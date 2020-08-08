@@ -9,10 +9,24 @@ import {
 } from './counterSlice';
 import styles from './Counter.module.css';
 
-export function Counter() {
+import { selectProduct, getCurrentProduct } from './../../Redux/Reducers/currentProductReducer';
+
+
+
+
+export function Counter(props) {
+
+
     const count = useSelector(selectCount);
+    const currentProduct = useSelector(getCurrentProduct);
+
     const dispatch = useDispatch();
     const [incrementAmount, setIncrementAmount] = useState('2');
+
+    const [ productValue, setSelectedProductValue ] = useState('2222');
+
+    console.log(props);
+    console.log(currentProduct);
 
     return (
         <div>
@@ -54,7 +68,23 @@ export function Counter() {
                 >
                     Add Async
         </button>
+
+
+
+                <input
+                    className={styles.textbox}
+                    aria-label="Current Product"
+                    onChange={e => setSelectedProductValue(e.target.value)}
+                />
+                <button onClick={() => dispatch(selectProduct(Number(productValue)))}>
+                    New Product Value
+                </button>
+
+
+
             </div>
         </div>
     );
 }
+
+

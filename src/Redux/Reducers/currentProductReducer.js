@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const currentProductSlice = createSlice({
     name: 'currentProduct',
     initialState: {
-        value: 1001,
+        value: null,
     },
     reducers: {
             // Redux Toolkit allows us to write "mutating" logic in reducers. It

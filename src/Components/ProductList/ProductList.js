@@ -1,42 +1,74 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectProduct, getCurrentProduct } from './../../Redux/Reducers/currentProductReducer';
+import { selectProduct, getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
+import { addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
 
 
 export function ProductList(props) {
 
 
-    const currentProduct = useSelector(getCurrentProduct);
     const dispatch = useDispatch();
+    const currentProduct = useSelector(getCurrentProduct);
+    const myWishList = useSelector(getCurrentWishList);
     const [productValue, setSelectedProductValue] = useState(currentProduct);
+    const [newWishValue, setNewWishValue] = useState();
 
-    console.log(props);
-    console.log("I am the updated currentProduct: ", currentProduct);
+
+    const handleAddWish = () => {
+        dispatch(addWish(newWishValue));
+        setNewWishValue("");
+    }
+
+
+    const handleSelectProduct = () => {
+        dispatch(selectProduct({"product": productValue}));
+        setSelectedProductValue("");
+    }
 
 
     return (
         <div>
             <h1>I am the productList!!</h1>
 
-            <input
-                aria-label="Current Product"
-                value={productValue}
-                onChange={e => setSelectedProductValue(e.target.value)}
-            />
-            <button onClick={() => dispatch(selectProduct(productValue))}>
-                Submit
-            </button>
-  
-  
-            {/* <input
-                aria-label="Current Product"
-                onChange={e => setSelectedProductValue(e.target.value)}
-            />
-            <button onClick={() => dispatch(selectProduct(productValue))}>
-                Submit
-            </button> */}
+
+            {/* Testing currentProduct slice */}
+            <div style={{ marginTop: 20 }}>
+                <input
+                    aria-label="Current Product"
+                    // value={productValue}
+                    onChange={e => setSelectedProductValue(e.target.value)}
+                />
+                <button onClick={handleSelectProduct}>
+                    Submit
+                </button>
+                <h5>I am the currentProduct State: </h5>
+            </div>
+
+
+            {/* Testing currentWishList slice */}
+            <div style={{ marginTop: 20 }}>
+                <input
+                    aria-label="Wishlist Test"
+                    value={newWishValue}
+                    onChange={e => setNewWishValue(e.target.value)}
+                />
+
+                <button onClick={handleAddWish}>
+                    ADD WISH
+                </button>
+
+                {/* Printing out the currentWishList */}
+                <ul>
+                    {myWishList.map(ele => {
+                        return <li>{ele}</li>
+                    })}
+                </ul>
+            </div>
+
+
         </div>
     )
 }
+
 
 

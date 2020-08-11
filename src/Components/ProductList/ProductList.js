@@ -21,7 +21,7 @@ export function ProductList(props) {
 
 
     const handleSelectProduct = () => {
-        dispatch(selectProduct({"product": productValue}));
+        dispatch(selectProduct(productValue));
         setSelectedProductValue("");
     }
 
@@ -41,7 +41,7 @@ export function ProductList(props) {
                 <button onClick={handleSelectProduct}>
                     Submit
                 </button>
-                <h5>I am the currentProduct State: </h5>
+                <h5>I am the currentProduct State: {currentProduct}</h5>
             </div>
 
 

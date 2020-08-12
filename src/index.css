@@ -11,3 +11,9 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+
+.Mui-selected {
+    border-right: 4px solid #1890ff !important;
+    color: rgb(190, 224, 255) !important;
+}

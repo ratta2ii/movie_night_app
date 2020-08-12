@@ -64,13 +64,17 @@ export default function Navigation(props) {
         return (
             <Fragment>
                 <MenuList key={key} className={classes.menuList} >
+                    <Box  
+                        style={{ height: 51, backgroundColor: '#2196f3'}} >
+                    </Box>
 
 
-                    <MenuItem component={Link} to='/' 
-                        selected={'/' === pathname} 
-                        style={{ 
-                            marginTop:  (open || mobileDrawerState) ? '50px': '45px', 
-                            paddingBottom: (open || mobileDrawerState) ? "15px" : '23px' }} >
+                    <MenuItem component={Link} to='/'
+                        selected={'/' === pathname}
+                        style={{
+                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px',
+                        }}
+                        className={classes.tr} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>HOME</Typography>
                         <Typography className={classes.miniHomeNavTitle}
@@ -82,60 +86,66 @@ export default function Navigation(props) {
 
 
                     <MenuItem component={Link} to='/productList'
-                            selected={'/productList' === pathname} 
-                            style={{ 
-                                padding: (open || mobileDrawerState) ? 15: '7px 15px 23px' }} >
+                        selected={'/productList' === pathname}
+                        style={{
+                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px'
+                        }} >
                         <ListItemIcon>
                             <ShopIcon className={classes.ShopIcon} />
                         </ListItemIcon>
                         <Typography className={classes.ListItemText}>PRODUCTS</Typography>
                         <Typography className={classes.miniiNavTitle}
-                            style={{ display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
+                            style={{ 
+                                left: '4px',
+                                display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
                             PRODUCTS
                         </Typography>
                     </MenuItem>
                     <Divider />
 
 
-                    <MenuItem component={Link} to='/wishList' 
-                            selected={'/wishList' === pathname} 
-                            style={{ padding: (open || mobileDrawerState) ? 15: '7px 15px 23px' }} >
+                    <MenuItem component={Link} to='/wishList'
+                        selected={'/wishList' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }} >
                         <ListItemIcon><FavoriteIcon className={classes.FavoriteIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>WISHLIST</Typography>
                         <Typography className={classes.miniiNavTitle}
-                            style={{ 
-                                display: (open || mobileDrawerState) ? 'none' : 'unset', 
-                                left: '8px'}} >
+                            style={{
+                                display: (open || mobileDrawerState) ? 'none' : 'unset',
+                                left: '8px'
+                            }} >
                             WISHLIST
                         </Typography>
                     </MenuItem>
                     <Divider />
 
 
-                    <MenuItem component={Link} to='/faqPage' 
-                        selected={'/faqPage' === pathname} 
-                        style={{ padding: (open || mobileDrawerState) ? 15: '7px 15px 23px' }} >
+                    <MenuItem component={Link} to='/faqPage'
+                        selected={'/faqPage' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>FAQPAGE</Typography>
                         <Typography className={classes.miniiNavTitle}
-                            style={{ 
-                                display: (open || mobileDrawerState) ? 'none' : 'unset', 
-                                left: '8px' }} >
+                            style={{
+                                display: (open || mobileDrawerState) ? 'none' : 'unset',
+                                left: '8px'
+                            }} >
                             FAQPAGE
                         </Typography>
                     </MenuItem>
                     <Divider />
 
 
-                    <MenuItem component={Link} to='/reservations' 
-                        selected={'/reservations' === pathname} 
-                        style={{ padding: (open || mobileDrawerState) ? 15: '7px 15px 23px' }} >
+                    <MenuItem component={Link} to='/reservations'
+                        selected={'/reservations' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>RESERVATIONS</Typography>
                         <Typography className={classes.miniiNavTitle}
-                            style={{ 
+                            style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
-                                left: '10px' }} >
+                                left: '10px'
+                            }} >
                             RESERVE
                         </Typography>
                     </MenuItem>
@@ -143,14 +153,15 @@ export default function Navigation(props) {
 
 
                     <MenuItem onClick={() => handleClose()}
-                        style={{ padding: (open || mobileDrawerState) ? 15: '7px 15px 23px' }}>
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}>
                         <ListItemIcon>
                             <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>CLOSE</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
-                                left: '18px'}} >
+                                left: '18px'
+                            }} >
                             OPEN
                         </Typography>
                     </MenuItem>
@@ -174,6 +185,7 @@ export default function Navigation(props) {
                         aria-label='open drawer'
                         onClick={handleDesktopDrawerToggle}
                         edge='start'
+                        alt='menu button icon'
                     />
                     {/* Mobile menu button */}
                     <img src={menuIcon}
@@ -182,6 +194,7 @@ export default function Navigation(props) {
                         aria-label='open drawer'
                         onClick={handleMobileDrawerToggle}
                         edge='start'
+                        alt='menu button icon'
                     />
                     {/* Toolbar Content */}
                     <Box className={classes.toolBarContent}>
@@ -218,7 +231,7 @@ export default function Navigation(props) {
                         <Box className={classes.companyLogo} >
                             <img src={companyLogoIcon} alt='company logo' />
                         </Box>
-                        
+
                         {/* Social Media Icons Container */}
                         <Box className={classes.socialIconsContainer} >
                             <img src={FaceBookIcon} alt='Facebook link'
@@ -255,7 +268,7 @@ export default function Navigation(props) {
                 anchor='left'
                 open={mobileDrawerState}
                 onClose={() => handleMobileDrawerToggle(false)}>
-                <Toolbar>
+                <Toolbar style={{backgroundColor: '#0b1120'}}>
                     <Typography variant='h6' noWrap style={{ color: '#fee2be' }}>
                         {websiteTitle}
                     </Typography>

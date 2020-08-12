@@ -7,6 +7,7 @@ import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
 import Box from '@material-ui/core/Box';
 
+
 // import { Select } from 'final-form-material-ui';
 // import { Link } from '@material-ui/core';
 // import { MenuItem } from '@material-ui/core';
@@ -21,15 +22,41 @@ function ReserveForm() {
     const handleDateChange = (date) => {
         setDate(date);
     };
+    const [emailSuccessStatus, setEmailSuccessStatus] = useState(null);
 
 
     const onSubmit = async (values) => {
+        // console.log(values.names);
+        // console.log(values.email);
+        // console.log(values.phoneNumber);
+        // console.log(values.date);
+        // console.log(values.message);
         values.date = selectedDate
         console.log(values);
         const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
         await sleep(300);
         window.alert(JSON.stringify(values, 0, 2));
     };
+
+
+    const submitForm = (ev) => {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                setEmailSuccessStatus("YOUR RESERVATION WAS A SUCCESS!");
+            } else {
+                setEmailSuccessStatus("THERE WAS AN ERROR MAKING YOUR RESERVATION!");
+            }
+        };
+        xhr.send(data);
+    }
 
 
     const validate = (values) => {
@@ -63,8 +90,9 @@ function ReserveForm() {
                 // initialValues={{ date: selectedDate }}
                 validate={validate}
                 render={({ handleSubmit, reset, submitting, pristine, values }) => (
-                    <form onSubmit={handleSubmit} noValidate>
-                        <Paper style={{ padding: 16 }}>
+                    <form onSubmit={submitForm} noValidate action="https://formspree.io/mdoddgdr"
+                        method="POST" >
+                        <Paper style={{ padding: 20 }}>
                             <Grid container alignItems="flex-start" spacing={2}>
                                 <Grid item xs={12} sm={6}>
                                     <Field
@@ -203,9 +231,29 @@ function ReserveForm() {
                     </form>
                 )}
             />
+            <Box style={{padding: 5}}>
+                {emailSuccessStatus}
+            </Box>
         </Box>
     );
 }
 
 
 export default ReserveForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

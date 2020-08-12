@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Navigation from './Components/Navigation/Navigation';
 import Home from './Views/Home/Home';
 import ProductsView  from './Views/ProductsView/ProductsView';
+import Reservations from './Views/Reservations/Reservations';
 
 
 
@@ -17,9 +18,9 @@ function App(props) {
                 <Route exact path='/' component={Home} />
                 <Route path="/productList" component={ProductsView} />
                 {/* <Route path="/faqPage" component={FaqPage} /> */}
-                {/* <Route path="/wishList" component={WishList} />
-                <Route path="/reservations" component={Reservations}>
-                <Route component={Error404} /> */}
+                {/* <Route path="/wishList" component={WishList} /> */}
+                <Route path="/reservations" component={Reservations} />
+                {/* <Route component={Error404} /> */}
             </Switch>
             <style jsx="true">{`
                     /* This responsive margin blocks out the space where the fixed sidebar is */

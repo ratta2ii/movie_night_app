@@ -8,6 +8,12 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex'
     },
+    tr: {
+        // background: "#f1f1f1",
+        '&:hover': {
+            // background: "#f00",
+        },
+    },
     appBar: {
         position: 'fixed',
         backgroundColor: '#0b1120',
@@ -18,9 +24,9 @@ export const useStyles = makeStyles((theme) => ({
         })
     },
     toolBar: {
-        height: '115px', 
+        height: '115px',
         borderBottom: '10px solid red',
-        padding: 15 
+        padding: 15
     },
     toolBarContent: {
         width: '100%',
@@ -38,7 +44,7 @@ export const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 0px 5px lightblue',
         '&:focus': {
             outline: 'none !important',
-        }, 
+        },
         '&:hover': {
             boxShadow: '0px 0px 5px yellow',
         },
@@ -57,7 +63,7 @@ export const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 0px 5px lightblue',
         '&:focus': {
             outline: 'none !important',
-        }, 
+        },
         '&:hover': {
             boxShadow: '0px 0px 5px yellow',
         },
@@ -109,16 +115,12 @@ export const useStyles = makeStyles((theme) => ({
     menuList: {
         backgroundColor: '#1a2644',
         color: '#fee2be',
-        paddingLeft: '3px',
-        paddingBottom: 0,
-    },
-    MenuItem: {
-        paddingBottom: '25px',
-        paddingTop: '25px' 
+        padding: '0 0 0 3px'
     },
     ListItemText: {
-        marginTop: '10px',
-        fontWeight: 'bold'
+        marginTop: '4px',
+        fontWeight: 'bold',
+        letterSpacing: '0.07em'
     },
     companyLogo: {
         display: 'flex',
@@ -128,8 +130,8 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     socialIconsContainer: {
-        width: 150, 
-        display: 'flex', 
+        width: 150,
+        display: 'flex',
         justifyContent: 'space-evenly',
         borderRadius: '5px'
     },
@@ -141,7 +143,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     HomeIcon: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#882ecc',
         marginLeft: 5,
         padding: 2,
@@ -149,7 +151,7 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
     },
     ShopIcon: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#38cc2e',
         marginLeft: '5px',
         padding: 2,
@@ -157,7 +159,7 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
     },
     FavoriteIcon: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#c53b2d',
         marginLeft: 5,
         padding: 2,
@@ -165,7 +167,7 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
     },
     ListAltIcon: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#f8fb2c',
         marginLeft: 5,
         padding: 2,
@@ -173,7 +175,7 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
     },
     ListAltIcon2: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#2ebdcc',
         marginLeft: 5,
         padding: 2,
@@ -181,24 +183,24 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
     },
     SwapHorizontalCircleIcon: {
-        color: '#0a77ce',
+        color: ' #1890ff',
         backgroundColor: '#f6961b',
         marginLeft: 5,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
-    }, 
+    },
     miniHomeNavTitle: {
         marginBottom: '1rem',
         position: 'absolute',
-        bottom: '-8px',
+        bottom: '-10px',
         left: '18px',
         fontSize: '10px',
-    }, 
+    },
     miniiNavTitle: {
         marginBottom: '1rem',
         position: 'absolute',
-        bottom: '-8px',
+        bottom: '-10px',
         left: '5px',
         fontSize: '10px'
     }

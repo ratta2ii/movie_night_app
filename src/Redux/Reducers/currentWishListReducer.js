@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const currentWishListSlice = createSlice({
     name: 'currentWishList',
     initialState: {
-        value: ["WishList Index One"],
+        value: [],
     },
     reducers: {
         // Redux Toolkit allows us to write "mutating" logic in reducers. It
@@ -13,23 +13,38 @@ export const currentWishListSlice = createSlice({
         // immutable state based off those changes
         addWish: (state, action) => {
 
-            const newWish = action.payload;
-            state.value = [
-                ...state.value.slice(0),
-                newWish
-            ];
-
+            console.log("Made it into wish list reducer");
+            console.log("Wishlist action: ", action);
+            console.log("State Value: ", state.value);
+            
+            let newWish = action.payload;
+            
+            //? Avoid adding the same product twice (Other possible solutions???) ?\\
+            // if (state.value.length > 0) {
+                //     state.value.forEach(ele => {
+                    //         if (ele.productId !== action.payload.productId) {
+                        //             newWish = action.payload;
+                        //         }
+                        //     })
+                        // }
+                        
+                        state.value = [
+                            ...state.value.slice(0),
+                            newWish
+                        ];
+                        
+            console.log("State Value Ending: ", state.value);
             // This is an alternative way to do this
             // const newWishList = [ ...state.value, action.payload ]; 
             // state.value = newWishList;
         },
         removeWish: (state, action) => {
-            // console.log("Payload in removeWish: ", action.payload);
-            // // This will needed to tested once data is added
-            // const wishList = state.value;
-            // const productToRemove = action.payload;
+            console.log("Payload in removeWish: ", action.payload);
+            // This will needed to tested once data is added
+            // let wishList = state.value;
+            // const productIdToRemove = action.payload;
             // for (let i in wishList) {
-            //     if (wishList[i].id === productToRemove.id) {
+            //     if (wishList[i].id === productIdToRemove) {
             //         wishList.splice(i);
             //     }
             // }

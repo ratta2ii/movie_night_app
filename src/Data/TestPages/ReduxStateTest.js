@@ -28,6 +28,17 @@ export default function ReduxStateTest(props) {
     }
 
 
+       // if (props.currentRouterPath === '/productList') {
+    //     console.log("Looks like we have the correct router path!!!");
+    //     productListHeader =
+    //         <Box>
+    //             <Box>
+    //                 <Typography variant="h3">OUR PRODUCTS</Typography>
+    //             </Box>
+    //         </Box>;
+    // }
+
+
     return (
         <div>
             <h1>I am the productList!!</h1>

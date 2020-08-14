@@ -8,8 +8,9 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex'
     },
-    tr: {
+    MenuItem: {
         // background: "#f1f1f1",
+        borderLeft: '5px solid #021542',
         '&:hover': {
             // background: "#f00",
         },
@@ -31,6 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     toolBarContent: {
         width: '100%',
         backgroundColor: '#17223a',
+        // backgroundColor: '#021542',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -113,9 +115,9 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     menuList: {
-        backgroundColor: '#1a2644',
+        backgroundColor: '#021542',
         color: '#fee2be',
-        padding: '0 0 0 3px'
+        padding: '0'
     },
     ListItemText: {
         marginTop: '4px',
@@ -145,7 +147,7 @@ export const useStyles = makeStyles((theme) => ({
     HomeIcon: {
         color: ' #1890ff',
         backgroundColor: '#882ecc',
-        marginLeft: 5,
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -153,7 +155,7 @@ export const useStyles = makeStyles((theme) => ({
     ShopIcon: {
         color: ' #1890ff',
         backgroundColor: '#38cc2e',
-        marginLeft: '5px',
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -161,7 +163,7 @@ export const useStyles = makeStyles((theme) => ({
     FavoriteIcon: {
         color: ' #1890ff',
         backgroundColor: '#c53b2d',
-        marginLeft: 5,
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -169,7 +171,7 @@ export const useStyles = makeStyles((theme) => ({
     ListAltIcon: {
         color: ' #1890ff',
         backgroundColor: '#f8fb2c',
-        marginLeft: 5,
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -177,7 +179,7 @@ export const useStyles = makeStyles((theme) => ({
     ListAltIcon2: {
         color: ' #1890ff',
         backgroundColor: '#2ebdcc',
-        marginLeft: 5,
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -185,7 +187,7 @@ export const useStyles = makeStyles((theme) => ({
     SwapHorizontalCircleIcon: {
         color: ' #1890ff',
         backgroundColor: '#f6961b',
-        marginLeft: 5,
+        marginLeft: 3,
         padding: 2,
         fontSize: 25,
         borderRadius: 3,
@@ -201,7 +203,7 @@ export const useStyles = makeStyles((theme) => ({
         marginBottom: '1rem',
         position: 'absolute',
         bottom: '-10px',
-        left: '5px',
+        left: '15px',
         fontSize: '10px'
     }
 }));

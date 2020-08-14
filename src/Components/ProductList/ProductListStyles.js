@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: '100%',
         backgroundColor: '#2196f326',
-        marginBottom: '50px',
+        marginBottom: '100px',
         borderRadius: '3px',
         boxShadow: '0px 0px 5px #161f3a',
         [theme.breakpoints.down('sm')]: {

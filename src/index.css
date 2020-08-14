@@ -9,9 +9,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin-left: 72px;
 }
-
-
-/* This takes up space for the sidebar, that way all other centering works accordingly */
 @media only screen and (max-width: 959px) {
     body {
         margin-left: 0;   

@@ -26,7 +26,6 @@ function App(props) {
                 {/* <Route component={Error404} /> */}
             </Switch>
             <style global jsx={true}>{`
-                //? Resolve this by finding a different solution to the "centering" issue ?\\
                 /* This takes up space for the sidebar so all future centering works accordingly */
                     body {
                         margin-left: 72px;

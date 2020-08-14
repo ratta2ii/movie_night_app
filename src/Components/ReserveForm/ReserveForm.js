@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useStyles from './ReserveFormStyles';
 import { Form, Field } from 'react-final-form';
 import { TextField } from 'final-form-material-ui';
 import { Paper } from '@material-ui/core';
@@ -6,6 +7,7 @@ import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
 import Box from '@material-ui/core/Box';
+
 
 
 // import { Select } from 'final-form-material-ui';
@@ -16,7 +18,7 @@ import Box from '@material-ui/core/Box';
 
 function ReserveForm() {
 
-
+    const classes = useStyles();
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
     const handleDateChange = (date) => {
@@ -55,7 +57,8 @@ function ReserveForm() {
                 setEmailSuccessStatus("THERE WAS AN ERROR MAKING YOUR RESERVATION!");
             }
         };
-        xhr.send(data);
+        //! IMPORTANT TO UNCOMMENT IN ORDER FOR EMAILS TO GO THROUGH !\\
+        // xhr.send(data);
     }
 
 
@@ -78,13 +81,7 @@ function ReserveForm() {
 
 
     return (
-        <Box
-            style={{
-                padding: 16,
-                margin: 'auto',
-                maxWidth: 600,
-                backgroundColor: 'cornflowerblue',
-            }} >
+        <Box className={classes.root} >
             <Form
                 onSubmit={onSubmit}
                 // initialValues={{ date: selectedDate }}
@@ -92,7 +89,7 @@ function ReserveForm() {
                 render={({ handleSubmit, reset, submitting, pristine, values }) => (
                     <form onSubmit={submitForm} noValidate action="https://formspree.io/mdoddgdr"
                         method="POST" >
-                        <Paper style={{ padding: 20 }}>
+                        <Paper className={classes.paper} >
                             <Grid container alignItems="flex-start" spacing={2}>
                                 <Grid item xs={12} sm={6}>
                                     <Field

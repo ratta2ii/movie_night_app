@@ -1,5 +1,7 @@
 import React from "react";
-// Styles
+import { withRouter } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+// Styling
 import { withStyles } from "@material-ui/core/styles";
 import useStyles from "./StyledCardStyles";
 import Grid from "@material-ui/core/Grid";
@@ -12,34 +14,38 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 // State management
 import { useSelector, useDispatch } from 'react-redux';
 import { getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
-import { addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer'
+import { addWish } from '../../Redux/Reducers/currentWishListReducer'
 
 
-function StyledCard(props) {
+const StyledCard = (props) => {
 
 
-    console.log("Styled Card props: ", props);
-
-
+    let history = useHistory();
+    const { handleClose } = props;
     const currentProduct = useSelector(getCurrentProduct);
-    const myWishList = useSelector(getCurrentWishList);
     const classes = useStyles();
     const dispatch = useDispatch();
-    console.log(myWishList);
+
+
+    //! Remove console statements !\\
+    // console.log("Styled Card props: ", props);
 
 
     const handleAddToWishList = () => {
         console.log("Made it in wishList");
         console.log("Wish to add: ", currentProduct);
         dispatch(addWish(currentProduct));
+        setTimeout(() => {
+            handleClose();
+            history.push("/wishList");
+        }, 500);
+
     }
 
 
     return (
         <Box className={classes.paper}>
-
             <Grid container className={classes.root} alignContent="center">
-
                 {/* Header */}
                 <Grid item xs={12} style={{
                     backgroundColor: 'white',
@@ -50,9 +56,9 @@ function StyledCard(props) {
                     display: 'flex',
                     alignItems: 'center',
                     // justifyContent: 'space-between',
-
                 }} >
-                    <ArrowBackIosIcon /> BACK TO PRODUCTS
+                    <ArrowBackIosIcon onClick={handleClose} />
+                    <span onClick={handleClose}>BACK TO PRODUCTS</span>
                     {/* <FavoriteBorderIcon style={{ float: 'right', color: '#c56767' }} /> */}
                 </Grid>
 
@@ -73,7 +79,6 @@ function StyledCard(props) {
                         </CardContent>
                         <ul>
                             {currentProduct.bullets.map(bullet => {
-                                console.log("Bullet: ", bullet)
                                 return <li>{bullet}</li>
                             })}
                         </ul>

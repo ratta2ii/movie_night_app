@@ -16,9 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     descriptionContainer: {
         fontFamily: 'Raleway, sans-serif',
-        // borderTop: '1px solid lightgrey',
         padding: '25px 40px 25px 35px',
-
     },
     description: {
         fontFamily: 'Raleway, sans-serif',
@@ -42,36 +40,50 @@ const useStyles = makeStyles((theme) => ({
     },
     imageGridContainer: {
         minWidth: '300px',
-        // display: 'flex',
-        // alignItems: 'center',
-        // justifyContent: 'center',
-        // borderTop: '1px solid lightgrey',
         borderRight: '2px solid #efefef',
         padding: 50,
+        [theme.breakpoints.down('sm')]: {
+            padding: '50px 50px 0px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '25px 25px 0px'
+        },
     },
     imageStyles: {
         boxShadow: '0 0 5px grey',
         width: '100%',
+        height: '100%'
     },
     wishButton: {
-        width: '35%',
-        backgroundColor: '#81be8e',
-        
+        width: '44%',
+        backgroundColor: '#03234b', 
         color: 'white',
-        fontSize: 13,
-        margin: '0 2% 0 14%',
+        fontSize: '.8rem',
+        margin: '0 4% 0 4%',
         padding: '8px',
         fontWeight: '600',
-        borderRadius: 1
+        borderRadius: 1,
+        boxShadow: '0 0 1px #17191b',
+        '&:hover': {
+            boxShadow: 'inset 0 0 1px #17191b',
+            backgroundColor: '#0559c0', 
+            fontSize: '0.785rem',
+        }
     },
     reserveButton: {
-        width: '35%',
-        backgroundColor: '#1f497c',
+        width: '44%',
+        backgroundColor: '#03234b',
         color: 'white',
         fontSize: 13,
         padding: '8px',
         fontWeight: '600',
-        borderRadius: 1
+        borderRadius: 1,
+        boxShadow: '0 0 1px #17191b',
+        '&:hover': {
+            boxShadow: 'inset 0 0 1px #17191b',
+            backgroundColor: '#0559c0', 
+            fontSize: '0.785rem',
+        }
     }
 }));
 
@@ -84,47 +96,3 @@ export default useStyles;
 
 
 
-
-
-
-
-
-// export const useStyles = makeStyles((theme) => ({
-//     root: {
-//         display: 'flex'
-//     },
-//     tr: {
-//         // background: "#f1f1f1",
-//         '&:hover': {
-//             // background: "#f00",
-//         },
-//     },
-//     appBar: {
-//         position: 'fixed',
-//         backgroundColor: '#0b1120',
-//         zIndex: theme.zIndex.drawer + 1,
-//         transition: theme.transitions.create(['width', 'margin'], {
-//             easing: theme.transitions.easing.sharp,
-//             duration: theme.transitions.duration.leavingScreen,
-//         })
-//     },
-//     toggleDesktopMenuBtn: {
-//         width: '40px',
-//         height: '40px',
-//         margin: '0 35px 0 13px',
-//         borderRadius: '50%',
-//         boxShadow: '0px 0px 5px lightblue',
-//         '&:focus': {
-//             outline: 'none !important',
-//         },
-//         '&:hover': {
-//             boxShadow: '0px 0px 5px yellow',
-//         },
-//         '&:active': {
-//             boxShadow: '0px 0px 0px',
-//         },
-//         [theme.breakpoints.down('sm')]: {
-//             display: 'none',
-//         },
-//     },
-// }));

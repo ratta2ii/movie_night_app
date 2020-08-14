@@ -1,74 +1,100 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectProduct, getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
-import { addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
+import React from 'react';
+import { Link } from "react-router-dom";
+// import { Route, withRouter } from 'react-router-dom';
+import propTypes from 'prop-types';
+import { connect } from 'react-redux';
+import useStyles from './ProductListStyles';
+import SingleProduct from './../Product/Product';
+import ProductModal from './../ProductModal/ProductModal';
+import { masterProductList } from './../../Data/MockData/DataProducts';
+import { Box } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 
-export function ProductList(props) {
 
 
-    const dispatch = useDispatch();
-    const currentProduct = useSelector(getCurrentProduct);
-    const myWishList = useSelector(getCurrentWishList);
-    const [productValue, setSelectedProductValue] = useState(currentProduct);
-    const [newWishValue, setNewWishValue] = useState();
+function ProductList(props) {
 
 
-    const handleAddWish = () => {
-        dispatch(addWish(newWishValue));
-        setNewWishValue("");
-    }
+    const styles = useStyles();
+    const [open, setOpen] = React.useState(false);
 
 
-    const handleSelectProduct = () => {
-        dispatch(selectProduct(productValue));
-        setSelectedProductValue("");
-    }
+
+    console.log(props.current_product);
+
+
+    const handleOpen = () => {
+        console.log("handleOpen is being called");
+        setOpen(true);
+    };
+
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
 
     return (
-        <div>
-            <h1>I am the productList!!</h1>
-
-
-            {/* Testing currentProduct slice */}
-            <div style={{ marginTop: 20 }}>
-                <input
-                    aria-label="Current Product"
-                    // value={productValue}
-                    onChange={e => setSelectedProductValue(e.target.value)}
-                />
-                <button onClick={handleSelectProduct}>
-                    Submit
-                </button>
-                <h5>I am the currentProduct State: {currentProduct}</h5>
-            </div>
-
-
-            {/* Testing currentWishList slice */}
-            <div style={{ marginTop: 20 }}>
-                <input
-                    aria-label="Wishlist Test"
-                    value={newWishValue}
-                    onChange={e => setNewWishValue(e.target.value)}
-                />
-
-                <button onClick={handleAddWish}>
-                    ADD WISH
-                </button>
-
-                {/* Printing out the currentWishList */}
-                <ul>
-                    {myWishList.map(ele => {
-                        return <li>{ele}</li>
-                    })}
-                </ul>
-            </div>
-
-
-        </div>
-    )
+        <Box className={styles.productListComponent}>
+            <Grid container>
+                {/* Product container margin left */}
+                <Grid item xs={0} sm={1} md={2}></Grid>
+                {/* Product continer grid item */}
+                <Grid item xs={12} sm={10} md={8}>
+                    <Grid container justify="center" spacing={5}>
+                        {masterProductList.map((product) =>
+                            <SingleProduct
+                                handleOpen={handleOpen}
+                                handleClose={handleClose}
+                                productId={product.productId}
+                                title={product.title}
+                                price={product.price}
+                                description={product.description}
+                                mainImage={product.mainImage}
+                                bullets={product.bullets}
+                                id={product.id}
+                                key={product.key} />
+                        )}
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Box>
+                {/* Producr Modal */}
+                {/* <ProductModal open={open} onClose={handleClose} /> */}
+                <ProductModal open={open} handleClose={handleClose} />
+            </Box>
+        </Box>
+    );
 }
+
+
+ProductList.propTypes = {
+};
+
+
+const mapStateToProps = state => {
+    return {
+        // current_product: state.current_product
+    };
+};
+
+
+export default connect(mapStateToProps)(ProductList);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

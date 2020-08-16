@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 // import { Route, withRouter } from 'react-router-dom';
 import propTypes from 'prop-types';
-
 import useStyles from './AboutUsStyles';
-
-
 import { Box } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import familyMovieNight from './../../Assets/Images/family-movie-night.jpg'
 import BookOnlineButton from './../../Assets/Images/book-online-button.png';
-
 
 
 const AboutUs = (props) => {
@@ -32,20 +28,17 @@ const AboutUs = (props) => {
                     <Paper className={classes.paper}>
                         <Grid container className={classes.mainGridContainer}>
 
+
                             {/* Left container */}
                             <Grid item xs={12} lg={6} className={classes.leftGridContainer}>
                                 <img src={familyMovieNight} className={classes.movieNightImage} alt='A family watching a movie together on an outdoor movie screen and sound equipment rentals.' />
                             </Grid>
 
 
-
-
                             {/* Right container */}
                             <Grid item xs={12} lg={6} className={classes.rightGridContainer}>
                                 <Box>
-
-
-                                    <Typography variant='h2' className={classes.aboutUsHeader}>About Us</Typography>
+                                    <Typography variant='h2' className={classes.title}>About Us</Typography>
                                     <Typography className={classes.companyDescription}>AZ Event Team is a family-owned business that takes great   pride in making sure we deliver safe, high-quality rentals and event equipment.</Typography>
 
                                     <Typography className={classes.companyDescription}>We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering
@@ -60,10 +53,7 @@ const AboutUs = (props) => {
                                     </Link> 
                                     */}
                                 </Box>
-
                             </Grid>
-
-
 
 
                         </Grid>

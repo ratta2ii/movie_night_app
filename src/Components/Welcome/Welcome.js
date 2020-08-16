@@ -12,7 +12,6 @@ import giantScreenImage from './../../Assets/Images/giant-screen.jpg'
 import BookOnlineButton from './../../Assets/Images/book-online-button.png';
 
 
-
 const Welcome = (props) => {
 
 
@@ -38,7 +37,6 @@ const Welcome = (props) => {
                                     <Typography className={classes.companyDescription}>
                                         AZ Event Team is a family-owned business that takes great   pride in making sure we deliver safe, high-quality rentals and event equipment.
                                     </Typography>
-
                                     <Typography className={classes.companyDescription}>
                                         We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering
                                             exceptional service at an affordable price.

@@ -6,18 +6,20 @@ const useStyles = makeStyles((theme) => ({
         padding: 30,
         margin: 'auto',
         maxWidth: 650,
-        backgroundColor: 'cornflowerblue',
-        [theme.breakpoints.down('xs')]: {
-            margin: '150px auto 0 auto',
+        backgroundColor: '#2196f3',
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: '550px',
+            margin: '190px auto 0%',
             padding: 15,
-            margin: 20
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '350px',
+            margin: '170px auto 60px auto',
+            padding: 15,
         },
     },
     paper: {
         padding: '20px',
-        [theme.breakpoints.down('xs')]: {
-            marginTop: 100,
-        }
     },
 }));
 

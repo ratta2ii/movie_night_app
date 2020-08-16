@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 // Styling
 import { withStyles } from "@material-ui/core/styles";
@@ -39,7 +38,6 @@ const StyledCard = (props) => {
             handleClose();
             history.push("/wishList");
         }, 500);
-
     }
 
 
@@ -73,7 +71,7 @@ const StyledCard = (props) => {
                         <h4 className={classes.title}>{currentProduct.title}</h4>
                         {/* <Typography variant="h4" style={{ fontFamily: 'Raleway, sans-serif'}}>{current_product.title}</Typography> */}
                         <Typography className={classes.subTitle}>MOST POPULAR ITEM</Typography>
-                        <Typography variant="h2">$395</Typography>
+                        <Typography variant="h2" className={classes.price}>$ {currentProduct.price}</Typography>
                         <CardContent className={classes.description}>
                             Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo planter with a blue & red ribbom and butterfly pick.
                         </CardContent>
@@ -90,13 +88,13 @@ const StyledCard = (props) => {
                 <Grid item xs={12}>
                     <Grid container alignItems="center" style={{
                         height: 85,
-                        backgroundColor: 'cornflowerblue',
+                        backgroundColor: '#2196f3',
                         borderTop: '2px solid #efefef',
                         display: 'flex',
                         justifyItems: 'center'
                     }}>
                         <Grid item xs={0} md={6}></Grid>
-                        <Grid item xs={0} md={6}>
+                        <Grid item xs={12} md={6}>
                             <Button className={classes.wishButton}
                                 variant="outlined"
                                 color="primary"

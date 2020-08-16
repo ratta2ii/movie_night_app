@@ -6,18 +6,19 @@ const drawerWidth = 240;
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-        display: 'flex'
+        display: 'flex',
     },
     MenuItem: {
         // background: "#f1f1f1",
-        borderLeft: '5px solid #021542',
+        borderLeft: '5px solid #010307',
         '&:hover': {
             // background: "#f00",
         },
     },
     appBar: {
         position: 'fixed',
-        backgroundColor: '#0b1120',
+        backgroundColor: '#010307',
+        // backgroundColor: '#0b1120',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
@@ -31,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     toolBarContent: {
         width: '100%',
-        backgroundColor: '#17223a',
+        backgroundColor: '#131b2f',
         // backgroundColor: '#021542',
         display: 'flex',
         alignItems: 'center',
@@ -96,14 +97,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: '#0b1120',
+        backgroundColor: '#131b2f',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.easeIn,
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
     drawerClose: {
-        backgroundColor: '#0b1120',
+        backgroundColor: '#131b2f',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -114,15 +115,21 @@ export const useStyles = makeStyles((theme) => ({
             width: theme.spacing(9) + 1,
         },
     },
+    contactInfo: {
+        color: 'floralwhite'
+    },
     menuList: {
-        backgroundColor: '#021542',
+        backgroundColor: '#010307',
         color: '#fee2be',
         padding: '0'
     },
     ListItemText: {
         marginTop: '4px',
-        fontWeight: 'bold',
-        letterSpacing: '0.07em'
+        // fontWeight: 'bold',
+        letterSpacing: '0.07em',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '.8rem'
+        },
     },
     companyLogo: {
         display: 'flex',

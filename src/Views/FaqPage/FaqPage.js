@@ -19,9 +19,9 @@ const FaqPage = (props) => {
         <Box>
             <Grid container>
                 {/* Header left margin */}
-                <Grid item xs={0} sm={1} md={2}></Grid>
+                <Grid item xs={0} sm={1} md={0}></Grid>
                 {/* Header Grid Container */}
-                <Grid item xs={12} sm={10} md={8}>
+                <Grid item xs={12} sm={10} md={12}>
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer} >
                             <Typography variant="h3" className={classes.productHeaderTitle} >

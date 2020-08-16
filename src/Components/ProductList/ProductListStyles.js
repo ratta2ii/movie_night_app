@@ -59,11 +59,10 @@ const useStyles = makeStyles((theme) => ({
     },
     bookOnlineButton: {
         position: 'absolute',
-        width: 140,
+        width: 120,
         bottom: 15,
         right: 20,
         [theme.breakpoints.down('md')]: {
-            width: 120,
             bottom: 10, 
             right: 15
         },

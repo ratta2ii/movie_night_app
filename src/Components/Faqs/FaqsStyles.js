@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
     heading: {
         fontSize: theme.typography.pxToRem(22),
         fontWeight: '500',
-        // color: '#fef1e0',
         color: 'white',
         letterSpacing: '.03em',
         wordSpacing: '.05em'
@@ -34,3 +33,4 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default useStyles;
+

@@ -1,25 +1,30 @@
 
 import React from 'react'
-import PropTypes from 'prop-types'
-// Styling
-import { withStyles } from "@material-ui/core/styles";
-import useStyles from "./HomeStyles";
-import Grid from "@material-ui/core/Grid";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import ProductsView from './../ProductsView/ProductsView';
+import useStyles from './HomeStyles';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import AboutUs from './../../Components/AboutUs/AboutUs';
+import ProductList from './../../Components/ProductList/ProductList';
+import Welcome from '../../Components/Welcome/Welcome';
 import Footer from './../../Components/Footer/Footer';
 
 
 function Home(props) {
+
+
+    const classes = useStyles();
     
 
     return (
-        <Box>
-            <Typography variant="h1">Outdoor Movie Night Equipment Rentals</Typography>
-            <ProductsView />
+        <Box className={classes.root}>
+            <Paper className={classes.mainTitlePaper}>
+                <Typography variant='h1' className={classes.mainTitle}>Outdoor Movie Night Equipment Rentals</Typography> 
+            </Paper>
+            <Welcome />
+            <AboutUs />
+            {/* ProductsView comes with the footer component */}
+            <ProductList />
             <Footer />
         </Box>
     )

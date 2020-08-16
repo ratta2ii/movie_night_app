@@ -14,13 +14,14 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#2196f326',
         marginBottom: '50px',
         borderRadius: '3px',
-        boxShadow: '0px 0px 5px #161f3a',
+        boxShadow: 'inset 0px 0px 10px #aeaeae',
         [theme.breakpoints.down('sm')]: {
             margin: '175px auto 50px auto'
         },
         [theme.breakpoints.down('xs')]: {
-            width: '90%',
-            marginTop: 150
+            width: '100%',
+            marginTop: 150,
+            height: 100
         },
     },
     headerOverlayContainer: {
@@ -53,19 +54,18 @@ const useStyles = makeStyles((theme) => ({
             display: 'none',
         },
     },
+    faqsContainer: {
+        padding: 25,
+        borderRadius: '3px',
+        boxShadow: 'inset 0px 0px 10px #aeaeae',
+        background: 'linear-gradient(90deg, rgba(104,123,127,1) 0%, rgba(89,106,109,1) 40%, rgba(74,76,77,1) 100%)',
+    },
     bookOnlineButton: {
         position: 'absolute',
         width: 130,
         bottom: 12,
         right: 14,
     },
-    faqsContainer: {
-        padding: 25,
-        borderRadius: '3px',
-        boxShadow: '0px 0px 5px #161f3a',
-        background: 'rgb(104,123,127)',
-        background: 'linear-gradient(90deg, rgba(104,123,127,1) 0%, rgba(89,106,109,1) 40%, rgba(74,76,77,1) 100%)',
-    }
 }));
 
 

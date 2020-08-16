@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             maxWidth: 500,
-            marginTop: 50,
+            marginTop: 30,
         },
     },
     paper: {
@@ -27,10 +27,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: '100% 100%',
         borderRadius: '3px',
         boxShadow: '0px 0px 5px #161f3a',
-        padding: 15,
     },
     leftGridContainer: {
-        backgroundColor: '#010308',
+        backgroundColor: '#010307d9',
         padding: '70px',
         [theme.breakpoints.down('md')]: {
             padding: '70px 70px 50px',
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#010308',
+        backgroundColor: '#010307d9',
         padding: '50px 70px 50px 0px',
         display: 'flex',
         alignItems: 'center',

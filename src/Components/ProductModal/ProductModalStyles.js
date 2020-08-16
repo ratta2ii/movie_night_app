@@ -3,24 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
+        overflowY: 'auto',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'rgba(0,0,0, .7)',
-        [theme.breakpoints.down('sm')]: {
-            alignItems: 'unset',
-            marginTop: 150, 
-        },
-        [theme.breakpoints.down('xs')]: {
-            // width: '90%',
-            margin: '150px auto 0 auto'
-        },
     },
     paper: {
-        // backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(2, 4, 3),
         outline: 'none',
-        width: '100%'
+        width: '100%',
+        [theme.breakpoints.down('xs')]: {
+            padding: '75% 5% 50px 5%',
+        },
     },
     modalGridContainer: {
         //backgroundColor: '#f2f2f2',

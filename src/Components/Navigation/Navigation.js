@@ -65,7 +65,7 @@ export default function Navigation(props) {
             <Fragment>
                 <MenuList key={key} className={classes.menuList} >
                     <Box
-                        style={{ height: 51, backgroundColor: '#2196f3' }} >
+                        style={{ height: 51, backgroundColor: '#131b2f' }} >
                     </Box>
 
 
@@ -208,6 +208,7 @@ export default function Navigation(props) {
                         <Box>
                             <Box>
                                 <FormControlLabel
+                                    className={classes.contactInfo}
                                     control={
                                         <a target="_top"
                                             color='primary'
@@ -225,6 +226,7 @@ export default function Navigation(props) {
                             </Box>
                             <Box>
                                 <FormControlLabel
+                                    className={classes.contactInfo}
                                     control={
                                         <IconButton color="primary"
                                             style={{ padding: '5px  8px 5px 12px' }}>
@@ -285,8 +287,13 @@ export default function Navigation(props) {
                 anchor='left'
                 open={mobileDrawerState}
                 onClose={() => handleMobileDrawerToggle(false)}>
-                <Toolbar style={{ backgroundColor: '#0b1120' }}>
-                    <Typography variant='h6' noWrap style={{ color: '#fee2be' }}>
+                <Toolbar style={{ backgroundColor: '#131b2f' }}>
+                    <Typography variant='h6' noWrap
+                        style={{
+                            color: '#fee2be',
+                            fontSize: 'medium',
+                            marginLeft: '10px'
+                        }}>
                         {websiteTitle}
                     </Typography>
                 </Toolbar>

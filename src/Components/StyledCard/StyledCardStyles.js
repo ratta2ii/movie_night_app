@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -12,11 +13,17 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     paper: {
-
     },
     descriptionContainer: {
         fontFamily: 'Raleway, sans-serif',
         padding: '25px 40px 25px 35px',
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: '10px',
+            paddingLeft: '50px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            paddingLeft: '25px',
+        },
     },
     description: {
         fontFamily: 'Raleway, sans-serif',
@@ -30,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
         margin: '0',
         fontSize: '35px',
         lineHeight: '1',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '25px',
+        },
     },
     subTitle: {
         margin: '5px 0 15px 0',
@@ -37,6 +47,15 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '12px',
         color: '#515151',
 
+    },
+    price: {
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 25,
+            fontWeight: 'bold'
+        },
+        [theme.breakpoints.down('xs')]: {
+            
+        },
     },
     imageGridContainer: {
         minWidth: '300px',
@@ -52,7 +71,6 @@ const useStyles = makeStyles((theme) => ({
     imageStyles: {
         boxShadow: '0 0 5px grey',
         width: '100%',
-        height: '100%'
     },
     wishButton: {
         width: '44%',

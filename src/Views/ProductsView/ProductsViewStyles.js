@@ -1,18 +1,23 @@
 import { makeStyles } from '@material-ui/core/styles';
-import bg_image from './../../Assets/Images/film20-cropped.jpg';
+import bg_image from './../../Assets/Images/film26.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: "",
-        diplay: 'flex'
+        diplay: 'flex',
+    },
+    mainGridContainer: {
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '188px',
+        },
     },
     headerContainer: {
         height: 175,
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: '100%',
         backgroundColor: '#2196f326',
-        marginBottom: '100px',
+        marginBottom: '40px',
         borderRadius: '3px',
         boxShadow: '0px 0px 5px #161f3a',
         [theme.breakpoints.down('sm')]: {
@@ -20,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             width: '90%',
-            marginTop: 150
+            marginBottom: 0
         },
     },
     headerOverlayContainer: {

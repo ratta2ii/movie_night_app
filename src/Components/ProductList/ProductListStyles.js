@@ -1,71 +1,82 @@
 import { makeStyles } from '@material-ui/core/styles';
-import bg_image from './../../Assets/Images/film20-cropped.jpg';
+import bg_image from './../../Assets/Images/film4.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "",
-        diplay: 'flex'
-    },
-    // media: {
-    //     height: 250,
-    // },
-    productListComponent: {
+        diplay: 'flex',
+        padding: '0 5%'
     },
     mainGridContainer: {
-    
+        backgroundColor: '#010308', 
     },
     headerContainer: {
-        height: 150,
+        height: 175,
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: '100%',
-        backgroundColor: '#2196f326',
-        marginBottom: '100px',
+        marginTop: '10px',
+        marginBottom: '40px',
         borderRadius: '3px',
-        boxShadow: '0px 0px 5px #161f3a',
+        boxShadow: 'inset 0px 0px 10px slategray',
+        [theme.breakpoints.down('md')]: {
+            height: 140,
+            margin: '50px auto 40px auto'
+        },
         [theme.breakpoints.down('sm')]: {
-            margin: '175px auto 50px auto'
+            height: 110,
+            margin: '20px auto 40px auto'
         },
         [theme.breakpoints.down('xs')]: {
-            width: '90%',
-            marginTop: 150
+            height: 90,
+            marginTop: -29,
+            padding: '0',
+            marginBottom: 50,
         },
     },
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#7b7b7b30',
         borderRadius: '3px',
+        backgroundColor: '#c6c6c65e',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
     },
     productHeaderTitle: {
-        fontSize: '6rem',
+        fontSize: '9rem',
         fontFamily: '"Roboto", "Helvetica", "Arial"',
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#00000024',
-        '&:focus': {
-            
-        },
-        '&:hover': {
-            
-        },
-        '&:active': {
-
+        color: '#1818181a',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '7.5em',
         },
         [theme.breakpoints.down('sm')]: {
-            display: 'none',
+            fontSize: '3.5em',
         },
     },
     bookOnlineButton: {
         position: 'absolute',
-        width: 120,
-        bottom: 12,
-        right: 14,
+        width: 140,
+        bottom: 15,
+        right: 20,
+        [theme.breakpoints.down('md')]: {
+            width: 120,
+            bottom: 10, 
+            right: 15
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: 110,
+            bottom: 5, 
+            right: 10
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: 100,
+            bottom: 5, 
+            right: 10
+        },
     },
 }));
 

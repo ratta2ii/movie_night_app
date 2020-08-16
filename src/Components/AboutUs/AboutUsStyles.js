@@ -10,14 +10,16 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '3em',
         padding: '0 5%',
         [theme.breakpoints.down('md')]: {
-            marginTop: '60px',
+            marginTop: '100px',
             marginBottom: '60px'
         },
         [theme.breakpoints.down('sm')]: {
             padding: 15,
+            marginTop: '60px',
         },
         [theme.breakpoints.down('xs')]: {
             maxWidth: 500,
+            marginTop: 15,
         },
     },
     paper: {
@@ -28,10 +30,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: '100% 100%',
         borderRadius: '3px',
         boxShadow: '0px 0px 5px #161f3a',
-        padding: 15,
     },
     leftGridContainer: {
-        backgroundColor: '#010308',
+        backgroundColor: '#010307d9',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#010308',
+        backgroundColor: '#010307d9',
         padding: '70px',
         [theme.breakpoints.down('md')]: {
             padding: '70px 70px 70px',

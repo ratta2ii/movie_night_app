@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import bg_image from './../../Assets/Images/film26.jpg';
+import header_bg_image from './../../Assets/Images/film4-upside.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -8,61 +8,77 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',
     },
     mainGridContainer: {
+        marginTop: -85,
         [theme.breakpoints.down('sm')]: {
-            marginTop: '188px',
+            marginTop: '115px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            
         },
     },
     headerContainer: {
-        height: 175,
-        background: `url('${bg_image}') no-repeat`,
+        height: 115,
+        background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
         backgroundColor: '#2196f326',
-        marginBottom: '40px',
-        borderRadius: '3px',
-        boxShadow: '0px 0px 5px #161f3a',
+        marginBottom: '120px',
+        boxShadow: 'inset 0px 0px 10px #aeaeae',
         [theme.breakpoints.down('sm')]: {
-            margin: '175px auto 50px auto'
+            // margin: '175px auto 50px auto'
+            width: '100%',
+            marginTop: 0,
+            height: 100
         },
         [theme.breakpoints.down('xs')]: {
-            width: '90%',
-            marginBottom: 0
+            marginBottom: 50,
+            height: 100
         },
     },
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#7b7b7b30',
+        backgroundColor: '#e0e0e0b8',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
     },
-    productHeaderTitle: {
+    headerTitle: {
         fontSize: '6rem',
         fontFamily: '"Roboto", "Helvetica", "Arial"',
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
         color: '#00000024',
-        '&:focus': {
-            
-        },
-        '&:hover': {
-            
-        },
-        '&:active': {
-
+        opacity: '.7',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '5.3rem',
         },
         [theme.breakpoints.down('sm')]: {
-            display: 'none',
+            fontSize: '4.3rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '3.3rem',
         },
     },
     bookOnlineButton: {
         position: 'absolute',
-        width: 120,
-        bottom: 12,
-        right: 14,
+            width: 120,
+            bottom: 12,
+            right: 12,
+    
+        [theme.breakpoints.down('md')]: {
+            width: 100,
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: 90,
+            bottom: 5,
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: 80,
+            right: 5,
+        },
     },
 }));
 

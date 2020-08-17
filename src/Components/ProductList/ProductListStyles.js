@@ -7,8 +7,10 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',
         padding: '0'
     },
-    mainGridContainer: {
-        backgroundColor: '#010308', 
+    mainProductGridContainer: {
+        backgroundColor: '#010308',
+        display: 'flex',
+        justifyContent: 'center', 
     },
     headerContainer: {
         height: 175,

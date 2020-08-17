@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '0 5%',
         [theme.breakpoints.down('md')]: {
             marginTop: '100px',
-            marginBottom: '60px'
+            marginBottom: '60px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: 15,
@@ -37,13 +37,10 @@ const useStyles = makeStyles((theme) => ({
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
-        // [theme.breakpoints.down('lg')]: {
-        //     padding: '100px 100px 0px',
-        // },
         [theme.breakpoints.down('md')]: {
             padding: '100px 100px 0px',
         },
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('sm')]: {
             padding: '70px 70px 0px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -55,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#010307d9',
         padding: '100px',
         [theme.breakpoints.down('md')]: {
-            padding: '70px 70px 70px',
+            padding: '100px 100px 100px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: '50px 70px 70px',
@@ -93,8 +90,6 @@ const useStyles = makeStyles((theme) => ({
     bookOnlineButton: {
         position: 'absolute',
         width: 120,
-        // bottom: 12,
-        // right: 14,
     },
 }));
 

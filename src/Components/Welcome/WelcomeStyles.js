@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#010307d9',
         padding: '100px',
         [theme.breakpoints.down('md')]: {
-            padding: '70px 70px 50px',
+            padding: '90px 100px 60px',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px',
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('md')]: {
-            padding: '10px 70px 70px 70px',
+            padding: '10px 100px 100px 100px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: '0px 70px 70px',
@@ -81,8 +81,6 @@ const useStyles = makeStyles((theme) => ({
     bookOnlineButton: {
         position: 'absolute',
         width: 120,
-        // bottom: 12,
-        // right: 14,
     },
 }));
 

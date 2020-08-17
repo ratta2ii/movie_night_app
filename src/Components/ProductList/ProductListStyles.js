@@ -5,7 +5,7 @@ import bg_image from './../../Assets/Images/film4.jpg';
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
-        padding: '0 5%'
+        padding: '0'
     },
     mainGridContainer: {
         backgroundColor: '#010308', 
@@ -59,11 +59,10 @@ const useStyles = makeStyles((theme) => ({
     },
     bookOnlineButton: {
         position: 'absolute',
-        width: 140,
+        width: 120,
         bottom: 15,
         right: 20,
         [theme.breakpoints.down('md')]: {
-            width: 120,
             bottom: 10, 
             right: 15
         },

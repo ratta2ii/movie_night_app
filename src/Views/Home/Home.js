@@ -13,8 +13,6 @@ import Grid from '@material-ui/core/Grid';
 import BookOnlineButton from './../../Assets/Images/book-online-button-rectangle.png';
 
 
-
-
 function Home(props) {
 
 
@@ -31,11 +29,12 @@ function Home(props) {
             <Welcome />
             <AboutUs />
 
+
             {/* Product Header */}
             <Grid container>
                 {/* Margin left main container */}
                 <Grid item xs={1}></Grid>
-                <Grid item xs={10} >
+                <Grid item xs={10}>
                     {/* //? Main container (All content here) */}
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer}>
@@ -54,6 +53,7 @@ function Home(props) {
                 {/* Header right margin */}
                 <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
             </Grid>
+
 
             <ProductList />
             <Footer />

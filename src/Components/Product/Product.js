@@ -16,8 +16,6 @@ import useStyles from './ProductStyles';
 import { selectProduct } from '../../Redux/Reducers/currentProductReducer';
 
 
-
-
 function Product(props) {
     // console.log("Product props: ", props);
 
@@ -52,7 +50,7 @@ function Product(props) {
                     />
                     <CardContent 
                         style={{
-                            backgroundColor: '#cfd8dc', 
+                            backgroundColor: '#edf0f8', 
                             padding: 8
                         }}>
                         <Typography

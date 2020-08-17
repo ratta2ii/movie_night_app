@@ -6,11 +6,6 @@ import ProductModal from './../ProductModal/ProductModal';
 import { masterProductList } from './../../Data/MockData/DataProducts';
 import { Box } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
-// import BookOnlineButton from './../../Assets/Images/book-online-button.png';
-// import { Route, withRouter } from 'react-router-dom';
-// import { Link } from "react-router-dom";
-// import propTypes from 'prop-types';
-// import { Typography } from '@material-ui/core';
 
 
 const ProductList = (props) => {
@@ -38,7 +33,7 @@ const ProductList = (props) => {
                 <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
                 {/* Product continer grid item */}
                 <Grid item xs={12} sm={10} md={10} xl={8}>
-                    <Grid container justify="center" spacing={5}>
+                    <Grid container spacing={5} styles={classes.mainProductGridContainer} >
                         {masterProductList.map((product) =>
                             <SingleProduct
                                 handleOpen={handleOpen}

@@ -14,8 +14,8 @@ const WishList = props => {
     
     
     // const currentProduct = useSelector(getCurrentProduct);
+    // const classes = useStyles();
     const currentWishList = useSelector(getCurrentWishList);
-    const classes = useStyles();
     const dispatch = useDispatch();
     let history = useHistory();
     console.log(currentWishList);

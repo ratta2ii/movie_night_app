@@ -48,7 +48,7 @@ export const useStyles = makeStyles((theme) => ({
         }, 
     },
     headerContainer: {
-        height: 115,
+        height: 215,
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
         backgroundPositionY: '-350px',

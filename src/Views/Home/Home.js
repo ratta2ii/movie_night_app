@@ -33,8 +33,8 @@ function Home(props) {
             {/* Product Header */}
             <Grid container>
                 {/* Margin left main container */}
-                <Grid item xs={1}></Grid>
-                <Grid item xs={10}>
+                <Grid item xs={1} xl={2}></Grid>
+                <Grid item xs={10} xl={8}>
                     {/* //? Main container (All content here) */}
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer}>

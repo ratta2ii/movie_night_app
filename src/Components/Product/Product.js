@@ -36,20 +36,25 @@ function Product(props) {
 
 
     return (
-        <Grid item xs={12} sm={6} lg={4} xl={3}>
-            <Card className={styles.root} onClick={() => { handleModal(props) }}>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+            <Card className={styles.root}>
 
 
                 <CardActionArea
                     className={styles.CardActionArea}
-                    style={{ outline: "none" }}
+                    style={{ outline: "none",}}
+                    onClick={() => { handleModal(props) }}
                 >
                     <CardMedia
                         className={styles.CardMedia}
                         image={props.mainImage}
                         title={props.title}
                     />
-                    <CardContent className={styles.CardContent}>
+                    <CardContent 
+                        style={{
+                            backgroundColor: '#cfd8dc', 
+                            padding: 8
+                        }}>
                         <Typography
                             className={styles.title}
                             // gutterBottom 
@@ -69,15 +74,19 @@ function Product(props) {
                 </CardActionArea>
 
                 {/* Buttons on Card */}
-                <CardActions className={styles.action}>
+                <CardActions className={styles.action} >
                     <AddCircleIcon fontSize="small" />
                     <Typography
                         className={styles.addWishText}
                         variant="body2"
                     >
-                        ADD TO WISHLIST
+                        Add To Wishlist
                     </Typography>
-                    <Button size="small" color="primary" style={{ margin: 'auto' }} >
+                    <Button size="small" 
+                        color="primary" 
+                        onClick={() => { handleModal(props) }}
+                        style={{ margin: 'auto', fontSize: '.8rem' }} 
+                    >
                         {/* <a
                             target="_blank"
                             rel="noopener noreferrer"

@@ -5,7 +5,7 @@ import bg_image from './../../Assets/Images/film4.jpg';
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
-        padding: '0 5%'
+        padding: '0'
     },
     mainGridContainer: {
         backgroundColor: '#010308', 

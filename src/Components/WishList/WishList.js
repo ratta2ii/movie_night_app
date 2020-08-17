@@ -1,45 +1,37 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
-import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles';
 import useStyles from './WishListStyles';
 import Grid from '@material-ui/core/Grid';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 // State management
-import { removeWish, addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer'
+import { removeWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer'
 import Wish from '../Wish/Wish';
-
-import * as styles from './WishListStyles';
 
 
 const WishList = props => {
-
-
+    
+    
     // const currentProduct = useSelector(getCurrentProduct);
     const currentWishList = useSelector(getCurrentWishList);
     const classes = useStyles();
     const dispatch = useDispatch();
     let history = useHistory();
     console.log(currentWishList);
-
-
+    
+    
     const handleRemoveWish = (productId) => {
         console.log("handleRemoveWish (productId): ", productId);
         console.log("wishlist", currentWishList);
-
+        
         dispatch(removeWish(productId));
         setTimeout(() => {
             history.push("/wishList");
         }, 1500);
     }
-
-
+    
+    
     return (
         <Box>
             <Grid container>
@@ -47,12 +39,6 @@ const WishList = props => {
                 <Grid item xs={0} ></Grid>
                 {/* Main Container */}
                 <Grid item xs={12} >
-
-
-
-
-
-
                     <table class="redTable">
                         <thead>
                             <tr>
@@ -68,33 +54,21 @@ const WishList = props => {
                             </tr>
                         </tfoot>
                         <tbody>
-
-
-
-
-
-
-
-
                             {Object.keys(currentWishList).map(function (productId) {
                                 var ele = currentWishList[productId];
                                 return <Wish
-                                    title={ele.title}
-                                    productId={ele.productId}
-                                    mainImage={ele.mainImage}
-                                    price={ele.price}
-                                    id={ele.id}
-                                    description={ele.description}
-                                    bullets={ele.bullets}
-                                    handleRemoveWish={handleRemoveWish}
+                                title={ele.title}
+                                productId={ele.productId}
+                                mainImage={ele.mainImage}
+                                price={ele.price}
+                                id={ele.id}
+                                description={ele.description}
+                                bullets={ele.bullets}
+                                handleRemoveWish={handleRemoveWish}
                                 />;
                             })}
-
-
                         </tbody>
                     </table>
-
-
                 </Grid>
             </Grid>
             <style jsx="true">{`
@@ -142,18 +116,14 @@ const WishList = props => {
                 table.redTable tfoot .links {
                     text-align: right;
                 }
-            `}</style>
+                `}</style>
         </Box>
     )
-
-
-
-
 }
 
 
 WishList.propTypes = {
-
+    
 }
 
 
@@ -163,8 +133,28 @@ export default withStyles(useStyles)(WishList);
 
 
 
+
+
+
+
+
+
+
+
+
+
+// import PropTypes from 'prop-types'
+// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+// import CardContent from '@material-ui/core/CardContent';
+// import Button from '@material-ui/core/Button';
+// import Typography from '@material-ui/core/Typography';
+// import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
+
+
+
 // return (
-//     <Box>
+    //     <Box>
 //         <Grid container>
 //             {/* Left margin */}
 //             <Grid item xs={0} ></Grid>

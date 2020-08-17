@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import header_bg_image from './../../Assets/Images/film4.jpg';
+import header_bg_image from './../../Assets/Images/film4-upside.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 15,
     },
     headerContainer: {
-        height: 120,
+        height: 115,
         marginTop: -85,
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
@@ -30,7 +30,9 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#e0e0e0b8',
+         // light matching color
+        // backgroundColor: '#e0e0e0b8',
+        backgroundColor: '#c6c6c65e',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -38,12 +40,22 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
     },
     headerTitle: {
-        fontSize: '7rem',
+        fontSize: '6rem',
         fontFamily: '"Roboto", "Helvetica", "Arial"',
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
         color: '#00000024',
+        opacity: '.7',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '5.3rem',
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '4.3rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '3.3rem',
+        },
     },
     bookOnlineButton: {
         position: 'absolute',

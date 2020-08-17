@@ -1,9 +1,9 @@
 body {
-    /* background: linear-gradient(90deg, rgba(0,0,1,1) 0%, rgba(46,66,114,1) 50%, rgba(0,0,1,1) 100%); */
+    background: linear-gradient(90deg, rgba(0,0,1,1) 0%, rgba(46,66,114,1) 50%, rgba(0,0,1,1) 100%);
     /* This is the best
     background: linear-gradient(117deg, #0a0e1b 16%, #26375e 50%, #0a0e1b 91%); */
     /* background: linear-gradient(117deg, #26375e  16%,  #0a0e1b 55%, #0a0e1b 91%);  */
-    background: linear-gradient(117deg, #1e2a48  16%,  #0a0e1b 55%, #0a0e1b 91%); 
+    /* background: linear-gradient(117deg, #1e2a48  16%,  #0a0e1b 55%, #0a0e1b 91%);  */
     background-size: cover;
     /* background: linear-gradient(90deg, rgba(0,0,1,1) 0%, rgb(29 44 91) 50%, rgba(0,0,1,1) 100%); */
     margin: 0 0 0 72px;
@@ -38,3 +38,4 @@ body {
 .MuiPaper-elevation16  {
     background-color: #171d2e !important;
 }
+

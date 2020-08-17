@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     leftGridContainer: {
         backgroundColor: '#010307d9',
-        padding: '70px',
+        padding: '100px',
         [theme.breakpoints.down('md')]: {
             padding: '70px 70px 50px',
         },
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         width: '100%',
-        fontSize: '2.75rem',
+        fontSize: '2.5rem',
         textAlign: 'center',
         paddingBottom: '25px',
         borderBottom: '8px solid #0068ff',
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: 'floralWhite',
         marginBottom: '15px',
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         [theme.breakpoints.down('xs')]: {
             fontSize: '1rem'
         },

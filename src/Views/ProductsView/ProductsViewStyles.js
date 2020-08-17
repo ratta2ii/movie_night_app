@@ -37,7 +37,9 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#e0e0e0b8',
+        // light matching color
+        // backgroundColor: '#e0e0e0b8',
+        backgroundColor: '#c6c6c65e',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

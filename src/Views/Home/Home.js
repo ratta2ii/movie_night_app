@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from "react-router-dom";
 import Box from '@material-ui/core/Box';
@@ -25,7 +24,7 @@ function Home(props) {
         <Box className={classes.root}>
             <Paper className={classes.mainTitlePaper}>
                 <Typography variant='h1' className={classes.mainTitle}>
-                    OUTDOOR MOVIE NIGHT EVENTS...
+                    OUTDOOR MOVIE EVENTS & MORE...
                 </Typography>
             </Paper>
             <Welcome />
@@ -37,28 +36,28 @@ function Home(props) {
                 <Grid item xs={10} xl={8}>
                     {/* //? Main container (All content here) */}
                     <Box className={classes.headerContainer} >
-                        <Box className={classes.headerOverlayContainer}>
-                            <Typography variant="h3" className={classes.productHeaderTitle}>
-                                PRODUCTS
-                            </Typography>
-                            <Button
-                                component={Link}
-                                to="/reservations"
-                                className={classes.bookOnlineButton}
-                                variant="contained"
-                                // color="default"
-                                size="small"
-                                endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
-                            >
-                                Book Online
+                        <Button
+                            component={Link}
+                            to="/reservations"
+                            className={classes.bookOnlineButton}
+                            variant="contained"
+                            color="primary"
+                            size="small"
+                            endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
+                        >
+                            Book Online
                             </Button>
-                        </Box>
                     </Box>
                 </Grid>
                 {/* Header right margin */}
                 <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
             </Grid>
-            <ProductList />
+            <Grid container>
+                <Grid item xs={1} sm={0}></Grid>
+                <Grid item xs={10} sm={12} className={classes.productListContainer}>
+                    <ProductList />
+                </Grid>
+            </Grid>
             <Footer />
         </Box>
     )

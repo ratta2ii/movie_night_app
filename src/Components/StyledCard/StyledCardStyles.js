@@ -1,18 +1,74 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        // boxShadow: '0 0 10px #0066ff',
-        transition: '.8s',
-        '&:hover': {
-            // boxShadow: '0 0 40px #0066ff',
-            transition: '.8s'
-        }
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    paper: {
+    mainGridContainer: {
+        maxWidth: 1000,
+        overflow: 'hidden',
+        boxShadow: '0 0 10px #314883',
+        [theme.breakpoints.down('lg')]: {
+        },
+        [theme.breakpoints.down('md')]: {
+            maxWidth: 850,
+        },
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: 600,
+            marginBottom: 100,
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '85%',
+            marginTop: 150,
+            marginBottom: 40,
+        },
+    },
+    topGridItem: {
+        backgroundColor: 'white',
+        padding: '20px 30px',
+        borderBottom: '2px solid #efefef',
+        color: '#727272',
+        height: 80,
+        display: 'flex',
+        alignItems: 'center',
+        position: 'relative',
+        [theme.breakpoints.down('xs')]: {
+            padding: '20px 20px',
+        },
+    },
+    // FavoriteBorderIcon: {
+    //     position: 'absolute', 
+    //     right: '35', 
+    //     [theme.breakpoints.down('xs')]: {
+    //         right: '10',
+    //     },
+    // },
+    backToProducts: {
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 'smaller'
+        },
+    },
+    imageGridContainer: {
+        minWidth: '300px',
+        borderRight: '2px solid #efefef',
+        padding: 50,
+        [theme.breakpoints.down('md')]: {
+            padding: '25px 25px 10px'
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '50px 50px 10px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '25px 25px 0px'
+        },
+    },
+    imageStyles: {
+        boxShadow: '0 0 5px grey',
+        width: '100%',
     },
     descriptionContainer: {
         fontFamily: 'Raleway, sans-serif',
@@ -42,66 +98,39 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     subTitle: {
-        margin: '5px 0 15px 0',
+        margin: '6px 0 15px 0',
         fontFamily: 'Raleway, sans-serif',
         fontSize: '12px',
         color: '#515151',
 
     },
     price: {
-        [theme.breakpoints.down('sm')]: {
-            fontSize: 25,
-            fontWeight: 'bold'
+        fontSize: '3rem',
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '2rem'
         },
-        [theme.breakpoints.down('xs')]: {
-            
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.7rem'
         },
-    },
-    imageGridContainer: {
-        minWidth: '300px',
-        borderRight: '2px solid #efefef',
-        padding: 50,
-        [theme.breakpoints.down('sm')]: {
-            padding: '50px 50px 0px'
-        },
-        [theme.breakpoints.down('xs')]: {
-            padding: '25px 25px 0px'
-        },
-    },
-    imageStyles: {
-        boxShadow: '0 0 5px grey',
-        width: '100%',
     },
     wishButton: {
-        width: '44%',
+        width: '47%',
+        padding: '8px',
+        margin: '0 2% 0 2%',
         backgroundColor: '#03234b', 
         color: 'white',
-        fontSize: '.8rem',
-        margin: '0 4% 0 4%',
-        padding: '8px',
-        fontWeight: '600',
-        borderRadius: 1,
-        boxShadow: '0 0 1px #17191b',
-        '&:hover': {
-            boxShadow: 'inset 0 0 1px #17191b',
-            backgroundColor: '#0559c0', 
-            fontSize: '0.785rem',
-        }
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 'x-small'
+        }, 
     },
     reserveButton: {
-        width: '44%',
-        backgroundColor: '#03234b',
-        color: 'white',
-        fontSize: 13,
+        width: '47%',
         padding: '8px',
-        fontWeight: '600',
-        borderRadius: 1,
-        boxShadow: '0 0 1px #17191b',
-        '&:hover': {
-            boxShadow: 'inset 0 0 1px #17191b',
-            backgroundColor: '#0559c0', 
-            fontSize: '0.785rem',
-        }
+        backgroundColor: '#e57373',
+        color: 'white',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 'x-small'
+        },
     }
 }));
 

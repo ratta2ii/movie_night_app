@@ -1,8 +1,8 @@
+// import ProductModal from './../ProductModal/ProductModal';
 import React from 'react';
 import { connect } from 'react-redux';
 import useStyles from './ProductListStyles';
 import SingleProduct from './../Product/Product';
-import ProductModal from './../ProductModal/ProductModal';
 import { masterProductList } from './../../Data/MockData/DataProducts';
 import { Box } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
@@ -12,18 +12,18 @@ const ProductList = (props) => {
 
 
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
 
 
-    const handleOpen = () => {
-        console.log("handleOpen is being called");
-        setOpen(true);
-    };
 
-
-    const handleClose = () => {
-        setOpen(false);
-    };
+    //! DO NOT DELETE. These work in conjunction with modal
+    // const [open, setOpen] = React.useState(false);
+    // const handleOpen = () => {
+    //     console.log("handleOpen is being called");
+    //     setOpen(true);
+    // };
+    // const handleClose = () => {
+    //     setOpen(false);
+    // };
 
 
     return (
@@ -36,8 +36,9 @@ const ProductList = (props) => {
                     <Grid container spacing={5} styles={classes.mainProductGridContainer} >
                         {masterProductList.map((product) =>
                             <SingleProduct
-                                handleOpen={handleOpen}
-                                handleClose={handleClose}
+                                // These work in conjuntion with Modal. Removing temporarily
+                                // handleOpen={handleOpen}
+                                // handleClose={handleClose}
                                 productId={product.productId}
                                 title={product.title}
                                 price={product.price}
@@ -51,9 +52,9 @@ const ProductList = (props) => {
                 </Grid>
             </Grid>
             <Box>
-                {/* Producr Modal */}
+                {/* Product Modal */}
                 {/* <ProductModal open={open} onClose={handleClose} /> */}
-                <ProductModal open={open} handleClose={handleClose} />
+                {/* <ProductModal open={open} handleClose={handleClose} /> */}
             </Box>
         </Box>
     );

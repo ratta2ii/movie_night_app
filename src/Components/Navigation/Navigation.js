@@ -31,9 +31,6 @@ import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import { useStyles } from './NavigationStyles';
 
 
-
-
-
 export default function Navigation(props) {
 
 
@@ -65,7 +62,7 @@ export default function Navigation(props) {
             <Fragment>
                 <MenuList key={key} className={classes.menuList} >
                     <Box
-                        style={{ height: 51, backgroundColor: '#131b2f' }} >
+                        style={{ height: 51, backgroundColor: '#171d2e' }} >
                     </Box>
 
 
@@ -287,14 +284,14 @@ export default function Navigation(props) {
                 anchor='left'
                 open={mobileDrawerState}
                 onClose={() => handleMobileDrawerToggle(false)}>
-                <Toolbar style={{ backgroundColor: '#131b2f' }}>
+                <Toolbar style={{ backgroundColor: '#171d2e' }}>
                     <Typography variant='h6' noWrap
                         style={{
                             color: '#fee2be',
                             fontSize: 'medium',
                             marginLeft: '10px'
                         }}>
-                        {websiteTitle}
+                        {/* {websiteTitle} */}
                     </Typography>
                 </Toolbar>
                 {renderNavItems('desktopNav')}

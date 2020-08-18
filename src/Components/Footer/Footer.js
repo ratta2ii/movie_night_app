@@ -1,17 +1,12 @@
-
-// import PropTypes from 'prop-types'
-// import CardContent from "@material-ui/core/CardContent";
-// import Button from "@material-ui/core/Button";
-// import Typography from "@material-ui/core/Typography";
-// import Paper from '@material-ui/core/Paper';
 import React from 'react'
 import { Link } from "react-router-dom";
 // Styling
+import Box from "@material-ui/core/Box";
+import Button from '@material-ui/core/Button';
+import Grid from "@material-ui/core/Grid";
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { withStyles } from "@material-ui/core/styles";
 import useStyles from "./FooterStyles";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import BookOnlineButton from './../../Assets/Images/book-online-button.png';
 
 
 const Footer = (props) => {
@@ -30,11 +25,17 @@ const Footer = (props) => {
                     <Box className={classes.footerContainer} >
                         {/* Footer overlay container */}
                         <Box className={classes.footerOverlayContainer} >
-                            <Link to="/reservations">
-                                <img src={BookOnlineButton}
-                                    alt='book movie theatre rental online now button'
-                                    className={classes.bookOnlineButton} />
-                            </Link>
+                            <Button
+                                component={Link}
+                                to="/reservations"
+                                className={classes.bookOnlineButton}
+                                variant="contained"
+                                color="default"
+                                size="small"
+                                endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
+                            >
+                                Book Online
+                            </Button>
                         </Box>
                     </Box>
                 </Grid>
@@ -46,9 +47,9 @@ const Footer = (props) => {
 }
 
 
-// Footer.propTypes = {
+Footer.propTypes = {
 
-// }
+}
 
 
 export default withStyles(useStyles)(Footer);

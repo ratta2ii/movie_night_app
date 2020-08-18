@@ -4,18 +4,21 @@ import bg_image from './../../Assets/Images/bg12copy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "",
         diplay: 'flex',
         margin: 'auto',
         marginTop: 75,
         fontSize: '3em',
-        padding: '0 5%',
-        [theme.breakpoints.down('sm')]: {
+        padding: '15px 3%',
+        [theme.breakpoints.down('lg')]: {
+            padding: '15px 0',
+        },
+        [theme.breakpoints.down('md')]: {
             marginTop: 80,
-            padding: 15,
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginTop: 45,
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: 500,
             marginTop: 30,
         },
     },
@@ -31,8 +34,16 @@ const useStyles = makeStyles((theme) => ({
     leftGridContainer: {
         backgroundColor: '#010307d9',
         padding: '100px',
+        display: 'flex',
+        alignItems: 'center',
+        [theme.breakpoints.down('lg')]: {
+            padding: '60px 70px 60px 80px',
+        },
         [theme.breakpoints.down('md')]: {
-            padding: '90px 100px 60px',
+            padding: '50px 0px 50px 50px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '60px 70px 50px',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px',
@@ -43,8 +54,11 @@ const useStyles = makeStyles((theme) => ({
         padding: '50px 70px 50px 0px',
         display: 'flex',
         alignItems: 'center',
+        [theme.breakpoints.down('lg')]: {
+            padding: '120px 80px 120px 0px',
+        },
         [theme.breakpoints.down('md')]: {
-            padding: '10px 100px 100px 100px',
+            padding: '0px 50px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: '0px 70px 70px',
@@ -73,14 +87,19 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: 'floralWhite',
         marginBottom: '15px',
-        fontSize: '1rem',
+        fontSize: '1.2rem',
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.1rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.1rem'
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '1rem'
         },
-    },
-    bookOnlineButton: {
-        position: 'absolute',
-        width: 120,
     },
 }));
 

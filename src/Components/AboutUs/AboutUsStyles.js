@@ -8,17 +8,19 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',
         margin: '125px auto',
         fontSize: '3em',
-        padding: '0 5%',
+        padding: '15px 3%',
+        [theme.breakpoints.down('lg')]: {
+            marginTop: '90px',
+            marginBottom: '100px',
+            padding: '15px 0',
+        },
         [theme.breakpoints.down('md')]: {
-            marginTop: '100px',
             marginBottom: '60px',
         },
         [theme.breakpoints.down('sm')]: {
-            padding: 15,
             marginTop: '60px',
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: 500,
             marginTop: 15,
         },
     },
@@ -31,14 +33,16 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '3px',
         boxShadow: '0px 0px 5px #161f3a',
     },
-    // image container
     leftGridContainer: {
         backgroundColor: '#010307d9',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
+        [theme.breakpoints.down('lg')]: {
+            padding: '120px 0px 120px 80px',
+        },
         [theme.breakpoints.down('md')]: {
-            padding: '100px 100px 0px',
+            padding: '0px 50px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: '70px 70px 0px',
@@ -47,12 +51,16 @@ const useStyles = makeStyles((theme) => ({
             padding: '30px 30px 0px',
         },
     },
-    // content container
     rightGridContainer: {
         backgroundColor: '#010307d9',
         padding: '100px',
+        display: 'flex',
+        alignItems: 'center',
+        [theme.breakpoints.down('lg')]: {
+            padding: '60px 80px 60px 70px',
+        },
         [theme.breakpoints.down('md')]: {
-            padding: '100px 100px 100px',
+            padding: '50px 50px 50px 0px',
         },
         [theme.breakpoints.down('sm')]: {
             padding: '50px 70px 70px',
@@ -81,15 +89,19 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: 'floralWhite',
         marginBottom: '15px',
-        fontSize: '1rem',
+        fontSize: '1.2rem',
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.1rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.1rem'
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '1rem'
         },
-
-    },
-    bookOnlineButton: {
-        position: 'absolute',
-        width: 120,
     },
 }));
 

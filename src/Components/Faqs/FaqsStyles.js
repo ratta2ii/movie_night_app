@@ -6,11 +6,19 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
     },
     heading: {
-        fontSize: theme.typography.pxToRem(22),
         fontWeight: '500',
         color: 'white',
         letterSpacing: '.02em',
-        wordSpacing: '.05em'
+        wordSpacing: '.05em',
+        fontSize: '1.4rem',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.25rem',
+            wordSpacing: 'unset',
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.15rem',
+            marginLeft: -15,
+        },
     },
     Accordion: {
         marginBottom: 10,
@@ -22,11 +30,24 @@ const useStyles = makeStyles((theme) => ({
     AccordionDetails: {
         backgroundColor: '#fdf1e0',
         padding: '30px 50px',
-        boxShadow: 'inset 0px 0px 5px black'
+        boxShadow: 'inset 0px 0px 5px black',
+        marginBottom: 10,
+        [theme.breakpoints.down('sm')]: {
+            padding: '15px',
+        },
     },
     details: {
         color: '#000000',
-        fontSize: theme.typography.pxToRem(18),
+        fontSize: '1.3rem',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.2rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.1rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1rem'
+        },
     }
 }));
 

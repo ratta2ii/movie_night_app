@@ -7,6 +7,7 @@ import ProductsView  from './Views/ProductsView/ProductsView';
 import FaqPage from './Views/FaqPage/FaqPage';
 import Reservations from './Views/Reservations/Reservations';
 import WishListView from './Views/WishListView/WishListView';
+import SingleProductView from './Views/SingleProductView/SingleProductView';
 // This is for testing purposes only
 // import ReduxStateTest from './Data/TestPages/ReduxStateTest';
 
@@ -23,6 +24,7 @@ function App(props) {
                 <Route path="/faqPage" component={FaqPage} />
                 <Route path="/wishList" component={WishListView} />
                 <Route path="/reservations" component={Reservations} />
+                <Route path="/product" component={SingleProductView} />
                 {/* <Route component={Error404} /> */}
             </Switch>
             <style global jsx={true}>{`

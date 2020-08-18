@@ -1,10 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
-import header_bg_image from './../../Assets/Images/film4-upside.jpg';
+import header_bg_image from './../../Assets/Images/bg12copy.png';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "",
         diplay: 'flex',
     },
     mainGridContainer: {
@@ -12,34 +11,25 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             marginTop: '115px',
         },
-        [theme.breakpoints.down('xs')]: {
-            
-        },
     },
     headerContainer: {
-        height: 115,
+        height: 150,
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
-        backgroundColor: '#2196f326',
-        marginBottom: '120px',
-        boxShadow: 'inset 0px 0px 10px #aeaeae',
+        marginBottom: '100px',
         [theme.breakpoints.down('sm')]: {
-            // margin: '175px auto 50px auto'
             width: '100%',
             marginTop: 0,
-            height: 100
+            height: 130
         },
         [theme.breakpoints.down('xs')]: {
             marginBottom: 50,
-            height: 100
         },
     },
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        // light matching color
-        // backgroundColor: '#e0e0e0b8',
-        backgroundColor: '#c6c6c65e',
+        backgroundColor: '#010307d9',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -47,15 +37,15 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
     },
     headerTitle: {
-        fontSize: '6rem',
+        fontSize: '8rem',
         fontFamily: '"Roboto", "Helvetica", "Arial"',
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#00000024',
+        color: '#2196f34a',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
-            fontSize: '5.3rem',
+            fontSize: '6.3rem',
         },
         [theme.breakpoints.down('sm')]: {
             fontSize: '4.3rem',
@@ -66,20 +56,25 @@ const useStyles = makeStyles((theme) => ({
     },
     bookOnlineButton: {
         position: 'absolute',
-            width: 120,
+        width: 140,
+        bottom: 12,
+        right: 15,
+        color: 'white',
+        backgroundColor: '#ff0100',
+        padding: 8,
+        [theme.breakpoints.down('sm')]: {
+            width: 130,
+            padding: 6,
+            fontSize: 'small',
             bottom: 12,
             right: 12,
-    
-        [theme.breakpoints.down('md')]: {
-            width: 100,
-        },
-        [theme.breakpoints.down('sm')]: {
-            width: 90,
-            bottom: 5,
         },
         [theme.breakpoints.down('xs')]: {
-            width: 80,
-            right: 5,
+            width: 110,
+            padding: 6,
+            fontSize: 'x-small',
+            bottom: 7,
+            right: 7,
         },
     },
 }));

@@ -1,15 +1,18 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-// Styling
+// Material ui
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
+import CardContent from "@material-ui/core/CardContent";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+// Icons
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import EmailIcon from '@material-ui/icons/Email';
+import ShareIcon from '@material-ui/icons/Share';
 import { withStyles } from "@material-ui/core/styles";
 import useStyles from "./StyledCardStyles";
-import Grid from "@material-ui/core/Grid";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 // State management
 import { useSelector, useDispatch } from 'react-redux';
 import { getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
@@ -20,51 +23,63 @@ const StyledCard = (props) => {
 
 
     let history = useHistory();
-    const { handleClose } = props;
     const currentProduct = useSelector(getCurrentProduct);
     const classes = useStyles();
     const dispatch = useDispatch();
 
 
     //! Remove console statements !\\
-    // console.log("Styled Card props: ", props);
+    console.log("Styled Card props: ", props);
 
 
     const handleAddToWishList = () => {
-        console.log("Made it in wishList");
-        console.log("Wish to add: ", currentProduct);
         dispatch(addWish(currentProduct));
         setTimeout(() => {
-            handleClose();
-            history.push("/wishList");
+            history.push("/productList");
+        }, 500);
+    }
+
+
+    const handleReserveNow = () => {
+        console.log("Wish to add then reservations: ", currentProduct);
+        dispatch(addWish(currentProduct));
+        setTimeout(() => {
+            history.push("/reservations");
+        }, 500);
+    }
+
+
+    const handleBack = () => {
+        setTimeout(() => {
+            history.push("/productList");
         }, 500);
     }
 
 
     return (
-        <Box className={classes.paper}>
-            <Grid container className={classes.root} alignContent="center">
+        <Box className={classes.root}>
+            <Grid container className={classes.mainGridContainer} alignContent="center" justify="center">
                 {/* Header */}
-                <Grid item xs={12} style={{
-                    backgroundColor: 'white',
-                    padding: '20px 30px',
-                    borderBottom: '2px solid #efefef',
-                    color: '#727272',
-                    height: 80,
-                    display: 'flex',
-                    alignItems: 'center',
-                    // justifyContent: 'space-between',
-                }} >
-                    <ArrowBackIosIcon onClick={handleClose} />
-                    <span onClick={handleClose}>BACK TO PRODUCTS</span>
-                    {/* <FavoriteBorderIcon style={{ float: 'right', color: '#c56767' }} /> */}
+                <Grid item xs={12} className={classes.topGridItem} >
+                    <ArrowBackIosIcon onClick={handleBack} />
+                    <span
+                        className={classes.backToProducts}
+                        onClick={handleBack}>
+                        BACK TO PRODUCTS
+                    </span>
+                    <ShareIcon
+                        className={classes.FavoriteBorderIcon}
+                        style={{
+                            position: 'absolute', 
+                            right: '35',
+                            color: '#7e7b7b' 
+                        }}
+                    />
                 </Grid>
-
+                {/* Image Container */}
                 <Grid item xs={12} md={6} className={classes.imageGridContainer} style={{ backgroundColor: 'white' }}>
                     <img className={classes.imageStyles} src={currentProduct.mainImage} alt="current outdoor movie screen rental equipment product" />
                 </Grid>
-
-
                 {/* Main Content */}
                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white' }}>
                     <Box className={classes.descriptionContainer}>
@@ -82,9 +97,7 @@ const StyledCard = (props) => {
                         </ul>
                     </Box>
                 </Grid>
-
-
-                {/* Button View */}
+                {/* Button view */}
                 <Grid item xs={12}>
                     <Grid container alignItems="center" style={{
                         height: 85,
@@ -93,26 +106,33 @@ const StyledCard = (props) => {
                         display: 'flex',
                         justifyItems: 'center'
                     }}>
-                        <Grid item xs={0} md={6}></Grid>
-                        <Grid item xs={12} md={6}>
-                            <Button className={classes.wishButton}
-                                variant="outlined"
-                                color="primary"
-                                onClick={handleAddToWishList} >
-                                Add to Wishlist
+                        <Grid item xs={0} sm={2} md={6}></Grid>
+                        <Grid item xs={12} sm={8} md={6}>
+                            <Button
+                                className={classes.wishButton}
+                                onClick={handleAddToWishList}
+                                variant="contained"
+                                color="default"
+                                size="small"
+                                startIcon={<AddShoppingCartIcon />}
+                            >
+                                Add To Cart
                             </Button>
-                            <Button className={classes.reserveButton}
-                                variant="outlined"
-                                color="primary" >
+                            <Button
+                                className={classes.reserveButton}
+                                onClick={handleReserveNow}
+                                variant="contained"
+                                color="default"
+                                size="small"
+                                startIcon={<EmailIcon />}
+                            >
                                 Reserve Now
                             </Button>
                         </Grid>
                     </Grid>
                 </Grid>
-
-
             </Grid>
-        </Box>
+        </Box >
     );
 }
 

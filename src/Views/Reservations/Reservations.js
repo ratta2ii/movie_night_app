@@ -1,14 +1,13 @@
 import React from 'react'
-import * as styles from './ReservationsStyles';
-import ReserveForm from './../../Components/ReserveForm/ReserveForm';
 import Box from '@material-ui/core/Box';
+import ReserveForm from './../../Components/ReserveForm/ReserveForm';
 
 
 function Reservations() {
 
-
+    
     return (
-        <Box style={{}}>
+        <Box>
             <ReserveForm />
         </Box>
     );

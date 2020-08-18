@@ -1,13 +1,19 @@
 import { makeStyles } from '@material-ui/core/styles';
+import header_bg_image from './../../Assets/Images/bg12copy.png';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: 110,
+        marginTop: 100,
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            marginTop: 50,
+        },
     },
     footerContainer: {
         height: 250,
-        backgroundColor: '#0c1120',
+        background: `url('${header_bg_image}') no-repeat`,
+        backgroundSize: '100%',
         boxShadow: '0px 0px 5px #161f3a',
         padding: 0,
         [theme.breakpoints.down('md')]: {
@@ -16,15 +22,11 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             margin: '0px auto 0px auto'
         },
-        [theme.breakpoints.down('xs')]: {
-            width: '100%',
-            marginTop: 0,
-        },
     },
     footerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#0103078c',
+        backgroundColor: '#010307d9',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -43,7 +45,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     bookOnlineButton: {
-        width: 140,
+        color: 'white',
+        backgroundColor: '#ff0100',
+        padding: 12,
+        fontSize: 'large',
     },
 }));
 

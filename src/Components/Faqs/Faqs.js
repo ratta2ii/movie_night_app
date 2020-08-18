@@ -30,7 +30,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -50,7 +50,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -70,7 +70,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -90,7 +90,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -110,7 +110,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -130,7 +130,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -150,7 +150,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>
@@ -170,7 +170,7 @@ export default function ControlledAccordions() {
                 // expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header" >
                     <Typography className={classes.heading}>

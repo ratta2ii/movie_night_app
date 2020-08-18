@@ -9,16 +9,11 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
     },
     MenuItem: {
-        // background: "#f1f1f1",
-        borderLeft: '5px solid #010307',
-        '&:hover': {
-            // background: "#f00",
-        },
+        borderLeft: '5px solid #0b1324',
     },
     appBar: {
         position: 'fixed',
         backgroundColor: '#010307',
-        // backgroundColor: '#0b1120',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
@@ -33,7 +28,6 @@ export const useStyles = makeStyles((theme) => ({
     toolBarContent: {
         width: '100%',
         backgroundColor: '#131b2f',
-        // backgroundColor: '#021542',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -82,7 +76,8 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: '200px',
         flexShrink: 0,
         whiteSpace: 'nowrap',
-        zIndex: 1, // necessary for nav to be below app bar
+        // necessary for nav to be below app bar
+        zIndex: 1, 
         [theme.breakpoints.down('sm')]: {
             display: 'none',
         },
@@ -104,7 +99,7 @@ export const useStyles = makeStyles((theme) => ({
         }),
     },
     drawerClose: {
-        backgroundColor: '#131b2f',
+        backgroundColor: '#0b1324',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -119,13 +114,12 @@ export const useStyles = makeStyles((theme) => ({
         color: 'floralwhite'
     },
     menuList: {
-        backgroundColor: '#010307',
+        backgroundColor: '#0b1324',
         color: '#fee2be',
         padding: '0'
     },
     ListItemText: {
         marginTop: '4px',
-        // fontWeight: 'bold',
         letterSpacing: '0.07em',
         [theme.breakpoints.down('sm')]: {
             fontSize: '.8rem'

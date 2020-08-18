@@ -2,19 +2,17 @@ import React from 'react'
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
-import useStyles from './WishListStyles';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-// State management
-import { removeWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer'
+// Custom component, state, and styles
+import { removeWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
 import Wish from '../Wish/Wish';
+import useStyles from './WishListStyles';
 
 
 const WishList = props => {
     
     
-    // const currentProduct = useSelector(getCurrentProduct);
-    // const classes = useStyles();
     const currentWishList = useSelector(getCurrentWishList);
     const dispatch = useDispatch();
     let history = useHistory();
@@ -22,9 +20,6 @@ const WishList = props => {
     
     
     const handleRemoveWish = (productId) => {
-        console.log("handleRemoveWish (productId): ", productId);
-        console.log("wishlist", currentWishList);
-        
         dispatch(removeWish(productId));
         setTimeout(() => {
             history.push("/wishList");

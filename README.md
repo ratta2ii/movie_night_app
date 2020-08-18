@@ -1,5 +1,8 @@
 # **Movie Night App**
+
+
 ###### By Trevor Mackin   
+
 
 ## IMPORTANT NOTES:
 
@@ -14,13 +17,12 @@ The application is also incomplete in that there are a few styling updates as we
 5. It currently is using lots of mock data. I have created it in a way that the owner can upload their files in a certain structure and it will populate the application.
 6. I built out this application over the last 8 days. I have had zero time to debug, clean up code, etc., however, I am on it. Just incase someone views this before I have a chance to clean up. 
 
+
 ## **Component Tree Planning Phase (Updates coming)**
 
-#
-#
 ![ Screenshot of Project ](src/Assets/Images/projectStructure.png)
-#
-#
+
+
 ## **Description**
 
 _This is a client-side application built in React. This project focuses on building a website for an outdoor movie theatre rental company._
@@ -31,8 +33,7 @@ _When a user has decided that they have saved all relevant products in the wish 
 
 _The reason for the unorthodox checkout, and the reason for a wish list instead of a cart, is due to the nature of the company. It is my understanding that the company prefers to first speak with customers due to the many factors that go into planning an event. This site will eventually function as the main page for an event team, and they have requested that the site follow this model._ 
 
-#
-#
+
 ##  **Setup/Installation Instructions**
 
 1. Github Project Address: https://github.com/ratta2ii/movie_night_app
@@ -40,9 +41,8 @@ _The reason for the unorthodox checkout, and the reason for a wish list instead 
 3. $ cd movie_night_app (Navigate to the project directory) 
 4. $ npm install
 5. $ npm run start
-#
 
-#
+
 ## **Features**
 
 * Once a user has filled out the reservation form, their wishlist will be added to email and sent to the company owner.
@@ -52,9 +52,8 @@ _The reason for the unorthodox checkout, and the reason for a wish list instead 
 * Collapsible navbar (sidebar) for smaller screens
 * Sidebar active when a user clicks the hamburger icon
 
-#  
-#
-### **Technologies Used**
+
+## **Technologies Used**
 
 * React
 * JavaScript
@@ -66,8 +65,7 @@ _The reason for the unorthodox checkout, and the reason for a wish list instead 
 * Webpack
 * npx-create-react-app
 
-#
-#
+
 ## **License**
 
 MIT License

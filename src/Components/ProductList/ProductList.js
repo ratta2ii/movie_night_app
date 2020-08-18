@@ -1,18 +1,16 @@
-// import ProductModal from './../ProductModal/ProductModal';
 import React from 'react';
-import { connect } from 'react-redux';
 import useStyles from './ProductListStyles';
 import SingleProduct from './../Product/Product';
 import { masterProductList } from './../../Data/MockData/DataProducts';
 import { Box } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+// import ProductModal from './../ProductModal/ProductModal';
 
 
 const ProductList = (props) => {
 
 
     const classes = useStyles();
-
 
 
     //! DO NOT DELETE. These work in conjunction with modal
@@ -30,9 +28,9 @@ const ProductList = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Product container margin left */}
-                <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
+                <Grid item xs={1} xl={2}></Grid>
                 {/* Product continer grid item */}
-                <Grid item xs={12} sm={10} md={10} xl={8}>
+                <Grid item xs={10} xl={8}>
                     <Grid container spacing={5} styles={classes.mainProductGridContainer} >
                         {masterProductList.map((product) =>
                             <SingleProduct
@@ -65,13 +63,7 @@ ProductList.propTypes = {
 };
 
 
-const mapStateToProps = state => {
-    return {
-    };
-};
-
-
-export default connect(mapStateToProps)(ProductList);
+export default ProductList;
 
 
 

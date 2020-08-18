@@ -19,17 +19,17 @@ const AboutUs = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Margin left main container */}
-                <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
-                <Grid item xs={12} sm={10} md={10} xl={8}>
+                <Grid item xs={1} xl={2}></Grid>
+                <Grid item xs={10} xl={8}>
                     {/* //? Main container (All content here) */}
                     <Paper className={classes.paper}>
                         <Grid container className={classes.mainGridContainer}>
                             {/* Left container */}
-                            <Grid item xs={12} lg={6} className={classes.leftGridContainer}>
+                            <Grid item xs={12} md={6} className={classes.leftGridContainer}>
                                 <img src={familyMovieNight} className={classes.movieNightImage} alt='A family watching a movie together on an outdoor movie screen and sound equipment rentals.' />
                             </Grid>
                             {/* Right container */}
-                            <Grid item xs={12} lg={6} className={classes.rightGridContainer}>
+                            <Grid item xs={12} md={6} className={classes.rightGridContainer}>
                                 <Box>
                                     <Typography variant='h2' className={classes.title}>
                                         About Us
@@ -38,7 +38,7 @@ const AboutUs = (props) => {
                                     </Typography>
                                     <Typography className={classes.companyDescription}>We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering exceptional service at an affordable price.
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Please check out some photos <Link to="/images">HERE</Link> to see some of the different events that we have partnered with in the past.
+                                    <Typography className={classes.companyDescription}>Please check out some photos <Link to="/images" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> to see some of the different events that we have partnered with in the past.
                                     </Typography>
                                 </Box>
                             </Grid>

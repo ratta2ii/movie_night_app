@@ -11,7 +11,6 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import EmailIcon from '@material-ui/icons/Email';
 import ShareIcon from '@material-ui/icons/Share';
-import { withStyles } from "@material-ui/core/styles";
 import useStyles from "./StyledCardStyles";
 // State management
 import { useSelector, useDispatch } from 'react-redux';
@@ -29,30 +28,23 @@ const StyledCard = (props) => {
 
 
     //! Remove console statements !\\
-    console.log("Styled Card props: ", props);
+    // console.log("Styled Card props: ", props);
 
 
     const handleAddToWishList = () => {
         dispatch(addWish(currentProduct));
-        setTimeout(() => {
-            history.push("/productList");
-        }, 500);
+        history.push("/productList");
     }
 
 
     const handleReserveNow = () => {
-        console.log("Wish to add then reservations: ", currentProduct);
         dispatch(addWish(currentProduct));
-        setTimeout(() => {
-            history.push("/reservations");
-        }, 500);
+        history.push("/reservations");
     }
 
 
     const handleBack = () => {
-        setTimeout(() => {
-            history.push("/productList");
-        }, 500);
+        history.push("/productList");
     }
 
 
@@ -70,9 +62,9 @@ const StyledCard = (props) => {
                     <ShareIcon
                         className={classes.FavoriteBorderIcon}
                         style={{
-                            position: 'absolute', 
+                            position: 'absolute',
                             right: '35',
-                            color: '#7e7b7b' 
+                            color: '#7e7b7b'
                         }}
                     />
                 </Grid>
@@ -83,8 +75,9 @@ const StyledCard = (props) => {
                 {/* Main Content */}
                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white' }}>
                     <Box className={classes.descriptionContainer}>
-                        <h4 className={classes.title}>{currentProduct.title}</h4>
-                        {/* <Typography variant="h4" style={{ fontFamily: 'Raleway, sans-serif'}}>{current_product.title}</Typography> */}
+                        <Typography className={classes.title}>
+                            {currentProduct.title}
+                        </Typography>
                         <Typography className={classes.subTitle}>MOST POPULAR ITEM</Typography>
                         <Typography variant="h2" className={classes.price}>$ {currentProduct.price}</Typography>
                         <CardContent className={classes.description}>
@@ -99,13 +92,7 @@ const StyledCard = (props) => {
                 </Grid>
                 {/* Button view */}
                 <Grid item xs={12}>
-                    <Grid container alignItems="center" style={{
-                        height: 85,
-                        backgroundColor: '#2196f3',
-                        borderTop: '2px solid #efefef',
-                        display: 'flex',
-                        justifyItems: 'center'
-                    }}>
+                    <Grid container alignItems="center" className={classes.buttonView}>
                         <Grid item xs={0} sm={2} md={6}></Grid>
                         <Grid item xs={12} sm={8} md={6}>
                             <Button
@@ -126,7 +113,7 @@ const StyledCard = (props) => {
                                 size="small"
                                 startIcon={<EmailIcon />}
                             >
-                                Reserve Now
+                                Contact Us
                             </Button>
                         </Grid>
                     </Grid>
@@ -137,4 +124,4 @@ const StyledCard = (props) => {
 }
 
 
-export default withStyles(useStyles)(StyledCard);
+export default StyledCard;

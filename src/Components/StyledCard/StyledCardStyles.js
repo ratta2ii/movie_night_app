@@ -40,13 +40,6 @@ const useStyles = makeStyles((theme) => ({
             padding: '20px 20px',
         },
     },
-    // FavoriteBorderIcon: {
-    //     position: 'absolute', 
-    //     right: '35', 
-    //     [theme.breakpoints.down('xs')]: {
-    //         right: '10',
-    //     },
-    // },
     backToProducts: {
         [theme.breakpoints.down('xs')]: {
             fontSize: 'smaller'
@@ -91,10 +84,13 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '300',
         paddingTop: '15px',
         margin: '0',
-        fontSize: '35px',
+        fontSize: '2.5rem',
         lineHeight: '1',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '25px',
+            fontSize: '2rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.4rem',
         },
     },
     subTitle: {
@@ -112,6 +108,13 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
             fontSize: '1.7rem'
         },
+    },
+    buttonView: {
+        height: 85,
+        backgroundColor: '#20b8ff',
+        borderTop: '2px solid #efefef',
+        display: 'flex',
+        justifyItems: 'center'
     },
     wishButton: {
         width: '47%',

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import Box from '@material-ui/core/Box';
@@ -27,19 +27,26 @@ const WishListView = (props) => {
         content = <WishList />;
     } else {
         content = (
-            <Typography variant='h4'>
-                Your cart is empty!
-            </Typography>
-        )
+            <Fragment className={classes.productButtonContainer}>
+                <Typography variant='h4'>
+                    Your cart is empty!
+                </Typography>
+                <Link
+                    to='/productList'
+                    className={classes.backToProductsLink}>
+                    Check Out Our Products here...
+                </Link>
+            </Fragment>
+        );
     };
 
 
     checkoutButton = (
-        <Button component={Link} 
-                to='/reservations' 
-                variant='contained'
-                color='primary'
-                className={classes.checkOutButton}>
+        <Button component={Link}
+            to='/reservations'
+            variant='contained'
+            color='primary'
+            className={classes.checkOutButton}>
             <Typography>
                 Go To Checkout
             </Typography>

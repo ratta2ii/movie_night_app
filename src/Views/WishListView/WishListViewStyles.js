@@ -91,28 +91,8 @@ const useStyles = makeStyles((theme) => ({
             right: 10,
         },
     },
-    bookOnlineButton: {
-        position: 'absolute',
-        width: 140,
-        bottom: 12,
-        right: 15,
-        color: 'white',
-        backgroundColor: '#ff0100',
-        padding: 8,
-        [theme.breakpoints.down('sm')]: {
-            width: 130,
-            padding: 6,
-            fontSize: 'small',
-            bottom: 12,
-            right: 12,
-        },
-        [theme.breakpoints.down('xs')]: {
-            width: 110,
-            padding: 6,
-            fontSize: 'x-small',
-            bottom: 7,
-            right: 7,
-        },
+    backToProducts: {
+        color: 'dodgerblue'
     },
 }));
 

@@ -7,19 +7,36 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '5em',
     },
     imageTableContainer: {
-        // display: 'flex',
         padding: '20 15 15 15',
-        // justifyContent: 'center'
+        textAlign: 'center',
+        borderBottom: '1px solid #a5a5a5'
     },
     mainImage: {
-        width: 100,
-        height: 80,
-        padding: 15
+        width: 115,
+        height: 90,
+        padding: 15,
+        [theme.breakpoints.down('xs')]: {
+            width: 90,  
+        },
     },
     tableText: {
-        fontSize: 16,
+        fontSize: 22,
+        fontWeight: 300,
+        textAlign: 'left',
+        paddingLeft: 30,
+        borderBottom: '1px solid #a5a5a5',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 12,
+            paddingLeft: 0,
+        },
     },
-
+    buttonContainer: {
+        textAlign: 'center',
+        borderBottom: '1px solid #a5a5a5',
+        [theme.breakpoints.down('xs')]: {
+            paddingRight: 8,
+        },
+    }
 }));
 
 

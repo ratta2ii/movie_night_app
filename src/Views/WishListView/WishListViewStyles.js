@@ -4,13 +4,32 @@ import header_bg_image from './../../Assets/Images/bg12copy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        diplay: 'flex',
+        diplay: 'flex',     
     },
     contentPaperContainer: {
-        backgroundColor: '#88979a',
-        boxShadow: 'inset 0px 0px 5px black',
-        background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100%',
+        minHeight: 500,
+        position: 'relative',
+        padding: '50px 50px 150px 50px',
+        marginBottom: 120,
+        [theme.breakpoints.down('md')]: {
+            margin: '0px auto 120px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: 25,
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: 15,
+            marginTop: 40,
+            marginBottom: 80,
+        },
+    },
+    mainGridContent: {
+        [theme.breakpoints.down('sm')]: {
+            padding: '0 5%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0',
+        },
     },
     headerContainer: {
         height: 150,
@@ -18,9 +37,8 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
         marginBottom: '120px',
-        boxShadow: 'inset 0px 0px 10px #aeaeae',
         [theme.breakpoints.down('sm')]: {
-            margin: '116px auto 80px auto'
+            margin: '116px auto 120px auto'
         },
         [theme.breakpoints.down('xs')]: {
             width: '100%',
@@ -31,19 +49,12 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#f2c299d1',
+        backgroundColor: '#2196f3c2',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative'
-    },
-    contentOverlayContainer: {
-        height: '100%',
-        width: '100%',
-        backgroundColor: '#f2c299d1',
-        borderRadius: '3px',
-        padding: 25,
     },
     headerTitle: {
         fontSize: '8rem',
@@ -51,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#2d221145',
+        color: '#0d213275',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
             fontSize: '6.3rem',
@@ -61,6 +72,23 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: '3.3rem',
+        },
+    },
+    checkOutButton: {
+        position: 'absolute',
+        width: 200,
+        bottom: 25,
+        right: 50,
+        color: '#fffff',
+        backgroundColor: '#03A9F4',
+        padding: 10,
+        [theme.breakpoints.down('sm')]: {
+            bottom: 25,
+            right: 25,
+        },
+        [theme.breakpoints.down('xs')]: {
+            bottom: 10,
+            right: 10,
         },
     },
     bookOnlineButton: {

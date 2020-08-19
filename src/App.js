@@ -8,6 +8,7 @@ import FaqPage from './Views/FaqPage/FaqPage';
 import Reservations from './Views/Reservations/Reservations';
 import WishListView from './Views/WishListView/WishListView';
 import SingleProductView from './Views/SingleProductView/SingleProductView';
+import Error404 from './Views/Error404/Error404';
 // This is for testing purposes only
 // import ReduxStateTest from './Data/TestPages/ReduxStateTest';
 
@@ -25,7 +26,7 @@ function App(props) {
                 <Route path="/wishList" component={WishListView} />
                 <Route path="/reservations" component={Reservations} />
                 <Route path="/product" component={SingleProductView} />
-                {/* <Route component={Error404} /> */}
+                <Route component={Error404} />
             </Switch>
             <style global jsx={true}>{`
                 /* This takes up space for the sidebar so all future centering works accordingly */

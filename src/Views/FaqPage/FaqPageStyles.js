@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
         marginBottom: '120px',
-        boxShadow: 'inset 0px 0px 10px #aeaeae',
         [theme.breakpoints.down('sm')]: {
             margin: '116px auto 80px auto'
         },
@@ -55,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100% 100%',
         borderRadius: '3px',
-        boxShadow: 'inset 0px 0px 10px #aeaeae',
         marginBottom: 135,
         [theme.breakpoints.down('sm')]: {
             margin: '0 5% 25px 5%',
@@ -68,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     faqsContainerOverlay: {
         width: '100%',
         height: '100%',
-        backgroundColor: '#98989acf',
+        backgroundColor: '#98989ae3',
         padding: 25,
     },
     returnHomeLinkBox: {

@@ -55,7 +55,7 @@ const FaqPage = (props) => {
                             <Faqs />
                             {/* Return home container */}
                             <Box className={classes.returnHomeLinkBox}>
-                                <Button component='Link' to="/" variant='contained'
+                                <Button component={Link} to="/" variant='contained'
                                     className={classes.returnHomeLink} label="home">
                                     <Typography>
                                         Go To Homepage

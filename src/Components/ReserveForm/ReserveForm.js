@@ -7,42 +7,30 @@ import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
 import Box from '@material-ui/core/Box';
+import { useSelector } from 'react-redux';
+import { getProductsForEmail } from './../../Redux/Reducers/currentWishListReducer';
 
 
+const ReserveForm = () => {
 
-// import { Select } from 'final-form-material-ui';
-// import { Link } from '@material-ui/core';
-// import { MenuItem } from '@material-ui/core';
-// import { Typography } from '@material-ui/core';
-
-
-function ReserveForm() {
 
     const classes = useStyles();
+    const productTitles = useSelector(getProductsForEmail);
+    const [displayForm, setDisplayForm] = useState(true);
+    const [emailSuccessStatus, setEmailSuccessStatus] = useState();
+
+
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
     const handleDateChange = (date) => {
         setDate(date);
     };
-    const [emailSuccessStatus, setEmailSuccessStatus] = useState(null);
 
 
-    const onSubmit = async (values) => {
-        // console.log(values.names);
-        // console.log(values.email);
-        // console.log(values.phoneNumber);
-        // console.log(values.date);
-        // console.log(values.message);
-        values.date = selectedDate
-        console.log(values);
-        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-        await sleep(300);
-        window.alert(JSON.stringify(values, 0, 2));
-    };
-
-
-    const submitForm = (ev) => {
+    const handleSubmitForm = (ev) => {
         ev.preventDefault();
+        console.log('Made it into the submitForm function!');
+        console.log(ev.target);
         const form = ev.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
@@ -58,7 +46,10 @@ function ReserveForm() {
             }
         };
         //! IMPORTANT TO UNCOMMENT IN ORDER FOR EMAILS TO GO THROUGH !\\
-        // xhr.send(data);
+        xhr.send(data);
+        setTimeout(() => {
+            setDisplayForm(false);
+        }, 1000)
     }
 
 
@@ -82,153 +73,153 @@ function ReserveForm() {
 
     return (
         <Box className={classes.root} >
-            <Form
-                onSubmit={onSubmit}
-                // initialValues={{ date: selectedDate }}
-                validate={validate}
-                render={({ handleSubmit, reset, submitting, pristine, values }) => (
-                    <form onSubmit={submitForm} noValidate action="https://formspree.io/mdoddgdr"
-                        method="POST" >
-                        <Paper className={classes.paper} >
-                            <Grid container alignItems="flex-start" spacing={2}>
-                                <Grid item xs={12} sm={6}>
-                                    <Field
-                                        variant="filled"
-                                        color="primary"
-                                        fullWidth
-                                        required
-                                        name="firstName"
-                                        component={TextField}
-                                        type="text"
-                                        label="First Name"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6}>
-                                    <Field
-                                        variant="filled"
-                                        fullWidth
-                                        required
-                                        name="lastName"
-                                        component={TextField}
-                                        type="text"
-                                        label="Last Name"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6}>
-                                    <Field
-                                        variant="filled"
-                                        name="email"
-                                        fullWidth
-                                        required
-                                        component={TextField}
-                                        type="email"
-                                        label="Email"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6}>
-                                    <Field
-                                        variant="filled"
-                                        name="phoneNumber"
-                                        fullWidth
-                                        required
-                                        component={TextField}
-                                        type="phone"
-                                        label="Phone Number"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12}>
-                                    <Field
-                                        variant="filled"
-                                        name="address"
-                                        fullWidth
-                                        required
-                                        component={TextField}
-                                        type="address"
-                                        label="Address of Event"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6}></Grid>
-                                <Grid item xs={12} sm={6}>
-                                    <Field
-                                        variant="filled"
-                                        fullWidth
-                                        required
-                                        name="city"
-                                        component={TextField}
-                                        type="text"
-                                        label="City of Event"
-                                    />
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6}></Grid>
-                                <Grid item xs={12} sm={6}>
-                                    <Calendar
-                                        selectedDate={selectedDate}
-                                        setDate={setDate}
-                                        handleDateChange={handleDateChange}
-                                    />
-                                </Grid>
-
-
-                                {/* Message (text area*/}
-                                <Grid item xs={12}>
-                                    <Field
-                                        fullWidth
-                                        name="message"
-                                        component={TextField}
-                                        multiline
-                                        label="Message"
-                                        placeholder="Write your message here..."
-                                        rows={6}
-                                        variant="outlined"
-                                    />
-                                </Grid>
-
-
-                                {/*
+            <Box style={{ display: (displayForm) ? 'unset' : 'none' }}>
+                <Form
+                    onSubmit={handleSubmitForm}
+                    validate={validate}
+                    render={({ form, handleSubmit, reset, submitting, pristine, values }) => (
+                        <form
+                            onSubmit={handleSubmitForm}
+                            action="https://formspree.io/mdoddgdr"
+                            method="POST"
+                        >
+                            <Paper className={classes.paper} >
+                                <Grid container alignItems="flex-start" spacing={2}>
+                                    <Grid item xs={12} sm={6}>
+                                        <Field
+                                            variant="filled"
+                                            color="primary"
+                                            fullWidth
+                                            required
+                                            name="firstName"
+                                            component={TextField}
+                                            type="text"
+                                            label="First Name"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Field
+                                            variant="filled"
+                                            fullWidth
+                                            required
+                                            name="lastName"
+                                            component={TextField}
+                                            type="text"
+                                            label="Last Name"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Field
+                                            variant="filled"
+                                            name="email"
+                                            fullWidth
+                                            required
+                                            component={TextField}
+                                            type="email"
+                                            label="Email"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Field
+                                            variant="filled"
+                                            name="phoneNumber"
+                                            fullWidth
+                                            required
+                                            component={TextField}
+                                            type="phone"
+                                            label="Phone Number"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Field
+                                            variant="filled"
+                                            name="address"
+                                            fullWidth
+                                            required
+                                            component={TextField}
+                                            type="address"
+                                            label="Address of Event"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}></Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Field
+                                            variant="filled"
+                                            fullWidth
+                                            required
+                                            name="city"
+                                            component={TextField}
+                                            type="text"
+                                            label="City of Event"
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}></Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Calendar
+                                            selectedDate={selectedDate}
+                                            setDate={setDate}
+                                            handleDateChange={handleDateChange}
+                                        />
+                                    </Grid>
+                                    {/* 
+                                    This hidden input adds the date selected on the calendar into
+                                    the data submitted with the form  
+                                    */}
+                                    <input style={{ display: 'none' }} type="text" name="date"
+                                        value={new Date(selectedDate)} />
+                                    {/* 
+                                    This is the input field that will include all the items from
+                                    the wishlist into the email reservartion sent 
+                                    */}
+                                    <input style={{ display: 'none' }} type="text" name="products"
+                                        value={productTitles} />
+                                    {/* Message (text area*/}
+                                    <Grid item xs={12}>
+                                        <Field
+                                            fullWidth
+                                            name="message"
+                                            component={TextField}
+                                            multiline
+                                            label="Message"
+                                            placeholder="Write your message here..."
+                                            rows={6}
+                                            variant="outlined"
+                                        />
+                                    </Grid>
+                                    {/*
                                  //? Update buttons and write functionality to reset form ?\\ 
                                 */}
-                                <Grid item style={{ marginTop: 16 }}>
-                                    <Button
-                                        type="button"
-                                        variant="contained"
-                                        onClick={reset}
-                                        disabled={submitting || pristine}
-                                    >
-                                        Reset
-                                </Button>
+                                    <Grid item style={{ marginTop: 16 }}>
+                                        <Button
+                                            type="button"
+                                            variant="contained"
+                                            onClick={reset}
+                                            disabled={submitting || pristine}
+                                        >
+                                            Reset
+                                    </Button>
+                                    </Grid>
+                                    <Grid item style={{ marginTop: 16 }}>
+                                        <Button
+                                            variant="contained"
+                                            color="primary"
+                                            type="submit"
+                                            disabled={submitting}
+                                        >
+                                            Submit
+                                    </Button>
+                                    </Grid>
                                 </Grid>
-                                <Grid item style={{ marginTop: 16 }}>
-                                    <Button
-                                        variant="contained"
-                                        color="primary"
-                                        type="submit"
-                                        disabled={submitting}
-                                    >
-                                        Submit
-                                </Button>
-                                </Grid>
-                            </Grid>
-                        </Paper>
-                        {/* 
-                        //! Returns a json object in the UI of the form entries !\\
-                        <pre>{JSON.stringify(values, 0, 2)}</pre> 
-                        */}
-                    </form>
-                )}
-            />
-            <Box style={{padding: 5}}>
+                            </Paper>                         
+                            {/* 
+                            //! Returns a json object in the UI of the form entries testing !\\
+                            <pre>{JSON.stringify(values, 0, 2)}</pre> 
+                            */}
+                        </form>
+                    )}
+                />
+            </Box>
+            <Box style={{ padding: 5, color: '#ffffff' }}>
                 {emailSuccessStatus}
             </Box>
         </Box>
@@ -237,14 +228,6 @@ function ReserveForm() {
 
 
 export default ReserveForm;
-
-
-
-
-
-
-
-
 
 
 

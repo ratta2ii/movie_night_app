@@ -5,26 +5,36 @@ export const currentWishListSlice = createSlice({
     name: 'currentWishList',
     initialState: {
         value: {},
+        productTitles: ''
     },
     reducers: {
         addWish: (state, action) => {
-            //! Remove console statements
-            // console.log("Made it into addWish reducer");
             //* The payload here is an object containing all the wish properties
             const newState = Object.assign({}, state.value, {
                 [action.payload.productId]: {
                     ...action.payload
                 }
             });
-            //? Redux Toolkit allows us to write "mutating" logic in reducers. It doesn't mutate the state. It uses the Immer library, which detects changes to a "draft state" and produces a brand new immutable state based off those changes 
             state.value = newState;
-            //! Fucntionality for working with an array state slice instead of an object !\\
-            // let newWish = action.payload;
-            // state.value = [ ...state.value.slice(0), newWish ];
+            /*
+            I am making a list of titles, in additon to entire objects, that will be mailed in 
+            the form to the business owner as products of interests. This simplified having to
+            parse the entire object to make input fields when the form rendered.
+            */
+            state.productTitles += `${action.payload.title}, `; 
+            /* 
+            FYI: Redux Toolkit allows us to write "mutating" logic in reducers. It doesn't mutate 
+            the state. It uses the Immer library, which detects changes to a "draft state" 
+            and produces a brand new immutable state based off those changes 
+            */
+            /* 
+            Fucntionality for working with an array state slice instead of an object. Currently 
+            an object to optimize checking for duplicates
+            let newWish = action.payload;
+            state.value = [ ...state.value.slice(0), newWish ];
+            */
         },
         removeWish: (state, action) => {
-            //! Remove console statement !\\
-            // console.log("Payload in removeWish reducer: ", action.payload);
             var indx = parseInt(action.payload);
             const newState = Object.assign({}, state.value);
             delete newState[indx];
@@ -35,12 +45,8 @@ export const currentWishListSlice = createSlice({
 
 
 export const { addWish, removeWish } = currentWishListSlice.actions;
-
-
-// The function below is called a selector and allows us to select a value from
-// the state. Selectors can also be defined inline where they're used instead of
-// in the slice file. For example: `useSelector((state) => state.counter.value)`
 export const getCurrentWishList = state => state.currentWishList.value;
+export const getProductsForEmail = state => state.currentWishList.productTitles;
 
 
 export default currentWishListSlice.reducer;

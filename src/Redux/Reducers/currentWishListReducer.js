@@ -35,7 +35,19 @@ export const currentWishListSlice = createSlice({
             */
         },
         removeWish: (state, action) => {
+
             var indx = parseInt(action.payload);
+
+            // Remove just the title from the productTitles slice
+            var productTitleToRemove = state.value[indx].title;
+            console.log("Product to remove", productTitleToRemove);
+            var titles = state.productTitles;
+            console.log('All titles list', titles);
+            titles = titles.replace(`${productTitleToRemove},`, "");
+            console.log('Titles after replacing the title', titles);
+            state.productTitles = titles;
+
+            // Remove entire wish/item object
             const newState = Object.assign({}, state.value);
             delete newState[indx];
             state.value = newState;

@@ -20,6 +20,9 @@ const ReserveForm = () => {
     const [emailSuccessStatus, setEmailSuccessStatus] = useState();
 
 
+    console.log("YOYO productTitles here: ", productTitles);
+
+
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
     const handleDateChange = (date) => {
@@ -193,8 +196,11 @@ const ReserveForm = () => {
                                         <Button
                                             type="button"
                                             variant="contained"
-                                            onClick={reset}
-                                            disabled={submitting || pristine}
+                                            onClick={() => {
+                                                form.restart();
+                                                setDate(null);
+                                            }}
+                                            // disabled={submitting || pristine}
                                         >
                                             Reset
                                     </Button>

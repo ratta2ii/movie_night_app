@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     imageStyles: {
-        boxShadow: '0 0 5px grey',
         width: '100%',
     },
     descriptionContainer: {
@@ -111,14 +110,14 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonView: {
         height: 85,
-        backgroundColor: '#20b8ff',
+        backgroundColor: '#2a75b2',
         borderTop: '2px solid #efefef',
         display: 'flex',
         justifyItems: 'center'
     },
     wishButton: {
         width: '47%',
-        padding: '8px',
+        padding: '12px',
         margin: '0 2% 0 2%',
         backgroundColor: '#03234b', 
         color: 'white',
@@ -128,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
     },
     reserveButton: {
         width: '47%',
-        padding: '8px',
+        padding: '12px',
         backgroundColor: '#e57373',
         color: 'white',
         [theme.breakpoints.down('xs')]: {

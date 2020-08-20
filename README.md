@@ -1,7 +1,8 @@
 # **Movie Night App**
+#### By Trevor Mackin   
 
+##### GH_PAGES: https://ratta2ii.github.io/movie_night_app/
 
-###### By Trevor Mackin   
 
 
 ## IMPORTANT NOTES:
@@ -35,6 +36,7 @@ _The reason for the unorthodox checkout, and the reason for a wish list instead 
 3. $ cd movie_night_app (Navigate to the project directory) 
 4. $ npm install
 5. $ npm run start
+
 
 
 ## **Features**

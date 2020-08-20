@@ -18,11 +18,6 @@ const styles = {
 function Calendar(props) {
 
 
-    // ! These were transferred to the parent props keeping the form state ! \\
-    // const [selectedDate, setDate] = useState(null);
-    // const handleDateChange = (date) => { setDate(date); };
-
-
     return (
         <Box>
             <MuiPickersUtilsProvider utils={MomentUtils}>

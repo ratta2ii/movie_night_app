@@ -6,7 +6,7 @@ import popcornCart from './../../Assets/Images/product-popcorn5.jpg';
 import cottonCandy from './../../Assets/Images/product-cotton-candy.jpg';
 import tableChairs from './../../Assets/Images/productTable.jpg';
 import hotdogCart from './../../Assets/Images/product-hotdog.png';
-import completePackage from './../../Assets/Images/package.png';
+import completePackage from './../../Assets/Images/pool-image.JPG';
 
 
 export const masterProductList = [
@@ -43,7 +43,7 @@ export const masterProductList = [
         bullets: ["I am the first bullet", "And I am the second bullet", "And me likewise, the third", "And look it's me the fourth", "And why not a number five too, ehh"],
     },
     {
-        title: 'Screens',
+        title: 'Screens Only',
         id: v4(),
         productId: '3',
         price: '499',

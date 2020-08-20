@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#0d132330',
+        color: '#b8dfff91',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
             fontSize: '6.3rem',

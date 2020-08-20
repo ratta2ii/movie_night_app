@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#6d0000c7',
+        backgroundColor: '#2a75b2d9',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#ffffff40',
+        color: '#b8dfff91',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
             fontSize: '6.3rem',

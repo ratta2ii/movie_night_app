@@ -6,16 +6,10 @@
 
 ## IMPORTANT NOTES:
 
-The current version on gh-pages is not the most up-to-date version. After hosting this app, I found that I was having problems with a modal when viewing a product. I will be working on these issues straight away though,and hope to get the updated version up and running ASAP. Please clone the repo and run for the latest version. 
-
-The application is also incomplete in that there are a few styling updates as well as lots of little bugs that I need to run through and fix really quick. They are as follows...
-
-1. Add styling to the WishList component. All the functionality is there to add and remove a product, but want to update this last file for more consistency
-2. The email functionality is currently disabled as I have 10 emails left for the month. I am happy to enable though, as this is more for myself and testing. 
-3. The modal of a product description does not work when hosted, but works great if you clone the app. I will be addressing this immediately.
-4. The footer, wishlist, as well as some other minor things have yet to be styled.
-5. It currently is using lots of mock data. I have created it in a way that the owner can upload their files in a certain structure and it will populate the application.
-6. I built out this application over the last 8 days. I have had zero time to debug, clean up code, etc., however, I am on it. Just incase someone views this before I have a chance to clean up. 
+The application is also incomplete in that there are a few styling updates as well as some linting errors in the console that I need to run through and fix really quick. Some of the other things are as follows...
+1. The footer, wishlist, as well as some other minor things have yet to be styled fully. I will be addressing color at some point as well.
+2. The site currently uses lots of mock data. I have created it in a way that the owner can upload their files within a specific structure, and it will populate the application. So for now this is just placeholder text, so fear not if it looks like I duplicated anything. :-)
+3. Don't forget to get on your phone and check out the mobile version. This site was styled for 5 different viewport sizes.
 
 
 ## **Component Tree Planning Phase (Updates coming)**

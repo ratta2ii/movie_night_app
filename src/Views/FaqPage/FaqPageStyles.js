@@ -4,7 +4,6 @@ import header_bg_image from './../../Assets/Images/bg12copy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "",
         diplay: 'flex',
     },
     headerContainer: {
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#b8dfff91',
+        color: '#e7eaed47',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
             fontSize: '6.3rem',
@@ -55,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: '100% 100%',
         borderRadius: '3px',
         marginBottom: 135,
+        marginTop: -25,
         [theme.breakpoints.down('sm')]: {
             margin: '0 5% 25px 5%',
             marginBottom: 80,

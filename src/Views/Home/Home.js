@@ -45,7 +45,7 @@ function Home(props) {
                             size="small"
                             endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                         >
-                            Book Online
+                            Contact Us
                             </Button>
                     </Box>
                 </Grid>

@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
     },
     MenuItem: {
-        borderLeft: '5px solid #0b1324',
+        borderLeft: '5px solid #010307',
     },
     appBar: {
         position: 'fixed',
@@ -22,7 +22,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     toolBar: {
         height: '115px',
-        borderBottom: '10px solid red',
+        borderBottom: '10px solid #F44336',
         padding: 15
     },
     toolBarContent: {
@@ -114,7 +114,7 @@ export const useStyles = makeStyles((theme) => ({
         color: 'floralwhite'
     },
     menuList: {
-        backgroundColor: '#0b1324',
+        backgroundColor: '#010307',
         color: '#fee2be',
         padding: '0'
     },

@@ -9,18 +9,20 @@ const useStyles = makeStyles((theme) => ({
     contentPaperContainer: {
         minHeight: 500,
         position: 'relative',
-        padding: '50px 50px 150px 50px',
+        padding: '25px 50px 150px 50px',
         marginBottom: 120,
+        marginTop: -50,
         [theme.breakpoints.down('md')]: {
-            margin: '0px auto 120px',
+            margin: '-50px auto 120px',
         },
         [theme.breakpoints.down('sm')]: {
+            marginTop: -50,
             padding: 25,
         },
         [theme.breakpoints.down('xs')]: {
             padding: 15,
-            marginTop: 40,
-            marginBottom: 80,
+            marginTop: 5,
+            marginBottom: 30,
         },
     },
     mainGridContent: {
@@ -49,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#2a75b2d9',
+        backgroundColor: '#db6e56de',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -62,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 800,
         lineHeight: 1.167,
         letterSpacing: '0.02em',
-        color: '#b8dfff91',
+        color: '#82423566',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
             fontSize: '6.3rem',
@@ -74,13 +76,22 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '3.3rem',
         },
     },
+    productsButtonContainer: {
+        marginTop: 10,
+        marginBottom: 0,
+    },
+    productsButton: {
+        padding: '10px 20px',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        color: 'floralwhite',
+    },
     checkOutButton: {
         position: 'absolute',
         width: 200,
         bottom: 25,
         right: 50,
-        color: '#fffff',
-        backgroundColor: '#03A9F4',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        color: 'floralwhite',
         padding: 10,
         [theme.breakpoints.down('sm')]: {
             bottom: 25,
@@ -88,6 +99,23 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             bottom: 10,
+            right: 10,
+        },
+    },
+    backToProductsButton2: {
+        position: 'absolute',
+        width: 200,
+        bottom: 25,
+        left: 50,
+        background: 'linear-gradient(90deg, #4DD0E1 0%, #4DD0E1 40%, #00bcd4 100%)',
+        color: 'floralwhite',
+        padding: 10,
+        [theme.breakpoints.down('sm')]: {
+            bottom: 25,
+            right: 25,
+        },
+        [theme.breakpoints.down('xs')]: {
+            bottom: 60,
             right: 10,
         },
     },

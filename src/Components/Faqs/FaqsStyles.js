@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) => ({
         background: 'linear-gradient(117deg, rgba(66,165,245,1) 16%, rgba(105,183,247,1) 56%)', 
     },
     AccordionDetails: {
-        backgroundColor: '#fdf1e0',
+        backgroundColor: '#fffaf2',
         padding: '30px 50px',
         boxShadow: 'inset 0px 0px 5px black',
         marginBottom: 10,
         [theme.breakpoints.down('sm')]: {
-            padding: '15px',
+            padding: '20px',
         },
     },
     details: {

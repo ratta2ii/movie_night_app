@@ -19,6 +19,7 @@ const WishListView = (props) => {
     let emptyCart = true;
     let checkoutButton;
     let content;
+    let backToProducts;
 
 
     useEffect(() => {
@@ -36,7 +37,7 @@ const WishListView = (props) => {
                 <Typography variant='h5'>
                     Your cart is empty!
                 </Typography>
-                {/* Return home container */}
+                {/* Return to products container */}
                 <Box className={classes.productsButtonContainer}>
                     <Button component={Link} to="/productList" variant='contained'
                         className={classes.productsButton} label="home">
@@ -59,6 +60,20 @@ const WishListView = (props) => {
             <Typography>
                 Go To Checkout
             </Typography>
+        </Button>
+    );
+
+
+    backToProducts = (
+        <Button component={Link}
+            to='/productList'
+            variant='outlined'
+            color='primary'
+            className={classes.backToProductsButton}
+        >
+        <Typography>
+                Back To Products
+        </Typography>
         </Button>
     );
 
@@ -86,6 +101,7 @@ const WishListView = (props) => {
                 <Grid item xs={10} sm={10} md={8} lg={6} className={classes.mainGridContent} >
                     <Paper className={classes.contentPaperContainer}>
                         {content}
+                        {(!emptyCart) ? backToProducts : null}
                         {(!emptyCart) ? checkoutButton : null}
                     </Paper>
                 </Grid>

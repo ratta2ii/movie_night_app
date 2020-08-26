@@ -52,7 +52,7 @@ const ReserveForm = () => {
         xhr.send(data);
         setTimeout(() => {
             setDisplayForm(false);
-        }, 1000)
+        }, 1500)
     }
 
 

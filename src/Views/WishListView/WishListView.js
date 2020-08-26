@@ -69,7 +69,7 @@ const WishListView = (props) => {
             to='/productList'
             variant='outlined'
             color='primary'
-            className={classes.backToProductsButton}
+            className={classes.backToProductsButton2}
         >
         <Typography>
                 Back To Products

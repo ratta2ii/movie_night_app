@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button';
@@ -15,6 +15,12 @@ const FaqPage = (props) => {
 
     console.log("I am FaqPage props: ", props);
     const classes = useStyles();
+
+
+    // To ensure the current screen opens at the top of the viewport
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 
     return (
@@ -34,12 +40,12 @@ const FaqPage = (props) => {
                                 to="/reservations"
                                 className={classes.bookOnlineButton}
                                 variant="contained"
-                                color="default"
+                                color="primary"
                                 size="small"
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} 
                                 
                             />} >
-                                Book Online
+                                Contact Us
                             </Button>
                         </Box>
                     </Box>

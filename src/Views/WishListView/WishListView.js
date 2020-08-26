@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import Box from '@material-ui/core/Box';
@@ -21,6 +21,11 @@ const WishListView = (props) => {
     let content;
 
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
     //! WishList component that renders only if there stuff in the cart/wishlist
     if ((Object.keys(currentWishList).length >= 1)) {
         emptyCart = false;
@@ -28,14 +33,18 @@ const WishListView = (props) => {
     } else {
         content = (
             <Fragment className={classes.productButtonContainer}>
-                <Typography variant='h4'>
+                <Typography variant='h5'>
                     Your cart is empty!
                 </Typography>
-                <Link
-                    to='/productList'
-                    className={classes.backToProductsLink}>
-                    Check Out Our Products here...
-                </Link>
+                {/* Return home container */}
+                <Box className={classes.productsButtonContainer}>
+                    <Button component={Link} to="/productList" variant='contained'
+                        className={classes.productsButton} label="home">
+                        <Typography>
+                            Go To Products
+                        </Typography>
+                    </Button>
+                </Box>
             </Fragment>
         );
     };

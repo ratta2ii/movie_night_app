@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import Box from '@material-ui/core/Box';
 import StyledCard from './../../Components/StyledCard/StyledCard';
@@ -15,6 +15,11 @@ const SingleProductView = (props) => {
     // console.log("selectProduct: ", selectProduct);
     const currentProduct = useSelector(getCurrentProduct);
     const classes = useStyles();
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 
     return (

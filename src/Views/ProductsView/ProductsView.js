@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 // Material ui
 import { Box } from '@material-ui/core';
@@ -18,8 +18,14 @@ function ProductView(props) {
     const classes = useStyles();
 
 
+    // To ensure the current screen opens at the top of the viewport
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
+
+
     return (
-        <Box>
+        <Box className={classes.root}>
             <Grid container className={classes.mainGridContainer}>
                 {/* Header Left Margin */}
                 <Grid item xs={0}></Grid>
@@ -38,7 +44,7 @@ function ProductView(props) {
                                 size="small"
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                             >
-                                Book Online
+                                Contact Us
                             </Button>
                         </Box>
                     </Box>

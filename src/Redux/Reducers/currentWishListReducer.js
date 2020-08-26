@@ -21,7 +21,9 @@ export const currentWishListSlice = createSlice({
             the form to the business owner as products of interests. This simplified having to
             parse the entire object to make input fields when the form rendered.
             */
-            state.productTitles += `${action.payload.title}, `; 
+            if (!state.productTitles.includes(action.payload.title)) {
+                state.productTitles += `${action.payload.title}, `;
+            }
             /* 
             FYI: Redux Toolkit allows us to write "mutating" logic in reducers. It doesn't mutate 
             the state. It uses the Immer library, which detects changes to a "draft state" 

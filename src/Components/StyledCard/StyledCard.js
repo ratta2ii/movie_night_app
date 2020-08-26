@@ -33,7 +33,11 @@ const StyledCard = (props) => {
 
     const handleAddToWishList = () => {
         dispatch(addWish(currentProduct));
-        history.push("/productList");
+        //? Possiblee time delay here
+        // setTimeout(() => {
+        //     history.push("/wishList");
+        // }, 500);
+        history.push("/wishList");
     }
 
 

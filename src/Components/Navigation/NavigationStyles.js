@@ -38,12 +38,12 @@ export const useStyles = makeStyles((theme) => ({
         height: '40px',
         margin: '0 35px 0 13px',
         borderRadius: '50%',
-        boxShadow: '0px 0px 5px lightblue',
+        boxShadow: '0px 0px 5px #2076c2',
         '&:focus': {
             outline: 'none !important',
         },
         '&:hover': {
-            boxShadow: '0px 0px 5px yellow',
+            boxShadow: '0px 0px 5px #53a9f4',
         },
         '&:active': {
             boxShadow: '0px 0px 0px',
@@ -57,12 +57,12 @@ export const useStyles = makeStyles((theme) => ({
         height: '40px',
         margin: '0 30px 0 8px',
         borderRadius: '50%',
-        boxShadow: '0px 0px 5px lightblue',
+        boxShadow: '0px 0px 5px #2076c2',
         '&:focus': {
             outline: 'none !important',
         },
         '&:hover': {
-            boxShadow: '0px 0px 5px yellow',
+            boxShadow: '0px 0px 5px #53a9f4',
         },
         '&:active': {
             boxShadow: '0px 0px 0px',

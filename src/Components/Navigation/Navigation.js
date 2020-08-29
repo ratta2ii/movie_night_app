@@ -17,7 +17,7 @@ import Typography from '@material-ui/core/Typography';
 import companyLogoIcon from './../../Assets/Icons/company-logo-icon.png';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import FaceBookIcon from './../../Assets/Icons/facebook-icon.png';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import HelpIcon from '@material-ui/icons/Help';
 import HomeIcon from '@material-ui/icons/Home';
 import InstagramIcon from './../../Assets/Icons/instagram-icon.png';
 import ListAltIcon from '@material-ui/icons/ListAlt';
@@ -25,6 +25,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import menuIcon from './../../Assets/Icons/menu-icon.png';
 import ShopIcon from '@material-ui/icons/Shop';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SwapHorizontalCircleIcon from '@material-ui/icons/SwapHorizontalCircle';
 import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 // DO NOT TOUCH: Custom styles must follow in order to override
@@ -73,7 +74,7 @@ export default function Navigation(props) {
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>HOME</Typography>
+                        <Typography className={classes.ListItemText}>Home</Typography>
                         <Typography className={classes.miniHomeNavTitle}
                             style={{ display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
                             Home
@@ -91,7 +92,7 @@ export default function Navigation(props) {
                         <ListItemIcon>
                             <ShopIcon className={classes.ShopIcon} />
                         </ListItemIcon>
-                        <Typography className={classes.ListItemText}>PRODUCTS</Typography>
+                        <Typography className={classes.ListItemText}>Products</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 left: '10px',
@@ -107,14 +108,14 @@ export default function Navigation(props) {
                         selected={'/wishList' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
-                        <ListItemIcon><FavoriteIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>WISHLIST</Typography>
+                        <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
+                        <Typography className={classes.ListItemText}>Cart</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
-                                left: '12px'
+                                left: '20px'
                             }} >
-                            Wishlist
+                            Cart
                         </Typography>
                     </MenuItem>
                     <Divider />
@@ -124,14 +125,14 @@ export default function Navigation(props) {
                         selected={'/faqPage' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
-                        <ListItemIcon><ListAltIcon className={classes.ListAltIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>FAQPAGE</Typography>
+                        <ListItemIcon><HelpIcon className={classes.ListAltIcon} /></ListItemIcon>
+                        <Typography className={classes.ListItemText}>FAQ's</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
-                                left: '18px'
+                                left: '17px'
                             }} >
-                            FAQS
+                            FAQ's
                         </Typography>
                     </MenuItem>
                     <Divider />
@@ -142,13 +143,13 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>RESERVATIONS</Typography>
+                        <Typography className={classes.ListItemText}>Contact Us</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
                                 left: '12px'
                             }} >
-                            Reserve
+                            Contact
                         </Typography>
                     </MenuItem>
                     <Divider />
@@ -159,7 +160,7 @@ export default function Navigation(props) {
                         className={classes.MenuItem} >
                         <ListItemIcon>
                             <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>CLOSE</Typography>
+                        <Typography className={classes.ListItemText}>Close</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',

@@ -4,7 +4,8 @@ import header_bg_image from './../../Assets/Images/sunset.jpeg';
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: '-85px'
+        marginTop: '-85px', 
+        marginBottom: 0
     },
     mainTitlePaper: {
         backgroundColor: '#2196f3',

@@ -91,7 +91,8 @@ export const masterProductList = [
         key: 7,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quia neque quidem voluptatum, quaerat fuga?',
         bullets: ["I am the first bullet", "And I am the second bullet", "And me likewise, the third", "And look it's me the fourth", "And why not a number five too, ehh"],
-    }];
+    }
+];
 
 
 

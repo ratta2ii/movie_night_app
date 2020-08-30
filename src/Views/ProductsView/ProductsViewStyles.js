@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#3b4f8db5',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
+            display: 'none',
             fontSize: '6.3rem',
         },
         [theme.breakpoints.down('sm')]: {

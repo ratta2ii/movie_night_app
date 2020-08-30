@@ -30,11 +30,11 @@ const Footer = (props) => {
                                 to="/reservations"
                                 className={classes.bookOnlineButton}
                                 variant="contained"
-                                color="default"
+                                color="primary"
                                 size="small"
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                             >
-                                Book Online
+                                CONTACT US
                             </Button>
                         </Box>
                     </Box>

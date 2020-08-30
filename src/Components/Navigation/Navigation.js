@@ -35,7 +35,7 @@ import { useStyles } from './NavigationStyles';
 export default function Navigation(props) {
 
 
-    const websiteTitle = 'AZ MOVIE NIGHTS'
+    // const websiteTitle = 'AZ MOVIE NIGHTS'
     const classes = useStyles();
     let pathname = useLocation().pathname;
     const [open, setDeskDrawOpen] = React.useState(false);
@@ -74,7 +74,7 @@ export default function Navigation(props) {
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Home</Typography>
+                        <Typography className={classes.ListItemText}>HOME</Typography>
                         <Typography className={classes.miniHomeNavTitle}
                             style={{ display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
                             Home
@@ -92,7 +92,7 @@ export default function Navigation(props) {
                         <ListItemIcon>
                             <ShopIcon className={classes.ShopIcon} />
                         </ListItemIcon>
-                        <Typography className={classes.ListItemText}>Products</Typography>
+                        <Typography className={classes.ListItemText}>PRODUCTS</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 left: '10px',
@@ -109,7 +109,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Cart</Typography>
+                        <Typography className={classes.ListItemText}>SHOPPING CART</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -126,7 +126,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HelpIcon className={classes.ListAltIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>FAQ's</Typography>
+                        <Typography className={classes.ListItemText}>FAQ'S</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -143,7 +143,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Contact Us</Typography>
+                        <Typography className={classes.ListItemText}>CONTACT US</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -160,7 +160,7 @@ export default function Navigation(props) {
                         className={classes.MenuItem} >
                         <ListItemIcon>
                             <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Close</Typography>
+                        <Typography className={classes.ListItemText}>CLOSE</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -211,14 +211,14 @@ export default function Navigation(props) {
                                         <a target="_top"
                                             color='primary'
                                             rel="noopener noreferrer"
-                                            href="mailto:tismeTRM@gmail.com">
+                                            href="mailto:jarebmackin76@gmail.com">
                                             <IconButton color="primary"
                                                 style={{ padding: '5px 7px 5px 10px' }} >
                                                 <MailOutlineIcon />
                                             </IconButton>
                                         </a>
                                     }
-                                    label={"tismeTRM@gmail.com"}
+                                    label={"jarebmackin76@gmail.com"}
                                     labelPlacement="end"
                                 />
                             </Box>
@@ -231,7 +231,7 @@ export default function Navigation(props) {
                                             <ContactPhoneIcon fontSize='small' />
                                         </IconButton>
                                     }
-                                    label={"(602) 555-5555"}
+                                    label={"(602) 339-9530"}
                                     labelPlacement="end"
                                 />
                             </Box>

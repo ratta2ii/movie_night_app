@@ -29,7 +29,10 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: '100% 100%',
         borderRadius: '3px',
-        boxShadow: '0px 0px 5px #161f3a',
+        [theme.breakpoints.down('sm')]: {
+            backgroundSize: 'auto',
+            backgroundPosition: 'center center'
+        },
     },
     leftGridContainer: {
         backgroundColor: '#0103079c',
@@ -43,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '50px 0px 50px 50px',
         },
         [theme.breakpoints.down('sm')]: {
+            backgroundColor: '#010307b8',
             padding: '60px 70px 50px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -61,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '0px 50px',
         },
         [theme.breakpoints.down('sm')]: {
+            backgroundColor: '#010307b8',
             padding: '0px 70px 70px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -81,7 +86,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '400',
         letterSpacing: '.005em',
         [theme.breakpoints.down('xs')]: {
-            fontSize: '1.75rem'
+            fontSize: '1.75rem',
+            margin: '10px auto 30px',
+            paddingBottom: '20px',
         },
     },
     companyDescription: {

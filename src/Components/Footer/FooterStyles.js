@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: '100%',
             marginTop: 50,
+            marginBottom: -200,
         },
     },
     footerContainer: {
@@ -21,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
         }, 
         [theme.breakpoints.down('sm')]: {
             margin: '0px auto 0px auto'
+        },
+        [theme.breakpoints.down('xs')]: {
+            backgroundSize: '100% 250px',
         },
     },
     footerOverlayContainer: {

@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import WishList from './../../Components/WishList/WishList';
 import useStyles from './WishListViewStyles';
 import { getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
@@ -71,7 +72,7 @@ const WishListView = (props) => {
             color='primary'
             className={classes.backToProductsButton2}
         >
-        <Typography>
+            <Typography>
                 Back To Products
         </Typography>
         </Button>
@@ -88,8 +89,18 @@ const WishListView = (props) => {
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer}>
                             <Typography variant="h3" className={classes.headerTitle}>
-                                WISHLIST
+                                CHECKOUT
                             </Typography>
+                            <Button
+                                component={Link}
+                                to="/reservations"
+                                className={classes.bookOnlineButton}
+                                variant="contained"
+                                size="small"
+                                endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
+                            >
+                                Contact Us
+                            </Button>
                         </Box>
                     </Box>
                 </Grid>

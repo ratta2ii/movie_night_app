@@ -119,7 +119,10 @@ export const useStyles = makeStyles((theme) => ({
         padding: '0'
     },
     ListItemText: {
+        fontSize: '.9rem',
         marginTop: '4px',
+        paddingTop: 3,
+        paddingBottom: 3,
         letterSpacing: '0.07em',
         [theme.breakpoints.down('sm')]: {
             fontSize: '.8rem'
@@ -201,9 +204,9 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '10px',
     },
     miniiNavTitle: {
-        marginBottom: '1rem',
+        marginBottom: '.95rem',
         position: 'absolute',
-        bottom: '-10px',
+        bottom: '-8px',
         left: '15px',
         fontSize: '10px'
     }

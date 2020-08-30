@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#ffffff33',
         opacity: '.7',
         [theme.breakpoints.down('md')]: {
+            display: 'none',
             fontSize: '6.3rem',
         },
         [theme.breakpoints.down('sm')]: {
@@ -81,9 +82,9 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 0,
     },
     productsButton: {
-        padding: '10px 20px',
-        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
-        color: 'floralwhite',
+        // padding: '10px 20px',
+        // background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        // color: 'floralwhite',
     },
     checkOutButton: {
         position: 'absolute',
@@ -107,20 +108,43 @@ const useStyles = makeStyles((theme) => ({
         width: 200,
         bottom: 25,
         left: 50,
-        background: 'linear-gradient(90deg, #4DD0E1 0%, #4DD0E1 40%, #00bcd4 100%)',
-        color: 'floralwhite',
+        // background: 'linear-gradient(90deg, #4DD0E1 0%, #4DD0E1 40%, #00bcd4 100%)',
+        // color: 'floralwhite',
         padding: 10,
         [theme.breakpoints.down('sm')]: {
-            bottom: 25,
+            left: 'unset',
+            bottom: 75,
             right: 25,
         },
         [theme.breakpoints.down('xs')]: {
-            bottom: 60,
+            bottom: 62,
             right: 10,
         },
     },
     backToProducts: {
         color: 'dodgerblue'
+    },
+    bookOnlineButton: {
+        position: 'absolute',
+        width: 160,
+        bottom: 12,
+        right: 15,
+        color: 'white',
+        backgroundColor: '#ff0100',
+        padding: '10px 0 10px 5px',
+        [theme.breakpoints.down('sm')]: {
+            width: 140,
+            fontSize: 'small',
+            bottom: 12,
+            right: 12,
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '7px 0px 7px 4px',
+            width: 120,
+            fontSize: 'smaller',
+            bottom: 8,
+            right: 8,
+        },
     },
 }));
 

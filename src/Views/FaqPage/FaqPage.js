@@ -13,7 +13,6 @@ import useStyles from './FaqPageStyles';
 const FaqPage = (props) => {
 
 
-    console.log("I am FaqPage props: ", props);
     const classes = useStyles();
 
 

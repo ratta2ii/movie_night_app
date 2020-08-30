@@ -38,7 +38,7 @@ function Calendar(props) {
                         animateYearScrolling={false}
                         autoOk={false}
                         clearable
-                        onInputChange={(e) => console.log("Keyboard:", e.target.value)}
+                        // onInputChange={(e) => console.log("Keyboard:", e.target.value)}
                     />
                 </Grid>
                 {/* 

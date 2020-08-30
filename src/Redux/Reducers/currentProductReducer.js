@@ -12,7 +12,7 @@ export const currentProductSlice = createSlice({
             // which detects changes to a "draft state" and produces a brand new
             // immutable state based off those changes
         selectProduct: (state, action) => {
-            console.log("I am the payload: ", action.payload);
+            // console.log("I am the payload: ", action.payload);
             state.value = action.payload;
         },
     },

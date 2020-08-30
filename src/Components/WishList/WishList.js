@@ -15,7 +15,6 @@ const WishList = props => {
     const currentWishList = useSelector(getCurrentWishList);
     const dispatch = useDispatch();
     const classes = useStyles();
-    console.log(currentWishList);
     
     
     const handleRemoveWish = (productId) => {

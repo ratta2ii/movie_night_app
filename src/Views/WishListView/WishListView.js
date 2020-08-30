@@ -34,7 +34,7 @@ const WishListView = (props) => {
         content = <WishList />;
     } else {
         content = (
-            <Fragment className={classes.productButtonContainer}>
+            <Fragment>
                 <Typography variant='h5'>
                     Your cart is empty!
                 </Typography>

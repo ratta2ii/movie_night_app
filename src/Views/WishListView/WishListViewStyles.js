@@ -80,11 +80,6 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 10,
         marginBottom: 0,
     },
-    productsButton: {
-        // padding: '10px 20px',
-        // background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
-        // color: 'floralwhite',
-    },
     checkOutButton: {
         position: 'absolute',
         width: 200,
@@ -107,8 +102,6 @@ const useStyles = makeStyles((theme) => ({
         width: 200,
         bottom: 25,
         left: 50,
-        // background: 'linear-gradient(90deg, #4DD0E1 0%, #4DD0E1 40%, #00bcd4 100%)',
-        // color: 'floralwhite',
         padding: 10,
         [theme.breakpoints.down('sm')]: {
             left: 'unset',

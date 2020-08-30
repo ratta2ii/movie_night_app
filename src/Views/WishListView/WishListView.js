@@ -89,7 +89,8 @@ const WishListView = (props) => {
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer}>
                             <Typography variant="h3" className={classes.headerTitle}>
-                                CHECKOUT
+                                {/* Jareb likes these so add again at later date */}
+                                {/* CHECKOUT */}
                             </Typography>
                             <Button
                                 component={Link}

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',     
     },
     contentPaperContainer: {
-        minHeight: 500,
+        minHeight: 610,
         position: 'relative',
         padding: '25px 50px 150px 50px',
         marginBottom: 120,
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     headerContainer: {
-        height: 150,
+        height: 100,
         marginTop: -85,
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
@@ -45,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: '100%',
             marginBottom: 25,
-            height: 130
         },
     },
     headerOverlayContainer: {

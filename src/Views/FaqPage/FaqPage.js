@@ -33,7 +33,8 @@ const FaqPage = (props) => {
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer} >
                             <Typography variant="h3" className={classes.headerTitle} >
-                                FAQ'S
+                                {/* Jareb likes these so add again at later date */}
+                                {/* FAQ'S */}
                             </Typography>
                             <Button
                                 component={Link}

@@ -34,7 +34,8 @@ function ProductView(props) {
                     <Box className={classes.headerContainer} >
                         <Box className={classes.headerOverlayContainer}>
                             <Typography variant="h3" className={classes.headerTitle}>
-                                PRODUCTS
+                                {/* Jareb likes these so add again at later date */}
+                                {/* PRODUCTS */}
                             </Typography>
                             <Button
                                 component={Link}

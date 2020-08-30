@@ -13,14 +13,13 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     headerContainer: {
-        height: 150,
+        height: 100,
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: '100%',
         marginBottom: '90px',
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             marginTop: 0,
-            height: 130
         },
         [theme.breakpoints.down('xs')]: {
             marginBottom: 50,

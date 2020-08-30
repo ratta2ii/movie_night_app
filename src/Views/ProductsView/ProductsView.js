@@ -43,6 +43,7 @@ function ProductView(props) {
                                 className={classes.bookOnlineButton}
                                 variant="contained"
                                 size="small"
+                                color="primary"
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                             >
                                 Contact Us

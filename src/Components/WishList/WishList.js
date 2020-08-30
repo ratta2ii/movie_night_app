@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from "react-router-dom";
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
@@ -14,7 +13,6 @@ const WishList = props => {
     
     
     const currentWishList = useSelector(getCurrentWishList);
-    let history = useHistory();
     const dispatch = useDispatch();
     const classes = useStyles();
     console.log(currentWishList);
@@ -22,11 +20,6 @@ const WishList = props => {
     
     const handleRemoveWish = (productId) => {
         dispatch(removeWish(productId));
-        //? Possible time delay
-        // setTimeout(() => {
-        //     history.push("/wishList");
-        // }, 1500);
-        history.push("/wishList");
     }
     
     

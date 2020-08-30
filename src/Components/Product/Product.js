@@ -15,6 +15,7 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './ProductStyles';
 // State management
 import { selectProduct } from '../../Redux/Reducers/currentProductReducer';
+import { addWish } from '../../Redux/Reducers/currentWishListReducer'
 
 
 function Product(props) {
@@ -28,7 +29,6 @@ function Product(props) {
     //! DO NOT DELETE. 
     //! This is for the modal that is temporarity replaced with SingleProduct View
     // function handleModal(product) {
-    //     // console.log("Product component: handleModal args: ", product);
     //     //*  Set Product *// 
     //     dispatch(selectProduct(product));
     //     //* Open modal *//
@@ -43,6 +43,12 @@ function Product(props) {
         setTimeout(() => {
             history.push("/product");
         }, 500);
+    }
+
+
+    const handleAddToWishList = (card) => {
+        dispatch(addWish(card));
+        history.push("/wishList");
     }
 
 
@@ -75,8 +81,11 @@ function Product(props) {
                 </CardActionArea>
                 {/* Buttons on Card */}
                 <CardActions className={styles.action} >
-                    <AddCircleIcon fontSize="small" />
+                    <AddCircleIcon 
+                        onClick={() => { handleAddToWishList(props) }}
+                        fontSize="small" />
                     <Typography
+                        onClick={() => { handleAddToWishList(props) }}
                         className={styles.addWishText}
                         variant="body2"
                     >
@@ -87,13 +96,13 @@ function Product(props) {
                         onClick={() => { handleOpenProduct(props) }}
                         style={{ margin: 'auto', fontSize: '.8rem' }}
                     >
-                        {/* <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={props.mainImage}
-                        >
-                            Learn More
-                        </a> */}
+                    {/* <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={props.mainImage}
+                    >
+                        Learn More
+                    </a> */}
                         Learn More
                     </Button>
                 </CardActions>

@@ -20,9 +20,6 @@ const ReserveForm = () => {
     const [emailSuccessStatus, setEmailSuccessStatus] = useState();
 
 
-    console.log("YOYO productTitles here: ", productTitles);
-
-
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
     const handleDateChange = (date) => {
@@ -30,10 +27,9 @@ const ReserveForm = () => {
     };
 
 
+    /* This is utilizing the FormSpree email service */
     const handleSubmitForm = (ev) => {
         ev.preventDefault();
-        console.log('Made it into the submitForm function!');
-        console.log(ev.target);
         const form = ev.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
@@ -43,16 +39,15 @@ const ReserveForm = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                setEmailSuccessStatus("YOUR RESERVATION WAS A SUCCESS!");
+                setEmailSuccessStatus("YOUR RESERVATION WAS A SUCCESS! If you created a cart, it will been sent been sent to AZ Movie Nights, along with your information, and one of our staff memebrs will contact you shortly. If you prefer to speak to someoone immediately, please call us at (602) 339-9530. We look forward to speaking with you soon. Thank you.");
             } else {
                 setEmailSuccessStatus("THERE WAS AN ERROR MAKING YOUR RESERVATION!");
             }
         };
-        //! IMPORTANT TO UNCOMMENT IN ORDER FOR EMAILS TO GO THROUGH !\\
         xhr.send(data);
         setTimeout(() => {
             setDisplayForm(false);
-        }, 1500)
+        }, 500)
     }
 
 
@@ -225,7 +220,7 @@ const ReserveForm = () => {
                     )}
                 />
             </Box>
-            <Box style={{ padding: 5, color: '#ffffff' }}>
+            <Box style={{ padding: 5, color: '#ffffff', fontSize: '1.1rem' }}>
                 {emailSuccessStatus}
             </Box>
         </Box>

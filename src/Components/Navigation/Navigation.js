@@ -104,23 +104,6 @@ export default function Navigation(props) {
                     <Divider />
 
 
-                    <MenuItem component={Link} to='/wishList'
-                        selected={'/wishList' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
-                        className={classes.MenuItem} >
-                        <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>SHOPPING CART</Typography>
-                        <Typography className={classes.miniiNavTitle}
-                            style={{
-                                display: (open || mobileDrawerState) ? 'none' : 'unset',
-                                left: '20px'
-                            }} >
-                            Cart
-                        </Typography>
-                    </MenuItem>
-                    <Divider />
-
-
                     <MenuItem component={Link} to='/faqPage'
                         selected={'/faqPage' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
@@ -150,6 +133,23 @@ export default function Navigation(props) {
                                 left: '12px'
                             }} >
                             Contact
+                        </Typography>
+                    </MenuItem>
+                    <Divider />
+
+
+                    <MenuItem component={Link} to='/wishList'
+                        selected={'/wishList' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        className={classes.MenuItem} >
+                        <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
+                        <Typography className={classes.ListItemText}>SHOPPING CART</Typography>
+                        <Typography className={classes.miniiNavTitle}
+                            style={{
+                                display: (open || mobileDrawerState) ? 'none' : 'unset',
+                                left: '20px'
+                            }} >
+                            Cart
                         </Typography>
                     </MenuItem>
                     <Divider />

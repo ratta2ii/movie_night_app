@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#98989ae3',
+        backgroundColor: '#0103079c',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
@@ -50,8 +50,6 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     faqsContainer: {
-        background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100% 100%',
         borderRadius: '3px',
         marginBottom: 135,
         marginTop: -25,
@@ -66,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     faqsContainerOverlay: {
         width: '100%',
         height: '100%',
-        backgroundColor: '#98989ae3',
+        backgroundColor: '#cccccce3',
         padding: 25,
     },
     returnHomeLinkBox: {

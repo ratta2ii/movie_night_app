@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#2278bcde',
+        backgroundColor: '#0103079c',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

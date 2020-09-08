@@ -35,14 +35,15 @@ function Product(props) {
     //     props.handleOpen();
     // }
 
+    
     function handleOpenProduct(product) {
-        // console.log("Product component: handleModal args: ", product);
-        //*  Set Product *// 
         dispatch(selectProduct(product));
-        //* Open modal *//
-        setTimeout(() => {
-            history.push("/product");
-        }, 500);
+        //* Open single product (modal currently disabled) *//
+        // Time delay necessay for product to be set ???
+        // setTimeout(() => {
+        //     history.push("/product");
+        // }, 2500);
+        history.push("/product");
     }
 
 

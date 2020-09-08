@@ -131,9 +131,12 @@ export const useStyles = makeStyles((theme) => ({
     companyLogo: {
         display: 'flex',
         alignItems: 'center',
+        marginRight: '100px',
         [theme.breakpoints.down('sm')]: {
             display: 'none',
         },
+    },
+    companyLogoIcon: {
     },
     socialIconsContainer: {
         width: 150,

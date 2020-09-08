@@ -74,7 +74,15 @@ const StyledCard = (props) => {
                 </Grid>
                 {/* Image Container */}
                 <Grid item xs={12} md={6} className={classes.imageGridContainer} style={{ backgroundColor: 'white' }}>
-                    <img className={classes.imageStyles} src={currentProduct.mainImage} alt="current outdoor movie screen rental equipment product" />
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={currentProduct.mainImage}
+                    >
+                        <img className={classes.imageStyles} src={currentProduct.mainImage} alt="current outdoor movie screen rental equipment product"
+                            Learn More
+                        />
+                    </a>
                 </Grid>
                 {/* Main Content */}
                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white' }}>
@@ -85,7 +93,7 @@ const StyledCard = (props) => {
                         <Typography className={classes.subTitle}>MOST POPULAR ITEM</Typography>
                         <Typography variant="h2" className={classes.price}>$ {currentProduct.price}</Typography>
                         <CardContent className={classes.description}>
-                            Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo planter with a blue & red ribbom and butterfly pick.
+                            {currentProduct.description}
                         </CardContent>
                         <ul>
                             {currentProduct.bullets.map(bullet => {

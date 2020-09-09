@@ -111,7 +111,7 @@ const StyledCard = (props) => {
                                 className={classes.wishButton}
                                 onClick={handleAddToWishList}
                                 variant="contained"
-                                color="default"
+                                color="primary"
                                 size="small"
                                 startIcon={<AddShoppingCartIcon />}
                             >
@@ -121,7 +121,7 @@ const StyledCard = (props) => {
                                 className={classes.reserveButton}
                                 onClick={handleReserveNow}
                                 variant="contained"
-                                color="default"
+                                color="primary"
                                 size="small"
                                 startIcon={<EmailIcon />}
                             >

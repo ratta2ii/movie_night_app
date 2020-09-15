@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/movie_night_app/static/css/main.62a21b2f.chunk.css",
+    "main.js": "/movie_night_app/static/js/main.8d5f6b98.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.8d5f6b98.chunk.js.map",
+    "runtime-main.js": "/movie_night_app/static/js/runtime-main.08086021.js",
+    "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.08086021.js.map",
+    "static/js/2.26629714.chunk.js": "/movie_night_app/static/js/2.26629714.chunk.js",
+    "static/js/2.26629714.chunk.js.map": "/movie_night_app/static/js/2.26629714.chunk.js.map",
+    "index.html": "/movie_night_app/index.html",
+    "precache-manifest.a8b1df3604e41c1990f693acc1cdaba4.js": "/movie_night_app/precache-manifest.a8b1df3604e41c1990f693acc1cdaba4.js",
+    "service-worker.js": "/movie_night_app/service-worker.js",
+    "static/css/main.62a21b2f.chunk.css.map": "/movie_night_app/static/css/main.62a21b2f.chunk.css.map",
+    "static/js/2.26629714.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.26629714.chunk.js.LICENSE.txt",
+    "static/media/bg12copy.png": "/movie_night_app/static/media/bg12copy.86b2ec89.png",
+    "static/media/family-movie-night.jpg": "/movie_night_app/static/media/family-movie-night.54b41371.jpg",
+    "static/media/giant-screen.jpg": "/movie_night_app/static/media/giant-screen.97cf373a.jpg",
+    "static/media/instagram-icon.png": "/movie_night_app/static/media/instagram-icon.ea8931b9.png",
+    "static/media/menu-icon.png": "/movie_night_app/static/media/menu-icon.62ad40cf.png",
+    "static/media/pool-image.JPG": "/movie_night_app/static/media/pool-image.923fe533.JPG",
+    "static/media/product-cotton-candy.jpg": "/movie_night_app/static/media/product-cotton-candy.9224ba5e.jpg",
+    "static/media/product-hotdog.png": "/movie_night_app/static/media/product-hotdog.dd474583.png",
+    "static/media/product-popcorn5.jpg": "/movie_night_app/static/media/product-popcorn5.6acb1d56.jpg",
+    "static/media/productTable.jpg": "/movie_night_app/static/media/productTable.7e89e16e.jpg",
+    "static/media/screens.jpg": "/movie_night_app/static/media/screens.27d17deb.jpg",
+    "static/media/sound.jpg": "/movie_night_app/static/media/sound.53449fd6.jpg",
+    "static/media/sunset.jpeg": "/movie_night_app/static/media/sunset.42fe1fa3.jpeg",
+    "static/media/twitter-icon.png": "/movie_night_app/static/media/twitter-icon.c8d54fd9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08086021.js",
+    "static/js/2.26629714.chunk.js",
+    "static/css/main.62a21b2f.chunk.css",
+    "static/js/main.8d5f6b98.chunk.js"
+  ]
+}

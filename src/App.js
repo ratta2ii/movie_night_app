@@ -28,7 +28,7 @@ function App(props) {
                 <Route path="/product" component={SingleProductView} />
                 <Route component={Error404} />
             </Switch>
-            <style global jsx={true}>{`
+            <style global="true" jsx="true">{`
                 /* This takes up space for the sidebar so all future centering works accordingly */
                     body {
                         margin-left: 72px;

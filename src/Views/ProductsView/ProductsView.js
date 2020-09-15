@@ -28,7 +28,7 @@ function ProductView(props) {
         <Box className={classes.root}>
             <Grid container className={classes.mainGridContainer}>
                 {/* Header Left Margin */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 {/* //? Main header container (All content here) */}
                 <Grid item xs={12}>
                     <Box className={classes.headerContainer} >
@@ -52,7 +52,7 @@ function ProductView(props) {
                     </Box>
                 </Grid>
                 {/* Header right margin */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 {/* MAIN PRODUCT CONTAINER */}
                 <ProductList />
             </Grid>

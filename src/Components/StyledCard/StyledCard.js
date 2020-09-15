@@ -80,7 +80,7 @@ const StyledCard = (props) => {
                         href={currentProduct.mainImage}
                     >
                         <img className={classes.imageStyles} src={currentProduct.mainImage} alt="current outdoor movie screen rental equipment product"
-                            Learn More
+                            // Learn More
                         />
                     </a>
                 </Grid>
@@ -97,7 +97,7 @@ const StyledCard = (props) => {
                         </CardContent>
                         <ul>
                             {currentProduct.bullets.map(bullet => {
-                                return <li>{bullet}</li>
+                                return <li key={bullet}>{bullet}</li>
                             })}
                         </ul>
                     </Box>
@@ -105,7 +105,7 @@ const StyledCard = (props) => {
                 {/* Button view */}
                 <Grid item xs={12}>
                     <Grid container alignItems="center" className={classes.buttonView}>
-                        <Grid item xs={0} sm={2} md={6}></Grid>
+                        <Grid item sm={2} md={6}></Grid>
                         <Grid item xs={12} sm={8} md={6}>
                             <Button
                                 className={classes.wishButton}

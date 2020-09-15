@@ -12,8 +12,8 @@ export default function ControlledAccordions() {
 
 
     const classes = useStyles();
-    //? Each of the Accordion components has an exanded prop?\\
-    const [expanded, setExpanded] = React.useState(false);
+    //? Each of the Accordion components has an expanded prop?\\
+    const [ expanded, setExpanded] = React.useState(false);
 
     
     const handleChange = (panel) => (event, isExpanded) => {

@@ -26,7 +26,7 @@ const WishList = props => {
         <Box>
             <Grid container>
                 {/* Left margin */}
-                <Grid item xs={0} ></Grid>
+                <Grid item></Grid>
                 {/* Main Container */}
                 <Grid item xs={12} >
                     <table className={classes.table}>
@@ -34,6 +34,7 @@ const WishList = props => {
                             {Object.keys(currentWishList).map(function (productId) {
                                 var ele = currentWishList[productId];
                                 return <Wish
+                                key={ele.id}
                                 title={ele.title}
                                 productId={ele.productId}
                                 mainImage={ele.mainImage}

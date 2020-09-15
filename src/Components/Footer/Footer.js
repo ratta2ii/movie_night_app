@@ -19,7 +19,7 @@ const Footer = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Footer left margin */}
-                <Grid item xs={0} sm={0} md={0}></Grid>
+                {/* <Grid item></Grid> */}
                 <Grid item xs={12} sm={12} md={12}>
                     {/* Footer deep container */}
                     <Box className={classes.footerContainer} >
@@ -40,7 +40,7 @@ const Footer = (props) => {
                     </Box>
                 </Grid>
                 {/* Header right margin */}
-                <Grid item xs={0} sm={1} md={2}></Grid>
+                {/* <Grid item sm={1} md={2}></Grid> */}
             </Grid>
         </Box>
     )

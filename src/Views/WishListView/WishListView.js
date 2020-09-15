@@ -68,8 +68,8 @@ const WishListView = (props) => {
     backToProducts = (
         <Button component={Link}
             to='/productList'
-            variant='outlined'
-            color='primary'
+            variant='contained'
+            color='default'
             className={classes.backToProductsButton2}
         >
             <Typography>
@@ -83,7 +83,7 @@ const WishListView = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Margin left header container */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 <Grid item xs={12}>
                     {/* //? Main header container */}
                     <Box className={classes.headerContainer} >
@@ -107,7 +107,7 @@ const WishListView = (props) => {
                     </Box>
                 </Grid>
                 {/* Header right margin */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 {/* Margin Left */}
                 <Grid item xs={1} sm={1} md={2} lg={3}></Grid>
                 {/* MAIN WISHLIST CONTAINER */}
@@ -121,7 +121,7 @@ const WishListView = (props) => {
                 {/* Margin Right */}
                 <Grid item xs={1} sm={1} md={2} lg={3}></Grid>
             </Grid>
-            <Grid item xs={0} sm={1} md={2}></Grid>
+            <Grid item sm={1} md={2}></Grid>
             <Grid item xs={12} sm={10} md={8}>
             </Grid>
         </Box>

@@ -55,10 +55,10 @@ function Home(props) {
                     </Box>
                 </Grid>
                 {/* Header right margin */}
-                <Grid item xs={0} sm={1} md={1} xl={2}></Grid>
+                <Grid item xs={1} xl={2}></Grid>
             </Grid>
             <Grid container>
-                <Grid item xs={1} sm={0}></Grid>
+                {/* <Grid item xs={1} sm={0}></Grid> */}
                 <Grid item xs={10} sm={12} className={classes.productListContainer}>
                     <ProductList />
                 </Grid>

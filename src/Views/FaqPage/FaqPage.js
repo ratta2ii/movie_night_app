@@ -26,7 +26,7 @@ const FaqPage = (props) => {
         <Box>
             <Grid container>
                 {/* Header left margin */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 {/* Header main container */}
                 <Grid item xs={12}>
                     <Box className={classes.headerContainer} >
@@ -51,9 +51,9 @@ const FaqPage = (props) => {
                     </Box>
                 </Grid>
                 {/* Header right margin */}
-                <Grid item xs={0}></Grid>
+                <Grid item></Grid>
                 {/* Faqs container margin left */}
-                <Grid item xs={0} sm={1} md={2}></Grid>
+                <Grid item sm={1} md={2}></Grid>
                 {/* MAIN FAQS CONTAINER */}
                 <Grid item xs={12} sm={10} md={8} >
                     <Box className={classes.faqsContainer}>

@@ -50,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
         height: 215,
         position: 'relative',
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100%',
+        backgroundSize: 'cover',
         backgroundPositionY: '-350px',
         margin: '10px 3% 40px',
         borderRadius: '3px',

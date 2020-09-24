@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     headerContainer: {
         height: 100,
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         marginBottom: '90px',
         [theme.breakpoints.down('sm')]: {
             width: '100%',
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#0103079c',
+        backgroundColor: '#010307c2',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

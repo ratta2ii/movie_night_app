@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     footerContainer: {
         height: 250,
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         boxShadow: '0px 0px 5px #161f3a',
         padding: 0,
         [theme.breakpoints.down('md')]: {
@@ -24,18 +24,22 @@ const useStyles = makeStyles((theme) => ({
             margin: '0px auto 0px auto'
         },
         [theme.breakpoints.down('xs')]: {
+            backgroundSize: 'auto',
             height: 225,
         },
     },
     footerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#0103079c',
+        backgroundColor: '#010307c2',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: '#0103078c',
+        },
     },
     bookOnlineButton: {
         color: 'white',

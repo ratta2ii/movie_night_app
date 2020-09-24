@@ -29,15 +29,14 @@ const useStyles = makeStyles((theme) => ({
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         borderRadius: '3px',
         [theme.breakpoints.down('sm')]: {
-            backgroundSize: 'auto',
-            backgroundPosition: 'center center'
+            backgroundPosition: 'center center',
         },
     },
     leftGridContainer: {
-        backgroundColor: '#0103079c',
+        backgroundColor: '#010307c2',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
@@ -56,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#0103079c',
+        backgroundColor: '#010307c2',
         padding: '100px',
         display: 'flex',
         alignItems: 'center',

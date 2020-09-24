@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     headerContainer: {
         height: 100,
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100%',
+        backgroundSize: 'auto',
         marginBottom: '90px',
         [theme.breakpoints.down('sm')]: {
             width: '100%',

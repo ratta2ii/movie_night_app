@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
-        backgroundSize: '100% 100%',
+        backgroundSize: 'auto',
         borderRadius: '3px',
         [theme.breakpoints.down('sm')]: {
             backgroundSize: 'auto',

@@ -24,8 +24,7 @@ const useStyles = makeStyles((theme) => ({
             margin: '0px auto 0px auto'
         },
         [theme.breakpoints.down('xs')]: {
-            backgroundSize: 'auto',
-            height: 200,
+            height: 225,
         },
     },
     footerOverlayContainer: {

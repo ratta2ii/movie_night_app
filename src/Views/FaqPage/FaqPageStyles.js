@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         height: 100,
         marginTop: -85,
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100%',
+        backgroundSize: 'auto',
         marginBottom: '120px',
         [theme.breakpoints.down('sm')]: {
             margin: '116px auto 80px auto'

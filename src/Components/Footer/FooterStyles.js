@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     footerContainer: {
         height: 250,
         background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: '100%',
+        backgroundSize: 'auto',
         boxShadow: '0px 0px 5px #161f3a',
         padding: 0,
         [theme.breakpoints.down('md')]: {
@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
             margin: '0px auto 0px auto'
         },
         [theme.breakpoints.down('xs')]: {
-            backgroundSize: '100% 250px',
+            backgroundSize: 'auto',
+            height: 200,
         },
     },
     footerOverlayContainer: {
@@ -37,22 +38,52 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         position: 'relative'
     },
-    producFooterTitle: {
-        fontSize: '6rem',
-        fontFamily: '"Roboto", "Helvetica", "Arial"',
-        fontWeight: 800,
-        lineHeight: 1.167,
-        letterSpacing: '0.02em',
-        color: '#00000024',
-        [theme.breakpoints.down('sm')]: {
-            display: 'none',
-        },
-    },
     bookOnlineButton: {
         color: 'white',
         backgroundColor: '#ff0100',
         padding: 12,
-        fontSize: 'large',
+        fontSize: 'medium',
+        [theme.breakpoints.down('xs')]: {
+            marginBottom: 35,
+            fontSize: 'smaller',
+        },
+    },
+    companyLogoBox: {
+        display: 'none',
+        [theme.breakpoints.down('sm')]: {
+            display: 'unset',
+            position: 'absolute',
+            bottom: 20,
+            left: 25,
+        },
+        [theme.breakpoints.down('xs')]: {
+            left: 15,
+            bottom: 10,
+        },
+    },
+    companyLogoIcon: {
+        width: 120,
+        [theme.breakpoints.down('xs')]: {
+            width: 85
+        },
+    },
+    socialIconsContainer: {
+        display: 'none',
+        [theme.breakpoints.down('xs')]: {
+            width: 150,
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            borderRadius: 5,
+            position: 'absolute',
+            bottom: 15,
+            right: 10, 
+        },
+    },
+    socialMediaIcons: {
+        [theme.breakpoints.down('xs')]: {
+            width: 40,
+            borderRadius: 5,
+        },
     },
 }));
 

@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 // Styling
+import { withStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Button from '@material-ui/core/Button';
 import Grid from "@material-ui/core/Grid";
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import { withStyles } from "@material-ui/core/styles";
+import companyLogoIcon from './../../Assets/Icons/company-logo-icon.png';
+import FaceBookIcon from './../../Assets/Icons/facebook-icon.png';
+import InstagramIcon from './../../Assets/Icons/instagram-icon.png';
+import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import useStyles from "./FooterStyles";
 
 
@@ -18,9 +22,7 @@ const Footer = (props) => {
     return (
         <Box className={classes.root}>
             <Grid container>
-                {/* Footer left margin */}
-                {/* <Grid item></Grid> */}
-                <Grid item xs={12} sm={12} md={12}>
+                <Grid item xs={12}>
                     {/* Footer deep container */}
                     <Box className={classes.footerContainer} >
                         {/* Footer overlay container */}
@@ -35,12 +37,34 @@ const Footer = (props) => {
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                             >
                                 CONTACT US
-                            </Button>
+                            </Button> 
+                            <Box className={classes.companyLogoBox} >
+                                <a href="http://azeventteam.com">
+                                    <img src={companyLogoIcon} 
+                                        alt='company logo' 
+                                        className={classes.companyLogoIcon} />
+                                </a>
+                            </Box>
+                            {/* Social Media Icons Container */}
+                            <Box className={classes.socialIconsContainer} >
+                                <a href="https://www.facebook.com/azeventteam/">
+                                    <img src={FaceBookIcon} alt='Facebook link'
+                                        className={classes.socialMediaIcons} />
+                                </a>
+                                <a href="https://www.instagram.com/">
+
+                                    <img src={InstagramIcon} alt='Instagram link'
+                                        className={classes.socialMediaIcons} />
+                                </a>
+                                <a href="https://twitter.com/">
+
+                                    <img src={TwitterIcon} alt='Twitter link'
+                                        className={classes.socialMediaIcons} />
+                                </a>
+                            </Box>
                         </Box>
                     </Box>
                 </Grid>
-                {/* Header right margin */}
-                {/* <Grid item sm={1} md={2}></Grid> */}
             </Grid>
         </Box>
     )

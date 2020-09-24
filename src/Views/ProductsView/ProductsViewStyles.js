@@ -54,6 +54,12 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '3.3rem',
         },
     },
+    productListContainer: {
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: '#2e406c54',
+            padding: '12% 0',
+        },
+    },
     bookOnlineButton: {
         position: 'absolute',
         width: 160,

@@ -77,10 +77,8 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     productListContainer: {
-        [theme.breakpoints.down('xs')]: {
-            backgroundColor: '#2e406c54',
-            padding: '12% 0',
-        },
+        backgroundColor: '#2e406c54',
+        padding: '5% 0',
     },
     bookOnlineButton: {
         position: 'absolute',

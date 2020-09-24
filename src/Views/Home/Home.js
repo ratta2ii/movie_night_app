@@ -58,10 +58,11 @@ function Home(props) {
                 <Grid item xs={1} xl={2}></Grid>
             </Grid>
             <Grid container>
-                {/* <Grid item xs={1} sm={0}></Grid> */}
-                <Grid item xs={10} sm={12} className={classes.productListContainer}>
+                <Grid item xs={1} sm={0}></Grid>
+                <Grid item xs={10} sm={10} className={classes.productListContainer}>
                     <ProductList />
                 </Grid>
+                <Grid item xs={1} sm={0}></Grid>
             </Grid>
             <Footer />
         </Box>

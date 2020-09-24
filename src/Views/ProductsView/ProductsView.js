@@ -20,7 +20,7 @@ function ProductView(props) {
 
     // To ensure the current screen opens at the top of the viewport
     useEffect(() => {
-    window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     }, []);
 
 
@@ -53,8 +53,16 @@ function ProductView(props) {
                 </Grid>
                 {/* Header right margin */}
                 <Grid item></Grid>
-                {/* MAIN PRODUCT CONTAINER */}
-                <ProductList />
+                <Grid container>
+                    {/* Product container left margin */}
+                    <Grid item xs={1} sm={0}></Grid>
+                    {/* MAIN PRODUCT CONTAINER */}
+                    <Grid item xs={10} sm={12} className={classes.productListContainer}>
+                        <ProductList />
+                    </Grid>
+                    {/* Product container right margin */}
+                    <Grid item xs={1} sm={0}></Grid>
+                </Grid>
             </Grid>
             <Footer />
         </Box>

@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             height: '200px',
         },
+        ['@media (max-width:400px)']: { // eslint-disable-line no-useless-computed-key
+            height: 160,
+        },
     },
     title: {
         fontSize: '1.1rem',

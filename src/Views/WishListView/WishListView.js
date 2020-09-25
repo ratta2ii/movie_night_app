@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { useSelector } from 'react-redux';
+import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -9,18 +10,23 @@ import Typography from '@material-ui/core/Typography';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import WishList from './../../Components/WishList/WishList';
 import useStyles from './WishListViewStyles';
-import { getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
+// import { useSelector } from 'react-redux';
+// import { getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
+// import { getCartTotalState } from '../../Redux/Reducers/currentWishListReducer';
 
 
 const WishListView = (props) => {
 
 
     const classes = useStyles();
-    const currentWishList = useSelector(getCurrentWishList);
+    const { currentWishList, cartTotalState } = props;
+    //? Mapped state to props instead of the selector here (updates coming ???)
+    // const currentWishList = useSelector(getCurrentWishList);
+    // const cartTotalState = useSelector(getCartTotalState);
     let emptyCart = true;
-    let checkoutButton;
     let content;
-    let backToProducts;
+    let buttonGroup;
+    let cartReceipt;
 
 
     useEffect(() => {
@@ -28,11 +34,22 @@ const WishListView = (props) => {
     }, []);
 
 
-    //! WishList component that renders only if there stuff in the cart/wishlist
-    if ((Object.keys(currentWishList).length >= 1)) {
-        emptyCart = false;
-        content = <WishList />;
-    } else {
+    const calculateTaxes = (amount) => {
+        let AZtaxes = 0.0805;
+        let totalTaxes = amount * AZtaxes;
+        return totalTaxes.toFixed(2);
+    }
+
+
+    const calculateGrandTotal = (amount) => {
+        let taxes = parseInt(calculateTaxes(cartTotalState));
+        let grandTotal = taxes + cartTotalState;
+        return parseInt(grandTotal).toFixed(2);
+    }
+
+
+    //! WishList component renders only if there are items in the cart/wishlist
+    if ((Object.keys(currentWishList).length < 1)) {
         content = (
             <Fragment>
                 <Typography variant='h5'>
@@ -40,7 +57,7 @@ const WishListView = (props) => {
                 </Typography>
                 {/* Return to products container */}
                 <Box className={classes.productsButtonContainer}>
-                    <Button component={Link} to="/productList" variant='contained'
+                    <Button component={Link} to="/productList"
                         className={classes.productsButton} label="home">
                         <Typography>
                             Go To Products
@@ -49,33 +66,74 @@ const WishListView = (props) => {
                 </Box>
             </Fragment>
         );
-    };
+    } else {
+        emptyCart = false;
+        content = <WishList />;
+    }
 
 
-    checkoutButton = (
-        <Button component={Link}
-            to='/reservations'
-            variant='contained'
-            color='primary'
-            className={classes.checkOutButton}>
-            <Typography>
-                Go To Checkout
-            </Typography>
-        </Button>
+    buttonGroup = (
+        <Box>
+            <Grid container>
+                <Grid item xs={6}>
+                    <Button component={Link}
+                        to='/productList'
+                        color='default'
+                        className={classes.backToProductsButton2} >
+                        <Typography>
+                            Back To Products
+                </Typography>
+                    </Button>
+                    <Button component={Link}
+                        to='/reservations'
+                        variant='contained'
+                        color='primary'
+                        fontSize='x-small'
+                        className={classes.checkOutButton}>
+                        Checkout
+                    </Button>
+                </Grid>
+                <Grid item xs={6}></Grid>
+            </Grid>
+        </Box>
     );
 
 
-    backToProducts = (
-        <Button component={Link}
-            to='/productList'
-            variant='contained'
-            color='default'
-            className={classes.backToProductsButton2}
-        >
-            <Typography>
-                Back To Products
-        </Typography>
-        </Button>
+    cartReceipt = (
+        <Box style={{ margin: 30 }}>
+            <Grid container>
+                <Grid item xs={8}>
+                    <Typography className={classes.cartTitle}>
+                        Cart Total: $
+                        </Typography>
+                </Grid>
+                <Grid item xs={4} className={classes.valueGridItem}>
+                    <Typography>
+                        {cartTotalState.toFixed(2)}
+                    </Typography>
+                </Grid>
+                <Grid item xs={8}>
+                    <Typography className={classes.cartTitle}>
+                        Taxes: $
+                        </Typography>
+                </Grid>
+                <Grid item xs={4} className={classes.valueGridItem}>
+                    <Typography>
+                        {calculateTaxes(cartTotalState)}
+                    </Typography>
+                </Grid>
+                <Grid item xs={8}>
+                    <Typography className={classes.grandTotalTitle}>
+                        GrandTotal: $
+                        </Typography>
+                </Grid>
+                <Grid item xs={4} className={classes.grandTotalGridItem}>
+                    <Typography>
+                        {calculateGrandTotal(cartTotalState)}
+                    </Typography>
+                </Grid>
+            </Grid>
+        </Box>
     );
 
 
@@ -114,8 +172,8 @@ const WishListView = (props) => {
                 <Grid item xs={10} sm={10} md={8} lg={6} className={classes.mainGridContent} >
                     <Paper className={classes.contentPaperContainer}>
                         {content}
-                        {(!emptyCart) ? backToProducts : null}
-                        {(!emptyCart) ? checkoutButton : null}
+                        {(!emptyCart) ? cartReceipt : null}
+                        {(!emptyCart) ? buttonGroup : null}
                     </Paper>
                 </Grid>
                 {/* Margin Right */}
@@ -134,4 +192,17 @@ WishListView.propTypes = {
 }
 
 
-export default WishListView;
+const mapStateToProps = state => {
+    return {
+        currentWishList: state.currentWishList.value,
+        cartTotalState: state.currentWishList.cartTotalState,
+    };
+};
+
+
+export default connect(
+    mapStateToProps,
+)(withRouter(WishListView));
+
+
+

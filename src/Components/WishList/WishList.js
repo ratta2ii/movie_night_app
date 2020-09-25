@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { withStyles } from '@material-ui/core/styles';
+// import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 // Custom component, state, and styles
@@ -11,16 +13,16 @@ import { removeWish, getCurrentWishList } from '../../Redux/Reducers/currentWish
 
 const WishList = props => {
     
-    
+
     const currentWishList = useSelector(getCurrentWishList);
     const dispatch = useDispatch();
     const classes = useStyles();
-    
+
     
     const handleRemoveWish = (productId) => {
         dispatch(removeWish(productId));
     }
-    
+
     
     return (
         <Box>
@@ -29,8 +31,8 @@ const WishList = props => {
                 <Grid item></Grid>
                 {/* Main Container */}
                 <Grid item xs={12} >
-                    <table className={classes.table}>
-                        <tbody>
+                    <Box className={classes.table}>
+                        <Box>
                             {Object.keys(currentWishList).map(function (productId) {
                                 var ele = currentWishList[productId];
                                 return <Wish
@@ -45,15 +47,10 @@ const WishList = props => {
                                 handleRemoveWish={handleRemoveWish}
                                 />;
                             })}
-                        </tbody>
-                    </table>
+                        </Box>
+                    </Box>
                 </Grid>
             </Grid>
-            <style jsx="true">{`
-                tr:nth-child(even) {
-                    background-color: #e3f2fd;
-                }
-            `}</style>
         </Box>
     )
 }
@@ -64,7 +61,14 @@ WishList.propTypes = {
 }
 
 
-export default withStyles(useStyles)(WishList);
+const mapStateToProps = state => {
+    return {
+        currentWishList: state.currentWishList.value,
+    };
+};
+
+
+export default connect(mapStateToProps)(withRouter(WishList));
 
 
 

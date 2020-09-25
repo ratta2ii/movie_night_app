@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import currentProductReducer from './Reducers/currentProductReducer';
-import currentWishListReducer from './Reducers/currentWishListReducer';
+import currentCartListReducer from './Reducers/currentCartListReducer';
 
 
 export default configureStore({
     reducer: {
         currentProduct: currentProductReducer,
-        currentWishList: currentWishListReducer,
+        currentCartList: currentCartListReducer,
     },
 });
 

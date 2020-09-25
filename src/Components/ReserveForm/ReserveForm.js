@@ -8,7 +8,7 @@ import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
 import Box from '@material-ui/core/Box';
 import { useSelector } from 'react-redux';
-import { getProductsForEmail } from './../../Redux/Reducers/currentWishListReducer';
+import { getProductsForEmail } from './../../Redux/Reducers/currentCartListReducer';
 
 
 const ReserveForm = () => {
@@ -167,7 +167,7 @@ const ReserveForm = () => {
                                         value={new Date(selectedDate)} />
                                     {/* 
                                     This is the input field that will include all the items from
-                                    the wishlist into the email reservartion sent 
+                                    the cartList into the email reservartion sent 
                                     */}
                                     <input style={{ display: 'none' }} type="text" name="products"
                                         value={productTitles} />

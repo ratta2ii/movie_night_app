@@ -6,15 +6,15 @@ import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 // Custom component, state, and styles
-import Wish from '../Wish/Wish';
-import useStyles from './WishListStyles';
-import { removeWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
+import CartItem from '../CartItem/CartItem';
+import useStyles from './CartListStyles';
+import { removeWish, getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
 
 
-const WishList = props => {
+const CartList = props => {
     
 
-    const currentWishList = useSelector(getCurrentWishList);
+    const currentCartList = useSelector(getCurrentCartList);
     const dispatch = useDispatch();
     const classes = useStyles();
 
@@ -33,9 +33,9 @@ const WishList = props => {
                 <Grid item xs={12} >
                     <Box className={classes.table}>
                         <Box>
-                            {Object.keys(currentWishList).map(function (productId) {
-                                var ele = currentWishList[productId];
-                                return <Wish
+                            {Object.keys(currentCartList).map(function (productId) {
+                                var ele = currentCartList[productId];
+                                return <CartItem
                                 key={ele.id}
                                 title={ele.title}
                                 productId={ele.productId}
@@ -56,19 +56,19 @@ const WishList = props => {
 }
 
 
-WishList.propTypes = {
+CartList.propTypes = {
     
 }
 
 
 const mapStateToProps = state => {
     return {
-        currentWishList: state.currentWishList.value,
+        currentCartList: state.currentCartList.value,
     };
 };
 
 
-export default connect(mapStateToProps)(withRouter(WishList));
+export default connect(mapStateToProps)(withRouter(CartList));
 
 
 

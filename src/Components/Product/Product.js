@@ -15,7 +15,7 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './ProductStyles';
 // State management
 import { selectProduct } from '../../Redux/Reducers/currentProductReducer';
-import { addWish } from '../../Redux/Reducers/currentWishListReducer'
+import { addWish } from '../../Redux/Reducers/currentCartListReducer'
 
 
 function Product(props) {
@@ -47,9 +47,9 @@ function Product(props) {
     }
 
 
-    const handleAddToWishList = (card) => {
+    const handleAddTocartList = (card) => {
         dispatch(addWish(card));
-        history.push("/wishList");
+        history.push("/cartList");
     }
 
 
@@ -83,14 +83,14 @@ function Product(props) {
                 {/* Buttons on Card */}
                 <CardActions className={styles.action} >
                     <AddCircleIcon 
-                        onClick={() => { handleAddToWishList(props) }}
+                        onClick={() => { handleAddTocartList(props) }}
                         fontSize="small" />
                     <Typography
-                        onClick={() => { handleAddToWishList(props) }}
+                        onClick={() => { handleAddTocartList(props) }}
                         className={styles.addWishText}
                         variant="body2"
                     >
-                        Add To Wishlist
+                        Add To cartList
                     </Typography>
                     <Button size="small"
                         color="primary"

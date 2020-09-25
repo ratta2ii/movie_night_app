@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 
-export const currentWishListSlice = createSlice({
-    name: 'currentWishList',
+export const currentCartListSlice = createSlice({
+    name: 'currentCartList',
     initialState: {
         value: {},
         productTitles: '',
@@ -10,7 +10,7 @@ export const currentWishListSlice = createSlice({
     },
     reducers: {
         addWish: (state, action) => {
-            //* The payload here is an object containing all the wish properties
+            //* The payload here is an object containing all the CartItem properties
             const newState = Object.assign({}, state.value, {
                 [action.payload.productId]: {
                     ...action.payload
@@ -52,7 +52,7 @@ export const currentWishListSlice = createSlice({
             var amountToRemove = parseInt(state.value[indx].price);
             state.cartTotalState -= amountToRemove;
 
-            // Remove entire wish/item object
+            // Remove entire CartItem/item object
             const newState = Object.assign({}, state.value);
             delete newState[indx];
             state.value = newState;
@@ -61,13 +61,13 @@ export const currentWishListSlice = createSlice({
 });
 
 
-export const { addWish, removeWish } = currentWishListSlice.actions;
-export const getCurrentWishList = state => state.currentWishList.value;
-export const getProductsForEmail = state => state.currentWishList.productTitles;
-export const getCartTotalState = state => state.currentWishList.cartTotalState;
+export const { addWish, removeWish } = currentCartListSlice.actions;
+export const getCurrentCartList = state => state.currentCartList.value;
+export const getProductsForEmail = state => state.currentCartList.productTitles;
+export const getCartTotalState = state => state.currentCartList.cartTotalState;
 
 
-export default currentWishListSlice.reducer;
+export default currentCartListSlice.reducer;
 
 
 

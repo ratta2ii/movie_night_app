@@ -8,20 +8,21 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import WishList from './../../Components/WishList/WishList';
-import useStyles from './WishListViewStyles';
+import CartList from './../../Components/CartList/CartList';
+import useStyles from './CartViewStyles';
 // import { useSelector } from 'react-redux';
-// import { getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
-// import { getCartTotalState } from '../../Redux/Reducers/currentWishListReducer';
+// import { getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
+// import { getCartTotalState } from '../../Redux/Reducers/currentCartListReducer';
 
 
-const WishListView = (props) => {
+const CartView = (props) => {
 
 
     const classes = useStyles();
-    const { currentWishList, cartTotalState } = props;
+    const { currentCartList, cartTotalState } = props;
+    console.log({currentCartList: currentCartList});
     //? Mapped state to props instead of the selector here (updates coming ???)
-    // const currentWishList = useSelector(getCurrentWishList);
+    // const currentCartList = useSelector(getCurrentCartList);
     // const cartTotalState = useSelector(getCartTotalState);
     let emptyCart = true;
     let content;
@@ -48,8 +49,8 @@ const WishListView = (props) => {
     }
 
 
-    //! WishList component renders only if there are items in the cart/wishlist
-    if ((Object.keys(currentWishList).length < 1)) {
+    //! cartList component renders only if there are items in the cart/cartList
+    if ((Object.keys(currentCartList).length < 1)) {
         content = (
             <Fragment>
                 <Typography variant='h5'>
@@ -68,7 +69,7 @@ const WishListView = (props) => {
         );
     } else {
         emptyCart = false;
-        content = <WishList />;
+        content = <CartList />;
     }
 
 
@@ -168,7 +169,7 @@ const WishListView = (props) => {
                 <Grid item></Grid>
                 {/* Margin Left */}
                 <Grid item xs={1} sm={1} md={2} lg={3}></Grid>
-                {/* MAIN WISHLIST CONTAINER */}
+                {/* MAIN cartList CONTAINER */}
                 <Grid item xs={10} sm={10} md={8} lg={6} className={classes.mainGridContent} >
                     <Paper className={classes.contentPaperContainer}>
                         {content}
@@ -187,22 +188,22 @@ const WishListView = (props) => {
 }
 
 
-WishListView.propTypes = {
+CartView.propTypes = {
 
 }
 
 
 const mapStateToProps = state => {
     return {
-        currentWishList: state.currentWishList.value,
-        cartTotalState: state.currentWishList.cartTotalState,
+        currentCartList: state.currentCartList.value,
+        cartTotalState: state.currentCartList.cartTotalState,
     };
 };
 
 
 export default connect(
     mapStateToProps,
-)(withRouter(WishListView));
+)(withRouter(CartView));
 
 
 

@@ -11,7 +11,7 @@ import Box from '@material-ui/core/Box';
 // import { getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
 // import { useDispatch } from 'react-redux';
 // import { selectProduct } from '../../Redux/Reducers/currentProductReducer';
-// import { addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer'
+// import { addWish, getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer'
 
 
 

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectProduct, getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
-import { addWish, getCurrentWishList } from '../../Redux/Reducers/currentWishListReducer';
+import { addWish, getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
 
 
 
@@ -11,7 +11,7 @@ export default function ReduxStateTest(props) {
 
     const dispatch = useDispatch();
     const currentProduct = useSelector(getCurrentProduct);
-    const myWishList = useSelector(getCurrentWishList);
+    const mycartList = useSelector(getCurrentCartList);
     const [productValue, setSelectedProductValue] = useState(currentProduct);
     const [newWishValue, setNewWishValue] = useState();
 
@@ -58,21 +58,21 @@ export default function ReduxStateTest(props) {
             </div>
 
 
-            {/* Testing currentWishList slice */}
+            {/* Testing currentCartList slice */}
             <div style={{ marginTop: 20 }}>
                 <input
-                    aria-label="Wishlist Test"
+                    aria-label="cartList Test"
                     value={newWishValue}
                     onChange={e => setNewWishValue(e.target.value)}
                 />
 
                 <button onClick={handleAddWish}>
-                    ADD WISH
+                    ADD CartItem
                 </button>
 
-                {/* Printing out the currentWishList */}
+                {/* Printing out the currentCartList */}
                 <ul>
-                    {myWishList.map(ele => {
+                    {mycartList.map(ele => {
                         return <li>{ele}</li>
                     })}
                 </ul>

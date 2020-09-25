@@ -6,10 +6,10 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import useStyles from './WishStyles';
+import useStyles from './CartItemStyles';
 
 
-const Wish = (props) => {
+const CartItem = (props) => {
 
 
     const { productId, handleRemoveWish } = props;
@@ -88,7 +88,7 @@ const Wish = (props) => {
 }
 
 
-Wish.propTypes = {
+CartItem.propTypes = {
 
 };
 
@@ -105,7 +105,7 @@ const mapDispatchToProps = {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(withRouter(Wish));
+)(withRouter(CartItem));
 
 
 
@@ -136,11 +136,11 @@ export default connect(
 // import Button from '@material-ui/core/Button';
 
 
-// const Wish = props => {
+// const CartItem = props => {
 
 
 //     //! Remove console statement !\\
-//     // console.log("Wish props: ", props);
+//     // console.log("CartItem props: ", props);
 //     const { productId, handleRemoveWish } = props;
 //     const classes = useStyles();
 
@@ -172,14 +172,14 @@ export default connect(
 // }
 
 
-// Wish.propTypes = {
+// CartItem.propTypes = {
 //     title: PropTypes.string.isRequired,
 //     price: PropTypes.string,
 //     mainImage: PropTypes.string,
 // }
 
 
-// export default withStyles(useStyles)(Wish);
+// export default withStyles(useStyles)(CartItem);
 
 
 
@@ -207,11 +207,11 @@ export default connect(
 // import Button from '@material-ui/core/Button';
 
 
-// const Wish = props => {
+// const CartItem = props => {
 
 
 //     //! Remove console statement !\\
-//     // console.log("Wish props: ", props);
+//     // console.log("CartItem props: ", props);
 //     const { productId, handleRemoveWish } = props;
 //     const classes = useStyles();
 
@@ -243,14 +243,14 @@ export default connect(
 // }
 
 
-// Wish.propTypes = {
+// CartItem.propTypes = {
 //     title: PropTypes.string.isRequired,
 //     price: PropTypes.string,
 //     mainImage: PropTypes.string,
 // }
 
 
-// export default withStyles(useStyles)(Wish);
+// export default withStyles(useStyles)(CartItem);
 
 
 

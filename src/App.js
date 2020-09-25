@@ -6,7 +6,7 @@ import Home from './Views/Home/Home';
 import ProductsView  from './Views/ProductsView/ProductsView';
 import FaqPage from './Views/FaqPage/FaqPage';
 import Reservations from './Views/Reservations/Reservations';
-import WishListView from './Views/WishListView/WishListView';
+import CartView from './Views/CartView/CartView';
 import SingleProductView from './Views/SingleProductView/SingleProductView';
 import Error404 from './Views/Error404/Error404';
 // This is for testing purposes only
@@ -23,7 +23,7 @@ function App(props) {
                 <Route exact path='/' component={Home} />
                 <Route path="/productList" component={ProductsView} />
                 <Route path="/faqPage" component={FaqPage} />
-                <Route path="/wishList" component={WishListView} />
+                <Route path="/cartList" component={CartView} />
                 <Route path="/reservations" component={Reservations} />
                 <Route path="/product" component={SingleProductView} />
                 <Route component={Error404} />

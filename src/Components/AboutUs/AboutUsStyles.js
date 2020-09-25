@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: 'cover',
         borderRadius: '3px',
+        // backgroundPosition: 'center center'
         [theme.breakpoints.down('sm')]: {
-            backgroundPosition: 'center center',
         },
     },
     leftGridContainer: {

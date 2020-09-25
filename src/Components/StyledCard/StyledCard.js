@@ -15,7 +15,7 @@ import useStyles from "./StyledCardStyles";
 // State management
 import { useSelector, useDispatch } from 'react-redux';
 import { getCurrentProduct } from '../../Redux/Reducers/currentProductReducer';
-import { addWish } from '../../Redux/Reducers/currentWishListReducer'
+import { addWish } from '../../Redux/Reducers/currentCartListReducer'
 
 
 const StyledCard = (props) => {
@@ -28,16 +28,16 @@ const StyledCard = (props) => {
 
 
     //! Remove console statements !\\
-    // console.log("Styled Card props: ", props);
+    console.log("Styled Card props: ", props);
 
 
-    const handleAddToWishList = () => {
+    const handleAddTocartList = () => {
         dispatch(addWish(currentProduct));
         //? Possiblee time delay here
         // setTimeout(() => {
-        //     history.push("/wishList");
+        //     history.push("/cartList");
         // }, 500);
-        history.push("/wishList");
+        history.push("/cartList");
     }
 
 
@@ -109,7 +109,7 @@ const StyledCard = (props) => {
                         <Grid item xs={12} sm={8} md={6}>
                             <Button
                                 className={classes.wishButton}
-                                onClick={handleAddToWishList}
+                                onClick={handleAddTocartList}
                                 variant="contained"
                                 color="primary"
                                 size="small"

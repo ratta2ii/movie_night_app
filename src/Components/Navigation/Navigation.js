@@ -138,8 +138,8 @@ export default function Navigation(props) {
                     <Divider />
 
 
-                    <MenuItem component={Link} to='/wishList'
-                        selected={'/wishList' === pathname}
+                    <MenuItem component={Link} to='/cartList'
+                        selected={'/cartList' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>

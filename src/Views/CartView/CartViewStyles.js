@@ -142,6 +142,9 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 5,
         paddingTop: 5,
     },
+    emptyCartText: {
+        fontFamily: 'monospace',
+    }
 }));
 
 

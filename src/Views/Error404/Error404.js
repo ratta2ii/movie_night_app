@@ -11,6 +11,7 @@ function Error404(props) {
     let styles = {
         errorComponent: {
             fontSize: 16,
+            fontFamily: 'monospace',
             textAlign: 'center',
             color: 'red',
             marginTop: 170,
@@ -20,15 +21,21 @@ function Error404(props) {
 
     return (
         <Box style={styles.errorComponent}>
-            <Typography variant='h3'>
+            <Typography variant='h4' 
+                style={{
+                    color: 'red',
+                    fontFamily: 'monospace',
+                }}>
                 The page {props.location.pathname} does not exist!
             </Typography>
-            <Typography variant='h5'>
+            <Typography variant='h6' 
+                style={{fontFamily: 'monospace'}}>
                 Would you like to return
                 <Link to="/" style={{
                     textDecoration: 'none',
                     color: 'dodgerblue',
                     margin: '0 5px',
+                    fontFamily: 'monospace',
                 }}>
                     HOME
                 </Link> 

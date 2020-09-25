@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
+import Divider from '@material-ui/core/Divider';
 
 
 const drawerWidth = 240;
@@ -10,9 +12,16 @@ export const useStyles = makeStyles((theme) => ({
     },
     MenuItem: {
         borderLeft: '5px solid #060a13',
+        height: 65,
+        '&:hover': {
+            borderLeft: '5px solid #0f131e',
+            backgroundColor: 'rgb(155 202 239 / 5%)',
+        },
     },
     appBar: {
         position: 'fixed',
+        // background: `url('${bg_image}') no-repeat`,
+        // backgroundSize: '100%',
         backgroundColor: '#060a13',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
@@ -77,7 +86,7 @@ export const useStyles = makeStyles((theme) => ({
         flexShrink: 0,
         whiteSpace: 'nowrap',
         // necessary for nav to be below app bar
-        zIndex: 1, 
+        zIndex: 1,
         [theme.breakpoints.down('sm')]: {
             display: 'none',
         },
@@ -152,65 +161,79 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     HomeIcon: {
-        color: ' #1890ff',
-        backgroundColor: '#882ecc',
+        color: '#1890ff',
+        // backgroundColor: '#882ecc',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ShopIcon: {
-        color: ' #1890ff',
-        backgroundColor: '#38cc2e',
+        color: '#1890ff',
+        // backgroundColor: '#38cc2e',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     FavoriteIcon: {
-        color: ' #1890ff',
-        backgroundColor: '#c53b2d',
+        color: '#1890ff',
+        // backgroundColor: '#c53b2d',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ListAltIcon: {
-        color: ' #1890ff',
-        backgroundColor: '#f8fb2c',
+        color: '#1890ff',
+        // backgroundColor: '#f8fb2c',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ListAltIcon2: {
-        color: ' #1890ff',
-        backgroundColor: '#2ebdcc',
+        color: '#1890ff',
+        // backgroundColor: '#2ebdcc',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     SwapHorizontalCircleIcon: {
-        color: ' #1890ff',
-        backgroundColor: '#f6961b',
+        color: '#f6961b',
+        // backgroundColor: '#f6961b',
         marginLeft: 3,
-        padding: 2,
+        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     miniHomeNavTitle: {
         marginBottom: '1rem',
         position: 'absolute',
-        bottom: '-10px',
+        bottom: '-3px',
         left: '18px',
         fontSize: '10px',
     },
     miniiNavTitle: {
         marginBottom: '.95rem',
         position: 'absolute',
-        bottom: '-8px',
+        bottom: '-4px',
         left: '15px',
         fontSize: '10px'
+    },
+    Divider: {
+        backgroundColor: '#243154',
     }
 }));
+
+
+export const StyledDivider = styled(Divider)`
+    background-color: white;
+    margin: 0,
+    padding: 0,
+
+    // & .MuiButton-label {
+    //     color: #fff;
+    // }
+`;

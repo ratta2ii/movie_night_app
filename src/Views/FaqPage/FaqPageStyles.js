@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
     },
     headerTitle: {
         fontSize: '8rem',
@@ -66,6 +66,9 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         backgroundColor: '#cccccce3',
         padding: 25,
+        [theme.breakpoints.down('xs')]: {
+            padding: 15,
+        }
     },
     returnHomeLinkBox: {
         marginTop: 50,

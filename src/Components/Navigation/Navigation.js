@@ -70,7 +70,7 @@ export default function Navigation(props) {
                     <MenuItem component={Link} to='/'
                         selected={'/' === pathname}
                         style={{
-                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px',
+                            padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px',
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
@@ -80,13 +80,13 @@ export default function Navigation(props) {
                             Home
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/productList'
                         selected={'/productList' === pathname}
                         style={{
-                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px'
+                            padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px'
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon>
@@ -101,12 +101,12 @@ export default function Navigation(props) {
                             Products
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/faqPage'
                         selected={'/faqPage' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HelpIcon className={classes.ListAltIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>FAQ'S</Typography>
@@ -118,12 +118,12 @@ export default function Navigation(props) {
                             FAQ's
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/reservations'
                         selected={'/reservations' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>CONTACT US</Typography>
@@ -135,12 +135,12 @@ export default function Navigation(props) {
                             Contact
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/cartList'
                         selected={'/cartList' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>SHOPPING CART</Typography>
@@ -152,11 +152,11 @@ export default function Navigation(props) {
                             Cart
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem onClick={() => handleClose()}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon>
                             <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>

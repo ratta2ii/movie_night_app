@@ -53,7 +53,7 @@ const CartView = (props) => {
     if ((Object.keys(currentCartList).length < 1)) {
         content = (
             <Fragment>
-                <Typography variant='h5'>
+                <Typography variant='h5' className={classes.emptyCartText}>
                     Your cart is empty!
                 </Typography>
                 {/* Return to products container */}

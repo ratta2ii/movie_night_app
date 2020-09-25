@@ -5,7 +5,8 @@ export const currentWishListSlice = createSlice({
     name: 'currentWishList',
     initialState: {
         value: {},
-        productTitles: ''
+        productTitles: '',
+        cartTotalState: 0,
     },
     reducers: {
         addWish: (state, action) => {
@@ -22,6 +23,7 @@ export const currentWishListSlice = createSlice({
             parse the entire object to make input fields when the form rendered.
             */
             if (!state.productTitles.includes(action.payload.title)) {
+                state.cartTotalState += parseInt(action.payload.price);
                 state.productTitles += `${action.payload.title}, `;
             }
             /* 
@@ -46,6 +48,10 @@ export const currentWishListSlice = createSlice({
             titles = titles.replace(`${productTitleToRemove},`, "");
             state.productTitles = titles;
 
+            // Minus item amount from cartTotal
+            var amountToRemove = parseInt(state.value[indx].price);
+            state.cartTotalState -= amountToRemove;
+
             // Remove entire wish/item object
             const newState = Object.assign({}, state.value);
             delete newState[indx];
@@ -58,6 +64,7 @@ export const currentWishListSlice = createSlice({
 export const { addWish, removeWish } = currentWishListSlice.actions;
 export const getCurrentWishList = state => state.currentWishList.value;
 export const getProductsForEmail = state => state.currentWishList.productTitles;
+export const getCartTotalState = state => state.currentWishList.cartTotalState;
 
 
 export default currentWishListSlice.reducer;

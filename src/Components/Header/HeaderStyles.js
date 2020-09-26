@@ -51,24 +51,21 @@ const useStyles = makeStyles((theme) => ({
     },
     contactUsButton: {
         position: 'absolute',
-        width: 160,
         bottom: 12,
-        right: 15,
+        right: 16,
         color: 'white',
         backgroundColor: '#ff0100',
-        padding: '10px 0 10px 5px',
+        padding: '10px 20px',
+        fontSize: '.8rem',
         [theme.breakpoints.down('sm')]: {
-            width: 140,
-            fontSize: 'small',
-            bottom: 12,
-            right: 12,
-        },
-        [theme.breakpoints.down('xs')]: {
             padding: '7px 0px 7px 4px',
             width: 120,
-            fontSize: 'smaller',
-            bottom: 8,
-            right: 8,
+            bottom: 12,
+            right: 16,
+        },
+        [theme.breakpoints.down('xs')]: {
+            bottom: 10,
+            right: 22,
         },
     },
 }));

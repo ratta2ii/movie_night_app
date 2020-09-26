@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 // Custom components and styles
 import Faqs from './../../Components/Faqs/Faqs';
 import Header from './../../Components/Header/Header';
+import Footer from './../../Components/Footer/Footer';
 import useStyles from './FaqPageStyles';
 
 
@@ -37,7 +38,7 @@ const FaqPage = (props) => {
                             <Box className={classes.returnHomeLinkBox}>
                                 <Button component={Link} to="/" variant='contained'
                                     className={classes.returnHomeLink} label="home">
-                                    <Typography>
+                                    <Typography style={{ fontSize: '.8rem',}}>
                                         Go To Homepage
                                     </Typography>
                                 </Button>
@@ -46,6 +47,7 @@ const FaqPage = (props) => {
                     </Box>
                 </Grid>
             </Grid>
+            <Footer />
         </Box>
     )
 }

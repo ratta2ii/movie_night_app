@@ -163,7 +163,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Cart</Typography>
+                        <Typography className={classes.ListItemText}>Shopping Cart</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -226,7 +226,7 @@ export default function Navigation(props) {
                         <Box>
                             <Box>
                                 <FormControlLabel
-                                    className={classes.contactInfo}
+                                    className={classes.contactEmail}
                                     control={
                                         <a target="_top"
                                             color='primary'
@@ -244,7 +244,7 @@ export default function Navigation(props) {
                             </Box>
                             <Box>
                                 <FormControlLabel
-                                    className={classes.contactInfo}
+                                    className={classes.contactPhone}
                                     control={
                                         <IconButton color="primary"
                                             style={{ padding: '5px  8px 5px 12px' }}>
@@ -256,9 +256,11 @@ export default function Navigation(props) {
                                 />
                             </Box>
                         </Box>
-                        <Box className={classes.companyLogo} >
+                        <Box className={classes.companyLogoBox} >
                             <a href="http://azeventteam.com">
-                                <img src={companyLogoIcon} alt='company logo' />
+                                <img src={companyLogoIcon} 
+                                    alt='company logo'
+                                    className={classes.companyLogo} />
                             </a>
                         </Box>
                         {/* Social Media Icons Container */}

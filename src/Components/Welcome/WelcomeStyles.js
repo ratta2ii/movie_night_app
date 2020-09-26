@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
         margin: 'auto',
-        marginTop: 75,
+        marginTop: 50,
         fontSize: '3em',
         padding: '15px 3%',
         [theme.breakpoints.down('lg')]: {

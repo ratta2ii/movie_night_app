@@ -7,14 +7,14 @@ const useStyles = makeStyles((theme) => ({
     },
     faqsContainer: {
         borderRadius: '3px',
-        marginBottom: 135,
-        marginTop: -25,
+        marginBottom: -25,
+        marginTop: -50,
         [theme.breakpoints.down('sm')]: {
-            margin: '0 5% 25px 5%',
-            marginBottom: 80,
+           // margin: '40px 5% -35 5%',
+            margin: '-20px 5px -40px 5px',
         },
         [theme.breakpoints.down('xs')]: {
-            margin: '0 5% 25px 5%',
+            margin: '0 25px -25px 25px',
         },
     },
     faqsContainerOverlay: {

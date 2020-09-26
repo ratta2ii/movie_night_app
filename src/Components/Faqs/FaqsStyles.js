@@ -39,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
     details: {
         color: '#000000',
         fontSize: '1rem',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.9rem',
+        },
     }
 }));
 

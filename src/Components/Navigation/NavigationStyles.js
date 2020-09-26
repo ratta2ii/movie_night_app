@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import Divider from '@material-ui/core/Divider';
+import bg_image from './../../Assets/Images/stars4.jpg';
 
 
 const drawerWidth = 230;
@@ -20,8 +21,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         position: 'fixed',
-        // background: `url('${bg_image}') no-repeat`,
-        // backgroundSize: '100%',
+        background: `url('${bg_image}')`,
+        // this goes with stars4
+        // backgroundSize: '100% 300px',
+       // backgroundSize: 'cover',
+       //  backgroundPositionY: '-475px',
         backgroundColor: '#060a13',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
@@ -47,12 +51,12 @@ export const useStyles = makeStyles((theme) => ({
         height: '40px',
         margin: '0 35px 0 13px',
         borderRadius: '50%',
-        boxShadow: '0px 0px 5px #2076c2',
+        boxShadow: '0px 0px 1px #6e6e6e',
         '&:focus': {
             outline: 'none !important',
         },
         '&:hover': {
-            boxShadow: '0px 0px 5px #53a9f4',
+            boxShadow: '0px 0px 3px #53a9f4',
         },
         '&:active': {
             boxShadow: '0px 0px 0px',
@@ -66,12 +70,12 @@ export const useStyles = makeStyles((theme) => ({
         height: '40px',
         margin: '0 30px 0 8px',
         borderRadius: '50%',
-        boxShadow: '0px 0px 5px #2076c2',
+        boxShadow: '0px 0px 1px #6e6e6e',
         '&:focus': {
             outline: 'none !important',
         },
         '&:hover': {
-            boxShadow: '0px 0px 5px #53a9f4',
+            boxShadow: '0px 0px 3px #53a9f4',
         },
         '&:active': {
             boxShadow: '0px 0px 0px',
@@ -92,7 +96,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     mobileDrawer: {
-        width: drawerWidth,
+        width: 300,
         flexShrink: 0,
         whiteSpace: 'nowrap',
         [theme.breakpoints.up('md')]: {
@@ -119,8 +123,14 @@ export const useStyles = makeStyles((theme) => ({
             width: theme.spacing(9) + 1,
         },
     },
-    contactInfo: {
-        color: 'floralwhite'
+    contactEmail: {
+        color: 'floralwhite',
+        fontSize: '.5rem',
+    },
+    contactPhone: {
+        marginTop: -5,
+        color: 'floralwhite',
+        fontSize: '.5rem',
     },
     menuList: {
         backgroundColor: '#060a13',
@@ -138,7 +148,7 @@ export const useStyles = makeStyles((theme) => ({
             fontSize: '.8rem'
         },
     },
-    companyLogo: {
+    companyLogoBox: {
         display: 'flex',
         alignItems: 'center',
         marginRight: '100px',
@@ -146,13 +156,16 @@ export const useStyles = makeStyles((theme) => ({
             display: 'none',
         },
     },
-    companyLogoIcon: {
+    companyLogo: {
+        width: 85,
+        marginTop: 8,
     },
     socialIconsContainer: {
         width: 150,
         display: 'flex',
         justifyContent: 'space-evenly',
-        borderRadius: '5px'
+        borderRadius: '5px',
+        paddingTop: 5,
     },
     socialMediaIcons: {
         width: 40,
@@ -224,7 +237,10 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '10px'
     },
     Divider: {
-        backgroundColor: '#243154',
+        backgroundColor: '#171d2e',
+        [theme.breakpoints.down('sm')]: {
+            opacity: '0',
+        },
     }
 }));
 

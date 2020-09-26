@@ -44,7 +44,7 @@ function Home(props) {
                         <Button
                             component={Link}
                             to="/reservations"
-                            className={classes.bookOnlineButton}
+                            className={classes.contactUsButton}
                             variant="contained"
                             color="primary"
                             size="small"
@@ -58,8 +58,8 @@ function Home(props) {
                 <Grid item xs={1} xl={2}></Grid>
             </Grid>
             <Grid container>
-                <Grid item xs={1} sm={0}></Grid>
-                <Grid item xs={10} sm={10} className={classes.productListContainer}>
+                <Grid item xs={1} sm={0} xl={2}></Grid>
+                <Grid item xs={10} sm={10} xl={8} className={classes.productListContainer}>
                     <ProductList />
                 </Grid>
                 <Grid item xs={1} sm={0}></Grid>

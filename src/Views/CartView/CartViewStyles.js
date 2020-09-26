@@ -55,13 +55,20 @@ const useStyles = makeStyles((theme) => ({
         color: 'dodgerblue'
     },
     cartTitle: {
-        textAlign: 'right'
+        textAlign: 'right',
+        fontSize: '.9rem',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.8rem',
+        },
     },
     cartValue: {
     },
     valueGridItem: {
         textAlign: 'right',
         paddingLeft: 15,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.8rem',
+        },
     },
     grandTotalGridItem: {
         textAlign: 'right',
@@ -74,9 +81,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'right',
         marginTop: 5,
         paddingTop: 5,
+        fontSize: '.9rem',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.8rem',
+        },
     },
     emptyCartText: {
         fontFamily: 'monospace',
+        marginLeft: 8,
     }
 }));
 

@@ -9,8 +9,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Removes visual scrollbar at all times (Revist this at a later point) */
+::-webkit-scrollbar {
+    -webkit-appearance: auto;
+    width: 0;
+}
+
 .Mui-selected {
-    border-left: 5px solid #0068ff !important;
+    /* border-left: 5px solid #0068ff !important; */
+    border-left: 5px solid red!important;
     /* color: rgb(190, 224, 255) !important; */
     
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Divider from '@material-ui/core/Divider';
 
 
-const drawerWidth = 240;
+const drawerWidth = 230;
 
 
 export const useStyles = makeStyles((theme) => ({
@@ -92,7 +92,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     mobileDrawer: {
-        width: 10,
+        width: drawerWidth,
         flexShrink: 0,
         whiteSpace: 'nowrap',
         [theme.breakpoints.up('md')]: {
@@ -133,6 +133,7 @@ export const useStyles = makeStyles((theme) => ({
         paddingTop: 3,
         paddingBottom: 3,
         letterSpacing: '0.07em',
+        textTransform: 'uppercase',
         [theme.breakpoints.down('sm')]: {
             fontSize: '.8rem'
         },

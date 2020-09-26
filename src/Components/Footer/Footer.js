@@ -37,20 +37,26 @@ const Footer = (props) => {
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
                             >
                                 CONTACT US
-                            </Button> 
-                            <Box className={classes.companyLogoBox} >
-                                <a href="http://azeventteam.com">
-                                    <img src={companyLogoIcon} 
-                                        alt='company logo' 
-                                        className={classes.companyLogoIcon} />
-                                </a>
-                            </Box>
+                            </Button>
+                            {/* Hidden logo (small viewport only) */}
+                            <a href="http://azeventteam.com">
+                                <img src={companyLogoIcon}
+                                    alt='company logo'
+                                    className={classes.hiddenCompanyLogo} />
+                            </a>
                             {/* Social Media Icons Container */}
                             <Box className={classes.socialIconsContainer} >
                                 <a href="https://www.facebook.com/azeventteam/">
                                     <img src={FaceBookIcon} alt='Facebook link'
                                         className={classes.socialMediaIcons} />
                                 </a>
+                                <Box className={classes.companyLogoBox} >
+                                    <a href="http://azeventteam.com">
+                                        <img src={companyLogoIcon}
+                                            alt='company logo'
+                                            className={classes.companyLogoIcon} />
+                                    </a>
+                                </Box>
                                 <a href="https://www.instagram.com/">
 
                                     <img src={InstagramIcon} alt='Instagram link'

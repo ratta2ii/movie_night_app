@@ -96,3 +96,57 @@ export const masterProductList = [
 
 // Movie countdown video
 // https://www.youtube.com/watch?v=uzRUWWa0nRo&list=PLG4em1_vDAGl7YZ2sIDv49mwWvNy8Owl7&index=41
+
+
+
+export const tileData = [
+    {
+        img: screensImage,
+        title: 'Image',
+        author: 'author',
+        cols: 5,
+    },
+    {
+        img: soundImage,
+        title: 'Image',
+        author: 'author',
+        cols: 4,
+    },
+    {
+        img: popcornCart,
+        title: 'Image',
+        author: 'author',
+        cols: 3,
+    },
+    {
+        img: giantScreenImage,
+        title: 'giantScreenImage',
+        author: 'author',
+        cols: 6,
+        rows: 2,
+    },
+    {
+        img: cottonCandy,
+        title: 'Image',
+        author: 'author',
+        cols: 3,
+    },
+    {
+        img: tableChairs,
+        title: 'Image',
+        author: 'author',
+        cols: 3,
+    },
+    {
+        img: hotdogCart,
+        title: 'Image',
+        author: 'author',
+        cols: 6,
+    },
+    {
+        img: completePackage,
+        title: 'Image',
+        author: 'author',
+        cols: 6,
+    },
+];

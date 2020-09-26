@@ -19,6 +19,7 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import FaceBookIcon from './../../Assets/Icons/facebook-icon.png';
 import HelpIcon from '@material-ui/icons/Help';
 import HomeIcon from '@material-ui/icons/Home';
+import ImageSearchIcon from '@material-ui/icons/ImageSearch';
 import InstagramIcon from './../../Assets/Icons/instagram-icon.png';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -70,29 +71,29 @@ export default function Navigation(props) {
                     <MenuItem component={Link} to='/'
                         selected={'/' === pathname}
                         style={{
-                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px',
+                            padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px',
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>HOME</Typography>
+                        <Typography className={classes.ListItemText}>HomePage</Typography>
                         <Typography className={classes.miniHomeNavTitle}
                             style={{ display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
                             Home
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/productList'
                         selected={'/productList' === pathname}
                         style={{
-                            padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px'
+                            padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px'
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon>
                             <ShopIcon className={classes.ShopIcon} />
                         </ListItemIcon>
-                        <Typography className={classes.ListItemText}>PRODUCTS</Typography>
+                        <Typography className={classes.ListItemText}>Products</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 left: '10px',
@@ -101,15 +102,34 @@ export default function Navigation(props) {
                             Products
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
+
+
+                    <MenuItem component={Link} to='/images'
+                        selected={'/images' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
+                        className={classes.MenuItem} >
+                        <ListItemIcon>
+                            <ImageSearchIcon className={classes.ListAltIcon} />
+                        </ListItemIcon>
+                        <Typography className={classes.ListItemText}>Gallery</Typography>
+                        <Typography className={classes.miniiNavTitle}
+                            style={{
+                                display: (open || mobileDrawerState) ? 'none' : 'unset',
+                                left: '15px'
+                            }} >
+                            Images
+                        </Typography>
+                    </MenuItem>
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/faqPage'
                         selected={'/faqPage' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HelpIcon className={classes.ListAltIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>FAQ'S</Typography>
+                        <Typography className={classes.ListItemText}>FaqPage</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -118,15 +138,15 @@ export default function Navigation(props) {
                             FAQ's
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem component={Link} to='/reservations'
                         selected={'/reservations' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>CONTACT US</Typography>
+                        <Typography className={classes.ListItemText}>Contact</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -135,15 +155,15 @@ export default function Navigation(props) {
                             Contact
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/wishList'
-                        selected={'/wishList' === pathname}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                    <MenuItem component={Link} to='/cartList'
+                        selected={'/cartList' === pathname}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>SHOPPING CART</Typography>
+                        <Typography className={classes.ListItemText}>Shopping Cart</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -152,11 +172,11 @@ export default function Navigation(props) {
                             Cart
                         </Typography>
                     </MenuItem>
-                    <Divider />
+                    <Divider className={classes.Divider} />
 
 
                     <MenuItem onClick={() => handleClose()}
-                        style={{ padding: (open || mobileDrawerState) ? 15 : '7px 15px 23px' }}
+                        style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon>
                             <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>
@@ -206,7 +226,7 @@ export default function Navigation(props) {
                         <Box>
                             <Box>
                                 <FormControlLabel
-                                    className={classes.contactInfo}
+                                    className={classes.contactEmail}
                                     control={
                                         <a target="_top"
                                             color='primary'
@@ -224,7 +244,7 @@ export default function Navigation(props) {
                             </Box>
                             <Box>
                                 <FormControlLabel
-                                    className={classes.contactInfo}
+                                    className={classes.contactPhone}
                                     control={
                                         <IconButton color="primary"
                                             style={{ padding: '5px  8px 5px 12px' }}>
@@ -236,9 +256,11 @@ export default function Navigation(props) {
                                 />
                             </Box>
                         </Box>
-                        <Box className={classes.companyLogo} >
+                        <Box className={classes.companyLogoBox} >
                             <a href="http://azeventteam.com">
-                                <img src={companyLogoIcon} alt='company logo' />
+                                <img src={companyLogoIcon} 
+                                    alt='company logo'
+                                    className={classes.companyLogo} />
                             </a>
                         </Box>
                         {/* Social Media Icons Container */}

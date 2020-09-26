@@ -44,42 +44,43 @@ const useStyles = makeStyles((theme) => ({
     bookOnlineButton: {
         color: 'white',
         backgroundColor: '#ff0100',
-        padding: 12,
-        fontSize: 'medium',
-        [theme.breakpoints.down('xs')]: {
-            marginBottom: 35,
-            fontSize: 'smaller',
+        padding: '10px 20px',
+        fontSize: '.8rem',
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
         },
     },
     companyLogoBox: {
-        display: 'none',
-        [theme.breakpoints.down('sm')]: {
-            display: 'unset',
-            position: 'absolute',
-            bottom: 20,
-            left: 25,
-        },
+        width: 85,
+        marginRight: '-9px',
         [theme.breakpoints.down('xs')]: {
-            left: 15,
-            bottom: 10,
         },
     },
     companyLogoIcon: {
-        width: 120,
+        width: 77,
         [theme.breakpoints.down('xs')]: {
-            width: 85
+        },
+    },
+    hiddenCompanyLogo: {
+        display: 'none',
+        [theme.breakpoints.down('sm')]: {
+            display: 'inline',
+            width: 120,
+        },
+        [theme.breakpoints.down('xs')]: {
+            display: 'none',
         },
     },
     socialIconsContainer: {
         display: 'none',
         [theme.breakpoints.down('xs')]: {
-            width: 150,
+            width: 220,
             display: 'flex',
             justifyContent: 'space-evenly',
-            borderRadius: 5,
-            position: 'absolute',
-            bottom: 15,
-            right: 10, 
+            // borderRadius: 5,
+            // position: 'absolute',
+            // bottom: 15,
+            // right: 10, 
         },
     },
     socialMediaIcons: {

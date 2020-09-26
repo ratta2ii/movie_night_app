@@ -7,8 +7,8 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import CartList from './../../Components/CartList/CartList';
+import Header from './../../Components/Header/Header';
 import useStyles from './CartViewStyles';
 // import { useSelector } from 'react-redux';
 // import { getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
@@ -140,33 +140,8 @@ const CartView = (props) => {
 
     return (
         <Box className={classes.root}>
+            <Header />
             <Grid container>
-                {/* Margin left header container */}
-                <Grid item></Grid>
-                <Grid item xs={12}>
-                    {/* //? Main header container */}
-                    <Box className={classes.headerContainer} >
-                        <Box className={classes.headerOverlayContainer}>
-                            <Typography variant="h3" className={classes.headerTitle}>
-                                {/* Jareb likes these so add again at later date */}
-                                {/* CHECKOUT */}
-                            </Typography>
-                            <Button
-                                component={Link}
-                                to="/reservations"
-                                className={classes.bookOnlineButton}
-                                variant="contained"
-                                size="small"
-                                color="primary"
-                                endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
-                            >
-                                Contact Us
-                            </Button>
-                        </Box>
-                    </Box>
-                </Grid>
-                {/* Header right margin */}
-                <Grid item></Grid>
                 {/* Margin Left */}
                 <Grid item xs={1} sm={1} md={2} lg={3}></Grid>
                 {/* MAIN cartList CONTAINER */}

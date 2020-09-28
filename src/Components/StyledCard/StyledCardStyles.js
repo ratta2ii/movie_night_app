@@ -110,26 +110,60 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonView: {
         height: 85,
-        backgroundColor: '#2a75b2',
-        borderTop: '2px solid #efefef',
+        backgroundColor: '#edf0f8',
+        // borderTop: '2px solid #efefef',
         display: 'flex',
-        justifyItems: 'center'
+        justifyItems: 'center',
     },
+    // wishButton: {
+    //     width: '47%',
+    //     padding: '12px',
+    //     margin: '0 2% 0 2%',
+    //     backgroundColor: '#03234b', 
+    //     color: 'white',
+    //     [theme.breakpoints.down('xs')]: {
+    //         fontSize: 'x-small'
+    //     }, 
+    // },
     wishButton: {
-        width: '47%',
-        padding: '12px',
-        margin: '0 2% 0 2%',
-        backgroundColor: '#03234b', 
-        color: 'white',
+        color: '#515151',
+        width: '40%',
+        margin: '0 2% 0 8%',
+        padding: 12,
+        backgroundColor: '#ffffff',
+        borderRadius: 0,
+        border: '1px solid #7e7e7e',
+        boxShadow: '0 0 1px',
+        '&:hover': {
+            color: '#ffffff',
+            border: 0,
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
         }, 
     },
+    // reserveButton: {
+    //     width: '47%',
+    //     padding: '12px',
+    //     backgroundColor: '#e57373',
+    //     color: 'white',
+    //     [theme.breakpoints.down('xs')]: {
+    //         fontSize: 'x-small'
+    //     },
+    // }
     reserveButton: {
-        width: '47%',
-        padding: '12px',
-        backgroundColor: '#e57373',
-        color: 'white',
+        color: '#515151',
+        width: '40%',
+        margin: '0 2% 0 1%',
+        padding: 12,
+        backgroundColor: '#ffffff',
+        borderRadius: 0,
+        border: '1px solid #7e7e7e',
+        boxShadow: '0 0 1px',
+        '&:hover': {
+            color: '#ffffff',
+            border: 0,
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
         },

@@ -125,18 +125,21 @@ const useStyles = makeStyles((theme) => ({
     //         fontSize: 'x-small'
     //     }, 
     // },
+    returnHomeLink: {
+        padding: '10px 20px',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        color: 'floralwhite',
+    },
     wishButton: {
-        color: '#515151',
+        color: '#ffffff',
         width: '40%',
         margin: '0 2% 0 8%',
         padding: 12,
-        backgroundColor: '#ffffff',
-        borderRadius: 0,
-        border: '1px solid #7e7e7e',
-        boxShadow: '0 0 1px',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         '&:hover': {
             color: '#ffffff',
             border: 0,
+            background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
@@ -152,21 +155,20 @@ const useStyles = makeStyles((theme) => ({
     //     },
     // }
     reserveButton: {
-        color: '#515151',
+        color: '#ffffff',
         width: '40%',
         margin: '0 2% 0 1%',
         padding: 12,
-        backgroundColor: '#ffffff',
-        borderRadius: 0,
-        border: '1px solid #7e7e7e',
-        boxShadow: '0 0 1px',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        backgroundColor: '#ff0100',
         '&:hover': {
             color: '#ffffff',
             border: 0,
+            background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
-        },
+        }, 
     }
 }));
 

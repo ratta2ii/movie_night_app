@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 1250,
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: '#edf0f8',
         padding: '50px 50px 30px 30px',
         [theme.breakpoints.down('lg')]: {
             width: '85%',

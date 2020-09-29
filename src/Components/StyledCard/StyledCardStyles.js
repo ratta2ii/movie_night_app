@@ -110,29 +110,65 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonView: {
         height: 85,
-        backgroundColor: '#2a75b2',
-        borderTop: '2px solid #efefef',
+        backgroundColor: '#edf0f8',
+        // borderTop: '2px solid #efefef',
         display: 'flex',
-        justifyItems: 'center'
+        justifyItems: 'center',
+    },
+    // wishButton: {
+    //     width: '47%',
+    //     padding: '12px',
+    //     margin: '0 2% 0 2%',
+    //     backgroundColor: '#03234b', 
+    //     color: 'white',
+    //     [theme.breakpoints.down('xs')]: {
+    //         fontSize: 'x-small'
+    //     }, 
+    // },
+    returnHomeLink: {
+        padding: '10px 20px',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        color: 'floralwhite',
     },
     wishButton: {
-        width: '47%',
-        padding: '12px',
-        margin: '0 2% 0 2%',
-        backgroundColor: '#03234b', 
-        color: 'white',
+        color: '#ffffff',
+        width: '40%',
+        margin: '0 2% 0 8%',
+        padding: 12,
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        '&:hover': {
+            color: '#ffffff',
+            border: 0,
+            background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
         }, 
     },
+    // reserveButton: {
+    //     width: '47%',
+    //     padding: '12px',
+    //     backgroundColor: '#e57373',
+    //     color: 'white',
+    //     [theme.breakpoints.down('xs')]: {
+    //         fontSize: 'x-small'
+    //     },
+    // }
     reserveButton: {
-        width: '47%',
-        padding: '12px',
-        backgroundColor: '#e57373',
-        color: 'white',
+        color: '#ffffff',
+        width: '40%',
+        margin: '0 2% 0 1%',
+        padding: 12,
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        backgroundColor: '#ff0100',
+        '&:hover': {
+            color: '#ffffff',
+            border: 0,
+            background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
-        },
+        }, 
     }
 }));
 

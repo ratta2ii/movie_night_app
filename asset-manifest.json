@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/movie_night_app/static/css/main.acd8f084.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.3bdc12d6.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.3bdc12d6.chunk.js.map",
+    "main.js": "/movie_night_app/static/js/main.32b0d10e.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.32b0d10e.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.08086021.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.08086021.js.map",
-    "static/js/2.106b6896.chunk.js": "/movie_night_app/static/js/2.106b6896.chunk.js",
-    "static/js/2.106b6896.chunk.js.map": "/movie_night_app/static/js/2.106b6896.chunk.js.map",
+    "static/js/2.dc297942.chunk.js": "/movie_night_app/static/js/2.dc297942.chunk.js",
+    "static/js/2.dc297942.chunk.js.map": "/movie_night_app/static/js/2.dc297942.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.0e6709df4f2f9918cbfaa4613cf0627f.js": "/movie_night_app/precache-manifest.0e6709df4f2f9918cbfaa4613cf0627f.js",
+    "precache-manifest.c2a545c9d405283100dc5f8a98108995.js": "/movie_night_app/precache-manifest.c2a545c9d405283100dc5f8a98108995.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
     "static/css/main.acd8f084.chunk.css.map": "/movie_night_app/static/css/main.acd8f084.chunk.css.map",
-    "static/js/2.106b6896.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.106b6896.chunk.js.LICENSE.txt",
+    "static/js/2.dc297942.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.dc297942.chunk.js.LICENSE.txt",
     "static/media/bg12copy.png": "/movie_night_app/static/media/bg12copy.86b2ec89.png",
     "static/media/family-movie-night.jpg": "/movie_night_app/static/media/family-movie-night.54b41371.jpg",
     "static/media/gallery1.jpg": "/movie_night_app/static/media/gallery1.560b9e9e.jpg",
@@ -19,7 +19,6 @@
     "static/media/gallery11.JPG": "/movie_night_app/static/media/gallery11.0f88c233.JPG",
     "static/media/gallery12.JPG": "/movie_night_app/static/media/gallery12.3c312e3a.JPG",
     "static/media/gallery13.JPG": "/movie_night_app/static/media/gallery13.37228857.JPG",
-    "static/media/gallery14.JPG": "/movie_night_app/static/media/gallery14.6297b786.JPG",
     "static/media/gallery2.jpg": "/movie_night_app/static/media/gallery2.b768452f.jpg",
     "static/media/gallery3.jpg": "/movie_night_app/static/media/gallery3.ce2122e8.jpg",
     "static/media/gallery4.jpg": "/movie_night_app/static/media/gallery4.f4015f79.jpg",
@@ -44,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.08086021.js",
-    "static/js/2.106b6896.chunk.js",
+    "static/js/2.dc297942.chunk.js",
     "static/css/main.acd8f084.chunk.css",
-    "static/js/main.3bdc12d6.chunk.js"
+    "static/js/main.32b0d10e.chunk.js"
   ]
 }

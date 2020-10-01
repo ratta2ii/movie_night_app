@@ -39,7 +39,7 @@ export default function ControlledAccordions() {
                 </AccordionSummary>
                 <AccordionDetails className={classes.AccordionDetails}>
                     <Typography className={classes.details}>
-                        Usually there may be a small trip charge based off of further out locations.  Also there may be an additional fee if it is not the "typical" delivery or setup.
+                        There can be a small trip charge on locations that are further out. There could also be an additional fee if it is not the "typical" delivery or setup. If you feel you have a "unique" situation, just let us know and together we can get everything sorted out before the event.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -79,7 +79,7 @@ export default function ControlledAccordions() {
                 </AccordionSummary>
                 <AccordionDetails className={classes.AccordionDetails}>
                     <Typography className={classes.details}>
-                        Generally not. However, every locality has different codes. I have never encountered a customer where this was a requirement for a 24’. We have seen requirements for engineering documents and permits for very large screens in states like California.
+                        Generally not. However, every locality has different codes. I have never encountered a customer where this was a requirement for even a 24’ screen. We seen more requirements for engineering documents, and permits for very large screens, in states like California.
                     </Typography>
                 </AccordionDetails>
             </Accordion>

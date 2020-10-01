@@ -3,24 +3,43 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: 30,
+        padding: 15,
         margin: 'auto',
-        maxWidth: 650,
-        backgroundColor: '#2196f330',
+        maxWidth: 600,
+        backgroundColor: '#42a5f566',
+        [theme.breakpoints.down('md')]: {
+            maxWidth: '550px',
+        },
         [theme.breakpoints.down('sm')]: {
             maxWidth: '550px',
-            margin: '190px auto 0%',
-            padding: 15,
+            margin: '60px auto 60px',
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '350px',
-            margin: '170px auto 60px auto',
-            padding: 15,
+            width: '90%',
+            maxWidth: '420px',
+            margin: '12% auto',
+        },
+        ['@media (max-width:475px)']: { // eslint-disable-line no-useless-computed-key
+            margin: '5% auto',
         },
     },
     paper: {
-        padding: '20px',
+        padding: '25px',
     },
+    emailResponse: {
+        padding: 5,
+        color: 'floralwhite',
+        fontSize: '1.1rem',
+        textAlign: 'center',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.9rem',
+        }
+    },
+    importantHeader: {
+        fontSize: '2.1rem',
+        marginBottom: 10,
+        color: '#ef9a9a'
+    }
 }));
 
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import useStyles from './ReserveFormStyles';
 import { Form, Field } from 'react-final-form';
 import { TextField } from 'final-form-material-ui';
-import { Paper } from '@material-ui/core';
+import { Paper, Typography } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
@@ -17,7 +17,11 @@ const ReserveForm = () => {
     const classes = useStyles();
     const productTitles = useSelector(getProductsForEmail);
     const [displayForm, setDisplayForm] = useState(true);
-    const [emailSuccessStatus, setEmailSuccessStatus] = useState();
+    const [emailSuccessStatus, setEmailSuccessStatus] = useState(null);
+
+
+    const messageSuccessText = "YOUR RESERVATION WAS A SUCCESS! Your shopping cart along with your personal information has been sent been sent to us at AZ Movie Nights. Our staff will take a look at the specifics right away, and then contact you immediately to discuss payment and specifics. If you prefer to speak to someone now, please give us a call at (602) 339-9530. Thank you so much for reserving with us today, we really apprreciate your business. We look forward to speaking with you soon. Thank you.";
+    const messageFailureText = "THERE WAS AN ERROR MAKING YOUR RESERVATION! Please try sending the form again, or feel free to give us a call at (602) 339-9530. We apologize for any inconvenience. Thank you.";
 
 
     // * These are drilled down to the Calendar component * //
@@ -39,9 +43,9 @@ const ReserveForm = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                setEmailSuccessStatus("YOUR RESERVATION WAS A SUCCESS! If you created a cart, it will been sent been sent to AZ Movie Nights, along with your information, and one of our staff memebrs will contact you shortly. If you prefer to speak to someoone immediately, please call us at (602) 339-9530. We look forward to speaking with you soon. Thank you.");
+                setEmailSuccessStatus(messageSuccessText);
             } else {
-                setEmailSuccessStatus("THERE WAS AN ERROR MAKING YOUR RESERVATION!");
+                setEmailSuccessStatus(messageFailureText);
             }
         };
         xhr.send(data);
@@ -220,7 +224,13 @@ const ReserveForm = () => {
                     )}
                 />
             </Box>
-            <Box style={{ padding: 5, color: '#ffffff', fontSize: '1.1rem' }}>
+            <Box className={classes.emailResponse}
+                style={{ 
+                    display: (emailSuccessStatus === null) ? 'none' : 'unset', 
+                }}>
+                <Typography variant="h5" className={classes.importantHeader} >
+                    IMPORTANT
+                </Typography>
                 {emailSuccessStatus}
             </Box>
         </Box>

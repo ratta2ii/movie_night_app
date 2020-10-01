@@ -75,7 +75,7 @@ export default function Navigation(props) {
                         }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>HomePage</Typography>
+                        <Typography className={classes.ListItemText}>Home</Typography>
                         <Typography className={classes.miniHomeNavTitle}
                             style={{ display: (open || mobileDrawerState) ? 'none' : 'unset' }} >
                             Home
@@ -112,7 +112,7 @@ export default function Navigation(props) {
                         <ListItemIcon>
                             <ImageSearchIcon className={classes.ListAltIcon} />
                         </ListItemIcon>
-                        <Typography className={classes.ListItemText}>Gallery</Typography>
+                        <Typography className={classes.ListItemText}>Image Gallery</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -129,7 +129,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><HelpIcon className={classes.ListAltIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>FaqPage</Typography>
+                        <Typography className={classes.ListItemText}>FAQ's</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -146,7 +146,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ListAltIcon className={classes.ListAltIcon2} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Contact</Typography>
+                        <Typography className={classes.ListItemText}>Contact Us</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',
@@ -163,7 +163,7 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon><ShoppingCartIcon className={classes.FavoriteIcon} /></ListItemIcon>
-                        <Typography className={classes.ListItemText}>Shopping Cart</Typography>
+                        <Typography className={classes.ListItemText}>Cart</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{
                                 display: (open || mobileDrawerState) ? 'none' : 'unset',

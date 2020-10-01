@@ -1,6 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import styled from 'styled-components';
-import Divider from '@material-ui/core/Divider';
 import bg_image from './../../Assets/Images/stars4.jpg';
 
 
@@ -22,10 +20,6 @@ export const useStyles = makeStyles((theme) => ({
     appBar: {
         position: 'fixed',
         background: `url('${bg_image}')`,
-        // this goes with stars4
-        // backgroundSize: '100% 300px',
-       // backgroundSize: 'cover',
-       //  backgroundPositionY: '-475px',
         backgroundColor: '#060a13',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
@@ -125,12 +119,10 @@ export const useStyles = makeStyles((theme) => ({
     },
     contactEmail: {
         color: 'floralwhite',
-        fontSize: '.5rem',
     },
     contactPhone: {
         marginTop: -5,
         color: 'floralwhite',
-        fontSize: '.5rem',
     },
     menuList: {
         backgroundColor: '#060a13',
@@ -151,7 +143,7 @@ export const useStyles = makeStyles((theme) => ({
     companyLogoBox: {
         display: 'flex',
         alignItems: 'center',
-        marginRight: '100px',
+        marginRight: '110px',
         [theme.breakpoints.down('sm')]: {
             display: 'none',
         },
@@ -244,13 +236,3 @@ export const useStyles = makeStyles((theme) => ({
     }
 }));
 
-
-export const StyledDivider = styled(Divider)`
-    background-color: white;
-    margin: 0,
-    padding: 0,
-
-    // & .MuiButton-label {
-    //     color: #fff;
-    // }
-`;

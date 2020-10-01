@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '2.3rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '1.75rem',
+            fontSize: '1.6rem',
             margin: '10px auto 30px',
             paddingBottom: '20px',
         },

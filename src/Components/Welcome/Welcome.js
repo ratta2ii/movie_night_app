@@ -31,11 +31,10 @@ const Welcome = (props) => {
                                         AZ Movie Nights
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                        AZ Event Team is a family-owned business that takes great   pride in making sure we deliver safe, high-quality rentals and event equipment.
+                                        AZ Movie Nights is a family-owned business that takes pride in making sure we deliver safe, high-quality rentals and event equipment.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                        We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering
-                                            exceptional service at an affordable price.
+                                        We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering exceptional service at an affordable price.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
                                         Please check <Link to="/images" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> to see photos of some of the different events we have partnered with in the past.

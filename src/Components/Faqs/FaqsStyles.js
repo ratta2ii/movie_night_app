@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#fffaf2',
         boxShadow: 'inset 0px 0px 2px black',
         marginBottom: 10,
-        padding: '20px 40px',
+        padding: '20px 40px !important',
         [theme.breakpoints.down('xs')]: {
-            padding: 20,
+            padding: '20px !important',
         },
     },
     details: {

@@ -29,11 +29,11 @@ const useStyles = makeStyles((theme) => ({
     },
     AccordionDetails: {
         backgroundColor: '#fffaf2',
-        padding: '20px 40px 20px',
         boxShadow: 'inset 0px 0px 2px black',
         marginBottom: 10,
-        [theme.breakpoints.down('md')]: {
-            padding: '20px',
+        padding: '20px 40px',
+        [theme.breakpoints.down('xs')]: {
+            padding: 20,
         },
     },
     details: {

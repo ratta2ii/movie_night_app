@@ -4,13 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 1250,
-        backgroundColor: '#edf0f8',
         padding: '50px 50px 30px 30px',
         [theme.breakpoints.down('lg')]: {
             width: '85%',
         },
         [theme.breakpoints.down('xs')]: { 
-            backgroundColor: '#ffffff',
+            backgroundColor: '#2e406c80',
             display: 'flex',
             justifyContents: 'center',
             alignItems: 'center',
@@ -22,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
         height: 'auto',
     },
     GridItem: {
-        marginTop: -20,
+        marginTop: -23,
         height: 400,
         overflow: 'hidden',
         [theme.breakpoints.down('md')]: {  //? md, medium: 960px
@@ -42,7 +41,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     GridItemTall: {
-        marginTop: -30,
+        marginTop: -23,
         height: 485,
         overflow: 'hidden',
         [theme.breakpoints.down('md')]: {  //? md, medium: 960px
@@ -50,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {  //? sm, small: 600px
             height: 300,
-            marginTop: -20,
+           // marginTop: -20,
         },
         [theme.breakpoints.down('xs')]: {  //? xs, extra-small: 0px
             height: 320,

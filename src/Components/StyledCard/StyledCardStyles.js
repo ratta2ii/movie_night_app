@@ -108,27 +108,17 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '1.7rem'
         },
     },
-    buttonView: {
-        height: 85,
-        backgroundColor: '#edf0f8',
-        // borderTop: '2px solid #efefef',
-        display: 'flex',
-        justifyItems: 'center',
-    },
-    // wishButton: {
-    //     width: '47%',
-    //     padding: '12px',
-    //     margin: '0 2% 0 2%',
-    //     backgroundColor: '#03234b', 
-    //     color: 'white',
-    //     [theme.breakpoints.down('xs')]: {
-    //         fontSize: 'x-small'
-    //     }, 
-    // },
     returnHomeLink: {
         padding: '10px 20px',
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         color: 'floralwhite',
+    },
+    buttonView: {
+        height: 85,
+        backgroundColor: '#edf0f8',
+        borderTop: '2px solid #efefef',
+        display: 'flex',
+        justifyItems: 'center',
     },
     wishButton: {
         color: '#ffffff',
@@ -145,15 +135,6 @@ const useStyles = makeStyles((theme) => ({
             fontSize: 'x-small'
         }, 
     },
-    // reserveButton: {
-    //     width: '47%',
-    //     padding: '12px',
-    //     backgroundColor: '#e57373',
-    //     color: 'white',
-    //     [theme.breakpoints.down('xs')]: {
-    //         fontSize: 'x-small'
-    //     },
-    // }
     reserveButton: {
         color: '#ffffff',
         width: '40%',

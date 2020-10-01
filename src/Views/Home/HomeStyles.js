@@ -77,7 +77,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     productListContainer: {
-        backgroundColor: '#2e406c54',
+        backgroundColor: '#2e406c80',
         padding: '5% 0',
     },
     // bookOnlineButton: {

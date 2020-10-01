@@ -35,18 +35,29 @@ const useStyles = makeStyles((theme) => ({
     productsButtonContainer: {
         marginTop: 10,
         marginBottom: 0,
+        backgroundColor: '#eceff1',
+        width: 165,
+        //textAlign: 'center',
     },
     checkOutButton: {
         width: 200,
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         color: 'floralwhite',
         padding: 10,
+        '&:hover': {
+            border: 0,
+            background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
+        },
     },
     backToProductsButton2: {
         width: 200,
         marginTop: 110,
         marginBottom: 5,
         padding: 10,
+        backgroundColor: '#eff0f1',
+        '&:hover': {
+            backgroundColor: '#dfe1e2',
+        },
         [theme.breakpoints.down('md')]: {
             marginTop: 50,
         },
@@ -56,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cartTitle: {
         textAlign: 'right',
-        fontSize: '.9rem',
+        fontSize: '.7rem',
         [theme.breakpoints.down('xs')]: {
             fontSize: '.8rem',
         },
@@ -81,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'right',
         marginTop: 5,
         paddingTop: 5,
-        fontSize: '.9rem',
+        fontSize: '.8rem',
         [theme.breakpoints.down('xs')]: {
             fontSize: '.8rem',
         },

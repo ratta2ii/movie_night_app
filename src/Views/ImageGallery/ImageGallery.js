@@ -22,14 +22,12 @@ const ImageGallery = (props) => {
 
 
     const classes = useStyles();
+    const [imageSource, setImageSource] = useState(false);
 
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
-
-    const [imageSource, setImageSource] = useState(false);
 
 
     const handleOpenModal = (event) => {
@@ -72,123 +70,6 @@ ImageGallery.propTypes = {
 
 
 export default ImageGallery;
-
-
-
-
-// <Box>
-//     <Header />
-//     <Box className={classes.root}>
-//         <ImageGrid handleOpenModal={handleOpenModal} />
-//     </Box>
-
-//     <Box className={classes.imageModal}
-//         style={{
-//             display: (!imageSource) ? 'none' : 'flex',
-//         }}>
-
-//     </Box>
-
-// </Box>
-
-
-
-
-
-
-
-
-
-
-
-// // const ImageGallery = (props) => {
-
-// //     const classes = useStyles();
-
-
-// //     useEffect(() => {
-// //         window.scrollTo(0, 0);
-// //     }, []);
-
-
-// //     const [ imageSource, setImageSource ] = useState(false);
-
-// //     const handleOpenModal = (event) => {
-// //         setImageSource(event.target.src)
-// //         console.log("I am source", event.target.src);
-// //     }
-
-// //     const closeModal = () => {
-// //         setImageSource(false);
-// //     }
-
-// //     return (
-// //         <Box>
-// //             <Header />
-
-
-// //             <Box className={classes.root}>
-// //                 <GridList cellHeight={300} spacing={20} className={classes.gridList} cols={12}>
-// //                     {tileData.map((tile) => (
-// //                         <GridListTile key={tile.img} cols={tile.cols || 1} >
-
-// //                                 <img src={tile.img} alt={tile.title} width="100%" height="auto"
-// //                                 onClick={handleFindSource} />
-
-
-// //                         </GridListTile>
-// //                     ))}
-// //                 </GridList>
-// //             </Box>
-
-// //             <Box 
-// //                 style={{
-// //                     backgroundColor: '#000000e6',
-// //                     width: '100vw',
-// //                     height: '100vh',
-// //                     display: (!imageSource) ? 'none' : 'flex',
-// //                     zIndex: '100',
-// //                     position: 'fixed',
-// //                     alignItems: 'center',
-// //                     justifyContent: 'center',
-// //                     top: '0',
-// //                     left: '0',
-// //                     padding: '15%',
-
-// //                     }}>
-// //                     <Box 
-// //                         onClick={closeModal}
-// //                         style={{
-// //                             position: 'absolute',
-// //                             top: 140, right: 70,
-// //                             color: 'white',
-// //                             fontSize: 30,
-// //                         }}
-// //                     >
-// //                         X
-// //                     </Box> 
-// //                     <img src={imageSource} alt="test" style={{maxWidth: '100%', maxHeight: '80%'}} />
-// //             </Box>
-
-// //         </Box>
-// //     );
-
-// // }
-
-
-// // ImageGallery.propTypes = {
-// // };
-
-
-// // export default ImageGallery;
-
-
-
-
-
-
-
-
 
 
 

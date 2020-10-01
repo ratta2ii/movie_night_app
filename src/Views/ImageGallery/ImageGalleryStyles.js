@@ -7,12 +7,12 @@ export const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         overflow: 'hidden',
         width: '100%',
-        margin: '-25px auto 100px auto',
+        margin: '-65px auto -45px auto',
         [theme.breakpoints.down('md')]: { 
-            margin: '-50px auto 80px auto',
+            margin: '-45px auto -40px auto',
         },
         [theme.breakpoints.down('sm')]: { 
-            margin: '-10px auto 80px auto',
+            margin: '-25px auto -45px auto',
         },
         [theme.breakpoints.down('xs')]: { 
             marginTop: 10,
@@ -34,6 +34,9 @@ export const useStyles = makeStyles((theme) => ({
         top: '0',
         left: '0',
         padding: '10% 2% 5%',
+        [theme.breakpoints.down('sm')]: { 
+            padding: '10%',
+        },
         [theme.breakpoints.down('xs')]: { 
             padding: '5%',
         },
@@ -47,6 +50,7 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight: '100',
         [theme.breakpoints.down('xs')]: { 
             right: 35,
+            top: 132,
         },
     },
 }));

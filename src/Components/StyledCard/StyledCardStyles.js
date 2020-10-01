@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
             maxWidth: 850,
         },
         [theme.breakpoints.down('sm')]: {
-            maxWidth: 600,
+            maxWidth: 525,
             marginBottom: 100,
         },
         [theme.breakpoints.down('xs')]: {
@@ -131,6 +131,10 @@ const useStyles = makeStyles((theme) => ({
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
+        [theme.breakpoints.down('sm')]: {
+            width: '45%',
+            margin: '0 2% 0 3%',
+        }, 
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
         }, 
@@ -147,6 +151,10 @@ const useStyles = makeStyles((theme) => ({
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
+        [theme.breakpoints.down('sm')]: {
+            width: '45%',
+            margin: '0 2% 0 2%',
+        }, 
         [theme.breakpoints.down('xs')]: {
             fontSize: 'x-small'
         }, 

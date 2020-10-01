@@ -38,9 +38,9 @@ const AboutUs = (props) => {
                                     </Typography>
                                     <Typography className={classes.companyDescription}>You can make can reserve our products <Link to="/productList" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> online, or give us a call anytime at (602) 339-9530.
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Our package prices also include a full-time staff member that will be responsible for running the equipment throughout the course of the event. Pricing also includes setting the equipment up, taking the equipment down, and any necessary clean-up.  
+                                    <Typography className={classes.companyDescription}>Our package prices include a full-time staff member that will be responsible for running the equipment throughout the course of the event. Pricing also includes free delivery to most areas, equipment set up, and of course, taking things down and cleaning up after the event.  
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Choose your event equipment today, and any extras you may want, and then leave the rest up to us. Thank you for visiting the site today, and we look forward to partnering with you in your next movie night event. 
+                                    <Typography className={classes.companyDescription}>Choose your event equipment today, and then leave the rest of it up to us.
                                     </Typography>
                                 </Box>
                             </Grid>

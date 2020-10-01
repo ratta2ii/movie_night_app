@@ -78,14 +78,24 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         width: '100%',
-        fontSize: '2.5rem',
-        fontWeight: '400',
+        fontSize: '2.7rem',
         textAlign: 'center',
         paddingBottom: '25px',
         borderBottom: '8px solid #0068ff',
-        margin: '0 auto 40px',
+        margin: '0 auto 30px',
         color: '#ffaa00',
+        fontWeight: '400',
         letterSpacing: '.005em',
+        textTransform: 'uppercase',
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '2.4rem',
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '2rem',
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2.3rem',
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '1.75rem',
             margin: '10px auto 30px',

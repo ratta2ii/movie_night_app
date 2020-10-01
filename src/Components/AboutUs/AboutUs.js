@@ -32,13 +32,15 @@ const AboutUs = (props) => {
                             <Grid item xs={12} md={6} className={classes.rightGridContainer}>
                                 <Box>
                                     <Typography variant='h2' className={classes.title}>
-                                        About Us
+                                        How it works
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>AZ Event Team is a family-owned business that takes great pride in making sure we deliver safe, high-quality rentals and event equipment.
+                                    <Typography className={classes.companyDescription}>Entertain guests at your next outdoor party with a movie, video games, or a presentation that will surely impress. Our huge outdoor inflatable movie screens will be the "WOW" factor at any event! 
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering exceptional service at an affordable price.
+                                    <Typography className={classes.companyDescription}>You can make can reserve our products <Link to="/productList" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> online, or give us a call anytime at (602) 339-9530.
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Please check out some photos <Link to="/images" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> to see some of the different events that we have partnered with in the past.
+                                    <Typography className={classes.companyDescription}>Our package prices also include a full-time staff member that will be responsible for running the equipment throughout the course of the event. Pricing also includes setting the equipment up, taking the equipment down, and any necessary clean-up.  
+                                    </Typography>
+                                    <Typography className={classes.companyDescription}>Choose your event equipment today, and any extras you may want, and then leave the rest up to us. Thank you for visiting the site today, and we look forward to partnering with you in your next movie night event. 
                                     </Typography>
                                 </Box>
                             </Grid>

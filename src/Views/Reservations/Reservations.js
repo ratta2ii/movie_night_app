@@ -35,7 +35,7 @@ function Reservations(props) {
                             display: (hideInfo === null) ? 'block' : 'none'
                         }}>
                         <Typography className={classes.text} >
-                            Thank you so much for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you. If we happen to miss you after hours, or for any other reason, someone will return your call as soon as possible. Thank you again for visiting AZ Movie Nights; we appreciate your business, and we looking forward to serving you at your next movie night event.
+                            Thank you so much for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you. If we happen to miss you after hours, or for any other reason, someone will return your call as soon as possible. Thank you again for visiting AZ Movie Nights; we appreciate your business, and we are looking forward to serving you at your next movie night event.
                         </Typography>
                         <Box className={classes.thankYouContainer} >
                             <Typography className={classes.text} >

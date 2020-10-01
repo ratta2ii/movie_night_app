@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import useStyles from './ImageGalleryStyles';
 import Box from '@material-ui/core/Box';
-import { Link } from "react-router-dom";
-import Button from '@material-ui/core/Button';
+// import { Link } from "react-router-dom";
+// import Button from '@material-ui/core/Button';
 // import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 // import GridList from '@material-ui/core/GridList';
 // import GridListTile from '@material-ui/core/GridListTile';
 // import Grid from '@material-ui/core/Grid';
-
-
-
 import Header from './../../Components/Header/Header';
 import Typography from '@material-ui/core/Typography';
 import ImageGrid from './../../Components/ImageGrid/ImageGrid';

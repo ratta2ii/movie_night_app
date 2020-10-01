@@ -35,7 +35,10 @@ function Reservations(props) {
                             display: (hideInfo === null) ? 'block' : 'none'
                         }}>
                         <Typography className={classes.text} >
-                            Thank you for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you. If you prefer to contact us online, go ahead and use the contact form and one of our staff members will be in touch. You may also continue through checkout with your cart, in which case someone will also contact you to go over any further details about your event.
+                            Thank you for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you.
+                        </Typography>
+                        <Typography className={classes.text} >
+                            If you prefer to reach out online, go ahead and use the contact form here and one of our staff members will be in touch. You may also continue through checkout with your cart, in which case someone will also contact you to go over any further details about your event.
                         </Typography>
                         <Typography className={classes.text} >
                             We appreciate your business, and we look forward to serving you at your next outdoor movie night event.

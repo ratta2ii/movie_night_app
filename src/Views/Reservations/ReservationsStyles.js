@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         float: 'right',
         marginLeft: '10px',
         marginRight: '10px',
-        padding: '20px 30px 30px 30px',
+        padding: '36px 30px 36px 30px',
         [theme.breakpoints.down('sm')]: {
             float: 'unset',
             width: '100%',
@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     text: {
         color: 'floralwhite',
         fontWeight: '200',
+        marginBottom: 5,
         [theme.breakpoints.down('xs')]: {
             fontSize: '.9rem',   
         },

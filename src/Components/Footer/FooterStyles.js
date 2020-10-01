@@ -41,15 +41,6 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#0103078c',
         },
     },
-    bookOnlineButton: {
-        color: 'white',
-        backgroundColor: '#ff0100',
-        padding: '10px 20px',
-        fontSize: '.8rem',
-        [theme.breakpoints.down('md')]: {
-            display: 'none',
-        },
-    },
     companyLogoBox: {
         width: 85,
         marginRight: '-9px',

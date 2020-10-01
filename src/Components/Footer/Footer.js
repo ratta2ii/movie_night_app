@@ -27,17 +27,6 @@ const Footer = (props) => {
                     <Box className={classes.footerContainer} >
                         {/* Footer overlay container */}
                         <Box className={classes.footerOverlayContainer} >
-                            <Button
-                                component={Link}
-                                to="/reservations"
-                                className={classes.bookOnlineButton}
-                                variant="contained"
-                                color="primary"
-                                size="small"
-                                endIcon={<PlayArrowIcon style={{ marginLeft: -8 }} />}
-                            >
-                                CONTACT US
-                            </Button>
                             {/* Hidden logo (small viewport only) */}
                             <a href="http://azeventteam.com">
                                 <img src={companyLogoIcon}

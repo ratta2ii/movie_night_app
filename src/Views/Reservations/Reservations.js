@@ -35,18 +35,21 @@ function Reservations(props) {
                             display: (hideInfo === null) ? 'block' : 'none'
                         }}>
                         <Typography className={classes.text} >
-                            Thank you so much for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you. If we happen to miss you after hours, or for any other reason, someone will return your call as soon as possible. Thank you again for visiting AZ Movie Nights; we appreciate your business, and we are looking forward to serving you at your next movie night event.
+                            Thank you for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you. If you prefer to contact us online, go ahead and use the contact form and one of our staff members will be in touch. You may also continue through checkout with your cart, in which case someone will also contact you to go over any further details about your event.
+                        </Typography>
+                        <Typography className={classes.text} >
+                            We appreciate your business, and we look forward to serving you at your next outdoor movie night event.
                         </Typography>
                         <Box className={classes.thankYouContainer} >
                             <Typography className={classes.text} >
                                 Thank you,
                             </Typography>
                             <Typography className={classes.text} >
-                                AZ Event Team
+                                AZ Movie Nights
                             </Typography>
                         </Box>
                         <Typography className={classes.phoneNumber}>
-                            (602) 339-9550
+                            (555) 555-5555
                         </Typography>
                     </Box>
                 </Grid>
@@ -67,7 +70,7 @@ function Reservations(props) {
                             YOUR RESERVATION WAS A SUCCESS! Your shopping cart, along with your personal information, has been sent been sent to us at here at AZ Movie Nights. Our staff will take a look at your reservation right away, and then contact you immediately to discuss any specifics concerning your event.
                             </Box>
                         <Box>
-                            If you prefer to speak to someone now, please give us a call at <span className={classes.phoneNumber}>(602) 339-9530</span>. Thank you so much for reserving with us today, we really apprreciate your business. We look forward to speaking with you soon.
+                            If you prefer to speak to someone now, please give us a call at <span className={classes.phoneNumber}>(555) 555-5555</span>. Thank you so much for reserving with us today, we really apprreciate your business. We look forward to speaking with you soon.
                             </Box>
                         <Box className={classes.emailResponseText}>
                             Thank You
@@ -75,7 +78,7 @@ function Reservations(props) {
                         {/* Notice this is a ternary operator */}
                     </Box>) : (
                         <Box>
-                            THERE WAS AN ERROR MAKING YOUR RESERVATION! Please try sending the form again, or feel free to give us a call at <span className={classes.phoneNumber}>(602) 339-9530</span>. We apologize for any inconvenience. Thank you.
+                            THERE WAS AN ERROR MAKING YOUR RESERVATION! Please try sending the form again, or feel free to give us a call at <span className={classes.phoneNumber}>(555) 555-5555</span>. We apologize for any inconvenience. Thank you.
                         </Box>)
                 }
             </Box>

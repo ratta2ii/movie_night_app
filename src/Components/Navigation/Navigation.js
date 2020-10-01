@@ -231,14 +231,14 @@ export default function Navigation(props) {
                                         <a target="_top"
                                             color='primary'
                                             rel="noopener noreferrer"
-                                            href="mailto:jarebmackin76@gmail.com">
+                                            href="mailto:example@example.com">
                                             <IconButton color="primary"
                                                 style={{ padding: '5px 7px 5px 10px' }} >
                                                 <MailOutlineIcon />
                                             </IconButton>
                                         </a>
                                     }
-                                    label={"jarebmackin76@gmail.com"}
+                                    label={"example@example.com"}
                                     labelPlacement="end"
                                 />
                             </Box>
@@ -251,7 +251,7 @@ export default function Navigation(props) {
                                             <ContactPhoneIcon fontSize='small' />
                                         </IconButton>
                                     }
-                                    label={"(602) 339-9530"}
+                                    label={"(555) 555-5555"}
                                     labelPlacement="end"
                                 />
                             </Box>

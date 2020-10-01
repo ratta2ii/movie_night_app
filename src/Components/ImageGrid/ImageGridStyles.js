@@ -60,6 +60,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     imageStyle: {
         height: '100%',
+        '&:hover': {
+            cursor: 'pointer',
+        },
         [theme.breakpoints.down('xs')]: {  //? sm, small: 600px
             width: '100%'
         },

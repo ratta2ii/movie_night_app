@@ -37,7 +37,7 @@ const Welcome = (props) => {
                                         We are here to help you plan your next event, whether that be a small backyard party, or a much larger city or corporate event. We are an upscale rental company offering exceptional service at an affordable price.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                        Please check <Link to="/images" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> to see photos of some of the different events we have partnered with in the past.
+                                        Please check <Link to="/images" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> to view photos of some of the different events that we have partnered with in the past.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
                                         We love what we do, and we look forward to partnering with you in your next movie night event. 

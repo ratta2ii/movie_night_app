@@ -36,11 +36,11 @@ const AboutUs = (props) => {
                                     </Typography>
                                     <Typography className={classes.companyDescription}>Entertain guests at your next outdoor party with a movie, video games, or a presentation that will surely impress. Our huge outdoor inflatable movie screens will be the "WOW" factor at any event! 
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>You can make can reserve our products <Link to="/productList" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> online, or give us a call anytime at (602) 339-9530.
+                                    <Typography className={classes.companyDescription}>
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Our package prices include a full-time staff member that will be responsible for running the equipment throughout the course of the event. Pricing also includes free delivery to most areas, equipment set up, and of course, taking things down and cleaning up after the event.  
+                                    <Typography className={classes.companyDescription}>Our package prices include staff to run all of the equipment, either remaining at the event, or close by if preferred. Pricing also includes free delivery (to most areas), free equipment set up, and of course, taking things down and cleaning up after the event.  
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Choose your event equipment today, and then leave the rest of it up to us.
+                                    <Typography className={classes.companyDescription}>Choose your event equipment today. You can view our products <Link to="/productList" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> and make reservations online, or give us a call anytime. Make your reservations now and leave the rest to us. (555) 555-5555
                                     </Typography>
                                 </Box>
                             </Grid>

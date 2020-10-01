@@ -39,6 +39,7 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight: '500',
         letterSpacing: 'revert',
         wordSpacing: '.175em',
+        fontFamily: 'math, serif',
         [theme.breakpoints.down('sm')]: {
             wordSpacing: 'unset',
         }, 
@@ -80,27 +81,6 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: '#2e406c80',
         padding: '5% 0',
     },
-    // bookOnlineButton: {
-    //     position: 'absolute',
-    //     width: 160,
-    //     bottom: 12,
-    //     right: 15,
-    //     color: 'white',
-    //     backgroundColor: '#ff0100',
-    //     padding: '10px 0 10px 5px',
-    //     [theme.breakpoints.down('sm')]: {
-    //         width: 140,
-    //         fontSize: 'small',
-    //         bottom: 12,
-    //         right: 12,
-    //     },
-    //     [theme.breakpoints.down('xs')]: {
-    //         width: 120,
-    //         fontSize: 'smaller',
-    //         bottom: 8,
-    //         right: 8,
-    //     },
-    // },
     contactUsButton: {
         position: 'absolute',
         bottom: 16,

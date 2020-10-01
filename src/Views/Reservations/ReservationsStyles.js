@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         float: 'right',
         marginLeft: '10px',
         marginRight: '10px',
-        padding: '20px 20px 20px 25px',
+        padding: '20px 30px 30px 30px',
         [theme.breakpoints.down('sm')]: {
             float: 'unset',
             width: '100%',
@@ -39,6 +39,39 @@ const useStyles = makeStyles((theme) => ({
             float: 'right',
             
         },
+    },
+    emailResponse: {
+        padding: '15px 30px 30px',
+        margin: 'auto',
+        maxWidth: 600,
+        color: 'floralwhite',
+        backgroundColor: '#42a5f566',
+        fontSize: '1rem',
+        [theme.breakpoints.down('md')]: {
+            maxWidth: '550px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: '550px',
+            margin: '60px auto 60px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '90%',
+            maxWidth: '420px',
+            fontSize: '.9rem',
+            margin: '115px auto',
+        },
+        ['@media (max-width:475px)']: { // eslint-disable-line no-useless-computed-key
+            // margin: '150px auto',
+        },
+    },
+    importantHeader: {
+        textAlign: 'center',
+        fontSize: '2.1rem',
+        color: '#ff6f6f'
+    },
+    emailResponseText: {
+        marginTop: 10,
+        marginBottom: 10,
     },
     phoneNumber: {
         color: '#f6961b',

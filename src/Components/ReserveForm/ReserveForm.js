@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import useStyles from './ReserveFormStyles';
 import { Form, Field } from 'react-final-form';
 import { TextField } from 'final-form-material-ui';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Calendar from './../Calendar/Calendar';
@@ -11,17 +11,12 @@ import { useSelector } from 'react-redux';
 import { getProductsForEmail } from './../../Redux/Reducers/currentCartListReducer';
 
 
-const ReserveForm = () => {
+const ReserveForm = (props) => {
 
-
+    const { handleHideFormMessage } = props;
     const classes = useStyles();
     const productTitles = useSelector(getProductsForEmail);
     const [displayForm, setDisplayForm] = useState(true);
-    const [emailSuccessStatus, setEmailSuccessStatus] = useState(null);
-
-
-    const messageSuccessText = "YOUR RESERVATION WAS A SUCCESS! Your shopping cart along with your personal information has been sent been sent to us at AZ Movie Nights. Our staff will take a look at the specifics right away, and then contact you immediately to discuss payment and specifics. If you prefer to speak to someone now, please give us a call at (602) 339-9530. Thank you so much for reserving with us today, we really apprreciate your business. We look forward to speaking with you soon. Thank you.";
-    const messageFailureText = "THERE WAS AN ERROR MAKING YOUR RESERVATION! Please try sending the form again, or feel free to give us a call at (602) 339-9530. We apologize for any inconvenience. Thank you.";
 
 
     // * These are drilled down to the Calendar component * //
@@ -43,9 +38,11 @@ const ReserveForm = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                setEmailSuccessStatus(messageSuccessText);
+                // The success message is the parent component "Reservations"
+                handleHideFormMessage(true);
             } else {
-                setEmailSuccessStatus(messageFailureText);
+                // The success message is the parent component "Reservations"
+                handleHideFormMessage(true);
             }
         };
         xhr.send(data);
@@ -199,7 +196,7 @@ const ReserveForm = () => {
                                                 form.restart();
                                                 setDate(null);
                                             }}
-                                            // disabled={submitting || pristine}
+                                        // disabled={submitting || pristine}
                                         >
                                             Reset
                                     </Button>
@@ -215,7 +212,7 @@ const ReserveForm = () => {
                                     </Button>
                                     </Grid>
                                 </Grid>
-                            </Paper>                         
+                            </Paper>
                             {/* 
                             //! Returns a json object in the UI of the form entries testing !\\
                             <pre>{JSON.stringify(values, 0, 2)}</pre> 
@@ -223,15 +220,6 @@ const ReserveForm = () => {
                         </form>
                     )}
                 />
-            </Box>
-            <Box className={classes.emailResponse}
-                style={{ 
-                    display: (emailSuccessStatus === null) ? 'none' : 'unset', 
-                }}>
-                <Typography variant="h5" className={classes.importantHeader} >
-                    IMPORTANT
-                </Typography>
-                {emailSuccessStatus}
             </Box>
         </Box>
     );

@@ -26,20 +26,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: '25px',
     },
-    emailResponse: {
-        padding: 5,
-        color: 'floralwhite',
-        fontSize: '1.1rem',
-        textAlign: 'center',
-        [theme.breakpoints.down('xs')]: {
-            fontSize: '.9rem',
-        }
+    phoneNumber: {
+        color: '#f6961b',
+        fontWeight: '600',
+        fontSize: '1rem',
     },
-    importantHeader: {
-        fontSize: '2.1rem',
-        marginBottom: 10,
-        color: '#ef9a9a'
-    }
 }));
 
 

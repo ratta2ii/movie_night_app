@@ -101,7 +101,7 @@ const CartView = (props) => {
 
 
     cartReceipt = (
-        <Box style={{ margin: 30 }}>
+        <Box style={{ margin: '50px 30px 30px' }}>
             <Grid container>
                 <Grid item xs={8}>
                     <Typography className={classes.cartTitle}>

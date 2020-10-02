@@ -1,7 +1,7 @@
 # **Movie Night App**
 #### By Trevor Mackin   
 
-##### GH_PAGES: https://ratta2ii.github.io/movie_night_app/
+##### GH-PAGES: https://ratta2ii.github.io/movie_night_app/
 
 
 ## **Component Tree Planning Phase**
@@ -26,7 +26,9 @@ _The reason for the unorthodox checkout is due to the nature of the company. It 
 
 ##  **Setup/Installation Instructions**
 
-1. Github Project Address: https://github.com/ratta2ii/movie_night_app
+##### Live: https://ratta2ii.github.io/movie_night_app/
+
+1. Github: https://github.com/ratta2ii/movie_night_app
 2. $ git clone https://github.com/ratta2ii/movie_night_app.git (Clone repository)
 3. $ cd movie_night_app (Navigate to the project directory) 
 4. $ npm install

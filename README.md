@@ -4,13 +4,6 @@
 ##### GH_PAGES: https://ratta2ii.github.io/movie_night_app/
 
 
-
-## IMPORTANT NOTES:
-
-1. The site currently uses lots of mock data. I have created it in a way that the admin can upload their files within a specific structure, and it will populate the entire application. That said, there is currently some placeholder text being used, so fear not if it looks like I duplicated anything. :-)
-2. Don't forget to get on your phone and check out the mobile version as well. This site was styled for 5 different viewport sizes, including mobile.
-
-
 ## **Component Tree Planning Phase**
 
 ![ Screenshot of Project ](src/Assets/Images/projectStructure.png)
@@ -26,6 +19,10 @@ _When a user has decided that they have saved all relevant products in the cart,
 
 _The reason for the unorthodox checkout is due to the nature of the company. It is my understanding that the company prefers to first speak with customers before accepting any payment, due to the many factors that go into planning an event._ 
 
+## IMPORTANT NOTES:
+
+1. The site currently uses lots of mock data. I have created it in a way that the admin can upload their files within a specific structure, and it will populate the entire application. That said, there is currently some placeholder text being used, so fear not if it looks like I duplicated anything. :-)
+2. Don't forget to get on your phone and check out the mobile version as well. This site was styled for 5 different viewport sizes, including mobile.
 
 ##  **Setup/Installation Instructions**
 
@@ -34,17 +31,6 @@ _The reason for the unorthodox checkout is due to the nature of the company. It 
 3. $ cd movie_night_app (Navigate to the project directory) 
 4. $ npm install
 5. $ npm run start
-
-
-
-## **Features**
-
-* Once a user has filled out the reservation form, their cartList will be added to email and sent to the company owner.
-* Stateful components using Redux
-* CRUD functionality surrounding a users cartList
-* Fully responsive on all viewport sizes, including mobile
-* Collapsible navbar (sidebar) for smaller screens
-* Sidebar active when a user clicks the hamburger icon
 
 
 ## **Technologies Used**

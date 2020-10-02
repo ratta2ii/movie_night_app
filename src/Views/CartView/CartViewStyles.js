@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
         minHeight: 420,
         position: 'relative',
         padding: '25px 50px 20px 50px',
-        marginBottom: 120,
+        marginBottom: 95,
         marginTop: -30,
         [theme.breakpoints.down('md')]: {
             margin: '-20px auto 0px',

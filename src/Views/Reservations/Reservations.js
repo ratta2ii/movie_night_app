@@ -28,7 +28,7 @@ function Reservations(props) {
     return (
         <Box className={classes.root}>
             <Grid container>
-                <Grid item xs={12} sm={12} md={4} lg={3} >
+                <Grid item xs={12} sm={12} md={5} lg={4} >
                     <Box className={classes.textContainer}
                         // This will hide form info in child component in order to display instructions upon a succesful http request
                         style={{
@@ -45,18 +45,15 @@ function Reservations(props) {
                         </Typography>
                         <Box className={classes.thankYouContainer} >
                             <Typography className={classes.text} >
-                                Thank you,
+                                Thank you!
                             </Typography>
-                            <Typography className={classes.text} >
-                                AZ Movie Nights
-                            </Typography>
-                        </Box>
-                        <Typography className={classes.phoneNumber}>
+                            <Typography className={classes.phoneNumber}>
                             (555) 555-5555
                         </Typography>
+                        </Box>
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={8} lg={6}>
+                <Grid item xs={12} md={7} lg={5}>
                     <ReserveForm handleHideFormMessage={handleHideFormMessage} />
                 </Grid>
             </Grid>
@@ -91,6 +88,8 @@ function Reservations(props) {
 
 
 export default Reservations;
+
+
 
 
 

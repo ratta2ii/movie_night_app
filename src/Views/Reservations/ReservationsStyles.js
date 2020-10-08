@@ -9,26 +9,32 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     textContainer: {
-        backgroundColor: '#42a5f566',
-        width: '280px',
         float: 'right',
         marginLeft: '10px',
         marginRight: '10px',
-        padding: '36px 30px 36px 30px',
+        padding: '36px 40px 36px 120px',
+        [theme.breakpoints.down('lg')]: {
+            padding: '36px 20px 36px 70px',
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '36px 10px 36px 10%',
+        },
         [theme.breakpoints.down('sm')]: {
+            backgroundColor: '#42a5f566',
             float: 'unset',
             width: '100%',
             margin: '115px 0px 0px 0px',
-            padding: '30px 80px',
+            padding: '30px 80px 85px',
         },
         [theme.breakpoints.down('xs')]: {
-            padding: '30px 45px',
+            padding: '40px 45px 80px',
         },
     },
     text: {
         color: 'floralwhite',
-        fontWeight: '200',
-        marginBottom: 5,
+        fontWeight: '300',
+        marginBottom: 10,
+        fontSize: '1.1rem',   
         [theme.breakpoints.down('xs')]: {
             fontSize: '.9rem',   
         },
@@ -77,12 +83,18 @@ const useStyles = makeStyles((theme) => ({
     phoneNumber: {
         color: '#f6961b',
         fontWeight: '600',
-        fontSize: '1rem',
+        fontSize: '1.2rem',
         [theme.breakpoints.down('sm')]: {
-            marginTop: 28,
+            marginTop: '-9px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1rem',
         },
     },
 }));
 
 
 export default useStyles;
+
+
+

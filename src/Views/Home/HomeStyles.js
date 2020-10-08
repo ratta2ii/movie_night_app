@@ -5,7 +5,7 @@ import header_bg_image from './../../Assets/Images/sunset.jpeg';
 export const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: '-85px', 
-        marginBottom: 0
+        marginBottom: 0,
     },
     mainTitlePaper: {
         backgroundColor: '#2196f3',
@@ -53,15 +53,15 @@ export const useStyles = makeStyles((theme) => ({
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
         backgroundPositionY: '-350px',
-        margin: '10px 3% 40px',
+        margin: '10px 3% 0px',
         borderRadius: '3px',
         boxShadow: 'inset 0px 0px 10px #000000a6',
         [theme.breakpoints.down('lg')]: {
-            margin: '10px 0 40px',
+            margin: '10px 0 0px',
             backgroundPositionY: '-300px',
         },
         [theme.breakpoints.down('md')]: {
-            margin: '50px auto 40px auto',
+            margin: '50px auto 120px auto',
             backgroundPositionY: '-250px',
         },
         [theme.breakpoints.down('sm')]: {
@@ -79,7 +79,15 @@ export const useStyles = makeStyles((theme) => ({
     },
     productListContainer: {
         backgroundColor: '#2e406c80',
-        padding: '5% 0',
+        margin: '0 3% 45px',
+        padding: '100px 0px',
+        [theme.breakpoints.down('lg')]: {
+            margin: '0 0 25px'
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '50px 0',
+            margin: 0,
+        },
     },
     contactUsButton: {
         position: 'absolute',

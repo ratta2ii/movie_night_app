@@ -28,9 +28,9 @@ const ProductList = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Product container margin left */}
-                <Grid item xs={1} xl={2}></Grid>
+                <Grid item xs={1}></Grid>
                 {/* Product continer grid item */}
-                <Grid item xs={10} xl={8}>
+                <Grid item xs={10}>
                     <Grid container spacing={5} styles={classes.mainProductGridContainer} >
                         {masterProductList.map((product) =>
                             <SingleProduct

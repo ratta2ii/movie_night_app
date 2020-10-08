@@ -58,11 +58,9 @@ const CartView = (props) => {
                 </Typography>
                 {/* Return to products container */}
                 <Box className={classes.productsButtonContainer}>
-                    <Button component={Link} to="/productList"
+                    <Button color="primary" component={Link} to="/productList"
                         className={classes.productsButton} label="home">
-                        <Typography>
                             Go To Products
-                        </Typography>
                     </Button>
                 </Box>
             </Fragment>
@@ -81,15 +79,12 @@ const CartView = (props) => {
                         to='/productList'
                         color='default'
                         className={classes.backToProductsButton2} >
-                        <Typography>
-                            Back To Products
-                </Typography>
+                        Back To Products
                     </Button>
                     <Button component={Link}
                         to='/reservations'
                         variant='contained'
                         color='primary'
-                        fontSize='x-small'
                         className={classes.checkOutButton}>
                         Checkout
                     </Button>
@@ -101,15 +96,15 @@ const CartView = (props) => {
 
 
     cartReceipt = (
-        <Box style={{ margin: '50px 30px 30px' }}>
+        <Box className={classes.receiptContainer}>
             <Grid container>
                 <Grid item xs={8}>
                     <Typography className={classes.cartTitle}>
                         Cart Total: $
-                        </Typography>
+                    </Typography>
                 </Grid>
                 <Grid item xs={4} className={classes.valueGridItem}>
-                    <Typography>
+                    <Typography className={classes.cartValue}>
                         {cartTotalState.toFixed(2)}
                     </Typography>
                 </Grid>
@@ -119,17 +114,17 @@ const CartView = (props) => {
                         </Typography>
                 </Grid>
                 <Grid item xs={4} className={classes.valueGridItem}>
-                    <Typography>
+                    <Typography className={classes.cartValue}>
                         {calculateTaxes(cartTotalState)}
                     </Typography>
                 </Grid>
                 <Grid item xs={8}>
                     <Typography className={classes.grandTotalTitle}>
-                        GrandTotal: $
+                        Grand Total: $
                         </Typography>
                 </Grid>
                 <Grid item xs={4} className={classes.grandTotalGridItem}>
-                    <Typography>
+                    <Typography className={classes.cartValue}>
                         {calculateGrandTotal(cartTotalState)}
                     </Typography>
                 </Grid>

@@ -32,14 +32,19 @@ const useStyles = makeStyles((theme) => ({
             padding: '0',
         },
     },
+    receiptContainer: {
+        margin: '50px 30px 30px',
+        [theme.breakpoints.down('xs')]: {
+            margin: '40px 10px 30px',
+        },
+    },
     productsButtonContainer: {
         marginTop: 10,
         marginBottom: 0,
-        backgroundColor: '#eceff1',
-        width: 165,
-        //textAlign: 'center',
+        padding: '10px 5px',
     },
     checkOutButton: {
+        marginRight: 50,
         width: 200,
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         color: 'floralwhite',
@@ -47,6 +52,13 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
+        },
+        [theme.breakpoints.down('lg')]: {
+            marginRight: '0',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.7rem',
+            width: 150,
         },
     },
     backToProductsButton2: {
@@ -61,9 +73,18 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
             marginTop: 50,
         },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.7rem',
+            width: 150,
+        },
     },
-    backToProducts: {
-        color: 'dodgerblue'
+    productsButton: {
+        backgroundColor: '#eceff1',
+        fontSize: 'small',
+        
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '.7rem',
+        },
     },
     cartTitle: {
         textAlign: 'right',
@@ -73,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     cartValue: {
+        fontSize: '.8rem',
     },
     valueGridItem: {
         textAlign: 'right',

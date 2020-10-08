@@ -19,8 +19,8 @@ const AboutUs = (props) => {
         <Box className={classes.root}>
             <Grid container>
                 {/* Margin left main container */}
-                <Grid item xs={1} xl={2}></Grid>
-                <Grid item xs={10} xl={8}>
+                <Grid item xs={1}></Grid>
+                <Grid item xs={10}>
                     {/* //? Main container (All content here) */}
                     <Paper className={classes.paper}>
                         <Grid container className={classes.mainGridContainer}>
@@ -47,6 +47,8 @@ const AboutUs = (props) => {
                         </Grid>
                     </Paper>
                 </Grid>
+                {/* Margin right main container */}
+                <Grid item xs={1}></Grid>
             </Grid>
         </Box>
     )

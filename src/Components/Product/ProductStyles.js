@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
             height: '200px',
         },
         ['@media (max-width:400px)']: { // eslint-disable-line no-useless-computed-key
-            height: 160,
+            height: 170,
         },
     },
     title: {

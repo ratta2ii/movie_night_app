@@ -4,7 +4,6 @@ import bg_image from './../../Assets/Images/bg12copy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "",
         diplay: 'flex',
         margin: '125px auto',
         fontSize: '3em',

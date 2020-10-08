@@ -11,7 +11,7 @@ import Footer from './../../Components/Footer/Footer';
 import useStyles from './FaqPageStyles';
 
 
-const FaqPage = (props) => {
+const FaqPage = () => {
 
 
     const classes = useStyles();
@@ -28,9 +28,9 @@ const FaqPage = (props) => {
             <Header />
             <Grid container>
                 {/* Faqs container margin left */}
-                <Grid item sm={1} md={2}></Grid>
+                <Grid item sm={1} md={2} xl={3}></Grid>
                 {/* MAIN FAQS CONTAINER */}
-                <Grid item xs={12} sm={10} md={8} >
+                <Grid item xs={12} sm={10} md={8} xl={6}>
                     <Box className={classes.faqsContainer}>
                         <Box className={classes.faqsContainerOverlay}>
                             <Faqs />
@@ -50,11 +50,6 @@ const FaqPage = (props) => {
             <Footer />
         </Box>
     )
-}
-
-
-FaqPage.propTypes = {
-
 }
 
 

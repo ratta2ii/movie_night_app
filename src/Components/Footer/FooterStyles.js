@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         position: 'relative',
         [theme.breakpoints.down('xs')]: {
-            backgroundColor: '#0103078c',
+            backgroundColor: '#010307b8',
         },
     },
     companyLogoBox: {

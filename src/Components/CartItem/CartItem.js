@@ -23,10 +23,8 @@ const CartItem = (props) => {
                 {/* Image grid item */}
                 <Grid item xs={3} sm={2}>
                     <Box>
-                        <a href="#" >
-                            <img src={props.mainImage} className={classes.productImg}
-                                alt="movie screen or sound equipment product chosen by a user pic"/>
-                        </a>
+                        <img src={props.mainImage} className={classes.productImg}
+                            alt="movie screen or sound equipment product chosen by a user pic"/>
                         {/* This box is hidden until an xs viewport; at which point it renders */}
                         <Box className={classes.hiddenIconBox}>
                             <DeleteForeverIcon

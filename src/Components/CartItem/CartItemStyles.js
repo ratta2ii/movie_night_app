@@ -41,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         fontSize: '10px',
         color: '#6b583c',
+        [theme.breakpoints.down('xs')]: {
+            display: 'none',
+        },
     },
     productName: {
         marginLeft: 5,

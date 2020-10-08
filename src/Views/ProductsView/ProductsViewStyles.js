@@ -8,9 +8,6 @@ const useStyles = makeStyles((theme) => ({
     mainGridContainer: {
         marginTop: -25,
         [theme.breakpoints.down('sm')]: {
-            marginTop: '5px',
-        },
-        [theme.breakpoints.down('sm')]: {
             marginTop: '25px',
         },
     },

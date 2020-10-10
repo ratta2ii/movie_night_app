@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             padding: '70px 70px 0px',
-            backgroundColor: '#010307b8',
+            backgroundColor: '#010307d4',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px 30px 0px',
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             padding: '50px 70px 70px',
-            backgroundColor: '#010307b8',
+            backgroundColor: '#010307d4',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px',

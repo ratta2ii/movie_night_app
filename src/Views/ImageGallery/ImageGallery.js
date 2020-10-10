@@ -53,7 +53,7 @@ const ImageGallery = (props) => {
                     onClick={closeModal}>
                     X
                 </Typography>
-                <img src={imageSource} alt="test"
+                <img src={imageSource ? imageSource : undefined} alt="test"
                     style={{ maxWidth: '100%', maxHeight: '80%' }} />
             </Box>
             <Footer />

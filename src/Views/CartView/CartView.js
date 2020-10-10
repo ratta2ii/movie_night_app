@@ -20,7 +20,6 @@ const CartView = (props) => {
 
     const classes = useStyles();
     const { currentCartList, cartTotalState } = props;
-    console.log({currentCartList: currentCartList});
     //? Mapped state to props instead of the selector here (updates coming ???)
     // const currentCartList = useSelector(getCurrentCartList);
     // const cartTotalState = useSelector(getCartTotalState);

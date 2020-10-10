@@ -27,16 +27,8 @@ const StyledCard = (props) => {
     const dispatch = useDispatch();
 
 
-    //! Remove console statements !\\
-    console.log("Styled Card props: ", props);
-
-
     const handleAddTocartList = () => {
         dispatch(addWish(currentProduct));
-        //? Possiblee time delay here
-        // setTimeout(() => {
-        //     history.push("/cartList");
-        // }, 500);
         history.push("/cartList");
     }
 

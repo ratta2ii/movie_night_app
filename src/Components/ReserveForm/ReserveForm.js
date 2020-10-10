@@ -22,7 +22,7 @@ const ReserveForm = (props) => {
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
     const handleDateChange = (date) => {
-        setDate(date);
+        setDate(new Date(date));
     };
 
 
@@ -71,8 +71,10 @@ const ReserveForm = (props) => {
 
 
     return (
-        <Box className={classes.root} >
-            <Box style={{ display: (displayForm) ? 'unset' : 'none' }}>
+        <Box className={classes.root}
+            style={{ display: (displayForm) ? 'box' : 'none' }} 
+        >
+            <Box >
                 <Form
                     onSubmit={handleSubmitForm}
                     validate={validate}
@@ -164,14 +166,22 @@ const ReserveForm = (props) => {
                                     This hidden input adds the date selected on the calendar into
                                     the data submitted with the form  
                                     */}
-                                    <input style={{ display: 'none' }} type="text" name="date"
-                                        value={new Date(selectedDate)} />
+                                    <input 
+                                        style={{ display: 'none' }} 
+                                        type="text" 
+                                        name="date"
+                                        value={selectedDate} 
+                                    />
                                     {/* 
                                     This is the input field that will include all the items from
                                     the cartList into the email reservartion sent 
                                     */}
-                                    <input style={{ display: 'none' }} type="text" name="products"
-                                        value={productTitles} />
+                                    <input 
+                                        style={{ display: 'none' }} 
+                                        type="text" 
+                                        name="products"
+                                        value={productTitles}
+                                    />
                                     {/* Message (text area*/}
                                     <Grid item xs={12}>
                                         <Field

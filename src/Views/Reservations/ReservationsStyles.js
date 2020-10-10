@@ -59,13 +59,12 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             maxWidth: '550px',
-            margin: '60px auto 60px',
+            margin: '200px auto 60px',
         },
         [theme.breakpoints.down('xs')]: {
             width: '90%',
             maxWidth: '420px',
             fontSize: '.9rem',
-            margin: '115px auto',
         },
         ['@media (max-width:475px)']: { // eslint-disable-line no-useless-computed-key
             // margin: '150px auto',

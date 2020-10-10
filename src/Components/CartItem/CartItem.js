@@ -43,7 +43,7 @@ const CartItem = (props) => {
                             <Grid container>
                                 {/* Product name container */}
                                 <Grid item xs={12}>
-                                    <Typography variant="title" className={classes.title}>
+                                    <Typography variant="inherit" className={classes.title}>
                                         Product:
                                     </Typography>
                                     <Typography variant="inherit" className={classes.productName}>
@@ -58,7 +58,7 @@ const CartItem = (props) => {
                             <Grid container>
                                 {/* Price container */}
                                 <Grid item xs={8}>
-                                    <Typography variant="title" className={classes.title}>
+                                    <Typography variant="inherit" className={classes.title}>
                                         Price:
                                     </Typography>
                                     <Typography variant="inherit" className={classes.price}>
@@ -75,7 +75,7 @@ const CartItem = (props) => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={0} sm={1} className={classes.iconGridItem}>
+                <Grid item xs={false} sm={1} className={classes.iconGridItem}>
                     <DeleteForeverIcon
                         className={classes.DeleteForeverIcon}
                         onClick={() => { handleRemoveWish(productId); }} />

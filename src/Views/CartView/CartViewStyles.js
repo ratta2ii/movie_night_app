@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',     
     },
     contentPaperContainer: {
-        minHeight: 420,
+        minHeight: 500,
         position: 'relative',
         padding: '25px 50px 20px 50px',
         marginBottom: 95,
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             marginTop: 30,
             padding: 15,
-            marginBottom: 50,
+            marginBottom: 60,
         },
     },
     mainGridContent: {
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     },
     backToProductsButton2: {
         width: 200,
-        marginTop: 110,
+        marginTop: 190,
         marginBottom: 5,
         padding: 10,
         backgroundColor: '#eff0f1',
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#dfe1e2',
         },
         [theme.breakpoints.down('md')]: {
-            marginTop: 50,
+            marginTop: 130,
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: '.7rem',

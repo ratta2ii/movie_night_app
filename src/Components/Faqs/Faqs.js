@@ -27,7 +27,7 @@ export default function ControlledAccordions() {
 
             <Accordion 
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
+                expanded={expanded === 'panel1'} 
                 onChange={handleChange('panel1')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
@@ -47,8 +47,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel2'} 
+                onChange={handleChange('panel2')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -67,8 +67,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel3'} 
+                onChange={handleChange('panel3')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -87,8 +87,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel4'} 
+                onChange={handleChange('panel4')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -107,8 +107,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel5'} 
+                onChange={handleChange('panel5')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -119,7 +119,7 @@ export default function ControlledAccordions() {
                 </AccordionSummary>
                 <AccordionDetails className={classes.AccordionDetails}>
                     <Typography className={classes.details}>
-                        Yes! Outdoor movie projection is similar to the technology you see in a movie theater. The difference is that instead of turning out the lights, the sun goes down. Calculate what time you can start your movie by using this handy link from the <a href="#">US Naval Observatory</a>.
+                        Yes! Outdoor movie projection is similar to the technology you see in a movie theater. The difference is that instead of turning out the lights, the sun goes down. Calculate what time you can start your movie by using this handy link to <a href="https://www.timeanddate.com/astronomy/usa">get sunset times in your area</a>.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -127,8 +127,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel6'} 
+                onChange={handleChange('panel6')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -147,8 +147,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel7'} 
+                onChange={handleChange('panel7')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"
@@ -167,8 +167,8 @@ export default function ControlledAccordions() {
 
             <Accordion
                 className={classes.Accordion}
-                // expanded={expanded === 'panel1'} 
-                onChange={handleChange('panel1')} >
+                expanded={expanded === 'panel8'} 
+                onChange={handleChange('panel8')} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{color: '#515452'}} />}
                     aria-controls="panel1bh-content"

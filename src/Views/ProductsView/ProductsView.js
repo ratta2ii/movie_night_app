@@ -27,13 +27,13 @@ function ProductView(props) {
             <Grid container className={classes.mainGridContainer}>
                 <Grid container>
                     {/* Product container left margin */}
-                    <Grid item xs={1} sm={0} xl={1}></Grid>
+                    <Grid item xs={1} sm={false} xl={1}></Grid>
                     {/* MAIN PRODUCT CONTAINER */}
                     <Grid item xs={10} sm={12} xl={10} className={classes.productListContainer}>
                         <ProductList />
                     </Grid>
                     {/* Product container right margin */}
-                    <Grid item xs={1} sm={0}></Grid>
+                    <Grid item xs={1} sm={false}></Grid>
                 </Grid>
             </Grid>
             <Footer />

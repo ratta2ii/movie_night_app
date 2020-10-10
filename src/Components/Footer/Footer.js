@@ -1,11 +1,8 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 // Styling
 import { withStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
-import Button from '@material-ui/core/Button';
 import Grid from "@material-ui/core/Grid";
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import companyLogoIcon from './../../Assets/Icons/company-logo-icon.png';
 import FaceBookIcon from './../../Assets/Icons/facebook-icon.png';
 import InstagramIcon from './../../Assets/Icons/instagram-icon.png';
@@ -13,7 +10,7 @@ import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import useStyles from "./FooterStyles";
 
 
-const Footer = (props) => {
+const Footer = () => {
 
 
     const classes = useStyles();
@@ -47,12 +44,10 @@ const Footer = (props) => {
                                     </a>
                                 </Box>
                                 <a href="https://www.instagram.com/">
-
                                     <img src={InstagramIcon} alt='Instagram link'
                                         className={classes.socialMediaIcons} />
                                 </a>
                                 <a href="https://twitter.com/">
-
                                     <img src={TwitterIcon} alt='Twitter link'
                                         className={classes.socialMediaIcons} />
                                 </a>
@@ -63,11 +58,6 @@ const Footer = (props) => {
             </Grid>
         </Box>
     )
-}
-
-
-Footer.propTypes = {
-
 }
 
 

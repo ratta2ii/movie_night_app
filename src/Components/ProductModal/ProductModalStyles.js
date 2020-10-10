@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgba(0,0,0, .7)',
     },
     paper: {
-        padding: theme.spacing(2, 4, 3),
+        // padding: theme.spacing(2, 4, 3),
         outline: 'none',
         width: '100%',
         [theme.breakpoints.down('xs')]: {

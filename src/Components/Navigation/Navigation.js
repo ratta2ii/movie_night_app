@@ -29,7 +29,6 @@ import ShopIcon from '@material-ui/icons/Shop';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SwapHorizontalCircleIcon from '@material-ui/icons/SwapHorizontalCircle';
 import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
-// DO NOT TOUCH: Custom styles must follow in order to override
 import { useStyles } from './NavigationStyles';
 
 
@@ -54,8 +53,10 @@ export default function Navigation(props) {
 
 
     const handleClose = () => {
-        setmobileDrawerState(false);
-        handleDesktopDrawerToggle();
+        setTimeout(() => {
+            setmobileDrawerState(false);
+            setDeskDrawOpen(false);
+        }, 500)
     }
 
 
@@ -68,7 +69,9 @@ export default function Navigation(props) {
                     </Box>
 
 
-                    <MenuItem component={Link} to='/'
+                    <MenuItem
+                        onClick={() => handleClose()}
+                        component={Link} to='/'
                         selected={'/' === pathname}
                         style={{
                             padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px',
@@ -84,7 +87,9 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/productList'
+                    <MenuItem 
+                        onClick={() => handleClose()}
+                        component={Link} to='/productList'
                         selected={'/productList' === pathname}
                         style={{
                             padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px'
@@ -105,7 +110,9 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/images'
+                    <MenuItem 
+                        onClick={() => handleClose()}
+                        component={Link} to='/images'
                         selected={'/images' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
@@ -124,7 +131,9 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/faqPage'
+                    <MenuItem 
+                        onClick={() => handleClose()}
+                        component={Link} to='/faqPage'
                         selected={'/faqPage' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
@@ -141,7 +150,9 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/reservations'
+                    <MenuItem 
+                        onClick={() => handleClose()}
+                        component={Link} to='/reservations'
                         selected={'/reservations' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
@@ -158,7 +169,9 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem component={Link} to='/cartList'
+                    <MenuItem 
+                        onClick={() => handleClose()}
+                        component={Link} to='/cartList'
                         selected={'/cartList' === pathname}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >

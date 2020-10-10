@@ -60,6 +60,12 @@ export default function Navigation(props) {
     }
 
 
+    const handleOpenCloseButton = () => {
+        handleDesktopDrawerToggle();
+        setmobileDrawerState(false);
+    }
+
+
     function renderNavItems(key) {
         return (
             <Fragment>
@@ -188,7 +194,7 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
 
 
-                    <MenuItem onClick={() => handleClose()}
+                    <MenuItem onClick={() => handleOpenCloseButton()}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon>

@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'none',
         [theme.breakpoints.down('sm')]: {
             display: 'inline',
-            width: 120,
+            width: 200,
         },
         [theme.breakpoints.down('xs')]: {
             display: 'none',
@@ -68,10 +68,6 @@ const useStyles = makeStyles((theme) => ({
             width: 220,
             display: 'flex',
             justifyContent: 'space-evenly',
-            // borderRadius: 5,
-            // position: 'absolute',
-            // bottom: 15,
-            // right: 10, 
         },
     },
     socialMediaIcons: {

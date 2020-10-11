@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/movie_night_app/static/css/main.acd8f084.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.81eabd2f.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.81eabd2f.chunk.js.map",
+    "main.js": "/movie_night_app/static/js/main.17a48ab2.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.17a48ab2.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.08086021.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.08086021.js.map",
     "static/js/2.0cce9cbb.chunk.js": "/movie_night_app/static/js/2.0cce9cbb.chunk.js",
     "static/js/2.0cce9cbb.chunk.js.map": "/movie_night_app/static/js/2.0cce9cbb.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.c4d13681fe53562210b4997c0b280864.js": "/movie_night_app/precache-manifest.c4d13681fe53562210b4997c0b280864.js",
+    "precache-manifest.47b119039012eeecce152c33978429ea.js": "/movie_night_app/precache-manifest.47b119039012eeecce152c33978429ea.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
     "static/css/main.acd8f084.chunk.css.map": "/movie_night_app/static/css/main.acd8f084.chunk.css.map",
     "static/js/2.0cce9cbb.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.0cce9cbb.chunk.js.LICENSE.txt",
     "static/media/bg12copy.png": "/movie_night_app/static/media/bg12copy.86b2ec89.png",
+    "static/media/company-logo-icon.png": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png",
     "static/media/family-movie-night.jpg": "/movie_night_app/static/media/family-movie-night.54b41371.jpg",
     "static/media/gallery1.jpg": "/movie_night_app/static/media/gallery1.560b9e9e.jpg",
     "static/media/gallery10.JPG": "/movie_night_app/static/media/gallery10.923fe533.JPG",
@@ -45,6 +46,6 @@
     "static/js/runtime-main.08086021.js",
     "static/js/2.0cce9cbb.chunk.js",
     "static/css/main.acd8f084.chunk.css",
-    "static/js/main.81eabd2f.chunk.js"
+    "static/js/main.17a48ab2.chunk.js"
   ]
 }

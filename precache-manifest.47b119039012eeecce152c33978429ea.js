@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e562ab9636d669ed7e983c35c5b2630c",
+    "revision": "4423bfefdfbc3c82772bbfe82da7a4f8",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "ff39602e64438de8dc73",
+    "revision": "08f1df49ce656e731eff",
     "url": "/movie_night_app/static/css/main.acd8f084.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_night_app/static/js/2.0cce9cbb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ff39602e64438de8dc73",
-    "url": "/movie_night_app/static/js/main.81eabd2f.chunk.js"
+    "revision": "08f1df49ce656e731eff",
+    "url": "/movie_night_app/static/js/main.17a48ab2.chunk.js"
   },
   {
     "revision": "4c787393de4262b8b5bb",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86b2ec89da40956f1c4f950cfbda8fb3",
     "url": "/movie_night_app/static/media/bg12copy.86b2ec89.png"
+  },
+  {
+    "revision": "9cdc67a04d88a5fe83b4c3d92aa4d756",
+    "url": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png"
   },
   {
     "revision": "54b4137187bb72a7e46abb7973fb01b0",

@@ -19,8 +19,8 @@
         },
         {
             "src": "/apple-touch-icon.png",
-            "sizes": "",
-            "type": "image/png"
+            "type": "image/png",
+            "sizes": "192x192"
         },
         {
             "src": "/android-chrome-192x192.png",
@@ -30,6 +30,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#ffffff",
+    "theme_color": "#000000",
     "background_color": "#ffffff"
 }

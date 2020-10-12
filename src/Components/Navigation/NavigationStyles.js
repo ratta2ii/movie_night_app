@@ -235,6 +235,22 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             opacity: '0',
         },
+    },
+    cartItemCount: {
+        width: 12,
+        height: 12,
+        position: "absolute",
+        left: 25,
+        top: 10,
+        backgroundColor: '#1990ff',
+        padding: 2,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: '50%',
+        color: 'black',
+        fontSize: '.7rem',
+        paddingTop: 4,
+        fontWeight: '600',
     }
 }));
 

@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Link, useLocation } from 'react-router-dom';
 // Material ui core
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
@@ -30,6 +31,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SwapHorizontalCircleIcon from '@material-ui/icons/SwapHorizontalCircle';
 import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import { useStyles } from './NavigationStyles';
+import { getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
 
 
 export default function Navigation(props) {
@@ -40,6 +42,8 @@ export default function Navigation(props) {
     let pathname = useLocation().pathname;
     const [open, setDeskDrawOpen] = React.useState(false);
     const [mobileDrawerState, setmobileDrawerState] = React.useState(false);
+    const currentCartList = useSelector(getCurrentCartList);
+    const cartItemCount = Object.keys(currentCartList).length;
 
 
     const handleMobileDrawerToggle = () => {
@@ -190,6 +194,13 @@ export default function Navigation(props) {
                             }} >
                             Cart
                         </Typography>
+                        {/* This is the cartitem counter */}
+                        <Box 
+                            className={classes.cartItemCount}
+                            style={{ display: (cartItemCount < 1) ? 'none': 'flex',
+                        }}>
+                            {cartItemCount}
+                        </Box>
                     </MenuItem>
                     <Divider className={classes.Divider} />
 

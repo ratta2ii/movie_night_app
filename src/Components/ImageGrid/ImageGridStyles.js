@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
             width: '85%',
         },
         [theme.breakpoints.down('xs')]: { 
-            backgroundColor: '#2e406c80',
+            backgroundColor: '#3a496ab8',
             display: 'flex',
             justifyContents: 'center',
             alignItems: 'center',

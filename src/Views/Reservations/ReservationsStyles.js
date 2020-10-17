@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '36px 10px 36px 10%',
         },
         [theme.breakpoints.down('sm')]: {
-            backgroundColor: '#42a5f566',
+            backgroundColor: '#7a97d745',
             float: 'unset',
             width: '100%',
             margin: '115px 0px 0px 0px',
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         color: 'floralwhite',
-        fontWeight: '300',
+        fontWeight: '400',
         marginBottom: 10,
         fontSize: '1.1rem',   
         [theme.breakpoints.down('xs')]: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         maxWidth: 600,
         color: 'floralwhite',
-        backgroundColor: '#42a5f566',
+        backgroundColor: '#7a97d745',
         fontSize: '1rem',
         [theme.breakpoints.down('md')]: {
             maxWidth: '550px',

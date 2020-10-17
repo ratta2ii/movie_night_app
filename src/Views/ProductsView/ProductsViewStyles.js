@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     productListContainer: {
         [theme.breakpoints.down('xs')]: {
-            backgroundColor: '#3a496ab8',
+            backgroundColor: '#7a97d745',
             padding: '12% 0',
         },
     },

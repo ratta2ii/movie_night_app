@@ -78,7 +78,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     productListContainer: {
-        backgroundColor: '#3a496ab8',
+        backgroundColor: '#7a97d745',
         margin: '0 3% 45px',
         padding: '100px 0px',
         [theme.breakpoints.down('lg')]: {

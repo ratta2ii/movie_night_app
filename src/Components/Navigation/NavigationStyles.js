@@ -34,7 +34,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     toolBarContent: {
         width: '100%',
-        backgroundColor: '#141d33',
+        backgroundColor: '#0e1529',
         // backgroundColor: '#0e1528',
         display: 'flex',
         alignItems: 'center',
@@ -100,14 +100,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: '#0e1528',
+        backgroundColor: '#0e1529',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.easeIn,
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
     drawerClose: {
-        backgroundColor: '#0e1528',
+        backgroundColor: '#0e1529',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,

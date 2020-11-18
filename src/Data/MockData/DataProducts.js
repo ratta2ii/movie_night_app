@@ -7,11 +7,23 @@ import cottonCandy from './../../Assets/Images/product-cotton-candy.jpg';
 import tableChairs from './../../Assets/Images/productTable.jpg';
 import hotdogCart from './../../Assets/Images/product-hotdog.png';
 import completePackage from './../../Assets/Images/pool-image.JPG';
+import backyardScreen from './../../Assets/Images/GalleryImages/gallery2.jpg';
 
 
 export const masterProductList = [
     {
+        title: 'Backyard Movie Screen',
+        subTitle: "Dimensions 13'W X 11'H X 8'D (9'W X 5'H viewable)",
+        id: v4(),
+        productId: '00',
+        price: '279.00',
+        mainImage: backyardScreen,
+        description: 'This inflatable movie screen rental is perfect for backyards, smaller events or even in a gym.  Rent an inflatable movie night for a dive in party where the movie screen is next to your swimming pool.  Our outdoor movie screens are the perfect rental for Super Bowl, Gaming, Dance or even block parties.  Rent an outdoor movie screen today in Phoenix, Chandler, Gilbert and more.',
+        bullets: ['HDTV Projector', 'Blu Ray DVD Player', '2 12" concert grade powered speakers', 'Multi-channel Mixer', 'Hookups for music, XBox, Playstation, Apple TV, Laptop etc.', 'Microphone available on request ($20)' ],
+    },
+    {
         title: 'Complete Package',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '0',
         price: '499.00',
@@ -22,6 +34,7 @@ export const masterProductList = [
     },
     {
         title: 'Giant Screen Package',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '1',
         key: 0,
@@ -34,6 +47,7 @@ export const masterProductList = [
     },
     {
         title: 'Sound Equipment',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '2',
         price: '149.00',
@@ -44,6 +58,7 @@ export const masterProductList = [
     },
     {
         title: 'Screens Only',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '3',
         price: '499.00',
@@ -54,6 +69,7 @@ export const masterProductList = [
     },
     {
         title: 'Table and Chairs',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '4',
         price: '499.00',
@@ -64,6 +80,7 @@ export const masterProductList = [
     },
     {
         title: 'Popcorn Machine',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '5',
         price: '49.00',
@@ -74,6 +91,7 @@ export const masterProductList = [
     },
     {
         title: 'Hotdog Cart',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '6',
         price: '499.00',
@@ -84,6 +102,7 @@ export const masterProductList = [
     },
     {
         title: 'Cotton Candy Machine',
+        subTitle: 'Subtitle goes here',
         id: v4(),
         productId: '7',
         price: '149.00',
@@ -94,9 +113,9 @@ export const masterProductList = [
     }
 ];
 
+
 // Movie countdown video
 // https://www.youtube.com/watch?v=uzRUWWa0nRo&list=PLG4em1_vDAGl7YZ2sIDv49mwWvNy8Owl7&index=41
-
 
 
 export const tileData = [

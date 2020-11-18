@@ -82,7 +82,7 @@ const StyledCard = (props) => {
                         <Typography className={classes.title}>
                             {currentProduct.title}
                         </Typography>
-                        <Typography className={classes.subTitle}>MOST POPULAR ITEM</Typography>
+                        <Typography className={classes.subTitle}>{currentProduct.subTitle}</Typography>
                         <Typography variant="h2" className={classes.price}>$ {currentProduct.price}</Typography>
                         <CardContent className={classes.description}>
                             {currentProduct.description}

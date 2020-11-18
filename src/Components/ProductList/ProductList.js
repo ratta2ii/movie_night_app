@@ -39,6 +39,7 @@ const ProductList = (props) => {
                                 // handleClose={handleClose}
                                 productId={product.productId}
                                 title={product.title}
+                                subTitle={product.subTitle}
                                 price={product.price}
                                 description={product.description}
                                 mainImage={product.mainImage}

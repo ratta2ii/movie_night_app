@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '300',
         paddingTop: '15px',
         margin: '0',
-        fontSize: '2.5rem',
+        fontSize: '2rem',
         lineHeight: '1',
         [theme.breakpoints.down('sm')]: {
             fontSize: '2rem',

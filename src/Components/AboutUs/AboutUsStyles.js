@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     leftGridContainer: {
-        backgroundColor: '#010307c2',
+        backgroundColor: '#060a13f0',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#010307c2',
+        backgroundColor: '#060a13f0',
         padding: '100px',
         display: 'flex',
         alignItems: 'center',
@@ -77,7 +77,6 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         width: '100%',
-        fontSize: '2.7rem',
         textAlign: 'center',
         paddingBottom: '25px',
         borderBottom: '8px solid #0068ff',
@@ -86,14 +85,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '400',
         letterSpacing: '.005em',
         textTransform: 'uppercase',
+        fontSize: '2.5rem',
         [theme.breakpoints.down('lg')]: {
-            fontSize: '2.4rem',
-        },
-        [theme.breakpoints.down('md')]: {
             fontSize: '2rem',
-        },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '2.3rem',
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: '1.6rem',
@@ -104,17 +98,8 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: 'floralWhite',
         marginBottom: '15px',
-        fontSize: '1.2rem',
+        fontSize: '1.1rem',
         [theme.breakpoints.down('lg')]: {
-            fontSize: '1.1rem'
-        },
-        [theme.breakpoints.down('md')]: {
-            fontSize: '1rem'
-        },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '1.1rem'
-        },
-        [theme.breakpoints.down('xs')]: {
             fontSize: '1rem'
         },
     },

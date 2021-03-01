@@ -43,7 +43,7 @@ function Product(props) {
         // setTimeout(() => {
         //     history.push("/product");
         // }, 2500);
-        history.push("/product");
+        history.push(`/product/${product.productId}`);
     }
 
 

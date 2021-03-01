@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     footerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#060a13f0',
+        backgroundColor: '#04060ef5',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

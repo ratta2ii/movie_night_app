@@ -33,9 +33,7 @@ import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import { useStyles } from './NavigationStyles';
 import { getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
 
-
 export default function Navigation(props) {
-
 
     // const websiteTitle = 'AZ MOVIE NIGHTS'
     const classes = useStyles();
@@ -45,16 +43,13 @@ export default function Navigation(props) {
     const currentCartList = useSelector(getCurrentCartList);
     const cartItemCount = Object.keys(currentCartList).length;
 
-
     const handleMobileDrawerToggle = () => {
         mobileDrawerState === false ? setmobileDrawerState(true) : setmobileDrawerState(false)
     }
 
-
     const handleDesktopDrawerToggle = () => {
         open === false ? setDeskDrawOpen(true) : setDeskDrawOpen(false)
     }
-
 
     const handleClose = () => {
         setTimeout(() => {
@@ -63,12 +58,10 @@ export default function Navigation(props) {
         }, 500)
     }
 
-
     const handleOpenCloseButton = () => {
         handleDesktopDrawerToggle();
         setmobileDrawerState(false);
     }
-
 
     function renderNavItems(key) {
         return (
@@ -77,8 +70,6 @@ export default function Navigation(props) {
                     <Box
                         style={{ height: 51, backgroundColor: '#171d2e' }} >
                     </Box>
-
-
                     <MenuItem
                         onClick={() => handleClose()}
                         component={Link} to='/'
@@ -95,8 +86,6 @@ export default function Navigation(props) {
                         </Typography>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem 
                         onClick={() => handleClose()}
                         component={Link} to='/productList'
@@ -118,8 +107,6 @@ export default function Navigation(props) {
                         </Typography>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem 
                         onClick={() => handleClose()}
                         component={Link} to='/images'
@@ -139,8 +126,6 @@ export default function Navigation(props) {
                         </Typography>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem 
                         onClick={() => handleClose()}
                         component={Link} to='/faqPage'
@@ -158,8 +143,6 @@ export default function Navigation(props) {
                         </Typography>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem 
                         onClick={() => handleClose()}
                         component={Link} to='/reservations'
@@ -177,8 +160,6 @@ export default function Navigation(props) {
                         </Typography>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem 
                         onClick={() => handleClose()}
                         component={Link} to='/cartList'
@@ -203,8 +184,6 @@ export default function Navigation(props) {
                         </Box>
                     </MenuItem>
                     <Divider className={classes.Divider} />
-
-
                     <MenuItem onClick={() => handleOpenCloseButton()}
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
@@ -219,13 +198,10 @@ export default function Navigation(props) {
                             Open
                         </Typography>
                     </MenuItem>
-
-
                 </MenuList>
             </Fragment>
         );
     }
-
 
     return (
         <Box className={classes.root}>

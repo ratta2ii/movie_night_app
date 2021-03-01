@@ -1,11 +1,22 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/sunset.jpeg';
 
-
 export const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: '-85px', 
         marginBottom: 0,
+    },
+    innerRoot: {
+        padding: '0 6%',
+        [theme.breakpoints.down('md')]: {
+            padding: '0',
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '0 5%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0',
+        },
     },
     mainTitlePaper: {
         backgroundColor: '#2196f3',
@@ -109,6 +120,5 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
 
 export default useStyles;

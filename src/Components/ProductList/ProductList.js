@@ -1,28 +1,12 @@
-import React from 'react';
-import useStyles from './ProductListStyles';
-import SingleProduct from './../Product/Product';
-import { masterProductList } from './../../Data/MockData/DataProducts';
-import { Box } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
-// import ProductModal from './../ProductModal/ProductModal';
-
+import React from "react";
+import useStyles from "./ProductListStyles";
+import SingleProduct from "./../Product/Product";
+import { masterProductList } from "./../../Data/MockData/DataProducts";
+import { Box } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 const ProductList = (props) => {
-
-
     const classes = useStyles();
-
-
-    //! DO NOT DELETE. These work in conjunction with modal
-    // const [open, setOpen] = React.useState(false);
-    // const handleOpen = () => {
-    //     console.log("handleOpen is being called");
-    //     setOpen(true);
-    // };
-    // const handleClose = () => {
-    //     setOpen(false);
-    // };
-
 
     return (
         <Box className={classes.root}>
@@ -31,12 +15,9 @@ const ProductList = (props) => {
                 <Grid item xs={1}></Grid>
                 {/* Product continer grid item */}
                 <Grid item xs={10}>
-                    <Grid container spacing={5} styles={classes.mainProductGridContainer} >
-                        {masterProductList.map((product) =>
+                    <Grid container spacing={5} styles={classes.mainProductGridContainer}>
+                        {masterProductList.map((product) => (
                             <SingleProduct
-                                // These work in conjuntion with Modal. Removing temporarily
-                                // handleOpen={handleOpen}
-                                // handleClose={handleClose}
                                 productId={product.productId}
                                 title={product.title}
                                 subTitle={product.subTitle}
@@ -45,38 +26,18 @@ const ProductList = (props) => {
                                 mainImage={product.mainImage}
                                 bullets={product.bullets}
                                 id={product.id}
-                                key={product.key} />
-                        )}
+                                key={product.key}
+                            />
+                        ))}
                     </Grid>
                 </Grid>
             </Grid>
             <Box>
-                {/* Product Modal */}
-                {/* <ProductModal open={open} onClose={handleClose} /> */}
-                {/* <ProductModal open={open} handleClose={handleClose} /> */}
             </Box>
         </Box>
     );
-}
-
-
-ProductList.propTypes = {
 };
 
+ProductList.propTypes = {};
 
 export default ProductList;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

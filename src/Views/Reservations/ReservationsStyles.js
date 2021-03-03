@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: 12,
@@ -34,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'floralwhite',
         fontWeight: '400',
         marginBottom: 10,
-        fontSize: '1.1rem',   
+        fontSize: '1rem',   
         [theme.breakpoints.down('xs')]: {
             fontSize: '.9rem',   
         },
@@ -65,10 +64,7 @@ const useStyles = makeStyles((theme) => ({
             width: '90%',
             maxWidth: '420px',
             fontSize: '.9rem',
-        },
-        ['@media (max-width:475px)']: { // eslint-disable-line no-useless-computed-key
-            // margin: '150px auto',
-        },
+        }
     },
     importantHeader: {
         textAlign: 'center',
@@ -91,7 +87,6 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
 
 export default useStyles;
 

@@ -1,19 +1,15 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
-import { Box } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
-import { Typography } from '@material-ui/core';
-import familyMovieNight from './../../Assets/Images/family-movie-night.jpg'
-import useStyles from './AboutUsStyles';
-
+import { Box } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import Paper from "@material-ui/core/Paper";
+import { Typography } from "@material-ui/core";
+import familyMovieNight from "./../../Assets/Images/family-movie-night.jpg";
+import useStyles from "./AboutUsStyles";
 
 const AboutUs = (props) => {
-
-
     const classes = useStyles();
-
 
     return (
         <Box className={classes.root}>
@@ -26,21 +22,45 @@ const AboutUs = (props) => {
                         <Grid container className={classes.mainGridContainer}>
                             {/* Left container */}
                             <Grid item xs={12} md={6} className={classes.leftGridContainer}>
-                                <img src={familyMovieNight} className={classes.movieNightImage} alt='A family watching a movie together on an outdoor movie screen and sound equipment rentals.' />
+                                <img
+                                    src={familyMovieNight}
+                                    className={classes.movieNightImage}
+                                    alt="A family watching a movie together on an outdoor movie screen and sound equipment rentals."
+                                />
                             </Grid>
                             {/* Right container */}
                             <Grid item xs={12} md={6} className={classes.rightGridContainer}>
                                 <Box>
-                                    <Typography variant='h2' className={classes.title}>
+                                    <Typography variant="h2" className={classes.title}>
                                         How it works
                                     </Typography>
-                                    <Typography className={classes.companyDescription}>Entertain guests at your next outdoor party with a movie, video games, or a presentation that will surely impress. Our huge outdoor inflatable movie screens will be the "WOW" factor at any event! 
+                                    <Typography className={classes.companyDescription}>
+                                        Entertain guests at your next outdoor party with a movie,
+                                        video games, or a presentation that will surely impress. Our
+                                        huge outdoor inflatable movie screens will be the "WOW"
+                                        factor at any event!
+                                    </Typography>
+                                    <Typography
+                                        className={classes.companyDescription}
+                                    ></Typography>
+                                    <Typography className={classes.companyDescription}>
+                                        Our package prices include staff to run all of the
+                                        equipment, either remaining at the event, or close by if
+                                        preferred. Pricing also includes free delivery (to most
+                                        areas), free equipment set up, and of course, taking things
+                                        down and cleaning up after the event.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                    </Typography>
-                                    <Typography className={classes.companyDescription}>Our package prices include staff to run all of the equipment, either remaining at the event, or close by if preferred. Pricing also includes free delivery (to most areas), free equipment set up, and of course, taking things down and cleaning up after the event.  
-                                    </Typography>
-                                    <Typography className={classes.companyDescription}>Choose your event equipment today. You can view our products <Link to="/productList" style={{textDecoration: 'none', color: '#e57373'}}>HERE</Link> and make reservations online, or give us a call anytime. Make your reservations now and leave the rest to us. (555) 555-5555
+                                        Choose your event equipment today. You can view our products{" "}
+                                        <Link
+                                            to="/products"
+                                            style={{ textDecoration: "none", color: "#e57373" }}
+                                        >
+                                            HERE
+                                        </Link>{" "}
+                                        and make reservations online, or give us a call anytime.
+                                        Make your reservations now and leave the rest to us. (555)
+                                        555-5555
                                     </Typography>
                                 </Box>
                             </Grid>
@@ -51,13 +71,9 @@ const AboutUs = (props) => {
                 <Grid item xs={1}></Grid>
             </Grid>
         </Box>
-    )
-}
+    );
+};
 
-
-AboutUs.propTypes = {
-
-}
-
+AboutUs.propTypes = {};
 
 export default withStyles(useStyles)(AboutUs);

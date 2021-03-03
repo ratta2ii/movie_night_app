@@ -1,10 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
-        padding: '0'
+        padding: '0',
+        animation: 'fadeIn ease .2s'
     },
     mainProductGridContainer: {
         backgroundColor: '#010308',
@@ -12,6 +12,5 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center', 
     },
 }));
-
 
 export default useStyles;

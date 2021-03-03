@@ -1,9 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
-        diplay: 'flex',     
+        diplay: 'flex',    
     },
     contentPaperContainer: {
         minHeight: 500,
@@ -11,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '25px 50px 20px 50px',
         marginBottom: 95,
         marginTop: -30,
+        animation: 'fadeIn ease .3s', 
         [theme.breakpoints.down('md')]: {
             margin: '-20px auto 0px',
         },
@@ -124,6 +124,5 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 8,
     }
 }));
-
 
 export default useStyles;

@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        animation: 'fadeIn ease .3s'
     },
     mainGridContainer: {
         maxWidth: 1000,
@@ -119,44 +120,47 @@ const useStyles = makeStyles((theme) => ({
         borderTop: '2px solid #efefef',
         display: 'flex',
         justifyItems: 'center',
+        alignItems: 'center',
+    },
+    buttonGroup: {
+        display: 'flex', 
+        justifyContent: 'center',
     },
     wishButton: {
+        width: 160,
+        height: 40,
+        fontSize: 10,
         color: '#ffffff',
-        width: '40%',
-        margin: '0 2% 0 8%',
-        padding: 12,
+        borderRaduis: 0,
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         '&:hover': {
-            color: '#ffffff',
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
         [theme.breakpoints.down('sm')]: {
-            width: '45%',
-            margin: '0 2% 0 3%',
+            
         }, 
         [theme.breakpoints.down('xs')]: {
-            fontSize: 'x-small'
+            fontSize: 9
         }, 
     },
     reserveButton: {
+        width: 160,
+        height: 40,
+        fontSize: 10,
         color: '#ffffff',
-        width: '40%',
-        margin: '0 2% 0 1%',
-        padding: 12,
+        borderRaduis: 0,
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
         backgroundColor: '#ff0100',
         '&:hover': {
-            color: '#ffffff',
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
         [theme.breakpoints.down('sm')]: {
-            width: '45%',
-            margin: '0 2% 0 2%',
+            
         }, 
         [theme.breakpoints.down('xs')]: {
-            fontSize: 'x-small'
+            fontSize: 9,
         }, 
     }
 }));

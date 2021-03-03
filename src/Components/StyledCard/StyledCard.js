@@ -1,22 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-// Material ui
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-// Icons
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import EmailIcon from "@material-ui/icons/Email";
 import ShareIcon from "@material-ui/icons/Share";
+import ButtonLoading from './../../Components/ButtonLoading/ButtonLoading';
 import useStyles from "./StyledCardStyles";
 import { useDispatch } from "react-redux";
 import { addWish } from "../../Redux/Reducers/currentCartListReducer";
 import { masterProductList } from "./../../Data/MockData/DataProducts";
 
-// This will ensure a single product stays loaded even through refresh
+//! This will ensure a single product stays loaded even through refresh (refactor coming?)
 let masterProductListLoadingRegistry = {};
 masterProductList.forEach((product) => {
     masterProductListLoadingRegistry[product.productId] = product;
@@ -26,25 +24,38 @@ const StyledCard = (props) => {
     const classes = useStyles();
     let history = useHistory();
     const dispatch = useDispatch();
+    const [loading, setLoading] = useState(false);
     const currentProductId = history.location.pathname.split("product/")[1];
     let currentProduct = masterProductListLoadingRegistry[currentProductId];
 
-    const handleAddTocartList = () => {
+    // loading indicator timer
+    const sleep = (delay) => {
+        return new Promise((resolve) => {
+            setTimeout(resolve, delay);
+        })
+    }
+
+    const handleAddTocartList = async () => {
+        setLoading(true);
+        await sleep(800);
         dispatch(addWish(currentProduct));
         history.push("/cartList");
+        setLoading(false);
     };
-
-    const handleReserveNow = () => {
-        dispatch(addWish(currentProduct));
+    
+    const handleContactUs = async () => {
+        setLoading(true);
+        await sleep(800);
         history.push("/reservations");
+        setLoading(false);
     };
 
     const handleBack = () => {
-        history.push("/productList");
+        history.push("/products");
     };
 
     return (
-        <Box className={classes.root}>
+        <Box className={classes.root} >
             <Grid
                 container
                 className={classes.mainGridContainer}
@@ -114,26 +125,23 @@ const StyledCard = (props) => {
                     <Grid container alignItems="center" className={classes.buttonView}>
                         <Grid item sm={2} md={6}></Grid>
                         <Grid item xs={12} sm={8} md={6}>
-                            <Button
-                                className={classes.wishButton}
-                                onClick={handleAddTocartList}
-                                variant="contained"
-                                color="primary"
-                                size="small"
-                                startIcon={<AddShoppingCartIcon />}
-                            >
-                                Add To Cart
-                            </Button>
-                            <Button
-                                className={classes.reserveButton}
-                                onClick={handleReserveNow}
-                                variant="contained"
-                                color="primary"
-                                size="small"
-                                startIcon={<EmailIcon />}
-                            >
-                                Contact Us
-                            </Button>
+                            <Box className={classes.buttonGroup}>
+                                {/* //! NOTE: these are custom properties being passed down  */}
+                                <ButtonLoading 
+                                    customClassName={classes.wishButton}
+                                    eventName={handleAddTocartList}
+                                    disabled={loading}
+                                    name="Add To Cart"
+                                    startIcon={<AddShoppingCartIcon />}
+                                />
+                                <ButtonLoading 
+                                    customClassName={classes.reserveButton}
+                                    eventName={handleContactUs}
+                                    disabled={loading}
+                                    name="Contact Us"
+                                    startIcon={<EmailIcon />}
+                                />
+                            </Box>
                         </Grid>
                     </Grid>
                 </Grid>

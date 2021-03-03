@@ -88,8 +88,8 @@ export default function Navigation(props) {
                     <Divider className={classes.Divider} />
                     <MenuItem 
                         onClick={() => handleClose()}
-                        component={Link} to='/productList'
-                        selected={'/productList' === pathname}
+                        component={Link} to='/products'
+                        selected={'/products' === pathname}
                         style={{
                             padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px'
                         }}

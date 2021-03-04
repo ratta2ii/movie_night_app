@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route, withRouter, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import Navigation from "./Components/Navigation/Navigation";
 import Home from "./Views/Home/Home";
@@ -14,12 +14,13 @@ import Error404 from "./Views/Error404/Error404";
 // import ReduxStateTest from './Data/TestPages/ReduxStateTest';
 
 function App(props) {
+    const location = useLocation();
 
     return (
         <Fragment>
             <Navigation />
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/"  key={location.key} component={Home} />
                 <Route path="/products/:category?" component={ProductsView} />
                 <Route path="/product/:id" component={SingleProductView} />
                 <Route path="/faqPage" component={FaqPage} />

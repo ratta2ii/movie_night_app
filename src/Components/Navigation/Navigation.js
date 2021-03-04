@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useHistory, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import clsx from "clsx";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -37,11 +37,11 @@ export default function Navigation(props) {
     // const websiteTitle = 'AZ MOVIE NIGHTS'
     const classes = useStyles();
     let pathname = useLocation().pathname;
+    const history = useHistory();
     const [open, setDeskDrawOpen] = React.useState(false);
     const [mobileDrawerState, setmobileDrawerState] = React.useState(false);
     const currentCartList = useSelector(getCurrentCartList);
     let cartItemCount;
-
 
     console.log(Object.keys(currentCartList).length);
     if (currentCartList) {
@@ -65,6 +65,16 @@ export default function Navigation(props) {
         }, 500);
     };
 
+    const handleHomeRedirectAndClose = () => {
+        setTimeout(() => {
+            setmobileDrawerState(false);
+            setDeskDrawOpen(false);
+        }, 500);
+        if (pathname !== "/") {
+            history.push("/");
+        }
+    };
+
     const handleOpenCloseButton = () => {
         handleDesktopDrawerToggle();
         setmobileDrawerState(false);
@@ -73,15 +83,12 @@ export default function Navigation(props) {
     function renderNavItems(key) {
         return (
             <Fragment>
-                <MenuList key={key} className={classes.menuList}>
+                <MenuList key={key} className={classes.menuList} style={{ outline: 0 }}>
                     <Box style={{ height: 51, backgroundColor: "#171d2e" }}></Box>
                     <MenuItem
-                        replace
-                        component={Link}
-                        to="/"
                         selected={"/" === pathname}
                         className={classes.MenuItem}
-                        onClick={() => handleClose()}
+                        onClick={() => handleHomeRedirectAndClose()}
                         style={{
                             padding: open || mobileDrawerState ? 15 : "8px 15px 26px",
                         }}

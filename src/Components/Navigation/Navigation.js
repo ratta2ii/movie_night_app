@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import clsx from "clsx";
@@ -42,6 +42,8 @@ export default function Navigation(props) {
     const currentCartList = useSelector(getCurrentCartList);
     let cartItemCount;
 
+
+    console.log(Object.keys(currentCartList).length);
     if (currentCartList) {
         cartItemCount = Object.keys(currentCartList).length;
     }
@@ -74,6 +76,7 @@ export default function Navigation(props) {
                 <MenuList key={key} className={classes.menuList}>
                     <Box style={{ height: 51, backgroundColor: "#171d2e" }}></Box>
                     <MenuItem
+                        replace
                         component={Link}
                         to="/"
                         selected={"/" === pathname}

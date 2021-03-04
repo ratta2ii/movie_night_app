@@ -7,8 +7,10 @@ export const currentCategorySlice = createSlice({
     },
     reducers: {
         selectCategory: (state, action) => {
-            console.log("I am the payload in currentCategorySlice: ", action.payload);
-            state.value = action.payload;
+            let newState = Object.assign({state, value: action.payload});
+            console.log("NewState: ", newState);
+            return newState;
+            // state.value = action.payload;
         },
     },
 });

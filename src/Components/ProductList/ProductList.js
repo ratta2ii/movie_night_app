@@ -24,7 +24,7 @@ const ProductList = (props) => {
     
     if (currentCategory === 'consessions') {
         categoryToRender = masterProductList.filter(product => {
-            if(consessions[product.productId]) return product;
+            if (consessions[product.productId]) return true
         });
     }
 

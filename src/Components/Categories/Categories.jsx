@@ -2,51 +2,19 @@ import { Grid } from "@material-ui/core";
 import { useDispatch } from 'react-redux';
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
 import "./styles.css";
 import { selectCategory } from "../../Redux/Reducers/currentCategoryReducer";
 
-const useStyles = makeStyles((theme) => ({
-    root: {},
-    categoryContainer: {
-        width: "90%",
-        height: 300,
-        margin: "20px auto",
-        color: "white",
-        fontWeight: 500,
-        fontSize: 20,
-        backgroundColor: "black",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        [theme.breakpoints.down("lg")]: {
-            backgroundColor: "cornflowerblue",
-        },
-        [theme.breakpoints.down("md")]: {
-            backgroundColor: "red",
-        },
-        [theme.breakpoints.down("sm")]: {
-            backgroundColor: "white",
-        },
-        [theme.breakpoints.down("xs")]: {
-            backgroundColor: "blue",
-        },
-    },
-}));
-
 export const Categories = () => {
-    const classes = useStyles();
     const history = useHistory();
     const dispatch = useDispatch();
     
-
     const handleLoadProducts = (event) => {
         const category = event.currentTarget.id;
         if (category === "imageGallery") {
             history.push(`/images`);
         } else {
             dispatch(selectCategory(category));
-            console.log(category);
             history.push(`/products/${category}`, category);
         }
     };

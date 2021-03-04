@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b4fd72f3f3f13321d9ef503a58ff537",
+    "revision": "8f3f97f28ddee598d8d99d32b433cdfd",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "cebc45bcf0759b5829d6",
-    "url": "/movie_night_app/static/css/main.ac9db4d0.chunk.css"
+    "revision": "1f4e94e5783b5c8f061a",
+    "url": "/movie_night_app/static/css/main.91c9337e.chunk.css"
   },
   {
-    "revision": "04fd9b9feea4f98ce36a",
-    "url": "/movie_night_app/static/js/2.e8ccf83e.chunk.js"
+    "revision": "758071b175f8f2f5e430",
+    "url": "/movie_night_app/static/js/2.284be061.chunk.js"
   },
   {
     "revision": "1937a0fc6634269e5f47f8181e27fdc7",
-    "url": "/movie_night_app/static/js/2.e8ccf83e.chunk.js.LICENSE.txt"
+    "url": "/movie_night_app/static/js/2.284be061.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cebc45bcf0759b5829d6",
-    "url": "/movie_night_app/static/js/main.dad28d3c.chunk.js"
+    "revision": "1f4e94e5783b5c8f061a",
+    "url": "/movie_night_app/static/js/main.b299ce02.chunk.js"
   },
   {
     "revision": "4c787393de4262b8b5bb",
@@ -28,8 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_night_app/static/media/bg12copy.ebe3f021.png"
   },
   {
+    "revision": "c27df1952145d26e5d8ba150b2770ab8",
+    "url": "/movie_night_app/static/media/c6.c27df195.jpg"
+  },
+  {
     "revision": "9cdc67a04d88a5fe83b4c3d92aa4d756",
     "url": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png"
+  },
+  {
+    "revision": "a00818c36abd8a9cbf06f181244d0110",
+    "url": "/movie_night_app/static/media/d6.a00818c3.jpg"
+  },
+  {
+    "revision": "0e008648237f5c5b59d2ffb8965342da",
+    "url": "/movie_night_app/static/media/e3.0e008648.jpg"
+  },
+  {
+    "revision": "13e3dfb55507766474e897626a739140",
+    "url": "/movie_night_app/static/media/f2.13e3dfb5.jpeg"
   },
   {
     "revision": "54b4137187bb72a7e46abb7973fb01b0",

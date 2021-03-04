@@ -5,25 +5,19 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './ReservationsStyles';
 
-
 function Reservations(props) {
-
-
     const classes = useStyles();
     // This hook will control whether the form info is hidden and the email response is displayed, based on whether a users a form was succesfully sent. These actions are in a child Component, so the handleHideFormMessage function will drilled down in props, and called in the child when the form is submitted. 
     const [hideInfo, setHideInfo] = useState(null)
-
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-
     const handleHideFormMessage = (emailSuccessStatus) => {
         if (emailSuccessStatus) setHideInfo(true);
         else setHideInfo(false);
     }
-
 
     return (
         <Box className={classes.root}>
@@ -85,7 +79,6 @@ function Reservations(props) {
         </Box>
     );
 }
-
 
 export default Reservations;
 

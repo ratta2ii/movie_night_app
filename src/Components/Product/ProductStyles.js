@@ -1,22 +1,20 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 250,
+        width: 280,
         minWidth: 215,
-        margin: '0 auto',
+        margin: 20,
         [theme.breakpoints.down('sm')]: {
+            margin: ' 20px auto',
             maxWidth: 325,
         },
     },
     CardMedia: {
-        height: "165px",
+        height: "190px",
+        backgroundPosition: 'center',
         [theme.breakpoints.down('xs')]: {
             height: '200px',
-        },
-        ['@media (max-width:400px)']: { // eslint-disable-line no-useless-computed-key
-            height: 170,
         },
     },
     title: {
@@ -28,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     action: {
-        margin: "0 0 0 7px",
+        margin: "0 0 0 15px",
         padding: 5,
         backgroundColor: 'floralwhite',
     },
@@ -36,6 +34,5 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '.6rem',
     },
 }));
-
 
 export default useStyles;

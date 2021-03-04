@@ -55,11 +55,17 @@ const Welcome = (props) => {
                             </Grid>
                             {/* Right container */}
                             <Grid item xs={12} md={6} className={classes.rightGridContainer}>
-                                <img
-                                    src={giantScreenImage}
-                                    className={classes.movieNightImage}
-                                    alt="A family watching a movie together on an outdoor movie screen and sound equipment rentals."
-                                />
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={giantScreenImage}
+                                >
+                                    <img
+                                        src={giantScreenImage}
+                                        className={classes.movieNightImage}
+                                        alt="A family watching a movie together on an outdoor movie screen and sound equipment rentals."
+                                    />
+                                </a>
                             </Grid>
                         </Grid>
                     </Paper>

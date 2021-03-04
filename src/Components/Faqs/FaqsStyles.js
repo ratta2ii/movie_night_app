@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -25,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         padding: '5px 20px',
         borderRadius: 5,
-        background: 'linear-gradient(117deg, rgba(66,165,245,1) 16%, rgba(105,183,247,1) 56%)', 
+        background: 'linear-gradient(124deg, rgb(49 111 161) 16%, rgb(51 111 158) 56%)', 
     },
     AccordionDetails: {
         backgroundColor: '#fffaf2',
@@ -44,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
         },
     }
 }));
-
 
 export default useStyles;
 

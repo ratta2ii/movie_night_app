@@ -1,10 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 export const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 1250,
+        maxWidth: 1150,
         padding: '50px 50px 30px 30px',
+        margin: '50px 0',
+        backgroundColor: '#0e1529',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+        animation: 'fadeIn ease .2s',
         [theme.breakpoints.down('lg')]: {
             width: '85%',
         },
@@ -49,7 +52,6 @@ export const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {  //? sm, small: 600px
             height: 300,
-           // marginTop: -20,
         },
         [theme.breakpoints.down('xs')]: {  //? xs, extra-small: 0px
             height: 320,
@@ -68,6 +70,5 @@ export const useStyles = makeStyles((theme) => ({
         },
     }
 }));
-
 
 export default useStyles;

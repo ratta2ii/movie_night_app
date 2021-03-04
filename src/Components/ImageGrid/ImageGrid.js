@@ -16,13 +16,9 @@ import image11 from './../../Assets/Images/GalleryImages/gallery11.JPG';
 import image12 from './../../Assets/Images/GalleryImages/gallery12.JPG';
 import image13 from './../../Assets/Images/GalleryImages/gallery13.JPG';
 
-
 const ImageGrid = (props) => {
-
-
     const classes = useStyles();
     const { handleOpenModal } = props;
-
 
     return (
         <Box className={classes.root}>
@@ -41,7 +37,6 @@ const ImageGrid = (props) => {
                         alt="Movie screen rental event night"
                         onClick={handleOpenModal} />
                 </Grid>
-
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image1}
@@ -63,8 +58,6 @@ const ImageGrid = (props) => {
                         alt="Movie screen rental event night"
                         onClick={handleOpenModal} />
                 </Grid>
-
-
                 <Grid item xs={12} sm={6}
                     className={classes.GridItemTall} >
                     <img src={image9}
@@ -79,8 +72,6 @@ const ImageGrid = (props) => {
                         alt="Movie screen rental event night"
                         onClick={handleOpenModal} />
                 </Grid>
-
-            
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image6}
@@ -102,8 +93,6 @@ const ImageGrid = (props) => {
                         alt="Movie screen rental event night"
                         onClick={handleOpenModal} />
                 </Grid>
-
-
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image11}
@@ -131,10 +120,7 @@ const ImageGrid = (props) => {
 
 }
 
-
-ImageGrid.propTypes = {
-};
-
+ImageGrid.propTypes = {};
 
 export default ImageGrid;
 

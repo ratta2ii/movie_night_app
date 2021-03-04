@@ -3,7 +3,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
-import AddCircleIcon from '@material-ui/icons/AddCircle';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -13,48 +13,26 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import useStyles from './ProductStyles';
-// State management
 import { selectProduct } from '../../Redux/Reducers/currentProductReducer';
 import { addWish } from '../../Redux/Reducers/currentCartListReducer'
 
-
-function Product(props) {
-    
-
+const Product = (props) => {
     const styles = useStyles();
     const dispatch = useDispatch();
     const history = useHistory();
 
-
-    //! DO NOT DELETE. 
-    //! This is for the modal that is temporarity replaced with SingleProduct View
-    // function handleModal(product) {
-    //     //*  Set Product *// 
-    //     dispatch(selectProduct(product));
-    //     //* Open modal *//
-    //     props.handleOpen();
-    // }
-
-    
     function handleOpenProduct(product) {
         dispatch(selectProduct(product));
-        //* Open single product (modal currently disabled) *//
-        // Time delay necessay for product to be set ???
-        // setTimeout(() => {
-        //     history.push("/product");
-        // }, 2500);
         history.push(`/product/${product.productId}`);
     }
-
 
     const handleAddTocartList = (card) => {
         dispatch(addWish(card));
         history.push("/cartList");
     }
 
-
     return (
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+        <Grid item xs={12} sm={6} md={4} xl={3}>
             <Card className={styles.root}>
                 <CardActionArea
                     className={styles.CardActionArea}
@@ -82,28 +60,23 @@ function Product(props) {
                 </CardActionArea>
                 {/* Buttons on Card */}
                 <CardActions className={styles.action} >
-                    <AddCircleIcon 
+                    <AddShoppingCartIcon 
                         onClick={() => { handleAddTocartList(props) }}
+                        style={{cursor: 'pointer'}}
                         fontSize="small" />
                     <Typography
                         onClick={() => { handleAddTocartList(props) }}
                         className={styles.addWishText}
+                        style={{cursor: 'pointer'}}
                         variant="body2"
                     >
-                        Add To cartList
+                        ADD TO CART
                     </Typography>
                     <Button size="small"
                         color="primary"
                         onClick={() => { handleOpenProduct(props) }}
                         style={{ margin: 'auto', fontSize: '.8rem' }}
                     >
-                    {/* <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={props.mainImage}
-                    >
-                        Learn More
-                    </a> */}
                         Learn More
                     </Button>
                 </CardActions>
@@ -111,6 +84,5 @@ function Product(props) {
         </Grid>
     )
 }
-
 
 export default withStyles(useStyles)(Product);

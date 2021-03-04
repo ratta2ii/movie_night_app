@@ -22,11 +22,17 @@ const AboutUs = (props) => {
                         <Grid container className={classes.mainGridContainer}>
                             {/* Left container */}
                             <Grid item xs={12} md={6} className={classes.leftGridContainer}>
-                                <img
-                                    src={familyMovieNight}
-                                    className={classes.movieNightImage}
-                                    alt="A family watching a movie together on an outdoor movie screen and sound equipment rentals."
-                                />
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={familyMovieNight}
+                                >
+                                    <img
+                                        src={familyMovieNight}
+                                        className={classes.movieNightImage}
+                                        alt="A family watching a movie together on an outdoor movie screen and sound equipment rentals."
+                                    />
+                                </a>
                             </Grid>
                             {/* Right container */}
                             <Grid item xs={12} md={6} className={classes.rightGridContainer}>
@@ -44,11 +50,9 @@ const AboutUs = (props) => {
                                         className={classes.companyDescription}
                                     ></Typography>
                                     <Typography className={classes.companyDescription}>
-                                        Our package prices include staff to run all of the
-                                        equipment, either remaining at the event, or close by if
-                                        preferred. Pricing also includes free delivery (to most
+                                        Pricing also includes free delivery (to most
                                         areas), free equipment set up, and of course, taking things
-                                        down and cleaning up after the event.
+                                        down and cleaning up after the event. Our package prices also include a staff member to run all of the equipment.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
                                         Choose your event equipment today. You can view our products{" "}

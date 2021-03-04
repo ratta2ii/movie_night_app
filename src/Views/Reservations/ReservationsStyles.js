@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: 12,
+        animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('md')]: {
             marginTop: 0,   
         },
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         color: 'floralwhite',
-        fontWeight: '400',
+        fontWeight: '300',
         marginBottom: 10,
         fontSize: '1rem',   
         [theme.breakpoints.down('xs')]: {

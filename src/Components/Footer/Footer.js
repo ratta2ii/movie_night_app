@@ -9,12 +9,8 @@ import InstagramIcon from './../../Assets/Icons/instagram-icon.png';
 import TwitterIcon from './../../Assets/Icons/twitter-icon.png';
 import useStyles from "./FooterStyles";
 
-
 const Footer = () => {
-
-
     const classes = useStyles();
-
 
     return (
         <Box className={classes.root}>
@@ -59,6 +55,5 @@ const Footer = () => {
         </Box>
     )
 }
-
 
 export default withStyles(useStyles)(Footer);

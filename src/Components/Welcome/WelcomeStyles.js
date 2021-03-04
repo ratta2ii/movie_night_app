@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import bg_image from './../../Assets/Images/bg12copy.png';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
@@ -58,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('lg')]: {
-            padding: '120px 80px 120px 0px',
+            padding: '136px 80px 136px 0px',
         },
         [theme.breakpoints.down('md')]: {
             padding: '0px 50px',
@@ -98,14 +97,14 @@ const useStyles = makeStyles((theme) => ({
         color: 'floralWhite',
         marginBottom: '15px',
         fontSize: '1.1rem',
+        fontWeight: 300,
         [theme.breakpoints.down('lg')]: {
-            fontSize: '1rem'
+            fontSize: '.95rem'
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: '.8rem'
         },
     },
 }));
-
 
 export default useStyles;

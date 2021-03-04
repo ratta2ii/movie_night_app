@@ -1,16 +1,16 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
+        justifyContent: 'center'
     },
     faqsContainer: {
         borderRadius: '3px',
-        marginBottom: -25,
-        marginTop: -50,
+        margin: 'auto',
+        marginBottom: 25,
+        maxWidth: 900,
         [theme.breakpoints.down('sm')]: {
-           // margin: '40px 5% -35 5%',
             margin: '-20px 5px -40px 5px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -58,6 +58,5 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
 
 export default useStyles;

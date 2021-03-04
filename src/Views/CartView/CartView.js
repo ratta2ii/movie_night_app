@@ -62,54 +62,56 @@ const CartView = (props) => {
     };
 
     //! cartList component renders only if there are items in the cart/cartList
-    if (Object.keys(currentCartList).length < 1) {
-        content = (
-            <Fragment>
-                <Typography variant="h5" className={classes.emptyCartText}>
-                    Your cart is empty!
-                </Typography>
-                {/* Return to products container */}
-                <Box className={classes.productsButtonContainer}>
-                    <Button
-                        color="primary"
-                        component={Link}
-                        to="/products"
-                        className={classes.productsButton}
-                        label="home"
-                    >
-                        Go To Products
-                    </Button>
-                </Box>
-            </Fragment>
-        );
-    } else {
-        emptyCart = false;
-        content = <CartList />;
-    }
+    if (currentCartList) {
+        if (Object.keys(currentCartList).length < 1) {
+            content = (
+                <Fragment>
+                    <Typography variant="h5" className={classes.emptyCartText}>
+                        Your cart is empty!
+                    </Typography>
+                    {/* Return to products container */}
+                    <Box className={classes.productsButtonContainer}>
+                        <Button
+                            color="primary"
+                            component={Link}
+                            to="/products"
+                            className={classes.productsButton}
+                            label="home"
+                        >
+                            Go To Products
+                        </Button>
+                    </Box>
+                </Fragment>
+            );
+        } else {
+            emptyCart = false;
+            content = <CartList />;
+        }
 
-    buttonGroup = (
-        <Box>
-            <Grid container>
-                <Grid item xs={6}>
-                    <ButtonLoading
-                        customClassName={classes.backToProductsButton2}
-                        eventName={() => handleRedirect("/products")}
-                        size="xx-small"
-                        name="Back To Products"
-                        startIcon={<ArrowBackIcon />}
-                    />
-                    <ButtonLoading
-                        customClassName={classes.checkOutButton}
-                        eventName={() => handleRedirect("/reservations")}
-                        size="xx-small"
-                        name="Check Out"
-                        startIcon={<CreditCardIcon />}
-                    />
+        buttonGroup = (
+            <Box>
+                <Grid container>
+                    <Grid item xs={6}>
+                        <ButtonLoading
+                            customClassName={classes.backToProductsButton2}
+                            eventName={() => handleRedirect("/products")}
+                            size="xx-small"
+                            name="Back To Products"
+                            startIcon={<ArrowBackIcon />}
+                        />
+                        <ButtonLoading
+                            customClassName={classes.checkOutButton}
+                            eventName={() => handleRedirect("/reservations")}
+                            size="xx-small"
+                            name="Check Out"
+                            startIcon={<CreditCardIcon />}
+                        />
+                    </Grid>
+                    <Grid item xs={6}></Grid>
                 </Grid>
-                <Grid item xs={6}></Grid>
-            </Grid>
-        </Box>
-    );
+            </Box>
+        );
+    }
 
     cartReceipt = (
         <Box className={classes.receiptContainer}>

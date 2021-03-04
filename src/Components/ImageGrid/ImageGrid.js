@@ -22,7 +22,7 @@ const ImageGrid = (props) => {
 
     return (
         <Box className={classes.root}>
-            <Grid container spacing={6}>
+            <Grid container>
                 <Grid item xs={12} sm={6}
                     className={classes.GridItemTall} >
                     <img src={image4}

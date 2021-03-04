@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('lg')]: {
-            padding: '120px 0px 120px 90px',
+            padding: '100px 0px 100px 90px',
         },
         [theme.breakpoints.down('md')]: {
             padding: '0px 50px',
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         textAlign: 'center',
         paddingBottom: '25px',
-        borderBottom: '8px solid #0068ff',
+        borderBottom: '8px solid #2196f3',
         margin: '0 auto 30px',
         color: '#ffaa00',
         fontWeight: '400',
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     companyDescription: {
-        color: 'floralWhite',
+        color: '#ffffff',
         marginBottom: '15px',
         fontSize: '1.1rem',
         fontWeight: 300,

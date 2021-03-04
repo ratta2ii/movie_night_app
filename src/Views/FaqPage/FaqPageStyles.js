@@ -20,8 +20,10 @@ const useStyles = makeStyles((theme) => ({
     faqsContainerOverlay: {
         width: '100%',
         height: '100%',
-        backgroundColor: '#cccccce3',
-        padding: 25,
+        padding: 75,
+        paddingBottom: 40,
+        backgroundColor: '#17233fc7',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('xs')]: {
             padding: 15,
         }

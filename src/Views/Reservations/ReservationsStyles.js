@@ -31,8 +31,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     text: {
-        color: 'floralwhite',
-        fontWeight: '300',
+        color: '#eeeeee',
         marginBottom: 10,
         fontSize: '1rem',   
         [theme.breakpoints.down('xs')]: {

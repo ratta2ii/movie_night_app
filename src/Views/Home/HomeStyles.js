@@ -20,7 +20,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     mainTitlePaper: {
-        backgroundColor: '#2196f3',
+        backgroundColor: '#1e88e5',
         zIndex: '1',
         width: '40%',
         textAlign: 'center',
@@ -40,7 +40,6 @@ export const useStyles = makeStyles((theme) => ({
             width: '80%',
             borderBottomLeftRadius: '10px',
             borderBottomRightRadius: '10px',
-            background: '#2196f3',
         }, 
     },
     mainTitle: {
@@ -107,6 +106,7 @@ export const useStyles = makeStyles((theme) => ({
         bottom: 16,
         right: 16,
         color: 'white',
+        backgroundColor: 'red',
         padding: '10px 20px',
         fontSize: '.8rem',
         [theme.breakpoints.down('sm')]: {

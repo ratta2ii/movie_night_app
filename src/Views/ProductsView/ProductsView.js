@@ -5,14 +5,27 @@ import ProductList from "./../../Components/ProductList/ProductList";
 import Header from "./../../Components/Header/Header";
 import Footer from "./../../Components/Footer/Footer";
 import useStyles from "./ProductsViewStyles";
+import Categories from "../../Components/Categories/Categories";
 
 function ProductView(props) {
     const classes = useStyles();
 
-    // To ensure the current screen opens at the top of the viewport
+    // To ensure the current screen opens at the top of the viewport on rendering
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    // Checks to see if you are coming from navBar without selecting a category first
+    // navLink is a boolean param passed into the "Link to={}" in the Navigation component
+    if (props.location.navLink) {
+        return (
+            <Box>
+                <Header />
+                <Categories />
+                <Footer />
+            </Box>
+        );
+    }
 
     return (
         <Box className={classes.root}>
@@ -35,7 +48,7 @@ function ProductView(props) {
                     <Grid item xs={1} sm={false}></Grid>
                 </Grid>
             </Grid>
-            <Footer />
+            {/* <Footer /> */}
         </Box>
     );
 }

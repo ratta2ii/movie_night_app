@@ -1,16 +1,14 @@
 import { makeStyles } from '@material-ui/core/styles';
 import bg_image from './../../Assets/Images/stars4.jpg';
 
-
 const drawerWidth = 230;
-
 
 export const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
     },
     MenuItem: {
-        borderLeft: '5px solid #060a13',
+        borderLeft: '5px solid #03070f',
         height: 65,
         '&:hover': {
             borderLeft: '5px solid #0f131e',
@@ -20,7 +18,7 @@ export const useStyles = makeStyles((theme) => ({
     appBar: {
         position: 'fixed',
         background: `url('${bg_image}')`,
-        backgroundColor: '#060a13',
+        backgroundColor: '#03070f',
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
@@ -35,7 +33,6 @@ export const useStyles = makeStyles((theme) => ({
     toolBarContent: {
         width: '100%',
         backgroundColor: '#0e1529',
-        // backgroundColor: '#0e1528',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -113,11 +110,9 @@ export const useStyles = makeStyles((theme) => ({
             duration: theme.transitions.duration.leavingScreen,
         }),
         overflowX: 'hidden',
-            //  width: theme.spacing(7) + 1,
             width: 20,
         [theme.breakpoints.up('sm')]: {
             width: 75,
-            // width: theme.spacing(9) + 1,
         },
     },
     contactEmail: {
@@ -128,7 +123,7 @@ export const useStyles = makeStyles((theme) => ({
         color: 'floralwhite',
     },
     menuList: {
-        backgroundColor: '#060a13',
+        backgroundColor: '#03070f',
         color: '#fee2be',
         padding: '0'
     },
@@ -171,49 +166,37 @@ export const useStyles = makeStyles((theme) => ({
     },
     HomeIcon: {
         color: '#1890ff',
-        // backgroundColor: '#882ecc',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ShopIcon: {
         color: '#1890ff',
-        // backgroundColor: '#38cc2e',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     FavoriteIcon: {
         color: '#1890ff',
-        // backgroundColor: '#c53b2d',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ListAltIcon: {
         color: '#1890ff',
-        // backgroundColor: '#f8fb2c',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     ListAltIcon2: {
         color: '#1890ff',
-        // backgroundColor: '#2ebdcc',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },
     SwapHorizontalCircleIcon: {
         color: '#f6961b',
-        // backgroundColor: '#f6961b',
         marginLeft: 3,
-        // padding: 2,
         fontSize: 25,
         borderRadius: 3,
     },

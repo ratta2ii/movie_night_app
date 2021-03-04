@@ -1,18 +1,14 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import Typography from '@material-ui/core/Typography';
 import useStyles from './HeaderStyles';
-
+// import { Link } from "react-router-dom";
+// import Button from '@material-ui/core/Button';
+// import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 const Header = () => {
-
-
     const classes = useStyles();
-
 
     return (
         <Box>
@@ -27,7 +23,7 @@ const Header = () => {
                                 {/* Jareb likes these so add again at later date */}
                                 {/* FAQ'S */}
                             </Typography>
-                            <Button
+                            {/* <Button
                                 component={Link}
                                 to="/reservations"
                                 className={classes.contactUsButton}
@@ -37,7 +33,7 @@ const Header = () => {
                                 endIcon={<PlayArrowIcon style={{ marginLeft: -8 }}
                                 />} >
                                 Contact Us
-                        </Button>
+                            </Button> */}
                         </Box>
                     </Box>
                 </Grid>

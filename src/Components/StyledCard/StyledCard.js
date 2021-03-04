@@ -42,7 +42,7 @@ const StyledCard = (props) => {
         history.push("/cartList");
         setLoading(false);
     };
-    
+
     const handleContactUs = async () => {
         setLoading(true);
         await sleep(800);
@@ -127,14 +127,14 @@ const StyledCard = (props) => {
                         <Grid item xs={12} sm={8} md={6}>
                             <Box className={classes.buttonGroup}>
                                 {/* //! NOTE: these are custom properties being passed down  */}
-                                <ButtonLoading 
+                                <ButtonLoading
                                     customClassName={classes.wishButton}
                                     eventName={handleAddTocartList}
                                     disabled={loading}
                                     name="Add To Cart"
                                     startIcon={<AddShoppingCartIcon />}
                                 />
-                                <ButtonLoading 
+                                <ButtonLoading
                                     customClassName={classes.reserveButton}
                                     eventName={handleContactUs}
                                     disabled={loading}

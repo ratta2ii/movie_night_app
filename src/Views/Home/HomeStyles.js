@@ -5,9 +5,10 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: '-85px', 
         marginBottom: 0,
+        animation: 'fadeIn ease .2s',
     },
     innerRoot: {
-        padding: '0 6%',
+        padding: '0 8%',
         [theme.breakpoints.down('md')]: {
             padding: '0',
         },
@@ -47,10 +48,10 @@ export const useStyles = makeStyles((theme) => ({
         padding: 15,
         fontSize: '1.1rem',
         color: 'floralwhite',
-        fontWeight: '500',
         letterSpacing: 'revert',
         wordSpacing: '.175em',
         fontFamily: 'math, serif',
+        fontWeight: 500,
         [theme.breakpoints.down('sm')]: {
             wordSpacing: 'unset',
         }, 
@@ -88,10 +89,11 @@ export const useStyles = makeStyles((theme) => ({
             marginBottom: 50,
         },
     },
-    productListContainer: {
-        backgroundColor: '#7a97d745',
+    CategoriesContainer: {
+        backgroundColor: '#17233fc7',
         margin: '0 3% 45px',
-        padding: '100px 0px',
+        padding: '75px 0px',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('lg')]: {
             margin: '0 0 25px'
         },
@@ -105,7 +107,6 @@ export const useStyles = makeStyles((theme) => ({
         bottom: 16,
         right: 16,
         color: 'white',
-        backgroundColor: '#ff0100',
         padding: '10px 20px',
         fontSize: '.8rem',
         [theme.breakpoints.down('sm')]: {

@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/bg12copy.png';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
@@ -51,10 +50,10 @@ const useStyles = makeStyles((theme) => ({
     },
     contactUsButton: {
         position: 'absolute',
-        bottom: 12,
-        right: 16,
+        bottom: 30,
+        right: 35,
         color: 'white',
-        backgroundColor: '#ff0100',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #125fb7 40%, #0D47A1 100%)',
         padding: '10px 20px',
         fontSize: '.8rem',
         [theme.breakpoints.down('sm')]: {
@@ -69,6 +68,5 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
 
 export default useStyles;

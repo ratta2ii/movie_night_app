@@ -6,12 +6,11 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import Typography from "@material-ui/core/Typography";
-// Custom components and styles
 import Welcome from "../../Components/Welcome/Welcome";
 import AboutUs from "./../../Components/AboutUs/AboutUs";
-import ProductList from "./../../Components/ProductList/ProductList";
 import Footer from "./../../Components/Footer/Footer";
 import useStyles from "./HomeStyles";
+import Categories from "../../Components/Categories/Categories";
 
 function Home(props) {
     const classes = useStyles();
@@ -55,8 +54,8 @@ function Home(props) {
                     {/* Products Left Margin */}
                     <Grid item xs={1}></Grid>
                     <Grid item xs={10}>
-                        <Box className={classes.productListContainer}>
-                            <ProductList />
+                        <Box className={classes.CategoriesContainer}>
+                            <Categories />
                         </Box>
                     </Grid>
                     <Grid item xs={1}></Grid>

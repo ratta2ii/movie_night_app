@@ -34,7 +34,6 @@ import { useStyles } from './NavigationStyles';
 import { getCurrentCartList } from '../../Redux/Reducers/currentCartListReducer';
 
 export default function Navigation(props) {
-
     // const websiteTitle = 'AZ MOVIE NIGHTS'
     const classes = useStyles();
     let pathname = useLocation().pathname;
@@ -71,13 +70,15 @@ export default function Navigation(props) {
                         style={{ height: 51, backgroundColor: '#171d2e' }} >
                     </Box>
                     <MenuItem
-                        onClick={() => handleClose()}
-                        component={Link} to='/'
+                        component={Link} 
+                        to='/'
                         selected={'/' === pathname}
+                        className={classes.MenuItem} 
+                        onClick={() => handleClose()}
                         style={{
                             padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px',
                         }}
-                        className={classes.MenuItem} >
+                    >
                         <ListItemIcon><HomeIcon className={classes.HomeIcon} /></ListItemIcon>
                         <Typography className={classes.ListItemText}>Home</Typography>
                         <Typography className={classes.miniHomeNavTitle}
@@ -87,13 +88,18 @@ export default function Navigation(props) {
                     </MenuItem>
                     <Divider className={classes.Divider} />
                     <MenuItem 
+                        component={Link} 
+                        to={{
+                            pathname: `/products`,
+                            navLink: true 
+                        }}
+                        selected={'/products' === pathname.slice(0, 9)}
+                        className={classes.MenuItem} 
                         onClick={() => handleClose()}
-                        component={Link} to='/products'
-                        selected={'/products' === pathname}
                         style={{
                             padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px'
                         }}
-                        className={classes.MenuItem} >
+                    >
                         <ListItemIcon>
                             <ShopIcon className={classes.ShopIcon} />
                         </ListItemIcon>
@@ -188,7 +194,8 @@ export default function Navigation(props) {
                         style={{ padding: (open || mobileDrawerState) ? 15 : '8px 15px 26px' }}
                         className={classes.MenuItem} >
                         <ListItemIcon>
-                            <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} /></ListItemIcon>
+                            <SwapHorizontalCircleIcon className={classes.SwapHorizontalCircleIcon} />
+                        </ListItemIcon>
                         <Typography className={classes.ListItemText}>CLOSE</Typography>
                         <Typography className={classes.miniiNavTitle}
                             style={{

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import clsx from 'clsx';
@@ -40,7 +40,11 @@ export default function Navigation(props) {
     const [open, setDeskDrawOpen] = React.useState(false);
     const [mobileDrawerState, setmobileDrawerState] = React.useState(false);
     const currentCartList = useSelector(getCurrentCartList);
-    const cartItemCount = Object.keys(currentCartList).length;
+    let cartItemCount;
+
+    if (currentCartList) {
+        cartItemCount = Object.keys(currentCartList).length;
+    }
 
     const handleMobileDrawerToggle = () => {
         mobileDrawerState === false ? setmobileDrawerState(true) : setmobileDrawerState(false)

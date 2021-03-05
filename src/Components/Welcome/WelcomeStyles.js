@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: '#ffffff',
         marginBottom: '15px',
-        fontSize: '1.1rem',
+        fontSize: '.9rem',
         fontWeight: 300,
         [theme.breakpoints.down('lg')]: {
             fontSize: '.95rem'

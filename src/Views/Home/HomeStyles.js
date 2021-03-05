@@ -120,6 +120,18 @@ export const useStyles = makeStyles((theme) => ({
             right: 16,
         },
     },
+    scrollTopButton: {
+        fontSize: 15,
+        border: '1px solid red',
+        fontWeight: 100,
+        margin: 'auto',
+        marginTop: 50,
+        display: 'block',
+        color: 'white',
+        cursor: 'pointer',
+        padding: 5,
+        borderRadius: 4,
+    }
 }));
 
 export default useStyles;

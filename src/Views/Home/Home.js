@@ -19,6 +19,11 @@ function Home(props) {
         window.scrollTo(0, 0);
     }, []);
 
+    const handleScrollTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     return (
         <Box className={classes.root}>
             <Box className={classes.innerRoot} >
@@ -61,6 +66,7 @@ function Home(props) {
                     <Grid item xs={1}></Grid>
                 </Grid>
             </Box>
+            <Button onClick={handleScrollTop} className={classes.scrollTopButton} >TOP</Button>
             <Footer />
         </Box>
     );

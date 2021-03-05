@@ -23,6 +23,7 @@
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-final-form": "latest",
+        "react-image-gallery": "^1.0.9",
         "react-number-format": "latest",
         "react-redux": "^7.1.3",
         "react-router-dom": "^5.2.0",

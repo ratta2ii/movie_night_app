@@ -17,11 +17,11 @@ const ProductList = (props) => {
         1008: 'hot dog',
         1009: 'cotton'
     };
-    
+
     useEffect(() => {
         console.log("Current category: ", currentCategory);
     }, [currentCategory]);
-    
+
     if (currentCategory === 'consessions') {
         categoryToRender = masterProductList.filter(product => {
             if (consessions[product.productId]) return true
@@ -33,7 +33,7 @@ const ProductList = (props) => {
             <Grid container>
                 {/* Product container margin left */}
                 <Grid item xs={1}></Grid>
-                {/* Product continer grid item */}
+                {/* Product container grid item */}
                 <Grid item xs={10}>
                     <Grid container styles={classes.mainProductGridContainer}>
                         {categoryToRender.map((product) => (
@@ -52,8 +52,6 @@ const ProductList = (props) => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Box>
-            </Box>
         </Box>
     );
 };

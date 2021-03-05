@@ -16,6 +16,22 @@ import image11 from './../../Assets/Images/GalleryImages/gallery11.JPG';
 import image12 from './../../Assets/Images/GalleryImages/gallery12.JPG';
 import image13 from './../../Assets/Images/GalleryImages/gallery13.JPG';
 
+export const imagesArray = [
+    image4,
+    image5, 
+    image1,
+    image2,
+    image3,
+    image9,
+    image10,
+    image6,
+    image7,
+    image8,
+    image11,
+    image12,
+    image13,
+];
+
 const ImageGrid = (props) => {
     const classes = useStyles();
     const { handleOpenModal } = props;
@@ -28,91 +44,117 @@ const ImageGrid = (props) => {
                     <img src={image4}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="0"
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}
                     className={classes.GridItemTall} >
                     <img src={image5}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="1"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image1}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="2"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image2}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="3"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image3}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="4"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}
                     className={classes.GridItemTall} >
                     <img src={image9}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="5"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}
                     className={classes.GridItemTall} >
                     <img src={image10}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="6"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image6}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="7"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image7}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="8"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image8}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="9"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image11}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="10"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image12}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="11"    
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}
                     className={classes.GridItem} >
                     <img src={image13}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
-                        onClick={handleOpenModal} />
+                        onClick={handleOpenModal} 
+                        name="12"    
+                    />
                 </Grid>
             </Grid>
         </Box>

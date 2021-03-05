@@ -2,25 +2,18 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        diplay: 'flex',    
+        diplay: 'flex',
     },
     contentPaperContainer: {
-        minHeight: 500,
+        minHeight: 560,
         position: 'relative',
-        padding: '25px 50px 20px 50px',
+        padding: '100px 50px 20px 50px',
         marginBottom: 95,
         marginTop: -30,
-        animation: 'fadeIn ease .3s', 
-        [theme.breakpoints.down('md')]: {
-            margin: '-20px auto 0px',
-        },
-        [theme.breakpoints.down('sm')]: {
-            marginTop: 0,
-            padding: 25,
-        },
+        animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('xs')]: {
             marginTop: 30,
-            padding: 15,
+            padding: '25px 15px',
             marginBottom: 60,
         },
     },
@@ -32,58 +25,65 @@ const useStyles = makeStyles((theme) => ({
             padding: '0',
         },
     },
-    receiptContainer: {
-        margin: '50px 30px 30px',
+    backToProductsButtonContainer: {
+        position: 'absolute',
+        top: 30,
+        left: 50,
         [theme.breakpoints.down('xs')]: {
-            margin: '40px 10px 30px',
+            position: 'unset',
+            top: 'unset',
+            left:'unset',
         },
     },
-    productsButtonContainer: {
-        marginTop: 10,
-        marginBottom: 0,
-        padding: '10px 5px',
+    backToProductsButton: {
+        width: 190,
+        height: 40,
+        fontSize: 10,
+        borderRaduis: 0,
+        backgroundColor: '#eff0f1',
+        color: '#000',
+        '&:hover': {
+            backgroundColor: '#dfe1e2',
+        },
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: '#0f1629',
+            color: 'white',
+            width: 140,
+            marginTop: 20,
+            fontSize: 9,
+        },
+    },
+    checkOutButtonContainer: {
+        position: 'absolute',
+        right: 30,
+        bottom: 30,
+        [theme.breakpoints.down('xs')]: {
+            right: 0,
+            bottom: 15,
+        },
     },
     checkOutButton: {
-        marginRight: 50,
-        width: 200,
+        width: 190,
+        height: 40,
+        fontSize: 10,
+        color: '#ffffff',
+        borderRaduis: 0,
         background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
-        color: 'floralwhite',
-        padding: 10,
         '&:hover': {
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
         [theme.breakpoints.down('lg')]: {
-            marginRight: '0',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '.7rem',
-            width: 150,
+            fontSize: 9,
+            width: 140,
         },
     },
-    backToProductsButton2: {
-        width: 200,
-        marginTop: 190,
-        marginBottom: 5,
-        padding: 10,
-        backgroundColor: '#eff0f1',
-        '&:hover': {
-            backgroundColor: '#dfe1e2',
-        },
-        [theme.breakpoints.down('md')]: {
-            marginTop: 130,
-        },
+    receiptContainer: {
+        margin: '50px 30px 30px',
         [theme.breakpoints.down('xs')]: {
-            fontSize: '.7rem',
-            width: 150,
-        },
-    },
-    productsButton: {
-        backgroundColor: '#eceff1',
-        fontSize: 'small',
-        
-        [theme.breakpoints.down('xs')]: {
-            fontSize: '.7rem',
+            margin: '40px 10px 30px',
         },
     },
     cartTitle: {
@@ -120,8 +120,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     emptyCartText: {
-        fontFamily: 'monospace',
-        marginLeft: 8,
+        fontSize: '.9rem',
     }
 }));
 

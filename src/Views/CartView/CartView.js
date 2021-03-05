@@ -1,9 +1,8 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
@@ -24,11 +23,10 @@ const CartView = (props) => {
     const classes = useStyles();
     const history = useHistory();
     const [loading, setLoading] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const { currentCartList, cartTotalState } = props;
     let emptyCart = true;
     let content;
-    let buttonGroup;
-    let cartReceipt;
 
     // loading indicator time delay
     const sleep = (delay) => {
@@ -39,22 +37,12 @@ const CartView = (props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+    }, [currentCartList]);
 
-    const calculateTaxes = (amount) => {
-        let AZtaxes = 0.0805;
-        let totalTaxes = amount * AZtaxes;
-        return totalTaxes.toFixed(2);
-    };
 
-    const calculateGrandTotal = (amount) => {
-        let taxes = parseInt(calculateTaxes(cartTotalState));
-        let grandTotal = taxes + cartTotalState;
-        return parseInt(grandTotal).toFixed(2);
-    };
 
     const handleRedirect = async (url) => {
-        if(!loading) 
+        if (!loading)
             setLoading(true);
         await sleep(400);
         history.push(url);
@@ -67,84 +55,76 @@ const CartView = (props) => {
             content = (
                 <Fragment>
                     <Typography variant="h5" className={classes.emptyCartText}>
-                        Your cart is empty!
+                        Shopping cart is currently empty...
                     </Typography>
-                    {/* Return to products container */}
-                    <Box className={classes.productsButtonContainer}>
-                        <Button
-                            color="primary"
-                            component={Link}
-                            to="/products"
-                            className={classes.productsButton}
-                            label="home"
-                        >
-                            Go To Products
-                        </Button>
-                    </Box>
                 </Fragment>
             );
         } else {
             emptyCart = false;
             content = <CartList />;
         }
+    }
 
-        buttonGroup = (
-            <Box>
-                <Grid container>
-                    <Grid item xs={6}>
-                        <ButtonLoading
-                            customClassName={classes.backToProductsButton2}
-                            eventName={() => handleRedirect("/products")}
-                            size="xx-small"
-                            name="Back To Products"
-                            startIcon={<ArrowBackIcon />}
-                        />
-                        <ButtonLoading
-                            customClassName={classes.checkOutButton}
-                            eventName={() => handleRedirect("/reservations")}
-                            size="xx-small"
-                            name="Check Out"
-                            startIcon={<CreditCardIcon />}
-                        />
-                    </Grid>
-                    <Grid item xs={6}></Grid>
-                </Grid>
+    //! Cart Receipt not in use, so neither are these 2 funcs
+    // const calculateTaxes = (amount) => {
+    //     let AZtaxes = 0.0805;
+    //     let totalTaxes = amount * AZtaxes;
+    //     return totalTaxes.toFixed(2);
+    // };
+
+    // const calculateGrandTotal = (amount) => {
+    //     let taxes = parseInt(calculateTaxes(cartTotalState));
+    //     let grandTotal = taxes + cartTotalState;
+    //     return parseInt(grandTotal).toFixed(2);
+    // };
+            
+    //! Cart receipt currently not in use. To render, use this {!emptyCart ? cartReceipt : null}
+    // const cartReceipt = (
+    //     <Box className={classes.receiptContainer}>
+    //         <Grid container>
+    //             <Grid item xs={8}>
+    //                 <Typography className={classes.cartTitle}>Cart Total: $</Typography>
+    //             </Grid>
+    //             <Grid item xs={4} className={classes.valueGridItem}>
+    //                 <Typography className={classes.cartValue}>
+    //                     {cartTotalState.toFixed(2)}
+    //                 </Typography>
+    //             </Grid>
+    //             <Grid item xs={8}>
+    //                 <Typography className={classes.cartTitle}>Taxes: $</Typography>
+    //             </Grid>
+    //             <Grid item xs={4} className={classes.valueGridItem}>
+    //                 <Typography className={classes.cartValue}>
+    //                     {calculateTaxes(cartTotalState)}
+    //                 </Typography>
+    //             </Grid>
+    //             <Grid item xs={8}>
+    //                 <Typography className={classes.grandTotalTitle}>
+    //                     Grand Total: $
+    //                 </Typography>
+    //             </Grid>
+    //             <Grid item xs={4} className={classes.grandTotalGridItem}>
+    //                 <Typography className={classes.cartValue}>
+    //                     {calculateGrandTotal(cartTotalState)}
+    //                 </Typography>
+    //             </Grid>
+    //         </Grid>
+    //     </Box>
+    // );
+
+    let checkOutButton = null;
+    if (!emptyCart) {
+        checkOutButton = (
+            <Box className={classes.checkOutButtonContainer}>
+                <ButtonLoading
+                    customClassName={classes.checkOutButton}
+                    eventName={() => handleRedirect("/reservations")}
+                    name="Go to Checkout"
+                    startIcon={<CreditCardIcon />}
+                />
             </Box>
         );
     }
-
-    cartReceipt = (
-        <Box className={classes.receiptContainer}>
-            <Grid container>
-                <Grid item xs={8}>
-                    <Typography className={classes.cartTitle}>Cart Total: $</Typography>
-                </Grid>
-                <Grid item xs={4} className={classes.valueGridItem}>
-                    <Typography className={classes.cartValue}>
-                        {cartTotalState.toFixed(2)}
-                    </Typography>
-                </Grid>
-                <Grid item xs={8}>
-                    <Typography className={classes.cartTitle}>Taxes: $</Typography>
-                </Grid>
-                <Grid item xs={4} className={classes.valueGridItem}>
-                    <Typography className={classes.cartValue}>
-                        {calculateTaxes(cartTotalState)}
-                    </Typography>
-                </Grid>
-                <Grid item xs={8}>
-                    <Typography className={classes.grandTotalTitle}>
-                        Grand Total: $
-                    </Typography>
-                </Grid>
-                <Grid item xs={4} className={classes.grandTotalGridItem}>
-                    <Typography className={classes.cartValue}>
-                        {calculateGrandTotal(cartTotalState)}
-                    </Typography>
-                </Grid>
-            </Grid>
-        </Box>
-    );
 
     return (
         <Box className={classes.root}>
@@ -161,10 +141,20 @@ const CartView = (props) => {
                     lg={6}
                     className={classes.mainGridContent}
                 >
-                    <Paper className={classes.contentPaperContainer}>
+                    <Paper 
+                        className={classes.contentPaperContainer}
+                        style={{ height: (Object.keys(currentCartList).length > 4) ? 830 : 560 }} 
+                    >
                         {content}
-                        {!emptyCart ? cartReceipt : null}
-                        {!emptyCart ? buttonGroup : null}
+                        <Box className={classes.backToProductsButtonContainer}>
+                            <ButtonLoading
+                                customClassName={classes.backToProductsButton}
+                                eventName={() => handleRedirect("/products")}
+                                name="Back To Products"
+                                startIcon={<ArrowBackIcon />}
+                            />
+                        </Box>
+                        {checkOutButton}
                     </Paper>
                 </Grid>
                 {/* Margin Right */}

@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -141,7 +140,9 @@ const useStyles = makeStyles((theme) => ({
             
         }, 
         [theme.breakpoints.down('xs')]: {
-            fontSize: 9
+            fontSize: 9,
+            width: 130,
+            marginLeft: 12,
         }, 
     },
     reserveButton: {
@@ -160,11 +161,11 @@ const useStyles = makeStyles((theme) => ({
             
         }, 
         [theme.breakpoints.down('xs')]: {
+            width: 130,
             fontSize: 9,
         }, 
     }
 }));
-
 
 export default useStyles;
 

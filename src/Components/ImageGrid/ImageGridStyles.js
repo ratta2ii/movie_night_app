@@ -4,11 +4,12 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         maxWidth: 1000,
-        margin: '20px auto',
-        boxShadow: 'inset 0 0 20px #070a14',
+        margin: '65px auto',
+        boxShadow: 'inset 0 0 5px #070a14',
         padding: 15,
-        backgroundColor: '#0f162947',
+        backgroundColor: '#17233fc7',
         overflow: 'hidden',
+        animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('lg')]: {
             width: '85%',
         },
@@ -73,6 +74,22 @@ export const useStyles = makeStyles((theme) => ({
             cursor: 'pointer',
         },
         [theme.breakpoints.down('sm')]: { 
+        },
+    }, 
+    modalContainer: {
+        height: '100vh',
+        width: '100vw',
+        position: 'fixed',
+        top: 0, 
+        left: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.97)',
+        zIndex: 5000,
+        overflow: 'auto',
+        [theme.breakpoints.down('xs')]: { 
+            paddingTop: 60,
         },
     }
 }));

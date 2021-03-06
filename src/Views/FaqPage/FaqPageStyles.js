@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
         padding: 75,
         paddingBottom: 40,
         backgroundColor: '#17233fc7',
-        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+        boxSShadow: 'inset 0 0 5px #070a14',
+        // boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('xs')]: {
             padding: 15,
         }
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     returnHomeLink: {
         padding: '10px 20px',
-        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #1565C0 100%)',
+        background: 'linear-gradient(90deg, #0D47A1 0%, #0D47A1 40%, #104dad 100%)',
         color: 'floralwhite',
     },
     bookOnlineButton: {

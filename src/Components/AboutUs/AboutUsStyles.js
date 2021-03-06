@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         [theme.breakpoints.down('lg')]: {
             padding: '100px 0px 100px 90px',
         },
@@ -102,7 +103,8 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '.95rem'
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '.8rem'
+            fontSize: '.85rem',
+            lineHeight: '1.35',
         },
     },
 }));

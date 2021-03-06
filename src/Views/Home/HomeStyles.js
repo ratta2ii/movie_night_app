@@ -55,7 +55,7 @@ export const useStyles = makeStyles((theme) => ({
             wordSpacing: 'unset',
         }, 
         [theme.breakpoints.down('xs')]: {
-            fontSize: '1rem',
+            fontSize: '.9rem',
         }, 
     },
     headerContainer: {
@@ -66,7 +66,7 @@ export const useStyles = makeStyles((theme) => ({
         backgroundPositionY: '-350px',
         margin: '10px 3% 0px',
         borderRadius: '3px',
-        boxShadow: 'inset 0px 0px 10px #000000a6',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('lg')]: {
             margin: '10px 0 0px',
             backgroundPositionY: '-300px',
@@ -77,7 +77,7 @@ export const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             height: 170,
-            margin: '20px auto 40px auto',
+            margin: '20px auto 0px auto',
             backgroundPositionY: '-165px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -97,8 +97,10 @@ export const useStyles = makeStyles((theme) => ({
             margin: '0 0 25px'
         },
         [theme.breakpoints.down('md')]: {
-            padding: '50px 0',
+            padding: 0,
             margin: 0,
+        },
+        [theme.breakpoints.down('xs')]: {
         },
     },
     contactUsButton: {
@@ -122,7 +124,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     scrollTopButton: {
         fontSize: 15,
-        border: '1px solid red',
+        border: '1px solid #7b4a0d',
         fontWeight: 100,
         margin: 'auto',
         marginTop: 50,

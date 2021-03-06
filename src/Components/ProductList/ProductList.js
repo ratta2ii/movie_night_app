@@ -19,7 +19,6 @@ const ProductList = (props) => {
     };
 
     useEffect(() => {
-        console.log("Current category: ", currentCategory);
     }, [currentCategory]);
 
     if (currentCategory === 'consessions') {

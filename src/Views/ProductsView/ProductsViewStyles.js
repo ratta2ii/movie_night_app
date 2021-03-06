@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     productListContainer: {
         [theme.breakpoints.down('xs')]: {
             backgroundColor: '#7a97d745',
-            padding: '12% 0',
+            padding: '3% 0',
         },
     },
 }));

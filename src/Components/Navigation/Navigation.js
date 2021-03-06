@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, NavLink, useHistory, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import clsx from "clsx";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -43,7 +43,6 @@ export default function Navigation(props) {
     const currentCartList = useSelector(getCurrentCartList);
     let cartItemCount;
 
-    console.log(Object.keys(currentCartList).length);
     if (currentCartList) {
         cartItemCount = Object.keys(currentCartList).length;
     }
@@ -147,7 +146,7 @@ export default function Navigation(props) {
                             <ImageSearchIcon className={classes.ListAltIcon} />
                         </ListItemIcon>
                         <Typography className={classes.ListItemText}>
-                            Image Gallery
+                            Images
                         </Typography>
                         <Typography
                             className={classes.miniiNavTitle}

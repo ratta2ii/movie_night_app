@@ -85,7 +85,7 @@ export const useStyles = makeStyles((theme) => ({
             backgroundPositionY: '-50px',
             marginTop: -29,
             padding: '0',
-            marginBottom: 50,
+            marginBottom: 45,
         },
     },
     CategoriesContainer: {
@@ -124,12 +124,12 @@ export const useStyles = makeStyles((theme) => ({
     },
     scrollTopButton: {
         fontSize: 15,
-        border: '1px solid #7b4a0d',
+        border: '1px solid #4a6ea9',
         fontWeight: 100,
         margin: 'auto',
         marginTop: 50,
         display: 'block',
-        color: 'white',
+        color: '#eaeaea',
         cursor: 'pointer',
         padding: 5,
         borderRadius: 4,

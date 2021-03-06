@@ -79,24 +79,25 @@ const ImagesModal = (props) => {
                     X
                 </Typography>
                 <Typography
-                    className={classes.modalRightArrow}
-                    style={{color: 'white', marginRight: 50}}
+                    className={classes.modalLeftArrow}
                     onClick={handlePreviousImage}>
                     <ChevronLeftIcon fontSize="large" />
                 </Typography>
                 {/* //! Main Image */}
-                <img src={imageSource ? imageSource : undefined} alt="test"
-                    style={{ maxWidth: 600, minWidth: 320 }} />
+                <img 
+                    className={classes.mainModalImg}
+                    src={imageSource ? imageSource : undefined} 
+                    alt="main movie night event selected"
+                />
                 <Typography
                     className={classes.modalRightArrow}
-                    style={{color: 'white', marginLeft: 50}}
                     onClick={handleNextImage}>
                     <ChevronRightIcon fontSize="large" />
                 </Typography>
             </Box>
             <Grid container >
-                <Grid item xs={4} sm={2} lg={1}
-                    className={classes.GridItemTall} >
+                <Grid item xs={3} sm={2} lg={1}
+                    className={classes.GridItem} >
                     <img src={image4}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
@@ -105,8 +106,8 @@ const ImagesModal = (props) => {
                         name="0"
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
-                    className={classes.GridItemTall} >
+                <Grid item xs={3} sm={2} lg={1}
+                    className={classes.GridItem} >
                     <img src={image5}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
@@ -115,7 +116,7 @@ const ImagesModal = (props) => {
                         name="1"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image1}
                         className={classes.imageStyle}
@@ -125,7 +126,7 @@ const ImagesModal = (props) => {
                         name="2"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image2}
                         className={classes.imageStyle}
@@ -135,7 +136,7 @@ const ImagesModal = (props) => {
                         name="3"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image3}
                         className={classes.imageStyle}
@@ -145,8 +146,8 @@ const ImagesModal = (props) => {
                         name="4"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
-                    className={classes.GridItemTall} >
+                <Grid item xs={3} sm={2} lg={1}
+                    className={classes.GridItem} >
                     <img src={image9}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
@@ -155,8 +156,8 @@ const ImagesModal = (props) => {
                         name="5"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
-                    className={classes.GridItemTall} >
+                <Grid item xs={3} sm={2} lg={1}
+                    className={classes.GridItem} >
                     <img src={image10}
                         className={classes.imageStyle}
                         alt="Movie screen rental event night"
@@ -165,7 +166,7 @@ const ImagesModal = (props) => {
                         name="6"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image6}
                         className={classes.imageStyle}
@@ -175,7 +176,7 @@ const ImagesModal = (props) => {
                         name="7"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image7}
                         className={classes.imageStyle}
@@ -185,7 +186,7 @@ const ImagesModal = (props) => {
                         name="8"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image8}
                         className={classes.imageStyle}
@@ -195,7 +196,7 @@ const ImagesModal = (props) => {
                         name="9"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image11}
                         className={classes.imageStyle}
@@ -205,7 +206,7 @@ const ImagesModal = (props) => {
                         name="10"    
                     />
                 </Grid>
-                <Grid item xs={4} sm={2} lg={1}
+                <Grid item xs={3} sm={2} lg={1}
                     className={classes.GridItem} >
                     <img src={image12}
                         className={classes.imageStyle}

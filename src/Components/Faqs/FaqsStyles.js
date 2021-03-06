@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     Accordion: {
         marginBottom: 10,
-        color: 'white',
+        color: '#eaeaea',
         padding: '5px 20px',
         borderRadius: 5,
         background: 'linear-gradient(124deg, rgb(38 85 132) 16%, rgb(51 102 153) 56%)', 

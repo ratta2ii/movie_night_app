@@ -21,10 +21,10 @@ export const Categories = () => {
 
     return (
         <Grid container>
-            <div class="container">
-                <div class="wrap">
+            <div className="container">
+                <div className="wrap">
                     <div
-                        class="box one"
+                        className="box one"
                         id="backyardMovies"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -32,7 +32,7 @@ export const Categories = () => {
                     </div>
 
                     <div
-                        class="box two"
+                        className="box two"
                         id="largeMovieEvents"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -40,7 +40,7 @@ export const Categories = () => {
                     </div>
 
                     <div
-                        class="box three"
+                        className="box three"
                         id="driveInMovies"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -48,7 +48,7 @@ export const Categories = () => {
                     </div>
 
                     <div
-                        class="box four"
+                        className="box four"
                         id="poolMovies"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -56,7 +56,7 @@ export const Categories = () => {
                     </div>
 
                     <div
-                        class="box five"
+                        className="box five"
                         id="consessions"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -64,7 +64,7 @@ export const Categories = () => {
                     </div>
 
                     <div
-                        class="box six"
+                        className="box six"
                         id="imageGallery"
                         onClick={(e) => handleLoadProducts(e)}
                     >
@@ -77,6 +77,112 @@ export const Categories = () => {
 };
 
 export default Categories;
+
+
+
+
+
+
+
+
+
+
+// import { Grid } from "@material-ui/core";
+// import { useDispatch } from 'react-redux';
+// import React from "react";
+// import { useHistory } from "react-router-dom";
+// import "./styles.css";
+// import { selectCategory } from "../../Redux/Reducers/currentCategoryReducer";
+
+// export const Categories = () => {
+//     const history = useHistory();
+//     const dispatch = useDispatch();
+    
+//     const handleLoadProducts = (event) => {
+//         const category = event.currentTarget.id;
+//         if (category === "imageGallery") {
+//             history.push(`/images`);
+//         } else {
+//             dispatch(selectCategory(category));
+//             history.push(`/products/${category}`, category);
+//         }
+//     };
+
+//     return (
+//         <Grid container>
+//             <div class="container">
+//                 <div class="wrap">
+//                     <div
+//                         class="box one"
+//                         id="backyardMovies"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>BACKYARD MOVIES</h1>
+//                     </div>
+
+//                     <div
+//                         class="box two"
+//                         id="largeMovieEvents"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>LARGE MOVIE EVENTS</h1>
+//                     </div>
+
+//                     <div
+//                         class="box three"
+//                         id="driveInMovies"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>DRIVE-IN MOVIES</h1>
+//                     </div>
+
+//                     <div
+//                         class="box four"
+//                         id="poolMovies"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>DIVE-IN MOVIES #poolparty</h1>
+//                     </div>
+
+//                     <div
+//                         class="box five"
+//                         id="consessions"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>CONSESSIONS</h1>
+//                     </div>
+
+//                     <div
+//                         class="box six"
+//                         id="imageGallery"
+//                         onClick={(e) => handleLoadProducts(e)}
+//                     >
+//                         <h1>IMAGE GALLERY</h1>
+//                     </div>
+//                 </div>
+//             </div>
+//         </Grid>
+//     );
+// };
+
+// export default Categories;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

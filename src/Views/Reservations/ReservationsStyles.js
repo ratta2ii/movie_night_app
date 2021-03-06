@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     text: {
-        color: '#eeeeee',
+        color: '#eaeaea',
         marginBottom: 10,
         fontSize: '1rem',   
         [theme.breakpoints.down('xs')]: {

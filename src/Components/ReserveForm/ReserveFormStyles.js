@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: '25px',
+        backgroundColor: '#eaeaea',
     },
     phoneNumber: {
         color: '#f6961b',

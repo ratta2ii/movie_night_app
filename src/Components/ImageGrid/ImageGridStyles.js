@@ -37,7 +37,6 @@ export const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {  //? xs, extra-small: 0px
             marginTop: 0,
-            height: 320,
         },
         ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
             height: 290,
@@ -56,9 +55,6 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: { 
             height: 'unset',
         },
-        [theme.breakpoints.down('xs')]: {
-            height: 320,
-        },
         ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
             height: 290,
         },
@@ -74,6 +70,7 @@ export const useStyles = makeStyles((theme) => ({
             cursor: 'pointer',
         },
         [theme.breakpoints.down('sm')]: { 
+            height: 'unset',
         },
     }, 
     modalContainer: {

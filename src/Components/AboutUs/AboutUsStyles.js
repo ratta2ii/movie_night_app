@@ -95,10 +95,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     companyDescription: {
-        color: '#ffffff',
+        color: '#eaeaea',
         marginBottom: '15px',
         fontSize: '.9rem',
-        fontWeight: 300,
+        fontWeight: 500,
         [theme.breakpoints.down('lg')]: {
             fontSize: '.95rem'
         },

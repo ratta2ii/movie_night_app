@@ -5,10 +5,14 @@ export const useStyles = makeStyles((theme) => ({
         width: 1325,
         animation: 'fadeIn ease .4s',
         [theme.breakpoints.down('md')]: { 
+            width: 935,
+        },
+        [theme.breakpoints.down('md')]: { 
             width: 635,
         },
         [theme.breakpoints.down('xs')]: { 
-            width: 320,
+            width: '90%',
+            padding: '150px 5% 200px 5%',
         },
         
     },
@@ -18,19 +22,24 @@ export const useStyles = makeStyles((theme) => ({
     },
     GridItem: {
         padding: 5,
-        height: 100,
         width: 100,
+        height: 80,
         overflow: 'hidden',
+        [theme.breakpoints.down('xs')]: { 
+            padding: 2,
+            width: 80,
+            height: 60,
+        },
     },
-    GridItemTall: {
-        padding: 5,
-        height: 100,
-        width: 100,
-        overflow: 'hidden',
+    mainModalImg: {
+        maxWidth: 600,
+        minWidth: 320,
+        [theme.breakpoints.down('xs')]: { 
+            maxWidth: 320,
+        },
     },
     imageStyle: {
-        height: 100,
-        width: 100,
+        width: '100%',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         '&:hover': {
             cursor: 'pointer',
@@ -47,6 +56,7 @@ export const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: { 
             padding: '5%',
+            marginBottom: 30,
         },
     },
     modalCloseX: {
@@ -60,6 +70,20 @@ export const useStyles = makeStyles((theme) => ({
             top: 25, 
             right: 30,
         },
+    },
+    modalLeftArrow: {
+        color: 'white',
+        marginRight: 50,
+        [theme.breakpoints.down('xs')]: { 
+            dispaly: 'none',
+        },
+    },
+    modalRightArrow: {
+        color: 'white',
+        marginLeft: 50,
+        [theme.breakpoints.down('xs')]: { 
+            dispaly: 'none',
+        }, 
     },
 }));
 

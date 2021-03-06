@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('xs')]: {
             marginTop: 30,
-            padding: '25px 15px',
+            padding: '75px 25px 15px',
             marginBottom: 60,
         },
     },
@@ -30,9 +30,8 @@ const useStyles = makeStyles((theme) => ({
         top: 30,
         left: 50,
         [theme.breakpoints.down('xs')]: {
-            position: 'unset',
-            top: 'unset',
-            left:'unset',
+            top: 0,
+            left: 25,
         },
     },
     backToProductsButton: {
@@ -46,8 +45,6 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#dfe1e2',
         },
         [theme.breakpoints.down('xs')]: {
-            backgroundColor: '#0f1629',
-            color: 'white',
             width: 140,
             marginTop: 20,
             fontSize: 9,
@@ -58,8 +55,8 @@ const useStyles = makeStyles((theme) => ({
         right: 30,
         bottom: 30,
         [theme.breakpoints.down('xs')]: {
-            right: 0,
-            bottom: 15,
+            right: 5,
+            bottom: 20,
         },
     },
     checkOutButton: {

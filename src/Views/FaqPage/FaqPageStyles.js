@@ -23,8 +23,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 75,
         paddingBottom: 40,
         backgroundColor: '#17233fc7',
-        boxShadow: 'inset 0 0 5px #070a14',
-        // boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('xs')]: {
             padding: 15,
         }

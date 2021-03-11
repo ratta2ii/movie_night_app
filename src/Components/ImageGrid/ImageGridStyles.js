@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
         width: '100%',
         maxWidth: 1000,
         margin: '65px auto',
-        boxShadow: 'inset 0 0 5px #070a14',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         padding: 15,
         backgroundColor: '#17233fc7',
         overflow: 'hidden',

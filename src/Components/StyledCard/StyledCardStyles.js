@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     backToProducts: {
+        cursor: 'pointer',
         [theme.breakpoints.down('xs')]: {
             fontSize: 'smaller'
         },

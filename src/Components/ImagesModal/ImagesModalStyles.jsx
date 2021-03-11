@@ -65,7 +65,7 @@ export const useStyles = makeStyles((theme) => ({
         right: 45,
         color: 'white',
         fontSize: 25,
-        fontWeight: '600',
+        fontWeight: '500',
         [theme.breakpoints.down('xs')]: { 
             top: 25, 
             right: 30,

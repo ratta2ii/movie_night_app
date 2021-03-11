@@ -1,29 +1,36 @@
 import React, { useEffect } from "react";
+import { masterProductList } from "./../../Data/MockData/DataProducts";
+import { Box, Button, Grid } from "@material-ui/core";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import useStyles from "./ProductListStyles";
 import SingleProduct from "./../Product/Product";
-import { masterProductList } from "./../../Data/MockData/DataProducts";
-import { Box } from "@material-ui/core";
-import { Grid } from "@material-ui/core";
-import { useSelector } from "react-redux";
-import { getCurrentCategory } from "../../Redux/Reducers/currentCategoryReducer";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    getCurrentCategory,
+    selectCategory,
+} from "../../Redux/Reducers/currentCategoryReducer";
 
 const ProductList = (props) => {
     const classes = useStyles();
+    const dispatch = useDispatch();
     let categoryToRender = masterProductList;
     const currentCategory = useSelector(getCurrentCategory);
 
     let consessions = {
-        1007: 'popcorn',
-        1008: 'hot dog',
-        1009: 'cotton'
+        1007: "popcorn",
+        1008: "hot dog",
+        1009: "cotton",
     };
 
-    useEffect(() => {
-    }, [currentCategory]);
+    useEffect(() => { }, [currentCategory]);
 
-    if (currentCategory === 'consessions') {
-        categoryToRender = masterProductList.filter(product => {
-            if (consessions[product.productId]) return true
+    const handleDeselectCategory = () => {
+        dispatch(selectCategory(null));
+    };
+
+    if (currentCategory === "consessions") {
+        categoryToRender = masterProductList.filter((product) => {
+            if (consessions[product.productId]) return true;
         });
     }
 
@@ -34,6 +41,13 @@ const ProductList = (props) => {
                 <Grid item xs={1}></Grid>
                 {/* Product container grid item */}
                 <Grid item xs={10}>
+                    <Button
+                        onClick={handleDeselectCategory}
+                        startIcon={<ArrowBackIosIcon />}
+                        style={{ marginBottom: 30, marginLeft: 20, color: "#eaeaea" }}
+                    >
+                        Choose a New Category
+                    </Button>
                     <Grid container styles={classes.mainProductGridContainer}>
                         {categoryToRender.map((product) => (
                             <SingleProduct

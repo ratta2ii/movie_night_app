@@ -7,12 +7,12 @@ import Typography from "@material-ui/core/Typography";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import EmailIcon from "@material-ui/icons/Email";
-import ShareIcon from "@material-ui/icons/Share";
 import ButtonLoading from './../../Components/ButtonLoading/ButtonLoading';
 import useStyles from "./StyledCardStyles";
 import { useDispatch } from "react-redux";
 import { addWish } from "../../Redux/Reducers/currentCartListReducer";
 import { masterProductList } from "./../../Data/MockData/DataProducts";
+// import ShareIcon from "@material-ui/icons/Share";
 
 //! This will ensure a single product stays loaded even through refresh (refactor coming?)
 let masterProductListLoadingRegistry = {};
@@ -64,18 +64,18 @@ const StyledCard = (props) => {
             >
                 {/* Header */}
                 <Grid item xs={12} className={classes.topGridItem}>
-                    <ArrowBackIosIcon onClick={handleBack} />
+                    <ArrowBackIosIcon onClick={handleBack}  style={{cursor: 'pointer'}} />
                     <span className={classes.backToProducts} onClick={handleBack}>
                         BACK TO PRODUCTS
                     </span>
-                    <ShareIcon
+                    {/* <ShareIcon
                         className={classes.FavoriteBorderIcon}
                         style={{
                             position: "absolute",
                             right: "35",
                             color: "#7e7b7b",
                         }}
-                    />
+                    /> */}
                 </Grid>
                 {/* Image Container */}
                 <Grid

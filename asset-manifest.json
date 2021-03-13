@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/movie_night_app/static/css/main.565eb5b0.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.423c7876.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.423c7876.chunk.js.map",
+    "main.js": "/movie_night_app/static/js/main.0394dbdc.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.0394dbdc.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.08086021.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.08086021.js.map",
     "static/js/2.687b6887.chunk.js": "/movie_night_app/static/js/2.687b6887.chunk.js",
     "static/js/2.687b6887.chunk.js.map": "/movie_night_app/static/js/2.687b6887.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.64d3ad44b200fa88e69d5857df81e235.js": "/movie_night_app/precache-manifest.64d3ad44b200fa88e69d5857df81e235.js",
+    "precache-manifest.f96b493fd97ccb9e729bc5eafad78c69.js": "/movie_night_app/precache-manifest.f96b493fd97ccb9e729bc5eafad78c69.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
     "static/css/main.565eb5b0.chunk.css.map": "/movie_night_app/static/css/main.565eb5b0.chunk.css.map",
     "static/js/2.687b6887.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.687b6887.chunk.js.LICENSE.txt",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.08086021.js",
     "static/js/2.687b6887.chunk.js",
     "static/css/main.565eb5b0.chunk.css",
-    "static/js/main.423c7876.chunk.js"
+    "static/js/main.0394dbdc.chunk.js"
   ]
 }

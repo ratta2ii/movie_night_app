@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import bg_image from './../../Assets/Images/stars4.jpg';
 
-const drawerWidth = 230;
+const drawerWidth = 200;
 
 export const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,6 +14,9 @@ export const useStyles = makeStyles((theme) => ({
             borderLeft: '5px solid #0f131e',
             backgroundColor: 'rgb(155 202 239 / 5%)',
         },
+        [theme.breakpoints.down("xs")]: {
+            height: 55,
+        }
     },
     appBar: {
         position: 'fixed',
@@ -128,14 +131,14 @@ export const useStyles = makeStyles((theme) => ({
         padding: '0'
     },
     ListItemText: {
-        fontSize: '.9rem',
+        fontSize: '.8rem',
         marginTop: '4px',
         paddingTop: 3,
         paddingBottom: 3,
         letterSpacing: '0.07em',
         textTransform: 'uppercase',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '.8rem'
+            fontSize: '.7rem'
         },
     },
     companyLogoBox: {
@@ -166,45 +169,45 @@ export const useStyles = makeStyles((theme) => ({
     },
     HomeIcon: {
         color: '#1890ff',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     ShopIcon: {
         color: '#1890ff',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     FavoriteIcon: {
         color: '#1890ff',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     ListAltIcon: {
         color: '#1890ff',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     ListAltIcon2: {
         color: '#1890ff',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     SwapHorizontalCircleIcon: {
         color: '#f6961b',
-        marginLeft: 3,
-        fontSize: 25,
+        marginLeft: 5,
+        fontSize: 20,
         borderRadius: 3,
     },
     miniHomeNavTitle: {
         marginBottom: '1rem',
         position: 'absolute',
         bottom: '-3px',
-        left: '18px',
+        left: '16.5px',
         fontSize: '10px',
     },
     miniiNavTitle: {

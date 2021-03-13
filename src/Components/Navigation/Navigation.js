@@ -152,7 +152,7 @@ export default function Navigation(props) {
                             className={classes.miniiNavTitle}
                             style={{
                                 display: open || mobileDrawerState ? "none" : "unset",
-                                left: "15px",
+                                left: "13px",
                             }}
                         >
                             Images

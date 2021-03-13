@@ -42,9 +42,9 @@ const ProductList = (props) => {
                 {/* Product container grid item */}
                 <Grid item xs={10}>
                     <Button
+                        className={classes.categoryBackBtn}
                         onClick={handleDeselectCategory}
                         startIcon={<ArrowBackIosIcon />}
-                        style={{ marginBottom: 30, marginLeft: 20, color: "#eaeaea" }}
                     >
                         Choose a New Category
                     </Button>

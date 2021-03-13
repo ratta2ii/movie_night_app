@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     mainGridContainer: {
         maxWidth: 1000,
         overflow: 'hidden',
-        boxShadow: '0 0 10px #314883',
+        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('lg')]: {
         },
         [theme.breakpoints.down('md')]: {
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
+        fontSize: '.8rem',
         [theme.breakpoints.down('xs')]: {
             padding: '20px 20px',
         },
@@ -62,10 +63,13 @@ const useStyles = makeStyles((theme) => ({
     },
     imageStyles: {
         width: '100%',
+        maxHeight: 300, 
+        objectFit: 'contain',
     },
     descriptionContainer: {
         fontFamily: 'Raleway, sans-serif',
         padding: '25px 40px 25px 35px',
+        fontSize: '.8rem',
         [theme.breakpoints.down('sm')]: {
             paddingTop: '10px',
             paddingLeft: '50px',
@@ -73,10 +77,6 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             paddingLeft: '25px',
         },
-    },
-    description: {
-        fontFamily: 'Raleway, sans-serif',
-        paddingLeft: 0,
     },
     title: {
         fontFamily: 'Raleway, sans-serif',
@@ -96,18 +96,17 @@ const useStyles = makeStyles((theme) => ({
     subTitle: {
         margin: '6px 0 15px 0',
         fontFamily: 'Raleway, sans-serif',
-        fontSize: '12px',
+        fontSize: '.8rem',
         color: '#515151',
-
+        textTransform: 'uppercase',  
+    },
+    description: {
+        fontFamily: 'Raleway, sans-serif',
+        paddingLeft: 0,
+        paddingBottom: 8,
     },
     price: {
-        fontSize: '3rem',
-        [theme.breakpoints.down('lg')]: {
-            fontSize: '2rem'
-        },
-        [theme.breakpoints.down('md')]: {
-            fontSize: '1.7rem'
-        },
+        fontSize: '1.5rem',
     },
     returnHomeLink: {
         padding: '10px 20px',
@@ -137,9 +136,6 @@ const useStyles = makeStyles((theme) => ({
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
-        [theme.breakpoints.down('sm')]: {
-            
-        }, 
         [theme.breakpoints.down('xs')]: {
             fontSize: 9,
             width: 130,
@@ -158,9 +154,6 @@ const useStyles = makeStyles((theme) => ({
             border: 0,
             background: 'linear-gradient(90deg, #2063cc 0%, #2166d3 40%, #2c85ea 100%)',
         },
-        [theme.breakpoints.down('sm')]: {
-            
-        }, 
         [theme.breakpoints.down('xs')]: {
             width: 130,
             fontSize: 9,

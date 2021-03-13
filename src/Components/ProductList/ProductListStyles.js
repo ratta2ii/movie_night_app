@@ -12,6 +12,14 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center', 
     },
+    categoryBackBtn: {
+        marginBottom: 30,
+        marginLeft: 20,
+        color: "#eaeaea",
+        [theme.breakpoints.down("xs")]: {
+            margin: 10,
+        }
+    }
 }));
 
 export default useStyles;

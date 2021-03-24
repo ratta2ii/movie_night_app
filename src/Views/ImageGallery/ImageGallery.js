@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Header from './../../Components/Header/Header';
 import ImageGrid from './../../Components/ImageGrid/ImageGrid';
 import Footer from './../../Components/Footer/Footer';
+import { Typography } from '@material-ui/core';
 
 const ImageGallery = (props) => {
     const classes = useStyles();
@@ -16,6 +17,14 @@ const ImageGallery = (props) => {
     return (
         <Box>
             <Header />
+            <Typography
+                style={{
+                    textAlign: 'center',
+                    color: 'white',
+                    marginBottom: 50,
+                }} >
+                Click any image to view in carousel
+            </Typography>
             <Box className={classes.root}>
                 <ImageGrid />
             </Box>

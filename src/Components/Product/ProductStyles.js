@@ -26,9 +26,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     action: {
-        margin: "0 0 0 15px",
-        padding: 5,
-        backgroundColor: 'floralwhite',
+        padding: '5px 20px',
+        backgroundColor: '#fff3e0',
     },
     addWishText: {
         fontSize: '.6rem',

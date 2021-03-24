@@ -44,11 +44,7 @@ const Product = (props) => {
                         image={props.mainImage}
                         title={props.title}
                     />
-                    <CardContent
-                        style={{
-                            backgroundColor: '#edf0f8',
-                            padding: 8
-                        }}>
+                    <CardContent style={{ padding: 8 }} >
                         <Typography
                             className={styles.title}
                             variant="h6"

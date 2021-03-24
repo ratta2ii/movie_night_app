@@ -159,7 +159,7 @@ export const useStyles = makeStyles((theme) => ({
     HomeIcon: {
         color: '#1890ff',
         marginLeft: 5,
-        fontSize: 20,
+        fontSize: 22,
         borderRadius: 3,
     },
     ShopIcon: {

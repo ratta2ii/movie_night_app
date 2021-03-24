@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/movie_night_app/static/css/main.565eb5b0.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.0394dbdc.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.0394dbdc.chunk.js.map",
+    "main.css": "/movie_night_app/static/css/main.2ea31a81.chunk.css",
+    "main.js": "/movie_night_app/static/js/main.91600222.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.91600222.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.08086021.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.08086021.js.map",
-    "static/js/2.687b6887.chunk.js": "/movie_night_app/static/js/2.687b6887.chunk.js",
-    "static/js/2.687b6887.chunk.js.map": "/movie_night_app/static/js/2.687b6887.chunk.js.map",
+    "static/js/2.1c8cab8e.chunk.js": "/movie_night_app/static/js/2.1c8cab8e.chunk.js",
+    "static/js/2.1c8cab8e.chunk.js.map": "/movie_night_app/static/js/2.1c8cab8e.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.f96b493fd97ccb9e729bc5eafad78c69.js": "/movie_night_app/precache-manifest.f96b493fd97ccb9e729bc5eafad78c69.js",
+    "precache-manifest.246b25bca03cda22e7eab7127b89c95e.js": "/movie_night_app/precache-manifest.246b25bca03cda22e7eab7127b89c95e.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
-    "static/css/main.565eb5b0.chunk.css.map": "/movie_night_app/static/css/main.565eb5b0.chunk.css.map",
-    "static/js/2.687b6887.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.687b6887.chunk.js.LICENSE.txt",
+    "static/css/main.2ea31a81.chunk.css.map": "/movie_night_app/static/css/main.2ea31a81.chunk.css.map",
+    "static/js/2.1c8cab8e.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.1c8cab8e.chunk.js.LICENSE.txt",
     "static/media/bg12copy.png": "/movie_night_app/static/media/bg12copy.ebe3f021.png",
     "static/media/styles.css": "/movie_night_app/static/media/gallery4.2787e1ca.jpg",
     "static/media/company-logo-icon.png": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png",
@@ -42,8 +42,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.08086021.js",
-    "static/js/2.687b6887.chunk.js",
-    "static/css/main.565eb5b0.chunk.css",
-    "static/js/main.0394dbdc.chunk.js"
+    "static/js/2.1c8cab8e.chunk.js",
+    "static/css/main.2ea31a81.chunk.css",
+    "static/js/main.91600222.chunk.js"
   ]
 }

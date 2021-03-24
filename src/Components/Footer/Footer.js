@@ -1,5 +1,4 @@
-import React from 'react'
-// Styling
+import React from 'react';
 import { withStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
@@ -20,7 +19,6 @@ const Footer = () => {
                     <Box className={classes.footerContainer} >
                         {/* Footer overlay container */}
                         <Box className={classes.footerOverlayContainer} >
-                            {/* Hidden logo (small viewport only) */}
                             <a href="http://azeventteam.com">
                                 <img src={companyLogoIcon}
                                     alt='company logo'

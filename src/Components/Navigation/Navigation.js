@@ -338,15 +338,6 @@ export default function Navigation(props) {
                                 />
                             </Box>
                         </Box>
-                        <Box className={classes.companyLogoBox}>
-                            <a href="http://azeventteam.com">
-                                <img
-                                    src={companyLogoIcon}
-                                    alt="company logo"
-                                    className={classes.companyLogo}
-                                />
-                            </a>
-                        </Box>
                         {/* Social Media Icons Container */}
                         <Box className={classes.socialIconsContainer}>
                             <a href="https://www.facebook.com/azeventteam/">

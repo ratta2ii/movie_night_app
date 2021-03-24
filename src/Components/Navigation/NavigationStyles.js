@@ -141,27 +141,16 @@ export const useStyles = makeStyles((theme) => ({
             fontSize: '.7rem'
         },
     },
-    companyLogoBox: {
-        display: 'flex',
-        alignItems: 'center',
-        marginRight: '110px',
-        [theme.breakpoints.down('sm')]: {
-            display: 'none',
-        },
-    },
-    companyLogo: {
-        width: 85,
-        marginTop: 8,
-    },
     socialIconsContainer: {
         width: 150,
+        height: 40,
         display: 'flex',
         justifyContent: 'space-evenly',
         borderRadius: '5px',
-        paddingTop: 5,
     },
     socialMediaIcons: {
         width: 40,
+        marginTop: -1,
         borderRadius: 5,
         [theme.breakpoints.down('xs')]: {
             display: 'none',

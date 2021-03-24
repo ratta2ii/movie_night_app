@@ -52,14 +52,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     hiddenCompanyLogo: {
-        display: 'none',
-        [theme.breakpoints.down('sm')]: {
-            display: 'inline',
-            width: 200,
-        },
-        [theme.breakpoints.down('xs')]: {
-            display: 'none',
-        },
+        width: 175,
     },
     socialIconsContainer: {
         display: 'none',

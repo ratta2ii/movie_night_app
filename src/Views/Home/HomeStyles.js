@@ -127,7 +127,7 @@ export const useStyles = makeStyles((theme) => ({
         border: '1px solid #4a6ea9',
         fontWeight: 100,
         margin: 'auto',
-        marginTop: 50,
+        marginTop: 65,
         display: 'block',
         color: '#eaeaea',
         cursor: 'pointer',

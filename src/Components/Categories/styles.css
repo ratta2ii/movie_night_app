@@ -62,7 +62,7 @@
 }
 
 .one {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/f2.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/f2.jpeg');
 	/* background: url('./../../Assets/Images/f2.jpeg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -70,35 +70,35 @@
 }
 
 .two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/GalleryImages/gallery4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/GalleryImages/gallery4.jpg');
 	/* background: url('./../../Assets/Images/GalleryImages/gallery4.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .three {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/d6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/d6.jpg');
     /* background: url('./../../Assets/Images/d6.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .four {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/GalleryImages/gallery10.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/GalleryImages/gallery10.JPG');
 	/* background: url('./../../Assets/Images/GalleryImages/gallery10.JPG'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .five {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/e3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/e3.jpg');
     /* background: url('./../../Assets/Images/e3.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* background-position: center; */
 }
 .six {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/Images/c6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./../../Assets/Images/c6.jpg');
 	/* background: url('./../../Assets/Images/c6.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;

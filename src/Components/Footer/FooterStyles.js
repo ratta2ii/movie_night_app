@@ -53,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
     },
     hiddenCompanyLogo: {
         width: 175,
+        [theme.breakpoints.down('xs')]: {
+            display: 'none',
+        },
     },
     socialIconsContainer: {
         display: 'none',

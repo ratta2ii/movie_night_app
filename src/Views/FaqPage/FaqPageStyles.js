@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import bgImage from './../../Assets/Images/sunset.jpeg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -10,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         marginBottom: 25,
         maxWidth: 900,
+        background: `url('${bgImage}')`,
+        backgroundPositionY: -60,
+        backgroundPositionX: -450,
         [theme.breakpoints.down('sm')]: {
             margin: '-20px 5px -40px 5px',
         },
@@ -22,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         padding: 75,
         paddingBottom: 40,
-        backgroundColor: '#17233fc7',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('xs')]: {
             padding: 15,

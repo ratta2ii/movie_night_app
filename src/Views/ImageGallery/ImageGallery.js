@@ -17,12 +17,7 @@ const ImageGallery = (props) => {
     return (
         <Box>
             <Header />
-            <Typography
-                style={{
-                    textAlign: 'center',
-                    color: 'white',
-                    marginBottom: 50,
-                }} >
+            <Typography className={classes.carouselInstructions} >
                 Click any image to view in carousel
             </Typography>
             <Box className={classes.root}>

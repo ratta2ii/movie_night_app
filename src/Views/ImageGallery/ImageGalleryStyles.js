@@ -22,6 +22,11 @@ export const useStyles = makeStyles((theme) => ({
             padding: 0,
         },
     },
+    carouselInstructions: {
+        textAlign: 'center',
+        color: 'white',
+        marginBottom: 50,
+    },
     imgModal: {
         backgroundColor: '#000000f2',
         width: '100vw',
@@ -53,6 +58,5 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
 
 export default useStyles;

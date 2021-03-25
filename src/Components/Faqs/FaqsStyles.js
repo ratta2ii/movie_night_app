@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
     },
     heading: {
+        padding: 10,
         fontWeight: '500',
         color: 'white',
         letterSpacing: '.02em',
@@ -20,9 +21,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     Accordion: {
-        marginBottom: 10,
+        marginBottom: 1,
         color: '#eaeaea',
-        padding: '5px 20px',
         borderRadius: 5,
         background: 'linear-gradient(124deg, rgb(38 85 132) 16%, rgb(51 102 153) 56%)',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)', 
@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     AccordionDetails: {
         backgroundColor: '#fffaf2',
         boxShadow: 'inset 0px 0px 2px black',
-        marginBottom: 10,
         padding: '20px 40px !important',
         [theme.breakpoints.down('xs')]: {
             padding: '20px !important',

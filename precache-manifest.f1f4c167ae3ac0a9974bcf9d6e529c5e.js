@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0434d990c2e272d6a4d1eee5c6631eeb",
+    "revision": "b58bb5ea1510472b58fe68ea2dd82ec1",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "a7d8e05b6281ef79bbc0",
+    "revision": "95df32016ff0bec632c0",
     "url": "/movie_night_app/static/css/main.421edbe0.chunk.css"
   },
   {
-    "revision": "edf56f04c62f5fa9d35d",
-    "url": "/movie_night_app/static/js/2.cf5d7dcb.chunk.js"
+    "revision": "36e9e611740a4c446815",
+    "url": "/movie_night_app/static/js/2.27b4b5ae.chunk.js"
   },
   {
     "revision": "1937a0fc6634269e5f47f8181e27fdc7",
-    "url": "/movie_night_app/static/js/2.cf5d7dcb.chunk.js.LICENSE.txt"
+    "url": "/movie_night_app/static/js/2.27b4b5ae.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7d8e05b6281ef79bbc0",
-    "url": "/movie_night_app/static/js/main.52863422.chunk.js"
+    "revision": "95df32016ff0bec632c0",
+    "url": "/movie_night_app/static/js/main.a9cca85b.chunk.js"
   },
   {
     "revision": "4c787393de4262b8b5bb",
@@ -144,8 +144,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_night_app/static/media/stars4.c56505f8.jpg"
   },
   {
-    "revision": "42fe1fa3eae42b8ceb6bb481e1977eb0",
-    "url": "/movie_night_app/static/media/sunset.42fe1fa3.jpeg"
+    "revision": "fae192229e4cbdccb59a2fb08516f2d1",
+    "url": "/movie_night_app/static/media/sunset.fae19222.jpeg"
   },
   {
     "revision": "c8d54fd94c984a1f7793afe0fedec005",

@@ -26,6 +26,9 @@ export const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: 'white',
         marginBottom: 50,
+        [theme.breakpoints.down('xs')]: { 
+            marginBottom: -45
+        },
     },
     imgModal: {
         backgroundColor: '#000000f2',

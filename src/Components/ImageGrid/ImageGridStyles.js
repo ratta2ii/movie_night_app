@@ -14,6 +14,9 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('lg')]: {
             width: '85%',
         },
+        [theme.breakpoints.down('sm')]: {
+            padding: '9px 5px 4px',
+        },
         [theme.breakpoints.down('xs')]: { 
             backgroundColor: '#7a97d745',
             padding: '30px 0 0',
@@ -30,7 +33,7 @@ export const useStyles = makeStyles((theme) => ({
         width: '100%',
         overflow: 'hidden',
         [theme.breakpoints.down('md')]: {  //? md, medium: 960px
-            height: 235,
+            height: 190,
         },
         [theme.breakpoints.down('sm')]: {  //? sm, small: 600px
             height: 'unset',
@@ -53,9 +56,10 @@ export const useStyles = makeStyles((theme) => ({
         height: 346,
         overflow: 'hidden',
         [theme.breakpoints.down('md')]: {  //? md, medium: 960px
-            height: 350,
+            height: 280,
         },
         [theme.breakpoints.down('sm')]: { 
+            backgroundColor: 'red',
             height: 'unset',
             padding: '3px 5px',
         },

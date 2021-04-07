@@ -25,8 +25,16 @@ export const useStyles = makeStyles((theme) => ({
     carouselInstructions: {
         textAlign: 'center',
         color: 'white',
-        marginBottom: 50,
+        marginBottom: 30,
+        [theme.breakpoints.down('lg')]: { 
+            marginTop: -55,
+        },
+        [theme.breakpoints.down('md')]: { 
+            marginBottom: 0,
+            marginTop: -25,
+        },
         [theme.breakpoints.down('xs')]: { 
+            marginTop: 'unset',
             marginBottom: -45
         },
     },

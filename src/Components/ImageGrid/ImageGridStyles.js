@@ -59,7 +59,6 @@ export const useStyles = makeStyles((theme) => ({
             height: 280,
         },
         [theme.breakpoints.down('sm')]: { 
-            backgroundColor: 'red',
             height: 'unset',
             padding: '3px 5px',
         },

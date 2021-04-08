@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 25,
         maxWidth: 900,
         background: `url('${bgImage}')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#1e1821',
         backgroundPositionY: -60,
         backgroundPositionX: -450,
         [theme.breakpoints.down('sm')]: {

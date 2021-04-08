@@ -59,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
         }, 
     },
     headerContainer: {
-        height: 215,
+        height: 175,
         position: 'relative',
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
@@ -91,7 +91,7 @@ export const useStyles = makeStyles((theme) => ({
     CategoriesContainer: {
         backgroundColor: '#17233fc7',
         margin: '0 3% 45px',
-        padding: '75px 0px',
+        padding: '75px 0px 50px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('lg')]: {
             margin: '0 0 25px'

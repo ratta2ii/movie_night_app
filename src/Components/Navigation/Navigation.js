@@ -300,8 +300,8 @@ export default function Navigation(props) {
                     <Box className={classes.toolBarContent}>
                         {/* Contact Info */}
                         <Box>
-                            <Box>
-                                <FormControlLabel
+                            <Box style={{minWidth: 250}}>
+                                {/* <FormControlLabel
                                     className={classes.contactEmail}
                                     control={
                                         <a
@@ -320,10 +320,29 @@ export default function Navigation(props) {
                                     }
                                     label={"example@example.com"}
                                     labelPlacement="end"
-                                />
+                                /> */}
+                                <IconButton
+                                    color="primary"
+                                    style={{ padding: "5px 7px 5px 10px" }}
+                                >
+                                    <MailOutlineIcon />
+                                </IconButton>
+                                <a
+                                    target="_top"
+                                    color="primary"
+                                    rel="noopener noreferrer"
+                                    href="mailto:example@example.com"
+                                    style={{ 
+                                        textDecoration: 'none',
+                                        color: '#ffffff',
+                                        fontSize: '.85rem'
+                                    }}
+                                >
+                                    example@example.com
+                                </a>             
                             </Box>
                             <Box>
-                                <FormControlLabel
+                                {/* <FormControlLabel
                                     className={classes.contactPhone}
                                     control={
                                         <IconButton
@@ -335,7 +354,20 @@ export default function Navigation(props) {
                                     }
                                     label={"(555) 555-5555"}
                                     labelPlacement="end"
-                                />
+                                /> */}
+                                <IconButton
+                                    color="primary"
+                                    style={{ padding: "5px  8px 5px 12px" }}
+                                >
+                                    <ContactPhoneIcon fontSize="small" />
+                                </IconButton>
+                                <span
+                                    style={{ 
+                                    color: '#ffffff',
+                                    fontSize: '.85rem'
+                                }}>
+                                    (555) 555-5555
+                                </span>
                             </Box>
                         </Box>
                         {/* Social Media Icons Container */}

@@ -2,14 +2,22 @@
 #### By Trevor Mackin   
 ##### Future Site: azmovienights.com
 
-##### GH-PAGES: https://ratta2ii.github.io/movie_night_app/
+##### Live (current): ratta2ii.github.io/movie_night_app
 
-
-## **Component Tree Planning Phase**
+#
+## Component Tree Planning Phase
 
 ![ Screenshot of Project ](src/Assets/Images/projectStructure.png)
 
+#
+## Homepage
+![ Screenshot of Project ](/public/movie_nights_ss_homepage.png)
 
+#
+## Contact Form
+![ Screenshot of Project ](/public/movie_nights_ss_contact_form.png)
+
+#
 ## **Description**
 
 _This is a client-side application built with React. The project focuses on building a website for an outdoor movie theatre rental company. I used Redux for state management, a Formspree API for email services, and Material-Ui for all of the design. The application is 100% responsive and built for both Mobile and Desktop._

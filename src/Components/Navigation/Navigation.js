@@ -341,7 +341,7 @@ export default function Navigation(props) {
                                     example@example.com
                                 </a>             
                             </Box>
-                            <Box>
+                            <Box style={{marginTop: -7}}>
                                 {/* <FormControlLabel
                                     className={classes.contactPhone}
                                     control={

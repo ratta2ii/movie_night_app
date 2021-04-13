@@ -55,16 +55,14 @@ const AboutUs = (props) => {
                                         down and cleaning up after the event. Our package prices also include a staff member to run all of the equipment.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                        Choose your event equipment today. You can view our products{" "}
+                                        Choose your event equipment today. View our {" "}
                                         <Link
                                             to="/products"
                                             style={{ textDecoration: "none", color: "#e57373" }}
                                         >
-                                            HERE
-                                        </Link>{" "}
-                                        and make reservations online, or give us a call anytime.
-                                        Make your reservations now and leave the rest to us. (555)
-                                        555-5555
+                                            Products
+                                        </Link>
+                                            {" "} online and make reservations now, or give us a call anytime. Just  make your reservations and leave the rest to us. (555)555-5555
                                     </Typography>
                                 </Box>
                             </Grid>

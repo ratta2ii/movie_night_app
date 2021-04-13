@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '15px',
         fontSize: '.9rem',
         fontWeight: 500,
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.down('md')]: {
             fontSize: '.95rem'
         },
         [theme.breakpoints.down('xs')]: {

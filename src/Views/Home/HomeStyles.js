@@ -124,7 +124,6 @@ export const useStyles = makeStyles((theme) => ({
     },
     scrollTopButton: {
         fontSize: 15,
-        border: '1px solid #4a6ea9',
         fontWeight: 100,
         margin: 'auto',
         marginTop: 65,

@@ -38,14 +38,14 @@ const Welcome = (props) => {
                                         exceptional service at an affordable price.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
-                                        Please click{" "}
+                                        Here are some {" "}
                                         <Link
                                             to="/images"
                                             style={{ textDecoration: "none", color: "#e57373" }}
                                         >
-                                            HERE
+                                            Images
                                         </Link>{" "}
-                                        to check out some of some of the different events that we have partnered with in the past.
+                                        of some of the different events that we have partnered with in the past.
                                     </Typography>
                                     <Typography className={classes.companyDescription}>
                                         We love what we do, and we look forward to partnering with

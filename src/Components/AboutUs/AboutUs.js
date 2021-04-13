@@ -60,9 +60,11 @@ const AboutUs = (props) => {
                                             to="/products"
                                             style={{ textDecoration: "none", color: "#e57373" }}
                                         >
-                                            Products
+                                            PRODUCTS
                                         </Link>
-                                            {" "} online and make reservations now, or give us a call anytime. Just  make your reservations and leave the rest to us. (555)555-5555
+                                            {" "} online and make reservations now, or give us a call anytime. Just  make your reservations and leave the rest to us. 
+                                                <br/>
+                                                (555)555-5555
                                     </Typography>
                                 </Box>
                             </Grid>

@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         padding: 15,
         margin: 'auto',
-        maxWidth: 600,
+        maxWidth: 575,
         backgroundColor: '#7a97d745',
         [theme.breakpoints.down('md')]: {
             maxWidth: '550px',

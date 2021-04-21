@@ -29,18 +29,15 @@ function Reservations(props) {
                             display: (hideInfo === null) ? 'block' : 'none'
                         }}>
                         <Typography className={classes.text} >
-                            Thank you for visiting AZ Movie Nights. Please don't hesitate to give us a call with any additional questions you might have. We would love to hear from you.
+                           (1) Please don't hesitate to give us a call with any additional questions you might have. If you prefer to reach out online, go ahead and use the contact form here and one of our staff members will be in touch shortly.
                         </Typography>
                         <Typography className={classes.text} >
-                            If you prefer to reach out online, go ahead and use the contact form here and one of our staff members will be in touch. You may also continue through checkout with your cart, in which case someone will also contact you to go over any further details about your event.
+                            (2) If you already have items in your cart and are ready to check out, go ahead and continue by filling out this form. Someone will review your reservation and contact you right away to go over any further details about your event.
                         </Typography>
                         <Typography className={classes.text} >
-                            We appreciate your business, and we look forward to serving you at your next outdoor movie night event.
+                            We appreciate your business, and we look forward to serving you at your next outdoor movie night event. Thank you for visiting AZ Movie Nights.
                         </Typography>
                         <Box className={classes.thankYouContainer} >
-                            <Typography className={classes.text} >
-                                Thank you!
-                            </Typography>
                             <Typography className={classes.phoneNumber}>
                             (555) 555-5555
                         </Typography>

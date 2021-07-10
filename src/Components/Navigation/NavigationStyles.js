@@ -30,7 +30,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     toolBar: {
         height: '115px',
-        borderBottom: '10px solid red',
+        // borderBottom: '10px solid red',
         padding: 15
     },
     toolBarContent: {

@@ -3,9 +3,9 @@ import bg_image from './../../Assets/Images/bg12copy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        diplay: 'flex',
+        display: 'flex',
         margin: 'auto',
-        marginTop: 90,
+        marginTop: 110,
         fontSize: '3em',
         padding: '15px 3%',
         [theme.breakpoints.down('lg')]: {

@@ -8,7 +8,10 @@ export const useStyles = makeStyles((theme) => ({
         animation: 'fadeIn ease .2s',
     },
     innerRoot: {
-        padding: '0 8%',
+        padding: '0 10%',
+        [theme.breakpoints.down('lg')]: {
+            padding: '0 12%'
+        },
         [theme.breakpoints.down('md')]: {
             padding: '0',
         },
@@ -90,11 +93,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     CategoriesContainer: {
         backgroundColor: '#17233fc7',
-        margin: '0 3% 45px',
+        margin: '0 3% 90px',
         padding: '75px 0px 50px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         [theme.breakpoints.down('lg')]: {
-            margin: '0 0 25px'
+            margin: '0 0 90px'
         },
         [theme.breakpoints.down('md')]: {
             padding: 0,
@@ -123,15 +126,19 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     scrollTopButton: {
-        fontSize: 15,
-        fontWeight: 100,
-        margin: 'auto',
-        marginTop: 65,
-        display: 'block',
-        color: '#eaeaea',
-        cursor: 'pointer',
-        padding: 5,
-        borderRadius: 4,
+        display: 'none',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 15,
+            fontWeight: 100,
+            margin: 'auto',
+            marginTop: 65,
+            display: 'block',
+            color: '#eaeaea',
+            cursor: 'pointer',
+            padding: 5,
+            borderRadius: 4,
+        },
+ 
     }
 }));
 

@@ -35,7 +35,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     toolBarContent: {
         width: '100%',
-        backgroundColor: '#0e1529',
+        backgroundColor: '#28a0ff57',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -100,14 +100,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: '#0e1529',
+        backgroundColor: '#000000c4',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.easeIn,
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
     drawerClose: {
-        backgroundColor: '#0e1529',
+        backgroundColor: '#000000c4',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -124,6 +124,13 @@ export const useStyles = makeStyles((theme) => ({
     contactPhone: {
         marginTop: -5,
         color: 'floralwhite',
+    },
+    companyLogoIcon: {
+        width: 90,
+        marginRight: '115px',
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
+        },
     },
     menuList: {
         backgroundColor: '#03070f',

@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import bg_image from './../../Assets/Images/bg12copy.png';
+// import bg_image from './../../Assets/Images/bg13.png';
+import bg_image from './../../Assets/Images/spiderman.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -7,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         marginTop: 110,
         fontSize: '3em',
-        padding: '15px 3%',
+        padding: '70px 3%',
         [theme.breakpoints.down('lg')]: {
             padding: '15px 0',
         },
@@ -22,19 +23,20 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     paper: {
-        backgroundColor: '#010308',
+        backgroundColor: '#4667c63b',
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
         backgroundSize: 'cover',
         borderRadius: '3px',
+        boxShadow: '0 0 35px 35px black inset',
         [theme.breakpoints.down('sm')]: {
             backgroundPosition: 'center center',
         },
     },
     leftGridContainer: {
-        backgroundColor: '#04060ef5',
-        padding: '100px',
+        backgroundColor: '#000000c4',
+        padding: '150px 100px',
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('lg')]: {
@@ -51,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#04060ef5',
-        padding: '50px 70px 50px 0px',
+        backgroundColor: '#000000c4',
+        padding: '50px 100px 50px 75px',
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('lg')]: {
@@ -94,8 +96,11 @@ const useStyles = makeStyles((theme) => ({
     companyDescription: {
         color: '#eaeaea',
         marginBottom: '15px',
-        fontSize: '.9rem',
+        fontSize: '1.1rem',
         fontWeight: 500,
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '.9rem',
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '.85rem',
             lineHeight: '1.35',

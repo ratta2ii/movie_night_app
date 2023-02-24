@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/sunset.jpeg';
 
+
 export const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: '-85px', 
@@ -8,9 +9,12 @@ export const useStyles = makeStyles((theme) => ({
         animation: 'fadeIn ease .2s',
     },
     innerRoot: {
-        padding: '0 10%',
-        [theme.breakpoints.down('lg')]: {
-            padding: '0 12%'
+        padding: '0 12%',
+        ['@media (max-width:2300px)']: {
+            padding: "0 10%",
+        },
+        ['@media (max-width:1650px)']: {
+            padding: "0 5%",
         },
         [theme.breakpoints.down('md')]: {
             padding: '0',
@@ -92,7 +96,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     CategoriesContainer: {
-        backgroundColor: '#17233fc7',
+        // NOTE: See addtional styling in the styles.css (i.e. .container_bg)
         margin: '0 3% 90px',
         padding: '75px 0px 50px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',

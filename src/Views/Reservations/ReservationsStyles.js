@@ -2,9 +2,12 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        padding: 150,
         marginTop: 12,
         animation: 'fadeIn ease .3s',
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('lg')]: {
+            padding: 0,   
+        },[theme.breakpoints.down('md')]: {
             marginTop: 0,   
         },
     },
@@ -33,7 +36,10 @@ const useStyles = makeStyles((theme) => ({
     text: {
         color: '#eaeaea',
         marginBottom: 10,
-        fontSize: '.9rem',   
+        fontSize: '1.3rem',   
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '.9rem',   
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '.9rem',   
         },

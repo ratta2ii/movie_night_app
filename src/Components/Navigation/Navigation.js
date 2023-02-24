@@ -370,6 +370,13 @@ export default function Navigation(props) {
                                 </span>
                             </Box>
                         </Box>
+                        <Box>
+                            <a href="http://azeventteam.com">
+                                <img src={companyLogoIcon}
+                                    alt='company logo'
+                                    className={classes.companyLogoIcon} />
+                            </a>
+                        </Box>
                         {/* Social Media Icons Container */}
                         <Box className={classes.socialIconsContainer}>
                             <a href="https://www.facebook.com/azeventteam/">

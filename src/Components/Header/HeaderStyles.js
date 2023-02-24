@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import header_bg_image from './../../Assets/Images/bg12copy.png';
+// import header_bg_image from './../../Assets/Images/bg12.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     headerContainer: {
         height: 200,
         marginTop: -185,
-        background: `url('${header_bg_image}') no-repeat`,
+        //background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
         marginBottom: '120px',
         [theme.breakpoints.down('sm')]: {
@@ -22,12 +22,12 @@ const useStyles = makeStyles((theme) => ({
     headerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#04060ef5',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative',
+        /* backgroundColor: '#000000c4', */
     },
     headerTitle: {
         fontSize: '8rem',

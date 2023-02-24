@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import header_bg_image from './../../Assets/Images/bg12copy.png';
+import header_bg_image from './../../Assets/Images/joker.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     footerContainer: {
-        height: 250,
-        background: `url('${header_bg_image}') no-repeat`,
+        height: 450,
+        //background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         padding: 0,
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     footerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#04060ef5',
+        backgroundColor: '#000000c4',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

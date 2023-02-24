@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         animation: 'fadeIn ease .2s',
     },
     mainProductGridContainer: {
-        backgroundColor: '#010308',
+        backgroundColor: '#4667c63b',
         display: 'flex',
         justifyContent: 'center', 
     },

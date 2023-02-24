@@ -10,7 +10,9 @@ import Welcome from "../../Components/Welcome/Welcome";
 import AboutUs from "./../../Components/AboutUs/AboutUs";
 import Footer from "./../../Components/Footer/Footer";
 import useStyles from "./HomeStyles";
+import "./styles.css";
 import Categories from "../../Components/Categories/Categories";
+
 
 function Home(props) {
     const classes = useStyles();
@@ -59,7 +61,7 @@ function Home(props) {
                     {/* Products Left Margin */}
                     <Grid item xs={1}></Grid>
                     <Grid item xs={10}>
-                        <Box className={classes.CategoriesContainer}>
+                        <Box className={classes.CategoriesContainer} class="container_bg" >
                             <Categories />
                         </Box>
                     </Grid>

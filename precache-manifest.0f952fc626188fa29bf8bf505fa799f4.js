@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38fa70dcb4697d8381aafbcaedc6440d",
+    "revision": "7ab19adca1bb36f602e4aef0dbac5598",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "5d1cbe41005b1a490fd6",
-    "url": "/movie_night_app/static/css/main.9d715b57.chunk.css"
+    "revision": "0cdec62c099d2ca952b8",
+    "url": "/movie_night_app/static/css/main.08aa1653.chunk.css"
   },
   {
-    "revision": "ab0d8c0ac74fd68dfe3b",
-    "url": "/movie_night_app/static/js/2.6ada3919.chunk.js"
+    "revision": "a5f3a89a1fa00c98adea",
+    "url": "/movie_night_app/static/js/2.8cfcef7d.chunk.js"
   },
   {
-    "revision": "1937a0fc6634269e5f47f8181e27fdc7",
-    "url": "/movie_night_app/static/js/2.6ada3919.chunk.js.LICENSE.txt"
+    "revision": "2a3a23bf878d7187dc1e20049a44e9ba",
+    "url": "/movie_night_app/static/js/2.8cfcef7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d1cbe41005b1a490fd6",
-    "url": "/movie_night_app/static/js/main.dc2d3938.chunk.js"
+    "revision": "0cdec62c099d2ca952b8",
+    "url": "/movie_night_app/static/js/main.f5482d59.chunk.js"
   },
   {
-    "revision": "4c787393de4262b8b5bb",
-    "url": "/movie_night_app/static/js/runtime-main.08086021.js"
+    "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
+    "url": "/movie_night_app/static/js/main.f5482d59.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebe3f0210dd55642c51868f919fe60f9",
-    "url": "/movie_night_app/static/media/bg12copy.ebe3f021.png"
+    "revision": "95c291ee6eac518c416a",
+    "url": "/movie_night_app/static/js/runtime-main.7481f3e5.js"
   },
   {
     "revision": "c27df1952145d26e5d8ba150b2770ab8",
@@ -108,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_night_app/static/media/instagram-icon.ea8931b9.png"
   },
   {
+    "revision": "07b26840c5721f6326df652410aea8fa",
+    "url": "/movie_night_app/static/media/joker.07b26840.jpg"
+  },
+  {
     "revision": "62ad40cf81d4279cfc88c0ed52d22ef6",
     "url": "/movie_night_app/static/media/menu-icon.62ad40cf.png"
   },
@@ -138,6 +142,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "53449fd6e919f9b6da280893d00daeff",
     "url": "/movie_night_app/static/media/sound.53449fd6.jpg"
+  },
+  {
+    "revision": "58ebc96f8f0b04db33fabf92a8acd48d",
+    "url": "/movie_night_app/static/media/spiderman.58ebc96f.jpg"
+  },
+  {
+    "revision": "e0bea02d42220d15eb186bdedb2e92dd",
+    "url": "/movie_night_app/static/media/spiderman2.e0bea02d.jpg"
   },
   {
     "revision": "c56505f85836a3ee11b7a47cd50e5642",

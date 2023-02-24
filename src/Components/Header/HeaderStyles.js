@@ -6,11 +6,15 @@ const useStyles = makeStyles((theme) => ({
         diplay: 'flex',
     },
     headerContainer: {
-        height: 200,
-        marginTop: -185,
         //background: `url('${header_bg_image}') no-repeat`,
+        height: 200,
+        marginTop: -150,
         backgroundSize: 'cover',
         marginBottom: '120px',
+        [theme.breakpoints.down('lg')]: {
+            marginTop: -150,
+            marginBottom: 0,
+        },
         [theme.breakpoints.down('sm')]: {
             margin: '16px auto 80px auto'
         },

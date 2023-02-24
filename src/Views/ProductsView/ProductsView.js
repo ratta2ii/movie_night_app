@@ -49,7 +49,7 @@ function ProductView(props) {
                 {/* Product container right margin */}
                 <Grid item xs={1} sm={false}></Grid>
             </Grid>
-            {/* <Footer /> */}
+            <Footer />
         </Box>
     );
 }

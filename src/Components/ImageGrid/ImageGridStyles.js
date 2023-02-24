@@ -18,7 +18,7 @@ export const useStyles = makeStyles((theme) => ({
             padding: '9px 5px 4px',
         },
         [theme.breakpoints.down('xs')]: { 
-            backgroundColor: '#7a97d745',
+            backgroundColor: '#28a0ff57',
             padding: '30px 0 0',
         },
     },

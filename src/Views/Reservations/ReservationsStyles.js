@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '36px 10px 36px 10%',
         },
         [theme.breakpoints.down('sm')]: {
-            backgroundColor: '#7a97d745',
+            backgroundColor: '#28a0ff57',
             float: 'unset',
             width: '100%',
             margin: '115px 0px 0px 0px',
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         maxWidth: 600,
         color: 'floralwhite',
-        backgroundColor: '#7a97d745',
+        backgroundColor: '#28a0ff57',
         fontSize: '1rem',
         [theme.breakpoints.down('md')]: {
             maxWidth: '550px',

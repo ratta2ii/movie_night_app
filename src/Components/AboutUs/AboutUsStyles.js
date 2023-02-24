@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     leftGridContainer: {
-        backgroundColor: '#000000c4',
+        backgroundColor: '#00000040',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightGridContainer: {
-        backgroundColor: '#000000c4',
+        backgroundColor: '#00000040',
         padding: '150px 100px',
         display: 'flex',
         alignItems: 'center',

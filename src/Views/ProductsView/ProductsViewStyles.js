@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
-        paddingBottom: 125,
+        // paddingBottom: 125,
     },
     mainGridContainer: {
         marginTop: -25,
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     productListContainer: {
         [theme.breakpoints.down('xs')]: {
-            backgroundColor: '#7a97d745',
+            backgroundColor: '#28a0ff57',
             padding: '3% 0',
         },
     },

@@ -57,10 +57,10 @@ export const Categories = () => {
 
                     <div
                         className="box five"
-                        id="consessions"
+                        id="concessions"
                         onClick={(e) => handleLoadProducts(e)}
                     >
-                        <h1>CONSESSIONS</h1>
+                        <h1>CONCESSIONS</h1>
                     </div>
 
                     <div
@@ -146,7 +146,7 @@ export default Categories;
 
 //                     <div
 //                         class="box five"
-//                         id="consessions"
+//                         id="concessions"
 //                         onClick={(e) => handleLoadProducts(e)}
 //                     >
 //                         <h1>CONSESSIONS</h1>
@@ -239,11 +239,11 @@ export default Categories;
 // }
 // <Grid item xs={12} md={6} lg={4}>
 //     <Box
-//         id="consessions"
+//         id="concessions"
 //         className={classes.categoryContainer}
 //         onClick={(e) => handleLoadProducts(e)}
 //     >
-//         Consessions
+//         Concessions
 //   </Box>
 // </Grid>;
 // {

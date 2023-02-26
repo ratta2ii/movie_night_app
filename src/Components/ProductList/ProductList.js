@@ -16,7 +16,7 @@ const ProductList = (props) => {
     let categoryToRender = masterProductList;
     const currentCategory = useSelector(getCurrentCategory);
 
-    let consessions = {
+    let concessions = {
         1007: "popcorn",
         1008: "hot dog",
         1009: "cotton",
@@ -28,9 +28,9 @@ const ProductList = (props) => {
         dispatch(selectCategory(null));
     };
 
-    if (currentCategory === "consessions") {
+    if (currentCategory === "concessions") {
         categoryToRender = masterProductList.filter((product) => {
-            if (consessions[product.productId]) return true;
+            if (concessions[product.productId]) return true;
         });
     }
 

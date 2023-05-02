@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import useStyles from './ReserveFormStyles';
 import { Form, Field } from 'react-final-form';
 import { TextField } from 'final-form-material-ui';
@@ -12,12 +13,11 @@ import { getProductsForEmail } from './../../Redux/Reducers/currentCartListReduc
 
 
 const ReserveForm = (props) => {
-
+    const contactForm = useRef();
     const { handleHideFormMessage } = props;
     const classes = useStyles();
     const productTitles = useSelector(getProductsForEmail);
     const [displayForm, setDisplayForm] = useState(true);
-
 
     // * These are drilled down to the Calendar component * //
     const [selectedDate, setDate] = useState(null);
@@ -25,32 +25,53 @@ const ReserveForm = (props) => {
         setDate(new Date(date));
     };
 
+    const handleSubmitForm = (e) => {
+        e.preventDefault();
 
-    /* This is utilizing the FormSpree email service */
-    const handleSubmitForm = (ev) => {
-        ev.preventDefault();
-        const form = ev.target;
-        const data = new FormData(form);
-        const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 200) {
-                form.reset();
-                // The success message is the parent component "Reservations"
-                handleHideFormMessage(true);
-            } else {
-                // The success message is the parent component "Reservations"
-                handleHideFormMessage(true);
-            }
-        };
-        xhr.send(data);
-        setTimeout(() => {
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            contactForm.current,
+            process.env.REACT_APP_PUBLIC_KEY)
+            .then((result) => {
+                if (result.status === 200) {
+                    // The success message is the parent component "Reservations"
+                    console.log("RESULT STATUS IS 200");
+                }
+            }, (error) => {
+                console.log(error.text);
+            });
+            
+            setTimeout(() => {
+            handleHideFormMessage(true);
             setDisplayForm(false);
         }, 500)
-    }
+    };
 
+    // /* This is utilizing the FormSpree email service */
+    // const handleSubmitForm = (ev) => {
+    //     ev.preventDefault();
+    //     const form = ev.target;
+    //     const data = new FormData(form);
+    //     const xhr = new XMLHttpRequest();
+    //     xhr.open(form.method, form.action);
+    //     xhr.setRequestHeader("Accept", "application/json");
+    //     xhr.onreadystatechange = () => {
+    //         if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    //         if (xhr.status === 200) {
+    //             form.reset();
+    //             // The success message is the parent component "Reservations"
+    //             handleHideFormMessage(true);
+    //         } else {
+    //             // The success message is the parent component "Reservations"
+    //             handleHideFormMessage(true);
+    //         }
+    //     };
+    //     xhr.send(data);
+    //     setTimeout(() => {
+    //         setDisplayForm(false);
+    //     }, 500)
+    // }
 
     const validate = (values) => {
         const errors = {};
@@ -72,7 +93,7 @@ const ReserveForm = (props) => {
 
     return (
         <Box className={classes.root}
-            style={{ display: (displayForm) ? 'box' : 'none' }} 
+            style={{ display: (displayForm) ? 'box' : 'none' }}
         >
             <Box >
                 <Form
@@ -80,9 +101,9 @@ const ReserveForm = (props) => {
                     validate={validate}
                     render={({ form, handleSubmit, reset, submitting, pristine, values }) => (
                         <form
+                            ref={contactForm}
                             onSubmit={handleSubmitForm}
-                            action="https://formspree.io/mdoddgdr"
-                            method="POST"
+                            onReset={reset}
                         >
                             <Paper className={classes.paper} >
                                 <Grid container alignItems="flex-start" spacing={2}>
@@ -166,19 +187,19 @@ const ReserveForm = (props) => {
                                     This hidden input adds the date selected on the calendar into
                                     the data submitted with the form  
                                     */}
-                                    <input 
-                                        style={{ display: 'none' }} 
-                                        type="text" 
+                                    <input
+                                        style={{ display: 'none' }}
+                                        type="text"
                                         name="date"
-                                        value={selectedDate} 
+                                        value={selectedDate}
                                     />
                                     {/* 
                                     This is the input field that will include all the items from
                                     the cartList into the email reservartion sent 
                                     */}
-                                    <input 
-                                        style={{ display: 'none' }} 
-                                        type="text" 
+                                    <input
+                                        style={{ display: 'none' }}
+                                        type="text"
                                         name="products"
                                         value={productTitles}
                                     />
@@ -209,7 +230,7 @@ const ReserveForm = (props) => {
                                         // disabled={submitting || pristine}
                                         >
                                             Reset
-                                    </Button>
+                                        </Button>
                                     </Grid>
                                     <Grid item style={{ marginTop: 16 }}>
                                         <Button
@@ -219,7 +240,7 @@ const ReserveForm = (props) => {
                                             disabled={submitting}
                                         >
                                             Submit
-                                    </Button>
+                                        </Button>
                                     </Grid>
                                 </Grid>
                             </Paper>

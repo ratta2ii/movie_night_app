@@ -61,7 +61,7 @@ function Home(props) {
                     {/* Products Left Margin */}
                     <Grid item xs={1}></Grid>
                     <Grid item xs={10}>
-                        <Box className={classes.CategoriesContainer} class="container_bg" >
+                        <Box className={classes.CategoriesContainer}>
                             <Categories />
                         </Box>
                     </Grid>

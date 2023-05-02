@@ -9,10 +9,12 @@ import {
     getCurrentCategory,
     selectCategory,
 } from "../../Redux/Reducers/currentCategoryReducer";
+import { useHistory } from "react-router-dom";
 
 const ProductList = (props) => {
     const classes = useStyles();
     const dispatch = useDispatch();
+    const history = useHistory();
     let categoryToRender = masterProductList;
     const currentCategory = useSelector(getCurrentCategory);
 
@@ -22,15 +24,18 @@ const ProductList = (props) => {
         1009: "cotton",
     };
 
-    useEffect(() => { }, [currentCategory]);
-
+    useEffect(() => {
+    }, [currentCategory]);
+    
     const handleDeselectCategory = () => {
         dispatch(selectCategory(null));
+        history.push("/products");
     };
 
     if (currentCategory === "concessions") {
         categoryToRender = masterProductList.filter((product) => {
             if (concessions[product.productId]) return true;
+            else return false;
         });
     }
 

@@ -1,10 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
-import header_bg_image from './../../Assets/Images/joker.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        width: '100%',
         marginTop: 100,
+        left: "0",
+        bottom: "0",
         [theme.breakpoints.down('xs')]: {
+            position: 'relative',
             width: '100%',
             marginTop: 50,
             marginBottom: -200,

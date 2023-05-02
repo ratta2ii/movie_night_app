@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/sunset.jpeg';
+import joker_image from './../../Assets/Images/joker.jpg';
 
 
 export const useStyles = makeStyles((theme) => ({
@@ -10,9 +11,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     innerRoot: {
         padding: '0 12%',
+        // eslint-disable-next-line
         ['@media (max-width:2300px)']: {
             padding: "0 10%",
         },
+        // eslint-disable-next-line
         ['@media (max-width:1650px)']: {
             padding: "0 5%",
         },
@@ -96,7 +99,10 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     CategoriesContainer: {
-        // NOTE: See addtional styling in the styles.css (i.e. .container_bg)
+        backgroundImage: `linear-gradient(rgba(40, 160, 255, 0.35), rgba(220, 165, 95, 0.8)), url('${joker_image}')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'top',
         margin: '0 3% 90px',
         padding: '75px 0px 50px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
@@ -106,8 +112,6 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
             padding: 0,
             margin: 0,
-        },
-        [theme.breakpoints.down('xs')]: {
         },
     },
     contactUsButton: {

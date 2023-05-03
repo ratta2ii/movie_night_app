@@ -29,17 +29,7 @@ function App(props) {
                 <Route path="/images" component={ImageGallery} />
                 <Route component={Error404} />
             </Switch>
-            <style global="true" jsx="true">{`
-                /* This takes up space for the sidebar so all future centering works accordingly */
-                body {
-                    margin-left: 72px;
-                }
-                @media only screen and (max-width: 959px) {
-                    body {
-                        margin-left: 0;
-                    }
-                }
-            `}</style>
+            <style global="true" jsx="true">{``}</style>
         </Fragment>
     );
 }

@@ -56,6 +56,10 @@ _The reason for the unorthodox checkout is due to the nature of the company. It 
 * Webpack
 * npx-create-react-app
 
+## **Commands**
+
+* export NODE_OPTIONS=--openssl-legacy-provider
+
 
 ## **License**
 

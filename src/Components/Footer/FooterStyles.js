@@ -1,7 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
+import footerBgImage from './../../Assets/Images/tron.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, .40)), url('${footerBgImage}')`,
+        backgroundSize: 'cover',
+        boxShadow: '0 0 7em 4em black inset',
+        backgroundPosition: 'center center',
         width: '100%',
         marginTop: 100,
         left: "0",
@@ -15,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
     },
     footerContainer: {
         height: 450,
-        //background: `url('${header_bg_image}') no-repeat`,
-        backgroundSize: 'cover',
-        boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         padding: 0,
         [theme.breakpoints.down('lg')]: {
             height: 250,

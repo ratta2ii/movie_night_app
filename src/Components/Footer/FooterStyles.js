@@ -3,14 +3,15 @@ import footerBgImage from './../../Assets/Images/tron.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, .40)), url('${footerBgImage}')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, .50)), url('${footerBgImage}')`,
         backgroundSize: 'cover',
-        boxShadow: '0 0 7em 4em black inset',
+        boxShadow: '0 0 2em 2em black inset',
         backgroundPosition: 'center center',
         width: '100%',
         marginTop: 100,
         left: "0",
         bottom: "0",
+        background: `linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5))`,
         [theme.breakpoints.down('xs')]: {
             position: 'relative',
             width: '100%',
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     footerOverlayContainer: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#000000c4',
+        backgroundColor: 'rgba(0, 0, 0, 0.30)',
         borderRadius: '3px',
         display: 'flex',
         alignItems: 'center',

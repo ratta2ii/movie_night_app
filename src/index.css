@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, .95)), url('./Assets/Images/batman.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, .95)), url('./Assets/Images/batman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;

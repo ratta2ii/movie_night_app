@@ -100,14 +100,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: '#000000c4',
+        backgroundColor: 'rgba(0, 0, 0, .001)',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.easeIn,
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
     drawerClose: {
-        backgroundColor: '#000000c4',
+        backgroundColor: 'rgba(0, 0, 0, .001)',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,

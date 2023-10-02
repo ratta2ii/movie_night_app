@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative',
-        /* backgroundColor: '#000000c4', */
     },
     headerTitle: {
         fontSize: '8rem',

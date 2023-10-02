@@ -2,7 +2,7 @@
 #### By Trevor Mackin   
 ##### Future Site: azmovienights.com
 
-##### Live (current): ratta2ii.github.io/movie_night_app
+#### Website: [Live Demo Here](https://ratta2ii.github.io/movie_night_app/#/)
 
 #
 ## Component Tree Planning Phase
@@ -11,11 +11,11 @@
 
 #
 ## Homepage
-![ Screenshot of Project ](/public/movie_nights_ss_homepage.png)
+![ Screenshot of Project ](/public/movie_app_ss_homepage.png)
 
 #
 ## Contact Form
-![ Screenshot of Project ](/public/movie_nights_ss_contact_form.png)
+![ Screenshot of Project ](/public/movie_app_ss_contactpage.png)
 
 #
 ## **Description**

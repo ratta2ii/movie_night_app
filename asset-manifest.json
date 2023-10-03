@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/movie_night_app/static/css/main.4eb5be2e.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.e0aa5c58.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.e0aa5c58.chunk.js.map",
+    "main.js": "/movie_night_app/static/js/main.7bf26d77.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.7bf26d77.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.7481f3e5.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.7481f3e5.js.map",
-    "static/js/2.557866bc.chunk.js": "/movie_night_app/static/js/2.557866bc.chunk.js",
-    "static/js/2.557866bc.chunk.js.map": "/movie_night_app/static/js/2.557866bc.chunk.js.map",
+    "static/js/2.1d04991f.chunk.js": "/movie_night_app/static/js/2.1d04991f.chunk.js",
+    "static/js/2.1d04991f.chunk.js.map": "/movie_night_app/static/js/2.1d04991f.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.0681f2ca901362f02349a47d90618335.js": "/movie_night_app/precache-manifest.0681f2ca901362f02349a47d90618335.js",
+    "precache-manifest.26dc5040e05baf8dbe3b459fdd4f8b0a.js": "/movie_night_app/precache-manifest.26dc5040e05baf8dbe3b459fdd4f8b0a.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
     "static/css/main.4eb5be2e.chunk.css.map": "/movie_night_app/static/css/main.4eb5be2e.chunk.css.map",
-    "static/js/2.557866bc.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.557866bc.chunk.js.LICENSE.txt",
-    "static/js/main.e0aa5c58.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.e0aa5c58.chunk.js.LICENSE.txt",
+    "static/js/2.1d04991f.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.1d04991f.chunk.js.LICENSE.txt",
+    "static/js/main.7bf26d77.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.7bf26d77.chunk.js.LICENSE.txt",
     "static/media/index.css": "/movie_night_app/static/media/batman.76a1ddc5.jpg",
     "static/media/styles.css": "/movie_night_app/static/media/gallery5.bfae7133.jpg",
     "static/media/company-logo-icon.png": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png",
@@ -46,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7481f3e5.js",
-    "static/js/2.557866bc.chunk.js",
+    "static/js/2.1d04991f.chunk.js",
     "static/css/main.4eb5be2e.chunk.css",
-    "static/js/main.e0aa5c58.chunk.js"
+    "static/js/main.7bf26d77.chunk.js"
   ]
 }

@@ -22,7 +22,7 @@ function App(props) {
       <Switch>
         <Route exact path="/" key={location.key} component={Home} />
         <Route exact path="/products" component={ProductsView} />
-        <Route path="/products/:category" component={ProductsView} />
+        <Route path="/products/:category?" component={ProductsView} />
         <Route path="/product/:id" component={SingleProductView} />
         <Route path="/faqPage" component={FaqPage} />
         <Route path="/cartList" component={CartView} />

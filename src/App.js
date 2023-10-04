@@ -21,7 +21,6 @@ function App(props) {
             <Navigation />
             <Switch>
                 <Route exact path="/"  key={location.key} component={Home} />
-                <Route path="/products" component={ProductsView} />
                 <Route path="/products/:category?" component={ProductsView} />
                 <Route path="/product/:id" component={SingleProductView} />
                 <Route path="/faqPage" component={FaqPage} />

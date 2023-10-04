@@ -147,7 +147,7 @@ const CartView = (props) => {
                         <Box className={classes.backToProductsButtonContainer}>
                             <ButtonLoading
                                 customClassName={classes.backToProductsButton}
-                                eventName={() => handleRedirect("/products")}
+                                eventName={() => handleRedirect(`/products/${props.currentCategory}`)}
                                 name="Back To Products"
                                 startIcon={<ArrowBackIcon />}
                             />
@@ -167,9 +167,11 @@ const CartView = (props) => {
 CartView.propTypes = {};
 
 const mapStateToProps = (state) => {
+  console.log({HERESTATE: state.currentCategory.value})
     return {
         currentCartList: state.currentCartList.value,
         cartTotalState: state.currentCartList.cartTotalState,
+        currentCategory: state.currentCategory.value,
     };
 };
 

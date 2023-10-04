@@ -14,29 +14,30 @@ import Error404 from "./Views/Error404/Error404";
 // import ReduxStateTest from './Data/TestPages/ReduxStateTest';
 
 function App(props) {
-    const location = useLocation();
+  const location = useLocation();
 
-    return (
-        <Fragment>
-            <Navigation />
-            <Switch>
-                <Route exact path="/"  key={location.key} component={Home} />
-                <Route path="/products/:category?" component={ProductsView} />
-                <Route path="/product/:id" component={SingleProductView} />
-                <Route path="/faqPage" component={FaqPage} />
-                <Route path="/cartList" component={CartView} />
-                <Route path="/reservations" component={Reservations} />
-                <Route path="/images" component={ImageGallery} />
-                <Route component={Error404} />
-            </Switch>
-            <style global="true" jsx="true">{``}</style>
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Navigation />
+      <Switch>
+        <Route exact path="/" key={location.key} component={Home} />
+        <Route exact path="/products" component={ProductsView} />
+        <Route path="/products/:category" component={ProductsView} />
+        <Route path="/product/:id" component={SingleProductView} />
+        <Route path="/faqPage" component={FaqPage} />
+        <Route path="/cartList" component={CartView} />
+        <Route path="/reservations" component={Reservations} />
+        <Route path="/images" component={ImageGallery} />
+        <Route component={Error404} />
+      </Switch>
+      <style global="true" jsx="true">{``}</style>
+    </Fragment>
+  );
 }
 
 App.propTypes = {
-    location: PropTypes.object,
-    currentRouterPath: PropTypes.string,
+  location: PropTypes.object,
+  currentRouterPath: PropTypes.string,
 };
 
 export default withRouter(App);

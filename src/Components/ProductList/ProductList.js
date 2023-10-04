@@ -46,14 +46,13 @@ const ProductList = (props) => {
                 <Grid item xs={1}></Grid>
                 {/* Product container grid item */}
                 <Grid item xs={10}>
-                {/* //TODO: Fix button */}
-                    {/* <Button
+                    <Button
                         className={classes.categoryBackBtn}
                         onClick={handleDeselectCategory}
                         startIcon={<ArrowBackIosIcon />}
                     >
                         Choose a New Category
-                    </Button> */}
+                    </Button>
                     <Grid container styles={classes.mainProductGridContainer}>
                         {categoryToRender.map((product) => (
                             <SingleProduct

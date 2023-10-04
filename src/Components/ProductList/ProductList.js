@@ -24,9 +24,6 @@ const ProductList = (props) => {
         1009: "cotton",
     };
 
-    useEffect(() => {
-    }, [currentCategory]);
-
     const handleDeselectCategory = () => {
         dispatch(selectCategory(null));
         history.push("/products");

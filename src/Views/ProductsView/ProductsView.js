@@ -19,6 +19,8 @@ function ProductView(props) {
         window.scrollTo(0, 0);
       }
     }, []);
+
+    console.log({ categorySelected, other: props.location.navLink});
     
     // Checks to see if you have a selected a category first || coming from NavBar 
     // navLink is a boolean param passed into the "Link to={}" in the Navigation component

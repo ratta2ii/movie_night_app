@@ -9,7 +9,7 @@ import {
     getCurrentCategory,
     selectCategory,
 } from "../../Redux/Reducers/currentCategoryReducer";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const ProductList = (props) => {
     const classes = useStyles();
@@ -26,10 +26,10 @@ const ProductList = (props) => {
 
     useEffect(() => {
     }, [currentCategory]);
-    
+
     const handleDeselectCategory = () => {
         dispatch(selectCategory(null));
-        // history.push("/products");
+        history.push("/products");
     };
 
     if (currentCategory === "concessions") {
@@ -46,7 +46,6 @@ const ProductList = (props) => {
                 <Grid item xs={1}></Grid>
                 {/* Product container grid item */}
                 <Grid item xs={10}>
-                <Link to='/products'>
                     <Button
                         className={classes.categoryBackBtn}
                         onClick={handleDeselectCategory}
@@ -54,7 +53,6 @@ const ProductList = (props) => {
                     >
                         Choose a New Category
                     </Button>
-                </Link>
                     <Grid container styles={classes.mainProductGridContainer}>
                         {categoryToRender.map((product) => (
                             <SingleProduct

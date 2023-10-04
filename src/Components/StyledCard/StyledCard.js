@@ -9,9 +9,10 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import EmailIcon from "@material-ui/icons/Email";
 import ButtonLoading from './../../Components/ButtonLoading/ButtonLoading';
 import useStyles from "./StyledCardStyles";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addWish } from "../../Redux/Reducers/currentCartListReducer";
 import { masterProductList } from "./../../Data/MockData/DataProducts";
+import { getCurrentCategory } from "../../Redux/Reducers/currentCategoryReducer";
 // import ShareIcon from "@material-ui/icons/Share";
 
 //! This will ensure a single product stays loaded even through refresh (refactor coming?)
@@ -27,6 +28,7 @@ const StyledCard = (props) => {
     const [loading, setLoading] = useState(false);
     const currentProductId = history.location.pathname.split("product/")[1];
     let currentProduct = masterProductListLoadingRegistry[currentProductId];
+    const currentCategory = useSelector(getCurrentCategory);
 
     // loading indicator timer
     const sleep = (delay) => {
@@ -51,7 +53,7 @@ const StyledCard = (props) => {
     };
 
     const handleBack = () => {
-        history.push("/products");
+        history.push(`/products/${currentCategory}`);
     };
 
     return (
@@ -60,7 +62,7 @@ const StyledCard = (props) => {
                 container
                 className={classes.mainGridContainer}
                 alignContent="center"
-                justify="center"
+                justifyContent="center"
             >
                 {/* Header */}
                 <Grid item xs={12} className={classes.topGridItem}>

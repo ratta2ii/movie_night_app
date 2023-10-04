@@ -16,7 +16,7 @@ function ProductView(props) {
     // To ensure the current screen opens at the top of the viewport on rendering
     useEffect(() => {
         window.scrollTo(0, 0); 
-    });
+    }, []);
     
     // Checks to see if you have a selected a category first || coming from NavBar 
     // navLink is a boolean param passed into the "Link to={}" in the Navigation component

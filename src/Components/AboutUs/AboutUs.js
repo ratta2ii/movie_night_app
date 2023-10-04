@@ -57,7 +57,7 @@ const AboutUs = (props) => {
                                     <Typography className={classes.companyDescription}>
                                         Choose your event equipment today. View our {" "}
                                         <Link
-                                            to="/products"
+                                            to="/categories"
                                             style={{ textDecoration: "none", color: "#e57373" }}
                                         >
                                             PRODUCTS

@@ -17,9 +17,9 @@ import Categories from "../../Components/Categories/Categories";
 function Home(props) {
     const classes = useStyles();
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleScrollTop = () => {
         document.body.scrollTop = 0;

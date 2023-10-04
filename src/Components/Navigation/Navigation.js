@@ -106,10 +106,10 @@ export default function Navigation(props) {
                     <MenuItem
                         component={Link}
                         to={{
-                            pathname: `/products`,
+                            pathname: `/categories`,
                             navLink: true,
                         }}
-                        selected={"/products" === pathname.slice(0, 9)}
+                        selected={"/categories" === pathname.slice(0, 11)}
                         className={classes.MenuItem}
                         onClick={() => handleClose()}
                         style={{

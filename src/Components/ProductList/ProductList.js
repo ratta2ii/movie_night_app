@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { masterProductList } from "./../../Data/MockData/DataProducts";
 import { Box, Button, Grid } from "@material-ui/core";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
@@ -26,7 +26,7 @@ const ProductList = (props) => {
 
     const handleDeselectCategory = () => {
         dispatch(selectCategory(null));
-        history.push("/products");
+        history.push("/categories");
     };
 
     if (currentCategory === "concessions") {
@@ -43,13 +43,13 @@ const ProductList = (props) => {
                 <Grid item xs={1}></Grid>
                 {/* Product container grid item */}
                 <Grid item xs={10}>
-                    {/* <Button
+                    <Button
                         className={classes.categoryBackBtn}
                         onClick={handleDeselectCategory}
                         startIcon={<ArrowBackIosIcon />}
                     >
                         Choose a New Category
-                    </Button> */}
+                    </Button>
                     <Grid container styles={classes.mainProductGridContainer}>
                         {categoryToRender.map((product) => (
                             <SingleProduct

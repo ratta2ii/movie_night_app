@@ -10,6 +10,7 @@ import CartView from "./Views/CartView/CartView";
 import SingleProductView from "./Views/SingleProductView/SingleProductView";
 import ImageGallery from "./Views/ImageGallery/ImageGallery";
 import Error404 from "./Views/Error404/Error404";
+import CategoriesView from "./Views/CategoriesView/CategoriesView";
 // This is for testing purposes only
 // import ReduxStateTest from './Data/TestPages/ReduxStateTest';
 
@@ -21,7 +22,7 @@ function App(props) {
       <Navigation />
       <Switch>
         <Route exact path="/" key={location.key} component={Home} />
-        <Route exact path="/products" component={ProductsView} />
+        <Route exact path="/categories" component={CategoriesView} />
         <Route path="/products/:category?" component={ProductsView} />
         <Route path="/product/:id" component={SingleProductView} />
         <Route path="/faqPage" component={FaqPage} />

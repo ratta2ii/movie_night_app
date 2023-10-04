@@ -14,17 +14,17 @@ function ProductView(props) {
     const categorySelected = useSelector(getCurrentCategory);
 
     // To ensure the current screen opens at the top of the viewport on rendering
-    useEffect(() => {
-      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
-        window.scrollTo(0, 0);
-      }
-    }, []);
+    // useEffect(() => {
+    //   if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+    //     window.scrollTo(0, 0);
+    //   }
+    // }, []);
 
     console.log({ categorySelected, other: props.location.navLink});
     
     // Checks to see if you have a selected a category first || coming from NavBar 
     // navLink is a boolean param passed into the "Link to={}" in the Navigation component
-    if (!categorySelected || props.location.navLink) {
+    if (categorySelected === null || props.location.navLink === true) {
         return (
             <Box>
                 <Header />

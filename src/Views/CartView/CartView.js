@@ -39,8 +39,6 @@ const CartView = (props) => {
         window.scrollTo(0, 0);
     }, [currentCartList]);
 
-
-
     const handleRedirect = async (url) => {
         if (!loading)
             setLoading(true);

@@ -15,7 +15,9 @@ function ProductView(props) {
 
     // To ensure the current screen opens at the top of the viewport on rendering
     useEffect(() => {
-        window.scrollTo(0, 0); 
+      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+        window.scrollTo(0, 0);
+      }
     }, []);
     
     // Checks to see if you have a selected a category first || coming from NavBar 

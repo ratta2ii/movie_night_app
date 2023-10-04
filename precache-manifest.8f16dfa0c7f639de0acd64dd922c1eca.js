@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffbccd45110a8a03bb3498033eea5aef",
+    "revision": "4d1b73594fef4380ba21ebd0e269f295",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "5733f1d2bea520c79ad8",
+    "revision": "dc0717e5690fccee5d22",
     "url": "/movie_night_app/static/css/main.4eb5be2e.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_night_app/static/js/2.557866bc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5733f1d2bea520c79ad8",
-    "url": "/movie_night_app/static/js/main.2cd93780.chunk.js"
+    "revision": "dc0717e5690fccee5d22",
+    "url": "/movie_night_app/static/js/main.92c628bf.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/movie_night_app/static/js/main.2cd93780.chunk.js.LICENSE.txt"
+    "url": "/movie_night_app/static/js/main.92c628bf.chunk.js.LICENSE.txt"
   },
   {
     "revision": "95c291ee6eac518c416a",

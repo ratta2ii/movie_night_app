@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         height: 450,
         padding: 0,
         [theme.breakpoints.down('lg')]: {
-            height: 250,
+            height: 350,
         }, 
         [theme.breakpoints.down('md')]: {
             marginTop: 15,
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             backgroundSize: 'auto',
-            height: 225,
+            height: 300
         },
     },
     footerOverlayContainer: {

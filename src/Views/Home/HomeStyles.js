@@ -1,13 +1,19 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/sunset.jpeg';
 import film_image from './../../Assets/Images/film7black.jpeg';
+import main_bg_image from './../../Assets/Images/batman.jpg';
 
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: '-85px', 
+        marginTop: '-85px',
         marginBottom: 0,
-        animation: 'fadeIn ease .2s',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, .95)), url('${main_bg_image}')`,
+        backgroundPosition: '700px -700px',
+        backgroundRepeat: 'no-repeat',
+        [theme.breakpoints.down('lg')]: {
+            backgroundImage: 'none !important',
+        },
     },
     innerRoot: {
         padding: '0 12%',
@@ -41,16 +47,16 @@ export const useStyles = makeStyles((theme) => ({
         borderBottomRightRadius: '20px',
         [theme.breakpoints.down('md')]: {
             width: '50%',
-        }, 
+        },
         [theme.breakpoints.down('sm')]: {
             width: '65%',
             marginTop: '200px',
-        }, 
+        },
         [theme.breakpoints.down('xs')]: {
             width: '80%',
             borderBottomLeftRadius: '10px',
             borderBottomRightRadius: '10px',
-        }, 
+        },
     },
     mainTitle: {
         textAlign: 'center',
@@ -63,10 +69,10 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight: 500,
         [theme.breakpoints.down('sm')]: {
             wordSpacing: 'unset',
-        }, 
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '.9rem',
-        }, 
+        },
     },
     headerContainer: {
         height: 175,
@@ -150,7 +156,7 @@ export const useStyles = makeStyles((theme) => ({
             padding: 5,
             borderRadius: 4,
         },
- 
+
     }
 }));
 

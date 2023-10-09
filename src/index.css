@@ -3,11 +3,7 @@ html {
 }
 
 body {
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, .95)), url('./Assets/Images/batman.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20%;
+    background-color: black !important;
     margin-left: 72px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;

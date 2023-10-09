@@ -27,7 +27,7 @@ function App() {
         if (isLoading) {
             setTimeout(() => {
                 dispatch(setIsLoading(false));
-            }, 1000);
+            }, 500);
         }
     }, [isLoading, dispatch ]);
 

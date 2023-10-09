@@ -15,7 +15,7 @@ const spinnerStyles = {
   borderRadius: '50%',
   width: '40px',
   height: '40px',
-  animation: 'spin 1s linear infinite', // Apply the spin animation
+  animation: 'spin 0.5s linear infinite', // Apply the spin animation
   marginBottom: '16px', // Add margin to separate spinner from text
 };
 

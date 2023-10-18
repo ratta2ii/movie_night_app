@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/movie_night_app/static/css/main.4b383a6a.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.1d073695.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.1d073695.chunk.js.map",
+    "main.js": "/movie_night_app/static/js/main.96a345c9.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.96a345c9.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.7481f3e5.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.7481f3e5.js.map",
-    "static/js/2.dfc63da1.chunk.js": "/movie_night_app/static/js/2.dfc63da1.chunk.js",
-    "static/js/2.dfc63da1.chunk.js.map": "/movie_night_app/static/js/2.dfc63da1.chunk.js.map",
+    "static/js/2.8eeaff7a.chunk.js": "/movie_night_app/static/js/2.8eeaff7a.chunk.js",
+    "static/js/2.8eeaff7a.chunk.js.map": "/movie_night_app/static/js/2.8eeaff7a.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.428c6451d8e7f25b5b2362c6ab958b51.js": "/movie_night_app/precache-manifest.428c6451d8e7f25b5b2362c6ab958b51.js",
+    "precache-manifest.11f8be59aacfbdd6e9543054435872d1.js": "/movie_night_app/precache-manifest.11f8be59aacfbdd6e9543054435872d1.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
     "static/css/main.4b383a6a.chunk.css.map": "/movie_night_app/static/css/main.4b383a6a.chunk.css.map",
-    "static/js/2.dfc63da1.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.dfc63da1.chunk.js.LICENSE.txt",
-    "static/js/main.1d073695.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.1d073695.chunk.js.LICENSE.txt",
+    "static/js/2.8eeaff7a.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.8eeaff7a.chunk.js.LICENSE.txt",
+    "static/js/main.96a345c9.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.96a345c9.chunk.js.LICENSE.txt",
     "static/media/batman.jpg": "/movie_night_app/static/media/batman.76a1ddc5.jpg",
     "static/media/styles.css": "/movie_night_app/static/media/gallery5.bfae7133.jpg",
     "static/media/company-logo-icon.png": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png",
@@ -30,6 +30,7 @@
     "static/media/giant-screen.jpg": "/movie_night_app/static/media/giant-screen.81ddcfb6.jpg",
     "static/media/instagram-icon.png": "/movie_night_app/static/media/instagram-icon.ea8931b9.png",
     "static/media/menu-icon.png": "/movie_night_app/static/media/menu-icon.62ad40cf.png",
+    "static/media/movie_posters_background.jpg": "/movie_night_app/static/media/movie_posters_background.a24a99da.jpg",
     "static/media/pool-image.JPG": "/movie_night_app/static/media/pool-image.73a95114.JPG",
     "static/media/product-cotton-candy.jpg": "/movie_night_app/static/media/product-cotton-candy.9224ba5e.jpg",
     "static/media/product-hotdog.png": "/movie_night_app/static/media/product-hotdog.dd474583.png",
@@ -46,8 +47,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7481f3e5.js",
-    "static/js/2.dfc63da1.chunk.js",
+    "static/js/2.8eeaff7a.chunk.js",
     "static/css/main.4b383a6a.chunk.css",
-    "static/js/main.1d073695.chunk.js"
+    "static/js/main.96a345c9.chunk.js"
   ]
 }

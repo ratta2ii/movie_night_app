@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b46f639a29d70950266d6a9ac3bc8bc",
+    "revision": "7115e113c715932844cfdbe2cecade9e",
     "url": "/movie_night_app/index.html"
   },
   {
-    "revision": "9c997e91575e69f59d2c",
+    "revision": "293c45b3c88beafbb439",
     "url": "/movie_night_app/static/css/main.4b383a6a.chunk.css"
   },
   {
-    "revision": "79257b0a5d3bc8dc9e39",
-    "url": "/movie_night_app/static/js/2.dfc63da1.chunk.js"
+    "revision": "5a0dba82908a3d0f4f6b",
+    "url": "/movie_night_app/static/js/2.8eeaff7a.chunk.js"
   },
   {
     "revision": "2a3a23bf878d7187dc1e20049a44e9ba",
-    "url": "/movie_night_app/static/js/2.dfc63da1.chunk.js.LICENSE.txt"
+    "url": "/movie_night_app/static/js/2.8eeaff7a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c997e91575e69f59d2c",
-    "url": "/movie_night_app/static/js/main.1d073695.chunk.js"
+    "revision": "293c45b3c88beafbb439",
+    "url": "/movie_night_app/static/js/main.96a345c9.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/movie_night_app/static/js/main.1d073695.chunk.js.LICENSE.txt"
+    "url": "/movie_night_app/static/js/main.96a345c9.chunk.js.LICENSE.txt"
   },
   {
     "revision": "95c291ee6eac518c416a",
@@ -118,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "62ad40cf81d4279cfc88c0ed52d22ef6",
     "url": "/movie_night_app/static/media/menu-icon.62ad40cf.png"
+  },
+  {
+    "revision": "a24a99dac0110a88370b42e5aa801ee3",
+    "url": "/movie_night_app/static/media/movie_posters_background.a24a99da.jpg"
   },
   {
     "revision": "73a95114d22fc3fa8c16fcec6b312a35",

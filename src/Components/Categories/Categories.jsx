@@ -8,6 +8,10 @@ import { selectCategory } from "../../Redux/Reducers/currentCategoryReducer";
 export const Categories = () => {
     const history = useHistory();
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const handleLoadProducts = (event) => {
         const category = event.currentTarget.id;
@@ -20,56 +24,54 @@ export const Categories = () => {
     };
 
     return (
-        <Grid container>
-            <div className="container">
-                <div className="wrap">
-                    <div
-                        className="box one"
-                        id="backyardMovies"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>BACKYARD MOVIES</h1>
-                    </div>
+        <Grid container justifyContent="center" style={{marginBottom: 125}}>
+            <div className="wrap">
+                <div
+                    className="box one"
+                    id="backyardMovies"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>BACKYARD MOVIES</h1>
+                </div>
 
-                    <div
-                        className="box two"
-                        id="largeMovieEvents"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>LARGE MOVIE EVENTS</h1>
-                    </div>
+                <div
+                    className="box two"
+                    id="largeMovieEvents"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>LARGE MOVIE EVENTS</h1>
+                </div>
 
-                    <div
-                        className="box three"
-                        id="driveInMovies"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>DRIVE-IN MOVIES</h1>
-                    </div>
+                <div
+                    className="box three"
+                    id="driveInMovies"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>DRIVE-IN MOVIES</h1>
+                </div>
 
-                    <div
-                        className="box four"
-                        id="poolMovies"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>DIVE-IN MOVIES #poolparty</h1>
-                    </div>
+                <div
+                    className="box four"
+                    id="poolMovies"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>DIVE-IN MOVIES #poolparty</h1>
+                </div>
 
-                    <div
-                        className="box five"
-                        id="concessions"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>CONCESSIONS</h1>
-                    </div>
+                <div
+                    className="box five"
+                    id="concessions"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>CONCESSIONS</h1>
+                </div>
 
-                    <div
-                        className="box six"
-                        id="imageGallery"
-                        onClick={(e) => handleLoadProducts(e)}
-                    >
-                        <h1>IMAGE GALLERY</h1>
-                    </div>
+                <div
+                    className="box six"
+                    id="imageGallery"
+                    onClick={(e) => handleLoadProducts(e)}
+                >
+                    <h1>IMAGE GALLERY</h1>
                 </div>
             </div>
         </Grid>

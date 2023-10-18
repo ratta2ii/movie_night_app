@@ -1,12 +1,12 @@
 /* //! Note media queries below */
 
-.container {
+/* .container {
     width: 100%;
     max-width: 875px;
     margin: auto;
     margin-bottom: 25px;
     padding: 25px;
-}
+} */
 
 .wrap {
     display: flex;
@@ -16,7 +16,7 @@
     -ms-flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -28,8 +28,8 @@
 
 .box {
     margin: 20px;
-    width: 230px;
-    height: 280px;
+    width: 30%;
+    height: 400px;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
@@ -50,9 +50,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 22px;
+    font-style: italic;
     font-weight: 600;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(88 88 88 / 45%);
 }
 
 .box:hover {
@@ -114,6 +115,13 @@ h1:hover {
 }
 
 /* //! Media queries below */
+@media only screen and (max-width: 1800px) {
+    .box {
+        width: 29%;
+        height: 350px;
+    }
+}
+
 @media only screen and (max-width: 1290px) {
     .container {
         max-width: 705px;
@@ -121,15 +129,31 @@ h1:hover {
         margin: 60px auto;
         padding: 25px 0;
     }
+    .box {
+        width: 230px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .box {
+        width: 27%;
+        height: 280px;
+    }
+    .box h1 {
+        font-size: 17px;
+    }
+    .wrap {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 880px) {
     .container {
         margin: 0px auto;
     }
-
     .box h1 {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -139,17 +163,14 @@ h1:hover {
         margin: 50px auto;
         padding: 5px 0;
     }
-
     .box {
         margin: 5px;
-        width: 140px;
-        height: 170px;
+        width: 42%;
+        height: 200px;
     }
-
     .box h1 {
         color: #fff;
         padding: 5px;
-        font-size: 10px;
     }
 }
 

@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 import header_bg_image from './../../Assets/Images/sunset.jpeg';
-import film_image from './../../Assets/Images/film7black.jpeg';
 import main_bg_image from './../../Assets/Images/batman.jpg';
 
 
@@ -37,16 +36,15 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     headerContainer: {
-        height: 175,
+        height: 200,
         position: 'relative',
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
         backgroundPositionY: '-350px',
-        margin: '10px 3% 0px',
+        margin: '10px 4.25% 0px',
         borderRadius: '3px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
-        borderTopLeftRadius: 12,
-        borderTopRightRadius: 12,
+        borderRadius: 12,
         [theme.breakpoints.down('lg')]: {
             margin: '10px 0 0px',
             backgroundPositionY: '-300px',
@@ -69,12 +67,8 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     CategoriesContainer: {
-        backgroundImage: `linear-gradient(rgba(17, 62, 97, 0.9), rgba(220, 165, 95, 0.8)), url('${film_image}')`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'top',
         margin: '0 3% 90px',
-        padding: '75px 0px 50px',
+        paddingTop: '25px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         borderBottomLeftRadius: 12,
         borderBottomRightRadius: 12,

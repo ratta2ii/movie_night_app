@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         diplay: 'flex',
-        // paddingBottom: 125,
     },
     mainGridContainer: {
         marginTop: -25,

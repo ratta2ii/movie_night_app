@@ -8,7 +8,6 @@ import Welcome from "../../Components/Welcome/Welcome";
 import AboutUs from "./../../Components/AboutUs/AboutUs";
 import Footer from "./../../Components/Footer/Footer";
 import useStyles from "./HomeStyles";
-import "./styles.css";
 import Categories from "../../Components/Categories/Categories";
 
 

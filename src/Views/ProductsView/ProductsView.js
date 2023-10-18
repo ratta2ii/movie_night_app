@@ -8,17 +8,15 @@ import Categories from "../../Components/Categories/Categories";
 import { getCurrentCategory } from "./../../Redux/Reducers/currentCategoryReducer";
 import { useSelector } from "react-redux";
 
-function ProductView(props) {
+function ProductsView(props) {
     const classes = useStyles();
     const categorySelected = useSelector(getCurrentCategory);
 
     // To ensure the current screen opens at the top of the viewport on rendering
     useEffect(() => {
-      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
         window.scrollTo(0, 0);
-      }
     }, []);
-    
+
     // Checks to see if you have a selected a category first || coming from NavBar 
     // navLink is a boolean param passed into the "Link to={}" in the Navigation component
     if (categorySelected === null || props.location.navLink === true) {
@@ -53,4 +51,4 @@ function ProductView(props) {
     );
 }
 
-export default ProductView;
+export default ProductsView;

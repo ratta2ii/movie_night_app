@@ -6,6 +6,7 @@ const drawerWidth = 200;
 export const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
+        animation: 'fadeIn ease .25s',
     },
     MenuItem: {
         borderLeft: '5px solid #03070f',

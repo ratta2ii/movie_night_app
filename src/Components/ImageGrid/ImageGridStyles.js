@@ -8,7 +8,6 @@ export const useStyles = makeStyles((theme) => ({
         margin: '65px auto',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         padding: '0px 5px 10px',
-        backgroundColor: '#17233fc7',
         overflow: 'hidden',
         animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('lg')]: {
@@ -18,7 +17,6 @@ export const useStyles = makeStyles((theme) => ({
             padding: '9px 5px 4px',
         },
         [theme.breakpoints.down('xs')]: { 
-            backgroundColor: '#28a0ff57',
             padding: '30px 0 0',
         },
     },

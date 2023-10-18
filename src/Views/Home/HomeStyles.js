@@ -11,6 +11,7 @@ export const useStyles = makeStyles((theme) => ({
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, .95)), url('${main_bg_image}')`,
         backgroundPosition: '700px -700px',
         backgroundRepeat: 'no-repeat',
+        animation: 'fadeIn ease .25s',
         [theme.breakpoints.down('lg')]: {
             backgroundImage: 'none !important',
         },
@@ -42,7 +43,6 @@ export const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         textTransform: 'capitalize',
         margin: '0 auto',
-        opacity: '.75',
         borderBottomLeftRadius: '20px',
         borderBottomRightRadius: '20px',
         [theme.breakpoints.down('md')]: {
@@ -67,6 +67,9 @@ export const useStyles = makeStyles((theme) => ({
         wordSpacing: '.175em',
         fontFamily: 'math, serif',
         fontWeight: 500,
+        "&:hover": { // Override global styling on h1:hover
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+        },
         [theme.breakpoints.down('sm')]: {
             wordSpacing: 'unset',
         },

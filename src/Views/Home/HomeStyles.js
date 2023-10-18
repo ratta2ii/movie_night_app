@@ -85,6 +85,9 @@ export const useStyles = makeStyles((theme) => ({
             padding: 0,
             margin: 0,
         },
+        [theme.breakpoints.down('xs')]: {
+            backgroundImage: 'unset',
+        },
     },
     contactUsButton: {
         position: 'absolute',

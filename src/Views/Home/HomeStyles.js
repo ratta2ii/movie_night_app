@@ -42,7 +42,6 @@ export const useStyles = makeStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundPositionY: '-350px',
         margin: '10px 4.25% 0px',
-        borderRadius: '3px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         borderRadius: 12,
         [theme.breakpoints.down('lg')]: {

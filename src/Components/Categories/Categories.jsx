@@ -1,6 +1,6 @@
+import React, { useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import { useDispatch } from 'react-redux';
-import React from "react";
 import { useHistory } from "react-router-dom";
 import "./styles.css";
 import { selectCategory } from "../../Redux/Reducers/currentCategoryReducer";

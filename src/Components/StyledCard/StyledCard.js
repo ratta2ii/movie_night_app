@@ -64,7 +64,6 @@ const StyledCard = (props) => {
                 alignContent="center"
                 justifyContent="center"
             >
-                {/* Header */}
                 <Grid item xs={12} className={classes.topGridItem}>
                     <ArrowBackIosIcon onClick={handleBack}  style={{cursor: 'pointer'}} />
                     <span className={classes.backToProducts} onClick={handleBack}>

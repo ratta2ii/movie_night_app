@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: 150,
+        padding: '75px 150px 150px 565px',
         marginTop: 12,
         animation: 'fadeIn ease .3s',
         [theme.breakpoints.down('lg')]: {
@@ -23,14 +23,14 @@ const useStyles = makeStyles((theme) => ({
             padding: '36px 10px 36px 10%',
         },
         [theme.breakpoints.down('sm')]: {
-            backgroundColor: '#28a0ff57',
             float: 'unset',
             width: '100%',
-            margin: '115px 0px 0px 0px',
+            margin: '-50px 0px 0px 0px',
             padding: '30px 80px 85px',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '40px 45px 80px',
+            marginTop: -50,
         },
     },
     text: {

@@ -1,12 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
+import borderImage from './../../Assets/Images/movie_posters_background.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: 15,
+        padding: 20,
         margin: 'auto',
         maxWidth: 575,
-        backgroundColor: '#28a0ff57',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, .50)), url('${borderImage}')`,
         [theme.breakpoints.down('md')]: {
             maxWidth: '550px',
         },
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
             width: '90%',
             maxWidth: '420px',
             margin: '12% auto',
+            padding: 15,
         },
         ['@media (max-width:475px)']: { // eslint-disable-line no-useless-computed-key
             margin: '5% auto',

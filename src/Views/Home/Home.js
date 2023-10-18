@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
-import Typography from "@material-ui/core/Typography";
 import Welcome from "../../Components/Welcome/Welcome";
 import AboutUs from "./../../Components/AboutUs/AboutUs";
 import Footer from "./../../Components/Footer/Footer";
@@ -29,11 +27,6 @@ function Home(props) {
     return (
         <Box className={classes.root}>
             <Box className={classes.innerRoot} >
-                <Paper className={classes.mainTitlePaper}>
-                    <Typography variant="h1" className={classes.mainTitle}>
-                        OUTDOOR MOVIE EVENTS & MORE...
-                    </Typography>
-                </Paper>
                 <Welcome />
                 <AboutUs />
                 {/* Product Header */}

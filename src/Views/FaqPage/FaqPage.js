@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Faqs from './../../Components/Faqs/Faqs';
-import Header from './../../Components/Header/Header';
 import Footer from './../../Components/Footer/Footer';
 import useStyles from './FaqPageStyles';
 
@@ -20,7 +19,6 @@ const FaqPage = () => {
 
     return (
         <Box>
-            <Header />
             <Grid container>
                 {/* Faqs container margin left */}
                 <Grid item sm={1} md={2} xl={3}></Grid>

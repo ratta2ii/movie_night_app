@@ -10,7 +10,6 @@ import CreditCardIcon from "@material-ui/icons/CreditCard";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ButtonLoading from "./../../Components/ButtonLoading/ButtonLoading";
 import CartList from "./../../Components/CartList/CartList";
-import Header from "./../../Components/Header/Header";
 import useStyles from "./CartViewStyles";
 //? Mapped state to props instead of the selector here (updates coming ???)
 // const currentCartList = useSelector(getCurrentCartList);
@@ -126,7 +125,6 @@ const CartView = (props) => {
 
     return (
         <Box className={classes.root}>
-            <Header />
             <Grid container>
                 {/* Margin Left */}
                 <Grid item xs={1} sm={1} md={2} lg={3}></Grid>

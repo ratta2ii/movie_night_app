@@ -14,7 +14,6 @@ const SingleProductView = (props) => {
 
     return (
         <Fragment>
-            {/* <Header /> */}
             <Box className={classes.root}>
                 <StyledCard {...props} />
             </Box>

@@ -17,6 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getIsLoading, setIsLoading } from "./Redux/Reducers/isLoadingReducer";
 import { useEffect } from "react";
 import Loading from "./Components/Loading/Loading";
+import DescriptionHeader from "./Components/DescriptionHeader/DescriptionHeader";
 
 function App() {
     const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
     return (
         <Fragment>
             <Navigation />
+            <DescriptionHeader />
             <Switch>
                 <Route exact path="/" key={location.key} component={Home} />
                 <Route exact path="/categories" component={CategoriesView} />

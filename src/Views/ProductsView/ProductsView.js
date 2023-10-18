@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Box } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import ProductList from "./../../Components/ProductList/ProductList";
-import Header from "./../../Components/Header/Header";
 import Footer from "./../../Components/Footer/Footer";
 import useStyles from "./ProductsViewStyles";
 import Categories from "../../Components/Categories/Categories";
@@ -25,7 +24,6 @@ function ProductView(props) {
     if (categorySelected === null || props.location.navLink === true) {
         return (
             <Box>
-                <Header />
                 <Categories />
                 <Footer />
             </Box>
@@ -34,7 +32,6 @@ function ProductView(props) {
 
     return (
         <Box className={classes.root}>
-            <Header />
             <Grid container className={classes.mainGridContainer}>
                 {/* Product container left margin */}
                 <Grid item xs={1} sm={false} xl={1}></Grid>

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/movie_night_app/static/css/main.044e6714.chunk.css",
-    "main.js": "/movie_night_app/static/js/main.1f1e5f43.chunk.js",
-    "main.js.map": "/movie_night_app/static/js/main.1f1e5f43.chunk.js.map",
+    "main.css": "/movie_night_app/static/css/main.3d9060f1.chunk.css",
+    "main.js": "/movie_night_app/static/js/main.b7ae03e3.chunk.js",
+    "main.js.map": "/movie_night_app/static/js/main.b7ae03e3.chunk.js.map",
     "runtime-main.js": "/movie_night_app/static/js/runtime-main.7481f3e5.js",
     "runtime-main.js.map": "/movie_night_app/static/js/runtime-main.7481f3e5.js.map",
     "static/js/2.44b3c12d.chunk.js": "/movie_night_app/static/js/2.44b3c12d.chunk.js",
     "static/js/2.44b3c12d.chunk.js.map": "/movie_night_app/static/js/2.44b3c12d.chunk.js.map",
     "index.html": "/movie_night_app/index.html",
-    "precache-manifest.270abaa2933b49063166c6bd2c1f51da.js": "/movie_night_app/precache-manifest.270abaa2933b49063166c6bd2c1f51da.js",
+    "precache-manifest.0ef3a0539c3bc2ff306913fdff477fa7.js": "/movie_night_app/precache-manifest.0ef3a0539c3bc2ff306913fdff477fa7.js",
     "service-worker.js": "/movie_night_app/service-worker.js",
-    "static/css/main.044e6714.chunk.css.map": "/movie_night_app/static/css/main.044e6714.chunk.css.map",
+    "static/css/main.3d9060f1.chunk.css.map": "/movie_night_app/static/css/main.3d9060f1.chunk.css.map",
     "static/js/2.44b3c12d.chunk.js.LICENSE.txt": "/movie_night_app/static/js/2.44b3c12d.chunk.js.LICENSE.txt",
-    "static/js/main.1f1e5f43.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.1f1e5f43.chunk.js.LICENSE.txt",
+    "static/js/main.b7ae03e3.chunk.js.LICENSE.txt": "/movie_night_app/static/js/main.b7ae03e3.chunk.js.LICENSE.txt",
     "static/media/batman.jpg": "/movie_night_app/static/media/batman.76a1ddc5.jpg",
     "static/media/styles.css": "/movie_night_app/static/media/gallery5.bfae7133.jpg",
     "static/media/company-logo-icon.png": "/movie_night_app/static/media/company-logo-icon.9cdc67a0.png",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.7481f3e5.js",
     "static/js/2.44b3c12d.chunk.js",
-    "static/css/main.044e6714.chunk.css",
-    "static/js/main.1f1e5f43.chunk.js"
+    "static/css/main.3d9060f1.chunk.css",
+    "static/js/main.b7ae03e3.chunk.js"
   ]
 }

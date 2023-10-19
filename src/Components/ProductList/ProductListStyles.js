@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 20,
         color: "#eaeaea",
         [theme.breakpoints.down("xs")]: {
-            margin: 10,
+            margin: '0 10px 10px',
         }
     }
 }));

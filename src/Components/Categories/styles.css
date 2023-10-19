@@ -16,7 +16,7 @@
     -ms-flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: space-evenly;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -179,6 +179,10 @@ h1:hover {
         max-width: 315px;
         padding: 5px 0;
         margin: 0 auto;
+    }
+    .box {
+        width: 46%;
+        height: 220px;
     }
 }
 

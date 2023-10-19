@@ -41,7 +41,7 @@ export const useStyles = makeStyles((theme) => ({
         background: `url('${header_bg_image}') no-repeat`,
         backgroundSize: 'cover',
         backgroundPositionY: '-350px',
-        margin: '10px 4.25% 0px',
+        margin: '10px 5% 0px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         borderRadius: 12,
         [theme.breakpoints.down('lg')]: {
@@ -107,7 +107,7 @@ export const useStyles = makeStyles((theme) => ({
             fontSize: 15,
             fontWeight: 100,
             margin: 'auto',
-            marginTop: 65,
+            marginTop: 25,
             display: 'block',
             color: '#eaeaea',
             cursor: 'pointer',

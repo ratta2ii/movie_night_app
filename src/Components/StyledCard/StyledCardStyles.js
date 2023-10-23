@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             maxWidth: 525,
-            marginBottom: 100,
+            marginTop: 0,
+            marginBottom: 150,  
         },
         [theme.breakpoints.down('xs')]: {
             maxWidth: '85%',
-            marginTop: 150,
-            marginBottom: 40,
+            marginBottom: 100,
         },
     },
     topGridItem: {

@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 //import bg_image from './../../Assets/Images/bg13flip.png';
 import bg_image from './../../Assets/Images/spiderman2.jpg';
+import bg_image2 from './../../Assets/Images/spiderman.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,11 +32,14 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'cover',
         borderRadius: '3px',
         boxShadow: '0 0 35px 35px black inset',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
+            background: `url('${bg_image2}') no-repeat`,
+            backgroundSize: 'inherit',
+            backgroundPosition: '-150px 120px',
         },
     },
     leftGridContainer: {
-        backgroundColor: '#00000040',
+        backgroundColor: '#00000070',
         padding: '50px 0px 50px 70px',
         display: 'flex',
         alignItems: 'center',
@@ -48,14 +52,14 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             padding: '70px 70px 0px',
-            backgroundColor: '#010307d4',
+            backgroundColor: '#00000040',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px 30px 0px',
         },
     },
     rightGridContainer: {
-        backgroundColor: '#00000040',
+        backgroundColor: '#00000070',
         padding: '150px 100px',
         display: 'flex',
         alignItems: 'center',
@@ -67,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('sm')]: {
             padding: '50px 70px 70px',
-            backgroundColor: '#010307d4',
+            backgroundColor: '#00000040',
         },
         [theme.breakpoints.down('xs')]: {
             padding: '30px',

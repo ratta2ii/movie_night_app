@@ -27,11 +27,10 @@ const useStyles = makeStyles((theme) => ({
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
-        backgroundSize: 'cover',
         borderRadius: '3px',
         boxShadow: '0 0 35px 35px black inset',
         [theme.breakpoints.down('sm')]: {
-            backgroundPosition: 'center center',
+            backgroundPosition: 'left',
         },
     },
     leftGridContainer: {

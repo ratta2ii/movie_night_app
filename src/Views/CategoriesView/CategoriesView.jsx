@@ -7,6 +7,10 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     categoriesContainer: {
         marginTop: 200,
+        margin: '0 20%',
+        [theme.breakpoints.down('lg')]: {
+            margin: '0 15%',
+        },
         [theme.breakpoints.down('md')]: {
             margin: '0 10%',
         },

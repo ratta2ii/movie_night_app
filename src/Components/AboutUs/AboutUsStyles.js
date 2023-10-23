@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     paper: {
-        backgroundColor: '#4667c63b',
+        backgroundColor: '#00000000',
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             background: `url('${bg_image2}') no-repeat`,
             backgroundSize: 'inherit',
-            backgroundPosition: '-150px 120px',
+            backgroundPosition: '-150px 260px',
         },
     },
     leftGridContainer: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#00000040',
         },
         [theme.breakpoints.down('xs')]: {
-            padding: '30px 30px 0px',
+            padding: '30px 0px',
         },
     },
     rightGridContainer: {
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#00000040',
         },
         [theme.breakpoints.down('xs')]: {
-            padding: '30px',
+            padding: '30px 0px',
         },
     },
     movieNightImage: {
@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '.9rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '.85rem',
+            fontSize: '1rem',
             lineHeight: '1.35',
         },
     },

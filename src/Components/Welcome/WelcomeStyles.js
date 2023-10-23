@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     paper: {
-        backgroundColor: '#4667c63b',
+        backgroundColor: '#00000000',
     },
     mainGridContainer: {
         background: `url('${bg_image}') no-repeat`,
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '60px 70px 50px',
         },
         [theme.breakpoints.down('xs')]: {
-            padding: '30px',
+            padding: '30px 0px',
         },
     },
     rightGridContainer: {
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
             padding: '0px 70px 70px',
         },
         [theme.breakpoints.down('xs')]: {
-            padding: '0 30px 30px',
+            padding: '30px 0px',
         },
     },
     movieNightImage: {
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '.9rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '.85rem',
+            fontSize: '1rem',
             lineHeight: '1.35',
         },
     },

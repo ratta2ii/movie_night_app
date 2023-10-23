@@ -41,7 +41,7 @@ function ProductsView(props) {
                     xl={10}
                     className={classes.productListContainer}
                 >
-                    {/* <ProductList /> */}
+                    <ProductList />
                 </Grid>
                 {/* Product container right margin */}
                 <Grid item xs={1} sm={false}></Grid>

@@ -24,7 +24,7 @@ export const Categories = () => {
     };
 
     return (
-        <Grid container justifyContent="center" style={{marginBottom: 125}}>
+        <Grid container justifyContent="center" className="container">
             <div className="wrap">
                 <div
                     className="box one"

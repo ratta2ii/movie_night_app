@@ -45,16 +45,14 @@ export const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
         borderRadius: 12,
         [theme.breakpoints.down('lg')]: {
-            margin: '10px 0 0px',
             backgroundPositionY: '-300px',
         },
         [theme.breakpoints.down('md')]: {
-            margin: '50px auto 120px auto',
+            margin: '50px 4% 20px',
             backgroundPositionY: '-250px',
         },
         [theme.breakpoints.down('sm')]: {
             height: 170,
-            margin: '20px auto 0px auto',
             backgroundPositionY: '-165px',
         },
         [theme.breakpoints.down('xs')]: {
@@ -63,17 +61,15 @@ export const useStyles = makeStyles((theme) => ({
             marginTop: -29,
             padding: '0',
             marginBottom: 45,
+            margin: '20px auto 0px auto',
         },
     },
     CategoriesContainer: {
-        margin: '0 3% 90px',
+        margin: '0px 0px 90px',
         paddingTop: '25px',
         boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
-        borderBottomLeftRadius: 12,
-        borderBottomRightRadius: 12,
-        [theme.breakpoints.down('lg')]: {
-            margin: '0 0 90px'
-        },
+        borderBottomLeftRadius: 8,
+        borderBottomRightRadius: 8,
         [theme.breakpoints.down('md')]: {
             padding: 0,
             margin: 0,

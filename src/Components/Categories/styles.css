@@ -1,12 +1,10 @@
 /* //! Note media queries below */
 
-/* .container {
+.container {
     width: 100%;
-    max-width: 875px;
     margin: auto;
-    margin-bottom: 25px;
-    padding: 25px;
-} */
+    margin-bottom: 200px;
+}
 
 .wrap {
     display: flex;
@@ -28,7 +26,7 @@
 
 .box {
     margin: 20px;
-    width: 30%;
+    width: 28%;
     height: 400px;
     text-align: center;
     border-radius: 3px;
@@ -115,22 +113,20 @@ h1:hover {
 }
 
 /* //! Media queries below */
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 2100px) {
+    .container {
+        margin-bottom: 200px;
+    }
     .box {
-        width: 29%;
         height: 350px;
     }
 }
 
 @media only screen and (max-width: 1290px) {
     .container {
-        max-width: 705px;
-        margin-bottom: auto;
-        margin: 60px auto;
-        padding: 25px 0;
+        margin-bottom: 125px;
     }
     .box {
-        width: 230px;
         height: 280px;
     }
 }
@@ -138,7 +134,7 @@ h1:hover {
 @media only screen and (max-width: 975px) {
     .box {
         width: 27%;
-        height: 280px;
+        height: 260px;
     }
     .box h1 {
         font-size: 17px;
@@ -149,8 +145,9 @@ h1:hover {
 }
 
 @media only screen and (max-width: 880px) {
-    .container {
-        margin: 0px auto;
+    .box {
+        width: 43%;
+        height: 240px;
     }
     .box h1 {
         font-size: 14px;
@@ -158,14 +155,9 @@ h1:hover {
 }
 
 @media only screen and (max-width: 800px) {
-    .container {
-        max-width: 465px;
-        margin: 50px auto;
-        padding: 5px 0;
-    }
     .box {
         margin: 5px;
-        width: 42%;
+        width: 47%;
         height: 200px;
     }
     .box h1 {
@@ -176,22 +168,9 @@ h1:hover {
 
 @media only screen and (max-width: 600px) {
     .container {
-        max-width: 315px;
-        padding: 5px 0;
-        margin: 0 auto;
+        margin-bottom: 75px;
     }
     .box {
-        width: 46%;
         height: 220px;
     }
 }
-
-/* 
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-} */
